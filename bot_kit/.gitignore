@@ -1,0 +1,19 @@
+# --- Sırlar: hesabına giriş hakkı verir, ASLA git'e girmesin ---
+oturum_cerez.txt
+AYARLAR.json
+
+# --- Çalışma zamanı çıktıları (gürültü) ---
+*.log
+*.log.jsonl
+*_kalp.txt
+supervizor.pid
+supervizor_out.txt
+*_durum.json
+hazir.json
+gelen_mesajlar.jsonl
+veri*.json
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
