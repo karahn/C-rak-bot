@@ -1,0 +1,46 @@
+name: Cirak account bridge
+
+on:
+  push:
+    branches:
+      - arena/56944c1f-c-rak-bot
+    paths:
+      - bridge/command.json
+      - bridge/cirak_operator.py
+      - .github/workflows/cirak-bridge.yml
+  workflow_dispatch:
+
+concurrency:
+  group: cirak-arastirmaci42
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  operate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out controller branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run one-shot operator
+        run: |
+          python3 bridge/cirak_operator.py \
+            --archive workspace-01a11343-39a6-7b74-9869-3a93e762eecf.zip \
+            --command bridge/command.json \
+            --result bridge/results/latest.json
+
+      - name: Return sanitized result to controller branch
+        run: |
+          git config user.name "cirak-bridge[bot]"
+          git config user.email "cirak-bridge[bot]@users.noreply.github.com"
+          git add bridge/results/latest.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "bridge: return command result [skip ci]"
+          git push origin HEAD:${GITHUB_REF_NAME}

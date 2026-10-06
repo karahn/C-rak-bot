@@ -1,0 +1,13 @@
+# Live game credentials and imported runtime workspace
+cirak/oturum_cerez.txt
+cirak/cerez.txt
+cirak/anahtar*.txt
+cirak/dogrulama_anahtar.txt
+bot_kit/oturum_cerez.txt
+devir/ARENA-DEVIR-PROMPTU.md
+
+# Runtime noise
+**/__pycache__/
+*.pyc
+*.pid
+*.lock
