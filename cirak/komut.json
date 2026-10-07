@@ -1,6 +1,7 @@
 {
-  "gorevler": ["cerez-kontrol", "bot", "kesif"],
-  "sure_dk": 0.8,
-  "not": "HAFIF MOD: oturum + tek tur bot (günlük ödül, sokak, tezgâh servisi) + keşif (Karahan'ın kartı, tezgâh fiyatları, yeni uçlar).",
-  "kosu": 7
+  "gorevler": ["cerez-kontrol", "bot", "ham"],
+  "sure_dk": 2,
+  "uclar": ["cadde", "gorevler", "bonus", "isletmelerim", "kiralama", "uretim", "mezat", "harita"],
+  "not": "Bot: 2 dk grind (servis hatası düzeltildi) + Karahan'ın dükkânlarını bulma denemesi (cadde taraması).",
+  "kosu": 8
 }

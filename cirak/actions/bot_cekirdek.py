@@ -19,7 +19,7 @@ class Bot:
         self.kalp = kalp
         self.sure_dk = sure_dk
         self.kazanc = 0.0
-        self.servis = 0
+        self.servis_adet = 0      # NOT: "servis" adı metotla çakışmasın!
         self.bahsis = 0
         self.katilinan = set()
         self.son_sokak = 0.0
@@ -154,7 +154,7 @@ class Bot:
             return False
         for i, is_ in enumerate(aktif[:6]):
             r = self.cek("seyyar/servis", {"id": is_.get("id")})
-            self.servis += 1
+            self.servis_adet += 1
             if isinstance(r, dict):
                 if r.get("tutar"):
                     self.kazanc += (r.get("tutar") or 0) / 100
@@ -194,14 +194,14 @@ class Bot:
                 self.servis(aktif)
             except Exception as e:  # tek tur hatası koşuyu bitirmesin
                 self.log({"olay": "tur_hata", "tur": tur, "hata": repr(e)[:300]})
-            self.kalp("tur=%d kazanc=%.0f servis=%d" % (tur, self.kazanc, self.servis))
+            self.kalp("tur=%d kazanc=%.0f servis=%d" % (tur, self.kazanc, self.servis_adet))
             if _t.time() - t0 > tur * 20 and tur % 5 == 0:
                 self.log({"olay": "ara_ozet", "tur": tur, "kazanc": round(self.kazanc, 1),
-                          "servis": self.servis, "bakiye": self.bakiye(),
+                          "servis": self.servis_adet, "bakiye": self.bakiye(),
                           "gecen_dk": round((_t.time() - t0) / 60, 1)})
             _t.sleep(2.5)
         ozet = {"olay": "kosu_bitti", "tur": tur, "kazanc": round(self.kazanc, 1),
-                "servis": self.servis, "bahsis": self.bahsis, "bakiye": self.bakiye(),
+                "servis": self.servis_adet, "bahsis": self.bahsis, "bakiye": self.bakiye(),
                 "gecen_dk": round((_t.time() - t0) / 60, 1)}
         self.log(ozet)
         return ozet
