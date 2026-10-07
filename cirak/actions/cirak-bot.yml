@@ -1,10 +1,15 @@
 name: Cirak Bot
 
-# KURULUM: GitHub -> Actions sekmesi -> "set up a workflow yourself" -> bu içeriği yapıştır -> Commit.
-# Bu dosya main (varsayılan) dalda durur; her koşuda ARENA dalını çekip botu orada çalıştırır.
-# Tetikleme: zamanlanmış (her saat :07 ve :37 UTC) + elle "Run workflow".
+# Tetikleme: (1) arena dalinda cirak/komut.json degisince OTOMATIK
+#           (2) saat basi :07 ve :37 (UTC)  (3) elle "Run workflow"
+# Bu dosya main (varsayilan) dalda durur; her kosuda ARENA dalini cekip botu orada calistirir.
 
 on:
+  push:
+    branches:
+      - 'arena/71f59bcb-c-rak-bot'
+    paths:
+      - 'cirak/komut.json'
   schedule:
     - cron: '7,37 * * * *'
   workflow_dispatch:
@@ -37,7 +42,7 @@ jobs:
           TEZGAH_CEREZ: ${{ secrets.TEZGAH_CEREZ }}
         run: python3 cirak/actions/cirak_kosu.py
 
-      - name: Sonuclari arena dalina yaz
+      - name: Sonuclari repoya yaz
         if: always()
         run: |
           git config user.name "cirak-bot"
