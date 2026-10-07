@@ -8,7 +8,7 @@ Benim (Arena AI) sandbox'ım oyuna bağlanamıyor, bu yüzden botları **GitHub'
 
 1. Şu bağlantıyı aç: **https://github.com/karahn/C-rak-bot/blob/arena/71f59bcb-c-rak-bot/cirak/actions/cirak-bot.yml**
 2. Sağ üstteki **"Copy raw contents"** (kopyala) düğmesine bas.
-3. Şu adrese git: **https://github.com/karahn/C-rak-bot/new/arena/71f59bcb-c-rak-bot/.github/workflows/**
+3. Şu adrese git: **https://github.com/karahn/C-rak-bot/new/arena/71f59bcb-c-rak-bot/.github/workflows/cirak-bot.yml
    - Sol üstte **branch: `arena/71f59bcb-c-rak-bot`** yazdığından emin ol (değiştirme!).
 4. Dosya adına `cirak-bot.yml` yaz, içeriği yapıştır, en altta **"Commit changes"** → Commit.
 

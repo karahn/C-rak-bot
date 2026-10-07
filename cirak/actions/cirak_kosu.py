@@ -157,7 +157,39 @@ def gorev_ham(op, komut):
     return rapor
 
 
-GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham}
+def gorev_yenilikler(op, komut):
+    """Sürüm notlarını COMPAK özetler (tüm dilleri atmak için)."""
+    ham = cek(op, "yenilikler")
+    if not isinstance(ham, dict) or not ham.get("surumler"):
+        return {"hata": ham}
+    adet = int(komut.get("adet") or 60)
+    ozet = []
+    for s in ham["surumler"][:adet]:
+        maddeler = []
+        for m in (s.get("maddeler") or []):
+            t = (m.get("tr") or "").strip()
+            if t:
+                maddeler.append(t if len(t) <= 300 else t[:300] + "…")
+        ozet.append({
+            "surum": s.get("surum"),
+            "tarih": s.get("tarih"),
+            "baslik": (s.get("baslik") or {}).get("tr"),
+            "maddeler": maddeler[:8],
+        })
+    dosya = os.path.join(RAK, "yenilikler-ozet.json")
+    yaz(dosya, json.dumps({"toplam": len(ham["surumler"]), "ozet": ozet}, ensure_ascii=False, indent=1))
+    satir = ["# Sürüm notları özeti (son %d) — %s" % (len(ozet), simdi()), ""]
+    for s in ozet:
+        satir.append("## %s — %s · %s" % (s["surum"], s["tarih"], s["baslik"] or ""))
+        for m in s["maddeler"]:
+            satir.append("- " + m.replace("\n", " "))
+        satir.append("")
+    yaz(os.path.join(RAK, "yenilikler-ozet.md"), "\n".join(satir))
+    return {"toplam_surum": len(ham["surumler"]), "ozetlenen": len(ozet),
+            "ilk": ozet[0] if ozet else None, "son": ozet[-1] if ozet else None}
+
+
+GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler}
 
 
 # ---------------------------------------------------------------- özet yaz
