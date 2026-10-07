@@ -545,11 +545,105 @@ def zincir(bekle_sn: int = 0):
         return {"hata": repr(e)[:200]}
 
 
+SEVIYE_DUKKANLARI = {
+    2: ["Temizlik ürünleri", "Balıkçı", "Şarküteri", "Börekçi", "Çantacı", "Perdeci", "Kargo şubesi", "Kasap",
+        "Nalbur", "Züccaciye", "Kitapçı", "Pet shop", "Fırın", "Kuaför", "Oyuncakçı", "Bebek mağazası"],
+    3: ["Market", "Oto yıkama", "İnternet kafe", "Boya satıcısı", "Pastane", "Dönerci", "Ayakkabıcı",
+        "Hırdavatçı", "Giyim mağazası", "Kafe", "Kuru temizleme"],
+    4: ["Lastikçi", "Tatlıcı", "Bilgisayarcı", "Bisikletçi", "Pideci", "Oto yedek parça", "Lokanta", "Otopark"],
+    5: ["Ziraat bayisi", "Halıcı", "Telefoncu", "Oto servis"],
+    6: ["Emlakçı", "Seyahat acentesi", "Matbaa", "Kebapçı"],
+    7: ["Sigorta acentesi", "Özel kurs", "Yapı marketi", "Güzellik salonu"],
+    8: ["Mobilya", "Optik", "Spor salonu", "Bar", "Kreş"],
+    9: ["Mali müşavir", "Beyaz eşya", "Elektronik mağazası", "Sürücü kursu", "Veteriner kliniği", "Araç kiralama"],
+    10: ["Reklam ajansı", "Kuyumcu", "Oto galeri"],
+    11: ["Hukuk bürosu", "Disko", "Diş kliniği"],
+    12: ["Gümrük müşaviri", "Eczane", "Düğün salonu"],
+}
+
+
+def gorev_seviye_bildir(op, komut):
+    """Seviye atladıysak yeni açılan dükkânları Karahan'a DM ile bildirir."""
+    d = cek(op, "durum") or {}
+    o = d.get("oyuncu") or {}
+    sv = int(o.get("seviye") or 0)
+    tp = o.get("tecrube")
+    durum_dosya = os.path.join(KOK, "seviye-durum.json")
+    onceki = 0
+    try:
+        onceki = int(json.load(open(durum_dosya, encoding="utf-8")).get("seviye") or 0)
+    except Exception:
+        pass
+    sonuc = {"seviye": sv, "tp": tp, "onceki": onceki, "yeni_mi": sv > onceki}
+    if sv > onceki:
+        yeni = SEVIYE_DUKKANLARI.get(sv) or []
+        metin = "Patron, SV%d oldum! Yeni açılan dükkânlar: %s" % (sv, ", ".join(yeni[:12]) if yeni else "-")
+        if komut.get("otopark_yasak", True) and "Otopark" in metin:
+            metin += " (Otopark hariç, senin dediğin gibi)"
+        sonuc["mesaj"] = mesaj_gonder(op, komut.get("arkadas_ad") or "Karahan", metin[:295])
+        sonuc["yeni_dukkanlar"] = yeni
+        try:
+            json.dump({"seviye": sv, "ts": simdi()}, open(durum_dosya, "w", encoding="utf-8"),
+                      ensure_ascii=False, indent=1)
+        except Exception as e:
+            sonuc["durum_yazma_hatasi"] = repr(e)
+    return sonuc
+
+
+def gorev_dukkan_ac(op, komut):
+    """Boş parsel bulur, tür/fiyat listesini çeker ve uygun ilk dükkânı kiralar."""
+    ilce = int(komut.get("ilce") or 2034)
+    hedefler = komut.get("hedefler") or ["kargo", "oto_yikama"]
+    adet = int(komut.get("adet") or 1)
+    rezerv = float(komut.get("rezerv") or 10000)
+    sonuc = {"ilce": ilce, "acilanlar": [], "secenekler": [], "denemeler": []}
+
+    d = cek(op, "durum") or {}
+    bakiye = ((d.get("oyuncu") or {}).get("bakiye") or 0) / 100
+    sonuc["bakiye"] = bakiye
+    cadde = cek(op, "cadde?ilce=%d" % ilce) or {}
+    bos = [y for y in (cadde.get("yerler") or []) if not y.get("isletme")]
+    sonuc["bos_parsel"] = len(bos)
+
+    for y in bos:
+        if len(sonuc["acilanlar"]) >= adet:
+            break
+        kb = cek(op, "kiralama/%s?ilce=%d" % (y.get("no"), ilce)) or {}
+        if kb.get("hata"):
+            sonuc["denemeler"].append({"no": y.get("no"), "hata": kb.get("hata")})
+            continue
+        turler = {t.get("kod"): t for t in (kb.get("turler") or [])}
+        ruhsat = kb.get("ruhsat") or 0
+        for kod in hedefler:
+            t = turler.get(kod)
+            if not t:
+                continue
+            kira = t.get("kira") or kb.get("kira") or 0
+            toplam = (kira * 2 + (t.get("kurulum") or 0) + ruhsat) / 100
+            kayit = {"no": y.get("no"), "tur": kod, "ad": t.get("ad"), "seviye": t.get("seviye"),
+                     "kilitli": t.get("kilitli"), "toplam": toplam, "kurulum": (t.get("kurulum") or 0) / 100,
+                     "kira": kira / 100}
+            sonuc["secenekler"].append(kayit)
+            if t.get("kilitli"):
+                continue
+            if bakiye - toplam < rezerv:
+                kayit["neden_alinmadi"] = "para_yetmiyor"
+                continue
+            ad = (komut.get("ad_kalibi") or "Kalfa {tur}").replace("{tur}", t.get("ad") or kod)
+            r = cek(op, "kirala", {"yerNo": y.get("no"), "tur": kod, "ad": ad, "ilceId": ilce})
+            sonuc["acilanlar"].append({"tur": kod, "no": y.get("no"), "toplam": toplam, "sonuc": r})
+            bakiye -= toplam
+            break
+    sonuc["kalan_bakiye"] = bakiye
+    return sonuc
+
+
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
             "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif,
             "ana-js": gorev_ana_js, "cadde-tara": gorev_cadde_tara,
-            "arkadas-istek": gorev_arkadas_istek, "mesaj": gorev_mesaj, "oda": gorev_oda}
+            "arkadas-istek": gorev_arkadas_istek, "mesaj": gorev_mesaj, "oda": gorev_oda,
+            "seviye-bildir": gorev_seviye_bildir, "dukkan-ac": gorev_dukkan_ac}
 
 
 # ---------------------------------------------------------------- özet yaz

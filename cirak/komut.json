@@ -1,18 +1,21 @@
 {
-  "gorevler": ["cerez-kontrol", "arkadas-istek", "oda", "ham", "ana-js", "cadde-tara", "bot"],
+  "gorevler": ["cerez-kontrol", "arkadas-istek", "oda", "seviye-bildir", "dukkan-ac", "bot"],
   "arkadas_id": 14,
   "arkadas_ad": "Karahan",
   "mesajlar": [
     {
       "alici": "Karahan",
-      "metin": "Patron, arkadaşlık isteğimi yolladım (Kalfa19). Kabul edince parayı gönderebilirsin. Botlar tezgâhta çalışıyor: 632₺'den 67.381₺'ye çıktık. Dükkân açma uçlarını çözüyorum, kargo + oto yıkama ilk sırada."
+      "metin": "Patron, arkadaşlık isteğimi yolladım (Kalfa19). Kabul edince parayı gönderebilirsin. Botlar tezgâhta: 632₺'den 74.317₺'ye çıktık. Dükkân ucunu çözdüm; para gelince kargo+oto yıkama açıyorum."
     }
   ],
-  "adaylar": ["ana.js", "js/ana.js", "/ana.js", "cirak/ana.js"],
-  "ilceler": ["2034"],
-  "uclar": ["kiralama", "kiralik", "dukkan/kirala", "isletme/kirala", "dukkan/ac", "oda/kayit", "oda/uye", "oda/secim", "kiralama?ilce=2034", "kiralama/2034"],
-  "sure_dk": 30,
+  "ilce": 2034,
+  "hedefler": ["kargo", "oto_yikama", "emlakci", "oto_servis"],
+  "adet": 1,
+  "rezerv": 20000,
+  "ad_kalibi": "Kalfa {tur}",
+  "otopark_yasak": true,
+  "sure_dk": 40,
   "zincir": false,
-  "not": "Arkadaşlık isteği + mesaj + oda (TP eğitimi) + dükkân açma ucu keşfi + ana oyun kodu + Pursaklar taraması + 30 dk grind.",
-  "kosu": 13
+  "not": "Arkadaşlık + oda + seviye bildirimi + Pursaklar dükkân seçenekleri (para gelince otomatik kiralama) + 40 dk grind.",
+  "kosu": 14
 }
