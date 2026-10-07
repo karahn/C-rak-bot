@@ -390,6 +390,73 @@ def finish_inventory_operation(api: Api, command: dict[str, Any]) -> dict[str, A
     }
 
 
+def transfer_and_maintain_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
+    require_account(api)
+    iban = str(command.get("iban") or "").replace(" ", "").strip()
+    aciklama = str(command.get("aciklama") or "Günlük pay").strip()
+    target_amount = int(command.get("amount_kurus") or 100000000)
+
+    # 1. Verify recipient
+    alici = api.call(f"banka/havale/alici?ad={iban}")
+    if not alici or str(alici.get("id")) != "14" or alici.get("ad") != "Karahan":
+        raise OperatorError(f"Recipient verification failed: expected Karahan (14), got {alici}")
+
+    # 2. Check transfer limits and balances
+    hv = api.call("banka/havale")
+    limit = int(hv.get("sinir") or 0)
+    used_today = int(hv.get("bugun") or 0)
+    allowed = max(0, limit - used_today)
+    if allowed <= 0:
+        raise OperatorError("Daily transfer limit already reached today")
+    send_amount = min(target_amount, allowed)
+
+    b_before = api.call("banka")
+    vadesiz = int(b_before.get("vadesiz") or 0)
+    nakit = int(b_before.get("nakit") or 0)
+
+    if vadesiz < send_amount:
+        needed = send_amount - vadesiz
+        if nakit < needed:
+            raise OperatorError(f"Insufficient funds: nakit={nakit}, needed={needed}")
+        deposit_resp = api.call("banka/yatir", {"tutar": needed})
+
+    # 3. Send havale
+    havale_resp = api.call("banka/havale", {
+        "alici": iban,
+        "tutar": send_amount,
+        "aciklama": aciklama
+    })
+
+    # 4. Perform business maintenance & stall maintenance
+    maintenance_res = maintain_businesses_and_stalls_operation(api, {
+        "max_stock_cost_kurus": int(command.get("max_stock_cost_kurus") or 10000000)
+    })
+    finish_inv_res = finish_inventory_operation(api, {
+        "max_stock_cost_kurus": int(command.get("max_stock_cost_kurus") or 10000000)
+    })
+
+    final_bank = api.call("banka")
+    final_durum = require_account(api)
+
+    return {
+        "transfer": {
+            "alici": alici,
+            "amount_sent_kurus": send_amount,
+            "response": havale_resp,
+        },
+        "maintenance": maintenance_res,
+        "finish_inventory": finish_inv_res,
+        "final_bank": {
+            "nakit": final_bank.get("nakit"),
+            "vadesiz": final_bank.get("vadesiz"),
+        },
+        "final_player": {
+            "bakiye": (final_durum.get("oyuncu") or {}).get("bakiye"),
+            "tecrube": (final_durum.get("oyuncu") or {}).get("tecrube"),
+        }
+    }
+
+
 def check_liquidation_and_transfer_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
     require_account(api)
     iban = str(command.get("iban") or "").replace(" ", "").strip()
@@ -509,6 +576,8 @@ def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
         return start_google_link_operation(api)
     if operation == "check_liquidation_and_transfer":
         return check_liquidation_and_transfer_operation(api, command)
+    if operation == "transfer_and_maintain":
+        return transfer_and_maintain_operation(api, command)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 

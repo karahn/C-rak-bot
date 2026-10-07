@@ -1,5 +1,8 @@
 {
-  "id": "2026-10-07-check-liquidation-002",
-  "operation": "check_liquidation_and_transfer",
-  "iban": "TR820077706416007162205383"
+  "id": "2026-10-07-transfer-and-maintain-001",
+  "operation": "transfer_and_maintain",
+  "iban": "TR820077706416007162205383",
+  "amount_kurus": 100000000,
+  "aciklama": "Günlük kâr payı",
+  "max_stock_cost_kurus": 15000000
 }
