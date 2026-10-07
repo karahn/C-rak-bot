@@ -1,0 +1,345 @@
+# Sürüm notları özeti (son 60) — 2026-10-07 16:17:42
+
+## 0.57.14 — 2026-10-07 · Koyu tema her yerde
+- 🌙 Koyu tema artık yalnızca harita balonlarını değil bütün menüleri ve pencereleri de koyulaştırıyor: işlerim, dükkân, banka, pazar, mesajlar ve diğerleri gece gözü yormuyor.
+- 🔎 Kiralık dükkân ekranı yenilendi: daha şık arama kutusu, iki yanında ok düğmeleri olan kayan kategori şeridi (bilgisayarda fareyle de kayıyor), işaret kutulu filtreler ve sonuç sayısı.
+- 🛣️ Sokaklar penceresinin adı artık "Görünüm seç": her sokakta kaç dükkân olduğu, kaçının dolu, kaçının kiralık olduğu ve kaç dükkânının orada bulunduğu ayrı ayrı yazıyor; bulunduğun sokak işaretli.
+
+## 0.57.13 — 2026-10-07 · Sokak ve pencere düzeltmeleri
+- 🛣️ Birden çok sokağın olduğu ilçelerde oyun artık son baktığın sokağı hatırlıyor ve açılışta dükkânlarının en çok olduğu sokağı gösteriyor; yeni dükkân açınca görünüm başka sokağa atlamıyor. İşlerim'de her dükkânın yanında hangi sokakta (ana cadde ya da arka sokak) olduğu yazıyor, dükkâna dokununca …
+- 🖱️ Bir pencerede yazıyı fareyle seçip imleci pencerenin dışına sürükleyince pencere artık kapanmıyor.
+
+## 0.57.12 — 2026-10-07 · İkinci el pazarı açıldı
+- 🏷️ Araba, yat, ev ve arsanı diğer oyunculara sat: Lüks yaşam → İkinci el. Fiyatı sen belirlersin; alıcılar hemen alır ya da teklif verir. Teklifin parası emanette durur, satıcı kabul ettiği an satış tamamlanır. Karşı teklifle pazarlık edebilirsin. Satıcıdan yalnızca %2 komisyon kesilir.
+- 🏦 Dükkân kasasında 12 saat toplanmayan para artık kendiliğinden vadesiz hesabına geçer. Kalan süre dükkânın kasa kartında görünür. Kasa eksiye düşerse kira ve maaş nakit yetmediğinde vadesiz hesaptan ödenir.
+
+## 0.57.11 — 2026-10-07 · Dükkân türünü bulmak kolaylaştı
+- 🔎 Dükkân kiralarken artık tür, kategori ya da ürün adıyla arayabilirsin ("ekmek" yazınca Fırın çıkar). Kategoriye, mal satan ya da hizmet işlerine, paranın yettiklerine ve açabildiklerine göre süzebilir; kuruluma, kiraya, toplam ödemeye ya da çalışan sayısına göre sıralayabilirsin.
+
+## 0.57.10 — 2026-10-07 · Mini oyunlar telefonda düzeltildi
+- 🎮 Bazı telefon ve tabletlerde Bovling, Dart, Basket gibi mini oyunların ekranı büyüyüp kenara kayıyordu; artık oyun alanı ekrana tam oturuyor. 🎳 Bovling lobutları ve 🎯 dart okları yeniden çizildi.
+
+## 0.57.9 — 2026-10-06 · Kalp masajı ve toplu sipariş düzeltmeleri
+- ❤️ Kalp masajı artık kalbe ilk dokunuşla başlıyor ve ritim rehberi pencere açılır açılmaz atıyor. Skor, doğru ritimdeki basışların oranına ve masajı sonuna kadar sürdürmene göre hesaplanıyor; doğru ritimle basan ama geç başlayan oyuncu artık düşük puan almıyor. 📦 Toplu siparişte süre dolarken yapıla…
+
+## 0.57.8 — 2026-10-06 · Güneş ve ay: açık ya da koyu balonlar
+- 🌙 Paranın yanına güneş ve ay düğmesi geldi. Ay'a dokununca tezgâh balonları, müşteri konuşmaları, olay balonları ve sokak çipi koyu renge geçer; akşamları göz almaz. Güneş eski açık görünüme döndürür. Seçimin bu cihazda saklanır.
+
+## 0.57.7 — 2026-10-06 · Kalabalık ilçede her zaman kiralık dükkân
+- 🛣️ Bir ilçede açılabilecek sokak sayısında artık sınır yok: on binlerce oyuncu dükkân açsa da kiralık yer bulunur. Kiralanabilir yer azalınca yeni sokak önceden açılıyor; hızlı dolan sokakta mahalle esnafı tek seferde gerektiği kadar yer bırakıyor. Telefonun ve tabletin her zaman yalnızca bulunduğun…
+
+## 0.57.6 — 2026-10-06 · Raflar satış hızına göre, yeni kasa dökümü
+- 🏪 Raflar artık ürünün ne kadar hızlı satıldığına göre: bakkalda ekmek, su ve süt rafları çok daha geniş; yavaş satan bilgisayar, mobilya ve takının rafı makul. Orta ve büyük dükkânın her rafı küçükten büyük. Rafına sığmayan mal (küçük dükkâna taşınınca ya da eski stoktan) toptancıya alış fiyatından …
+- 🧾 Dükkândaki "Bugün kasaya giren ve çıkan" bölümü yenilendi: satışlar, otomatik mal alımı ve giderler simgeli satırlarda, satılan adet altında, en altta günün neti.
+- 🛒 Art arda iki ürüne "+" ile alım yapınca ikinci alım ekranda görünmüyordu, düzeldi. Talep dalgalarının sebebi artık takvime ve havaya uyuyor ("Pazar günü kalabalığı" yalnızca pazar, sağanak yalnızca yağmur yağarken). Sokak adı çipi kısayolların altına taşındı. Kaldırıma yanaşan görev araçları (ambu…
+
+## 0.57.5 — 2026-10-06 · Enflasyon, ülkene göre acil numaralar ve daha az bildirim
+- 📈 Fiyatlar artık enflasyonu izliyor. Her ayın 1'inde ürünler, kiralar, maaşlar, faturalar, ev ve araba fiyatları, tatil ve biletler, harçlar ve ödüller aylık enflasyon kadar artıyor; dükkân raflarındaki etiketlerin de aynı oranda güncelleniyor. Kenarda duran nakit değer kaybeder; vadeli mevduat, döv…
+- 📞 Acil numaralar artık ülkene göre: Türkiye'de itfaiye 110, polis 155, ambulans 112. Başka bir ülkede oynuyorsan o ülkenin gerçek numaralarını aramalısın; görevlerde, olay düğmelerinde ve hastane ile itfaiye bilgilerinde doğru numara yazıyor.
+- 💵 "Kasa doldu" ve raf bildirimleri artık tek kartta toplanıyor ve en çok 6 saatte bir geliyor; oyuna her girişinde bildirim yağmuru yok. İstersen Ayarlar → İşletme bildirimleri'nden tamamen kapatabilirsin; borç uyarıları her zaman gelir.
+- 📦 Toplu siparişler zorlaştı: tezgâhta hazırlama süresi ve dükkân siparişlerinin teslim süresi %25 kısaldı (dükkân siparişlerinde 2 saat 15 dakika). Yetişmek için hızlı olmalısın.
+- 🎬 Tanıtım filmi bazı cihazlarda yüklenmiyordu, düzeldi. Film yine de açılamazsa sana haber veriyor; Hesabım → Tanıtım'dan dilediğin zaman izleyebilirsin.
+- 🚆 Bölge haritalarında tren yolu ve havalimanı pisti artık ufukta sise karışarak kayboluyor; boşlukta kesilip kalmıyor.
+
+## 0.57.4 — 2026-10-06 · Raflar, kasa dökümü, gar, havalimanı ve yaban hayatı
+- 🏪 Her ürünün artık kendi rafı var: dükkânda ürün ürün stok ve raf kapasitesi, bugün ve dün kaç tane satıldığı görünüyor. "Rafı doldur" düğmesi rafı tam dolduruyor. Toplu siparişler rafına sığacak kadar geliyor; eksik mal varsa "Eksiği al ve teslim et" ile tek dokunuşta teslim edebilirsin.
+- 💰 Dükkânda bugün kasaya giren ve çıkan para ayrı ayrı görünüyor: satışlar, otomatik mal alımı ve kira-maaş giderleri. Otomatik tedarik nakit yetmezse bankadaki vadesiz hesabından da ödüyor ve gün içinde biten ürünü hemen tamamlıyor; raflar boş kalıp müşteri kaçmıyor.
+- 🎉 Toplu siparişler ve talep dalgaları artık dükkâna ve sebebe uygun: düğüne baklava, mevlide lokum ve şerbet, okul gezisine simit, yeni açılan otele mobilya isteniyor; soğukta salep ve mont, maç akşamı çekirdek ve kola aranıyor.
+- 🔔 Oyun içi bildirimler sağ altta, alt menünün üstünde çıkıyor ve önemine göre 3 ya da 5 saniye kalıyor. Binalara dokununca adları kısa bir kutuda görünüyor. Olaylar kutusundaki sayı rozeti düzeldi.
+- 🚉 Gar şehrin batı ucuna taşındı: üç hat ve iki peron var, raylar sisin içine kadar uzanıyor, peronda yolcu treni ve yük treni bekliyor. Havalimanı şehrin güney ucunda: apronda uçaklar ve merdiven araçları var, pist sise kadar uzanıyor, uçaklar iniyor ve kalkıyor. Akaryakıt istasyonları ve otogara ar…
+- 🌲 Bölgeler canlandı: ormanda kızıl geyik sürüsü, dere kenarında karacalar, boz ayı, yavrulu yaban domuzu ve tilki dolaşıyor; denizde yunuslar atlıyor, tarlalarda leylekler yem arıyor. Köy evlerinin çatısında güneş enerjili su ısıtıcıları ve bahçelerinde meyve ağaçları var. Bölgelerin gökyüzüne güneş…
+- 🛝 Çocuk parkında salıncaklar doğru yönde sallanıyor, koşan çocuk oyuncakların içinden geçmiyor; parklarda ağaçlar oyun alanına ve kameriyeye girmiyor. İtfaiye hortumundan çıkan su artık uzaktan da net görünüyor.
+
+## 0.57.3 — 2026-10-06 · Şehre yeni yapılar, hava ve yangın
+- 🏛️ Her ilde artık bir üniversite ve bir teknik üniversite, otogar ve iki akaryakıt istasyonu var. İlde gerçekten bulunuyorsa tren garı, YHT garı ve havalimanı da şehre eklendi; bulunmayan illerde yerlerini bir kent parkı alıyor. Yeni yapılar telefonu yormayacak şekilde hafif tutuldu.
+- 🕌 Cami meydanına şadırvan geldi; yerde gezinen güvercinler yanlarından geçen yayalardan ürküp kaçıyor, banklarda tembel kediler uzanıyor. Mahalleye salıncaklı, kaydıraklı, tahterevallili bir çocuk parkı yapıldı: gündüzleri çocuklar oynuyor, anneleri bankta bekliyor.
+- 🌦️ Hava daha gerçekçi: yağmur rüzgârla eğik yağıyor, kar savruluyor, dolu yağınca taneler yerde sekiyor, tipide görüş kısalıyor. Gece gökte ayın o günkü evresi görünüyor; gün doğumu ve batımında gökyüzü kızıla dönüyor.
+- 🔥 Yangınlar baştan çizildi: pencereden dilli alevler ve kıvılcımlar yükseliyor, kabarık duman kıvrılıyor, cephede is lekesi büyüyor. İtfaiyecilerin hortumundan pencereye yay çizen su gidiyor, su değince alev buhara dönüyor.
+- 🚗 Trafiğe kamyonetler ve spor arabalar katıldı.
+- 🌾 Bölgeler zenginleşti: köylerde sokaklar, cami, meydan ve kahvehane; ovaya dağılmış çiftlik evleri, yol kenarı ağaçları ve yama yama ekin tarlaları. Limanda konteyner terminali, büyük gemiler ve rıhtım vinçleri; kıyıda pastel apartmanlı bir kasaba. Organize sanayide yönetim binası ve TIR parkı, mad…
+
+## 0.57.2 — 2026-10-06 · Mini oyunlar, kredi ve şehir düzeltmeleri
+- 🎮 Mini oyunlar tek tek elden geçti: Hamal Dengesi'nde kontroller artık doğru yöne çalışıyor; Tost, Dondurma, Dart, Bovling, Masa Tenisi ve Sayı Birleştir'de kusursuz oyun 100 puana ulaşabiliyor. Pazar Üçle'de parmakla kaydırarak takas, Döner Kes'te tek parmak takibi, Güvercin Yemle'de öndeki kuşa do…
+- 💰 Mini oyunlarda ekranda gördüğün ödül hesabına geçen ödüldür: Para Yağmuru balonlarının üstünde kazanacağın gerçek tutar yazar, bağlantı koparsa sonuç yeniden sorulur (ödül kaybolmaz, iki kez de yazılmaz), bakiye artık geri sıçramıyor.
+- 🎁 Ödüllü oyun daveti artık daha seyrek: 2 saatte en çok 3 kez gelir ve ekranda 5 dakika durur; ödüller yarıya indi.
+- 🏦 Krediye ara ödeme: “Kısmen öde” ile istediğin kadarını öde (en az 1.000 ₺); ödediğin kadar anapara düşer, vade aynı kalır, aylık taksitin küçülür.
+- 🏪 15 yeni sektör: özel okul, dershane, halı yıkama, çamaşırhane, pizzacı, hamburgerci, dondurmacı, kozmetik, spor mağazası, nakliyat, teknik servis, kunduracı, hamam, müzik kursu ve ev yemekleri. Dükkânların son saatinin kazancı artık kapanışta kasaya giriyor.
+- 📱 Bildirimler ekranın sol ortasında, telefonda en çok ikisi görünür; “Tümünü kapat” düğmesi ve kaydırarak kapatma eklendi. Plazanın görünmez kutusu artık önündeki tezgâh ve dükkânlara dokunmayı engellemiyor; hastane, plaza, emniyet ve itfaiyeye odaklanınca kamera tabelayı görecek şekilde cepheye bak…
+- 🔊 Sesler ve efektler oyun açıldıktan sonra arka planda cihaza indirilir: ilk çalışta takılma olmaz, sonraki açılışlarda internetten değil cihazdan okunur. Kedi düğmeleri “Besle” ve “Kov” oldu, beslerken çıkan bozuk ve yüksek miyav kaldırıldı.
+- 🌍 Tanıtım filmi ve Emeği Geçenler 10 dilde yeniden denetlendi: Rusçada başlık ve el yazısı yazı tipleri artık Kiril harflerini gösteriyor, Arapçada sayılar doğru sırada, Çince ve Japonca başlıklar ekrana sığıyor; üstteki tarih her dilde o dilin kuralıyla yazılıyor.
+
+## 0.57.1 — 2026-10-06 · Akıcı tanıtım filmi
+- 🎬 Tanıtım filmindeki takılmalar giderildi: “Kendi yolunu çiz”, “Esnaf ol” ve “Sokak senin” yazılarında görüntü artık donmuyor, yumuşak bir ağır çekimle akıyor. Başlık kartları da filmi yavaşlatmadan gelir.
+- 🔊 Filmin sonunda ÇIRAK logosu belirirken güçlü, sinematik bir logo vurgusu duyulur; müzik o anda geri çekilir.
+
+## 0.56.9 — 2026-10-06 · Bu senin hikâyen
+- 🎞️ Emeği geçenler açılışında ÇIRAK logosunun altında artık “Bu senin hikâyen” yazıyor. Açılışta yalnız logo görünür, yapımcı listesi birkaç saniye sonra aşağıdan gelir; gök gürültüsü biraz daha güçlü.
+- 🎬 Tanıtım filminde yağmur ve gök gürültüsü sesi kaldırıldı; filmin sonunda ÇIRAK logosu belirirken yükselen bir vurgu ve darbe sesi duyulur.
+
+## 0.56.8 — 2026-10-06 · Servet dökümü
+- 💎 Sıralamadaki Servet sekmesinde artık servetinin dökümü var: nakit, banka, arsa ve tarlalar, evler, arabalar, tesisler, dükkânlar, mallar, borçlar… Hangi kalemin ne kadar tuttuğunu tek bakışta görürsün.
+- 🧮 Servete eksik sayılan kalemler eklendi: mezatta lider olduğun teklif, ihale teminatı, plaza ofis depozitosu, tesiste üretilmekte olan mal ve reklam ajansı yatırımı. Birikmiş ev borcu da artık servetten düşülüyor.
+
+## 0.56.7 — 2026-10-06 · Jenerik rötuşu
+- 🎞️ Emeği geçenler açılışında ÇIRAK logosu ve alt yazılar kutunun boyuna göre ölçeklenir; küçük ekranlarda yazılar artık alttaki karartmada kalmıyor.
+- ⛈️ Jenerikteki gök gürültüsü biraz daha güçlü.
+
+## 0.56.6 — 2026-10-06 · Bölgeler baştan
+- ⚓ Liman artık gerçek bir liman: dev konteyner gemilerinin yanaştığı terminal, raylı rıhtım vinçleri, konteyner istifleri ve aralarında dolaşan tırlar, römorkör, genel kargo rıhtımı, balıkçı barınağı ve arkada küçük bir kasaba.
+- ⚡ Enerji vadisinde rüzgâr gülleri çoğaldı; üç güneş tarlası var, biri baraj gölünde yüzüyor. Batarya depoları, yeni yerinde trafo merkezi, giriş yolları ve dere üstünde köprüler eklendi.
+- 🏖️ Sahilde arka yolun gerisinde sokakları, apartmanları, camisi ve parkıyla bir kasaba kuruldu; tepedeki villalar artık yollara dizili.
+- 🌾 Tarım ovasında ve 🐄 çiftlikte köyler sokaklara dizildi, meydanında cami ve kahvehane var. Ovaya çiftlik evleri, uzak kuşaklara yama yama ekin tarlaları, meralara gölgelik ve suluk eklendi; sürüler büyüdü.
+- ⛏️ Maden sahasına lojmanlar ve camisi, cevher treniyle yükleme silosu, rayı kesen yollarda hemzemin geçitler, atık barajı ve işletme kampüsü eklendi.
+- 🌲 Ormanda kesim alanları, kütükler, yol kenarında tomruk istifleri, kesim makineleri, yeni dikilmiş fidanlıklar ve batıda bir orman köyü var.
+- 🏭 Organize sanayide yönetim binası, itfaiye ve otoparkıyla kendi adasına taşındı; yanına akaryakıtlı TIR parkı ve demiryolu geçitlerine bariyerler geldi.
+- 🛣️ Tüm bölgelerin yolları elden geçirildi: uzak kesimlerde yolların ve evlerin zeminin altında kalması, yol uçlarındaki hata ve tesislerin üst üste binmesi giderildi.
+
+## 0.56.5 — 2026-10-05 · Anında kutlama ilanı
+- 🎉 Kutlama ilanları artık onay beklemeden, ödeme yapılınca hemen mahalle panolarında yayına girer. Küfür, hakaret, bağlantı ve telefon numarası içeren metinler para alınmadan geri çevrilir.
+- 🔔 Bildirimlerde geçen bölüm adları (Banka, Yenilikler, Hesabım…) artık şık bir bağlantı çipi olarak görünür; dokununca o bölüm açılır.
+- 🏨 Sahildeki otel ve ofislerin pencereleri gerçek kat yüksekliğinde: uzaktan bakınca ışıklar artık yanıp sönüyormuş gibi titremiyor.
+
+## 0.56.4 — 2026-10-05 · Yağmurlu jenerik
+- 🎞️ Emeği Geçenler'de hafif yağmur sesi; şimşek çaktığında gök gürültüsü. Ses Ortam sesleri kanalından gelir.
+
+## 0.56.3 — 2026-10-05 · Uygun kiralar, yağmurlu tanıtım
+- 🏠 Dükkân kiraları arasındaki fark azaldı: en kalabalık ilçede kira en küçük ilçenin en çok 2 katı kadar.
+- 🎬 Tanıtım filminde hafif yağmur sesi; şimşek çaktığında gök gürültüsü.
+
+## 0.56.2 — 2026-10-05 · Daha kolay üyelik
+- ✍️ Üye olurken e-posta artık isteğe bağlı. Yazarsan şifreni unuttuğunda yenileyebilirsin.
+- 🛡️ Mini oyun puanları ve ödüllü video ödülleri hileye karşı sunucuda daha sıkı denetleniyor.
+
+## 0.56.0 — 2026-10-05 · Menü araması, varlık vergisi ve yeni bölgeler
+- 🔎 Menü araması: Hesabım ve Devlet ve Piyasalar'da ilk 3 harften sonra öneriler çıkar. İşlerim'de iş, dükkân ve tesis araması.
+- 🎥 Kamera düğmesi: 🧭 ile sola/sağa döndür, yukarıdan ya da yandan bak. Mahallede ve bölgelerde çalışır.
+- 🗺️ Sekiz üretim bölgesi daha gerçekçi: gerçek kavşaklar, tarla yolları, anız ve biçilmiş çayır, sakin deniz, limanda bağlı tekneler, sık orman.
+- 💎 Varlık vergisi: büyük servetin muafiyet üstü kısmından, kâra göre yıllık %3–15. Tamamı ülke kasasına gider.
+- 🏠 Kiralar ilçenin kalabalığına ve işletme türüne göre adil: büyük ilçede kira yüksek, küçük ilçede kira, elektrik ve maaş düşük. Davet indirimi kirada görünür.
+- 🛡️ Havale ve EFT yalnızca IBAN ile. Kötü niyetli havaleler artık alıcıyı MASAK'a sokmaz. Olay ödülleri en çok 2.500 ₺.
+- 🏛️ Olaylar, Devlet ve Piyasalar menüsüne taşındı; Pazar'a 🏷️ İlanlar kutusu eklendi. Kapatılan uyarılar tekrar çıkmaz.
+
+## 0.55.1 — 2026-10-05 · Yenilenen pencereler
+- 🪟 Menü pencereleri artık sabit boyda: sekme değiştirince büyüyüp küçülmüyor. Küçük bilgi pencereleri içeriği kadar açılıyor.
+- 🎨 Yeni pencere tasarımı: altın şeritli başlık, tek parça sekme rayı (kaydırırken üstte kalır), sade kartlar. Sığmayan sekmeler eşit iki satıra iner. Kumarhane, varlıklar, mağaza, borsa ve olaylar ekranlarındaki taşmalar düzeltildi.
+
+## 0.55.0 — 2026-10-05 · Mahallede hayat var: Olaylar
+- 📞 Dükkânında yangın çıkabilir, gece hırsız girebilir, bir müşteri fenalaşabilir. Telefonu aç, doğru numarayı ara (İtfaiye 110, Polis 155, Ambulans 112); zamanında yetişirsen ödül ve itibar kazanırsın. Günde en çok 3 olay olur.
+- ❤️ Fenalaşan müşteriye ambulans gelene kadar kalp masajı yap: ritmi tutturursan hayat kurtarırsın. 📦 Toplu siparişler (düğün, okul gezisi…) piyasanın %35 üstünden ve teslim primiyle gelir; 📈 talep dalgalarında bazı ürünler 2 saat çok satar.
+- 🔨 Mezat: icradan gelen mallar açık artırmada (10. seviyeden itibaren). 🏗️ Mahalle projeleri: ilçece bağış toplayın, hedef dolarsa bir hafta bütün dükkânlara %5 fazla müşteri gelir. 🏅 Mahalle itibarı müşteri sayını, tezgâh cironu ve kredi notunu etkiler; gazetede 'Mahallenden haberler' bölümü var.
+
+## 0.54.0 — 2026-10-05 · Yetenekler her yerde geçerli
+- 🤝 Pazarlıkçı artık otomatik tedarikte, hizmet malzemesinde ve tezgâh malzemesinde de indirim yapar. Dükkânda toptan fiyat indirimli gösterilir.
+- ⚖️ Pazarda ve ambarda gösterilen sistem fiyatları Tüccar ve Pazarlıkçı yeteneklerinle hesaplanır; yetenek açıklamaları artık her dilde.
+- 🏗️ Bölgede boş parsele dokununca yalnızca o bölgenin yatırımları açılır; istersen tüm sektörleri gösterebilirsin.
+
+## 0.53.1 — 2026-10-05 · Üretim bölgeleri baştan kuruldu
+- 🗺️ Sekiz üretim bölgesi artık mahalle genişliğinde; ufukta sisle kapanan, yolları, araçları ve yaşayan çevresiyle baştan tasarlandı. Hava, gece ve ışıklar mahalledeki gibi.
+- ⚓ Liman yeniden yapıldı: dalgakıranlar, fener, rıhtım ve iskeleler, gerçekçi deniz. Deniz, sonar, av defteri ve tekneler sol üstte simge oldu; üstüne gelince adı açılır.
+- 🏭 Sanayide tırlar yalnızca yolda gider; maden ocağı, orman, enerji vadisi (baraj, rüzgâr ve güneş santralleri) ve sahil yeniden tasarlandı. Her tesis türü kendi binasıyla görünür.
+- 🧭 Bölgede Mahalle, Bölgeler ve Yatırım yap düğmeleri hava durumunun altında. Pazar kategorileri ve Tesislerim'deki bölge seçimi kaymayan, hepsi görünen karolara dönüştü.
+
+## 0.52.0 — 2026-10-05 · Hastaneler, emniyet, itfaiye ve yenilenen meydan
+- 🏥 Her ilçede kendi adıyla devlet hastanesi, emniyet müdürlüğü (il merkezlerinde il emniyet müdürlüğü) ve itfaiye istasyonu var. Plaza da bu binalarla birlikte şehirdeki yeni yerine taşındı.
+- 🕌 Meydandaki cami büyüdü ve meydanın tam ortasına geçti; iki yanında süs havuzları ve ağaçlar var.
+- 🎮 Mini oyunlar düzeldi: Para Üstü'nde doğru cevap hep şıklarda ve şıklar birbirinden farklı; Sudoku her doğru çözümü kabul ediyor; birkaç oyunda çift sayma ve takılma giderildi. Şıklı oyunların görünümü yenilendi.
+- 🧔 Çırak Bot artık iş bitmeden "iş bitti" demiyor: sipariş verdikten sonra işin sürdüğünü söyleyip kese çıkınca haber veriyor. Mahallen yüklenirken görünmüyor; yükleme kartı ortalandı ve girişteki tanıtım filmi kaldırıldı (Hesabım'dan izlenebilir).
+- 🚫 Dükkân tabelalarında, şirket, yat ve grup adlarında küfür ve argo kabul edilmiyor; kullanıcı adı denetimi de güçlendirildi.
+- ✉️ Yeni üyelikte e-posta zorunlu (şifreni unutursan yenilemek için); doğrulama kodu gönderilmez. Sunucu tarafında sık açılan sayfalar (banka, sıralama, durum) daha az veritabanı sorgusuyla açılıyor.
+
+## 0.51.0 — 2026-10-05 · Şehirler arası yolculuk ve taşınma
+- 🧳 Başka bir şehri gezmek için artık yolculuk seçiyorsun: uçak (havalimanı), otobüs (otogar), yüksek hızlı tren, anahat treni ya da kendi araban. Süre ve bilet fiyatı mesafeye göre; haritada aracın şehirden şehre gidişini izlersin.
+- 🚚 Şirketlerinle birlikte başka bir ile ya da ilçeye taşınabilirsin: evin, dükkânların, üretim tesislerin ve plaza ofisin yeni adresine geçer. Nakliye taşınanların çokluğuna ve mesafeye göre; işyeri nakil ruhsatı, tesis nakil harcı, ticaret sicili harcı ve damga vergisi ayrıca alınır.
+- 🏛️ Başka bir ilçeyi gezerken artık oranın valiliği, kaymakamlığı, belediyesi ve il plazası görünüyor; caminin adı da gerçek camilerdeki gibi taç kapının üstünde yazıyor.
+- 💡 Spor salonu, okul, kütüphane, kültür merkezi ve park tabelaları gece projektörlerle aydınlanıyor; park kapısında fenerler yanıyor. Plaza çevresindeki kaldırım taşları düzeltildi.
+- 🔊 Üretim bölgelerine ortam sesleri geldi: limanda dalga ve martı, çiftlikte inek ve horoz, sanayide makine uğultusu… Ağ atarken ve yolculukta da sesler var. Oyun artık 10 dilde arama motorlarında kendi diliyle görünüyor.
+
+## 0.50.2 — 2026-10-04 · Daha hızlı sunucu
+- ⚡ Oyun sunucusu hızlandı: üretim, banka, sıralama ve ana ekran çok daha az veritabanı sorgusuyla açılıyor. Kalabalık saatlerde sayfalar daha çabuk yüklenir.
+- 🔔 Eski bildirimleri çok olan oyuncularda bildirim listesi artık anında açılıyor.
+
+## 0.50.1 — 2026-10-04 · Büyük cami, gece ışıkları ve mahya
+- 🕌 Meydanın camisi büyüdü: Selimiye’den esinlenen tek büyük kubbe, köşelerde kubbecikler ve üç şerefeli dört ince minare. Önünde altın varaklı oyma yazılı beyaz mermer kitabe var.
+- 🌙 Gece cami projektörle aydınlanıyor: taş sıcak, kubbe serin ışıkta, pencereler içeriden yanıyor, şerefelerde ışık halkaları var. Ramazan boyunca, kandil gecelerinde ve bayramlarda minareler arasına mahya geriliyor ve şerefeler yeşil-altın yanıyor; millî bayramlarda kırmızı-beyaz.
+- 🏢 Plaza gece simsiyah değil: ofis katlarında geç saate kadar çalışanların ışıkları yanıyor, lobi aydınlık; kule köşelerinde, kat bantlarında ve tacında renk değiştiren LED şeritler var.
+
+## 0.50.0 — 2026-10-04 · Üretim bölgeleri, açık deniz balıkçılığı, YSK ve isim bağışı
+- 🗺️ Üretim bölgeleri: tesislerin artık kendi haritalarında. Tarım ovası, çiftlik, liman, sahil, organize sanayi, maden sahası, orman ve enerji vadisi. Parsele dokun; üretimi başlat, topla, büyüt. Bölge girince yüklenir, çıkınca bellekten silinir.
+- 🎣 Açık deniz balıkçılığı: sandal, çektirme, gırgır ve trol teknesi al; martıların döndüğü, suyun köpürdüğü yere ağ at. Karadeniz, Marmara, Ege ve Akdeniz’de dokuz tür balık, gerçek av yasağı, sonar ve aynı denizdeki herkesin paylaştığı sürüler.
+- 🕌 İsim bağışı: ilçendeki cami, kilise, okul, park, millet bahçesi, kütüphane ve spor salonuna 1 gün, 3 gün, 1 hafta ya da 2 hafta adını ver. Ad, mahalledeki tabelada görünür.
+- 🏫 Her ilçede artık ilkokul, ortaokul, lise, millet bahçesi, halk kütüphanesi, spor salonu ve kilise ya da kültür merkezi var; bağış yokken sistem uygun adlar verir.
+- 🗳️ YSK kuruldu: seçime ve oda seçimine aday olmak için teminat yatırılır (150.000 – 5.000.000 ₺). Kazanana tamamı, oyların %10’unu alana yarısı iade edilir. Seçim kampanyası: afiş, seçim aracı, meydanda miting ve bildiri; son 12 saat seçim sessizliği.
+- ⛈️ 10 °C’nin üstündeki sağanakta şimşek çakar, gök gürler; hava raporunda da görünür. Hava adı artık her dilde yazıyor.
+- 🚗 Trafik: park eden arabalar artık birbirine girmiyor; duran aracın arkasında uzun bekleyen, karşı şerit boşsa sollar. Sıkışıkta selektör, arada bir korna; fren yapan arabanın burnu hafifçe iner.
+- 🪧 Bilboardlar binaların arasına alındı, tabelaları kapatmıyor. Arka sokak dükkân adları tam görünüyor. Bayraklar rüzgârda dalgalanıyor, meydanın üstünde güvercinler dönüyor.
+
+## 0.49.7 — 2026-10-04 · Dükkânlar arası hızlı geçiş ve reklam araçları
+- 🏪 Dükkân penceresinde ‹ › oklarıyla (bilgisayarda ← → tuşlarıyla) dükkânların arasında geçebilirsin. Toptancı malı getirince eski dükkânın penceresi artık geri açılmıyor.
+- 🚚 Reklam ajanslarından reklam aracı kiralayabilirsin: dijital ekranlı araç dükkânının reklamıyla mahallede dolaşır ve ek müşteri getirir. Kaldırım panoları da artık dijital ekranlı.
+- 🪧 Dükkânının tabelasını istediğin zaman değiştirebilirsin: tabela yapımı ve belediye harcı ödenir, 30 günde en çok 2 kez.
+- 🏦 Banka hesabı incelemeye alınan oyuncular Banka sayfasından açıklamalı itiraz gönderebilir; yanıt bildirim olarak gelir. İnceleme sistemi de güçlendirildi.
+- 🖱️ Bilgisayarda yana kayan menüler (pazar sekmeleri gibi) artık fareyle sürüklenerek ya da tekerlekle kaydırılabiliyor.
+
+## 0.49.6 — 2026-10-04 · Çırak Gazetesi ve büyük ofis
+- 📰 Devlet ve Piyasalar'a Çırak Gazetesi geldi: borsanın yükselenleri, pazarın en çok satanları, yeni dükkânlar, ihaleler, meclis kararları ve mini oyun liderleri her gün tek sayfada.
+- 🏢 Plazaya büyük ofis eklendi: 15–18. katlarda, katta iki ofis, tesis gelirine %5 teşvik. Tam kat artık 19–22. katlarda.
+- 🛠️ Aktif geliştiriciler için günlük katkı sınırı kalktı. Uygulanan öneriler Yenilikler'de geliştiricinin adıyla görünecek.
+- 🌧️ Emeği geçenler jeneriğine yağmur efekti geldi; telefonları yormaması için grafik kalitesine göre ayarlanıyor.
+
+## 0.49.5 — 2026-10-04 · Plaza, vergi taksiti ve 60 mini oyun
+- 🏢 Şehir merkezine cam bir plaza geldi. Üretim tesisi ya da şirketi olanlar ofis kiralayıp şirket merkezini kurabilir; ofis tesis gelirine %2–%6 teşvik ekler.
+- 🧾 Vergi Dairesi'nde kısmi ödeme, 3/6/9 taksit ve gecikme cezasında indirimli yapılandırma var. Vergi borcundaki her değişiklik bildirim olarak gelir.
+- 🎮 Mini oyunlar 60'a çıktı: refleks, beceri, bulmaca ve şans gruplarında 15'er oyun. Penaltı, basket, dart, mini golf, bovling, sudoku ve kahve falı da geldi. Bazı oyunlardaki hatalar düzeltildi.
+- 👥 Profil sayfası ve Arkadaşlar baştan tasarlandı: sayfalama, arama, sıralama, istekler ve Oyuncu bul önerileri.
+- 📊 Devlet ve Piyasalar'a Ekonomi göstergeleri geldi; Ticaret Odası pazar raporu yenilendi ve her odanın başkanlık seviyesi gösteriliyor (Esnaf 10, Ticaret 15, Sanayi 20).
+- 🏖️ Tatile 4 yurt içi (Kaş, Sapanca, Mardin, Bozcaada) ve 5 yurt dışı (Londra, Amsterdam, Santorini, Kahire, Bali) rota eklendi.
+- ⚖️ Denge: cüzdan, itfaiye, ambulans ve polis yardım ödülleri ile günlük şans oyunlarının ödülleri yarıya indi; 20. seviyeden sonra seviye atlamak daha zor.
+
+## 0.49.4 — 2026-10-04 · Toptancı teslimatı düzenlendi
+- 🚚 Rafları tek seferde doldurunca dükkânına tek bir "TOPTANCI" kamyonu gelir. Tek ürün alınca o ürünün toptancısı gelir.
+- 🛣️ Bir dükkâna aynı anda tek araç gelir; araç yoldayken aldığın mallar aynı seferle gelir. Yan yana dükkânların kamyonları artık iç içe geçmez, sırayla yanaşır.
+- 💬 Toptancı personeli artık konuşuyor: "Mallar geldi, dükkâna koyuyoruz!", "İrsaliyeyi imzalar mısın?" ve daha fazlası.
+
+## 0.49.3 — 2026-10-04 · Yeni içecekler, içecek dolapları ve iş makinesi pazarı
+- 🥤 İçecek fabrikasında 9 yeni içecek: kola, portakallı gazoz, soğuk çay, limonata, meyveli soda, şalgam, Ramazan şerbeti, boza ve enerji içeceği. Bakkal, market, büfe ve kebapçılarda da satılıyor.
+- 🧊 Beyaz eşya fabrikası tek, çift ve üç kapaklı içecek dolabı üretiyor (400 L, 800 L, 1200 L). Beyaz eşya mağazalarında da satılıyor.
+- 🚜 Pazarda yeni bölümler: İş makineleri, İçecekler ve Geri dönüşüm. Müteahhitlik tesislerinde nasıl çalıştığı anlatılıyor; işe gereken makinelerin ambarda olup olmadığı görünüyor.
+- ✔️ Yönetim ve geliştirici ekibindeki oyuncuların adının yanında onay işareti var.
+- 🏪 Bir dükkâna dokununca yanındaki dükkânın bilgisinin açılması düzeltildi; dükkân adları da doğru binanın üstünde.
+
+## 0.49.1 — 2026-10-04 · 5 yeni mini oyun ve yeni Hesabım
+- 🎫 Yeni şans oyunları: Kazı Kazan ve Mahalle Piyangosu. Artık günde beş şans oyunu var.
+- ⚡ Yeni refleks oyunları: Kediyi Kovala, Manav Kasası ve Hızlı Sipariş.
+- 🛡️ Şans oyunu sonucu açılmadan kapanırsa ödül yine hesabına geçer.
+- 👤 Hesabım yenilendi: Oyun Köşesi ve Esnaf Kartı artık buradan açılıyor.
+
+## 0.49.0 — 2026-10-04 · Ev, kumarhane, tır ihaleleri ve devlet binaları
+- 🏆 Mini oyunlara haftalık skor tablosu, 13 başarım ve günlük görevler eklendi; haftanın ilk 10'u ödül alır.
+- 🏛️ Valilik, kaymakamlık ve belediye binaları her il ve ilçede; Ankara'da Cumhurbaşkanlığı, TBMM ve bakanlıklar.
+- 🚚 Raf doldurunca ürün grubuna göre toptancı kamyonu gelir; firma kıyafetli çalışanlar kolileri dükkâna taşır. Vitrinlerin içi artık dolu görünüyor.
+- 🚕 Taksilerin kapısında TAKSİ, polis araçlarında POLİS ve 112 yazısı.
+- 🚛 Devlet tır sevkiyat ihaleleri: nakliye firmanla teklif ver, filonla seferleri tamamla.
+- 🦺 Belediye çalışmaları: yol, kaldırım, aydınlatma, park ve temizlik çalışmaları sokakta görünür ve müşteriyi artırır.
+- 💎 Üst segment: butik otel, lüks galeri, inşaat firması ve özel hastane.
+- 🎰 Kumarhane: yüksek kazanç, ama baskında son 3 günün kazancına el konur ve 24 saat hapis.
+
+## 0.48.0 — 2026-10-03 · 30 mini oyun geldi
+- 🎮 Oyun Köşesi açıldı: Para Yağmuru'ndan Okey Per'e 30 mini oyun. Ara sıra gelen oyun davetlerinde oynayıp ödül kazan; Çarkıfelek, Sürpriz Kese ve Tavla Zarı günde bir kez.
+- 📺 Yeni video ödülleri: günlük ödülü ikiye katla, zabıta cezasını sil, bir satışlık komisyonsuz pazar hakkı al, kaçan toplu siparişi geri çağır, keyfini +20 yap, mini oyunda ikinci şans kazan. Esnaf Kartı sahiplerine hepsi reklamsız.
+- 🗺️ Başka ilçede şube açarken harita artık ters dönmüyor, her zaman kuzey yukarıda açılıyor.
+
+## 0.47.1 — 2026-10-03 · Videoyla daha fazla ödül
+- 🎁 Biten işi toplarken kısa bir video izle, satışın %15'i kadar bonus al.
+- 👷 Çırağın çalıştığı işte video izle, o işin çırak yevmiyesi geri gelsin. 🏭 Tesis üretimini de videoyla hızlandırabilirsin.
+- 🎫 Haftada 7 video izleyene 24 saatlik Esnaf Kartı denemesi hediye.
+- 🏆 Sıralama yenilendi: dönem sekmeleri düzeltildi, son 14 günün kazançları da sayıldı, sıra kartı ve ilk 10 ödülleri listenin altında.
+
+## 0.47.0 — 2026-10-03 · Günün, haftanın, ayın ve yılın yıldızları
+- 🏆 Sıralamada yeni sekmeler: Gün, Hafta, Ay, Yıl ve Tüm Zamanlar. Dönem sıralamaları o dönemde kazandığına göre; her gün yeni isimler zirveye çıkabilir.
+- 💰 Dönem ödülleri: günün ilk 10'u 25.000 ₺, haftanın 100.000 ₺, ayın 250.000 ₺, yılın 1.000.000 ₺ paylaşır (1.'ye %20'den 10.'ya %5'e). Yılın ilk üçüne 7 gecelik tatil: Maldivler, dilediği yurt dışı ve yurt içi.
+- ⏩ Tezgâh işini hızlandır: kısa bir video izle, kalan süre yarıya insin (en çok 30 dk, günde 5 kez). Kazancın aynı kalır. Esnaf Kartı sahiplerine reklamsız.
+- 🔋 Telefonda daha az ısınma, daha uzun pil: ekrana bir süre dokunmazsan oyun daha seyrek çizer; yeni Pil tasarrufu ayarı (Otomatik: pil %30'un altına inince). Tablette kamera kaydırırken ve kuşlar geçerken yaşanan küçük takılmalar giderildi.
+
+## 0.46.1 — 2026-10-03 · Sertifikalar her dilde
+- 🏆 Başarı sertifikaları, mazbatalar, adaylık afişleri ve paylaşım sayfası artık 10 dilde. Paylaştığın sayfa, açan kişinin dilinde görünür.
+- 🎬 Tanıtım filminde üst yazılar artık büyük başlığın altında kalmıyor; noktalı arka plan yerine fırça darbesi geldi.
+
+## 0.46.0 — 2026-10-03 · Meslek odaları ve yeni şirketler
+- 🤝 Esnaf, Ticaret ve Sanayi Odası kuruldu. İşletme türüne göre kendiliğinden üye olursun; aylık aidatla kredi faizi indirimi, izin ve komisyon indirimi, üretim teşviki ve aylık eğitim (TP) alırsın. Oda başkanı her ay üyelerin oyuyla seçilir. Devlet ve Piyasalar → Meslek odaları.
+- 🚌 35 yeni şirket: taksi filosu, servis, araç kiralama, otobüs firması, feribot, bölgesel havayolu, havalimanı, demiryolu yük taşımacılığı; döviz bürosu, sigorta acentesi, aracı kurum, özel banka; çağrı merkezi, internet sağlayıcı, GSM operatörü; halı saha, spor salonu, spor kompleksi, futbol kulübü;…
+- 📺 Toplu siparişte isteğe bağlı kısa bir video izleyip 30 sn ek süre alabilirsin (günde 3 kez). Esnaf Kartı olanlar reklam izlemeden alır.
+- 🐦 Kuşlar artık günde 9 kez (sabah, öğle ve akşam 3'er kez) geçiyor; güvercin, martı ve sığırcık sürüleri daha gerçekçi. Parkta yine top oynayan çocuklar var, sokakta da ebeveyniyle yürüyen çocuklar.
+- 🔒 Güvenlik ve sağlamlık: pazar, borsa, banka, bonus ve ortaklıkta eşzamanlı istek açıkları kapatıldı; çıkış yapınca tüm çerezlerin oturumu kapanır, şifre değişince diğer cihazlardan çıkılır. Birden çok sunucuyla çalışma güçlendirildi. Şifre yenileme e-postası artık seçtiğin dilde gelir.
+
+## 0.45.0 — 2026-10-03 · Davet indirimi
+- 🏷️ Davet ettiğin her arkadaşın 3. seviyeye ulaşınca 3 ay boyunca tezgâh masrafların ve dükkân kiraların %2 azalır. İlk 25 davet sayılır (en çok %50). Davet panelinde indirimini ve bitiş süresini görebilirsin.
+
+## 0.44.3 — 2026-10-03 · Çeviri düzeltmeleri
+- 🌍 Mağaza sekmeleri, jant düğmesi, bilboard ve mahalle panosu yazıları ile kutlama ve reklam bildirimleri artık bütün dillerde.
+
+## 0.44.1 — 2026-10-03 · Arkadaşlar penceresi ve bilboard
+- 👥 Arkadaşlar penceresinin boyu sekme değişince oynamıyor; Kabul et düğmesi tek satırda, mesaj düğmesi yenilendi.
+- 🪧 Park yolundaki bilboard tezgâhların önünden alındı, yaya geçidinin sağına taşındı.
+
+## 0.44.0 — 2026-10-03 · Esnaf Kartı ve haftalık Sezon
+- 🎫 Esnaf Kartı (30 gün): tek dokunuşla “topla ve yeniden başlat”, akşam hatırlatmaları, her ay 2 ücretsiz görünüm hakkı ve adının yanında Esnaf rozeti. Mağaza → Esnaf ve Sezon.
+- 🏅 Haftalık sezon: bu hafta kazandığın her TP sezon puanı olur, 10 kademe var. Herkese küçük para ödülleri; Sezon kartı alanlara sezon çerçevesi, isim rengi, tezgâh deseni, neon tabela ve şampiyon çerçevesi.
+- Şimdilik ikisi de oyun parasıyla; satılan ürünlerin hiçbiri servete ya da kazanca etki etmez.
+
+## 0.43.1 — 2026-10-03 · Yeni desen ve yazı tipleri
+- 🎨 Tezgâh desenleri 9'a çıktı (yeni: Nar); tabela yazı tipleri 6'ya çıktı (yeni: Kalın blok, Klasik).
+- 🧾 Hesabım'da vergi numarası artık kullanıcı adının yanında, sağda; pencerelerdeki geri ve ileri düğmeleri düzeltildi.
+
+## 0.43.0 — 2026-10-03 · Bilboardlar, havai fişek ve MASAK
+- 🪧 Bilboardlar: caddende 3 büyük bilboard var, her birinde 5 reklam sırayla döner. Mağaza → Reklam Ver ile kendi reklamını koy; bilboarda dokunan reklamı görür.
+- 🎆 Havai fişek ve 🎉 kutlama ilanı: mahallende herkesin aynı anda gördüğü bir gösteri başlat ya da doğum günü, açılış gibi bir mesajı 24 saat panolara as.
+- 🛣️ Mahallede dolaşma, ⭐ altın istek, 🛥️ yat ismi ve 🏡 ev cephesi: araban adınla trafikte dolaşsın, müzisyenler isteğini özel anonsla çalsın.
+- 🛑 MASAK: birden çok hesapla havaleyle para toplamak yasak. Aynı cihaz ya da bağlantıdan açılan hesaplar arasındaki ve tekrar eden havaleler incelenir; şüphede banka hesabı durdurulur. Hata olduğunu düşünürsen İletişim'den yardım iste.
+- 🌈 İsim rengine Pembe ve Turkuaz eklendi; artık 9 renk var.
+
+## 0.42.2 — 2026-10-03 · Tezgâh deseni, ışık zinciri ve neon tabela
+- 🎨 Tezgâh deseni: bütün tezgâhlarının tentesi, şemsiyesi ve örtüsü 8 desenden biriyle çizgili olur; komşular da görür.
+- 💡 Işık zinciri: tezgâhlarının önünde renkli ampullü bir ışık kemeri; istediğin zaman açıp kapatabilirsin.
+- 🌃 Neon tabela ve 🔤 tabela yazı tipi: dükkân tabelaların 6 neon renginden biriyle parlar, adın 4 farklı yazı tipiyle yazılabilir.
+
+## 0.42.1 — 2026-10-03 · Mağaza: çerçeve, isim rengi, far, jant ve altın sertifika
+- 🛍️ Yeni Mağaza: Hesabım → Destek → Mağaza. Görünüm ürünlerinin hiçbiri servetine ya da kazancına etki etmez.
+- 🖼️ Profil çerçevesi ve 🌈 isim rengi: profilde, sıralamada ve sohbette görünür. Bir kez aldığını istediğin zaman yeniden seçebilirsin.
+- 💡 Far rengi (beyaz LED, sarı halojen, buz mavisi xenon) ve 🛞 jant (siyah, krom, altın, bronz): sokağındaki arabanda görünür.
+- 🏆 Altın sertifika: sertifikaların altın çerçeveyle gösterilir; paylaştığın sertifika sayfasında da parlayan altın çerçeve çıkar.
+
+## 0.42.0 — 2026-10-03 · Özel plaka, özel boya ve garaj vitrini
+- 🔖 Özel plaka: Lüks yaşam → Varlıklarım'da arabana kendi plakanı tak (ör. 26 TEFON 01). Her plaka oyunda tektir; sokağındaki arabanda da görünür.
+- 🎨 Özel boya: mat, metalik, sedef, krom ve altın boyalar. Arabanın değeri değişmez, sadece görünümü.
+- 🏎️ Garaj vitrini: araçların, yatın ve mülklerin profilinde sergilenir; plakan ve boyan da görünür.
+
+## 0.41.1 — 2026-10-03 · Anketler, canlanan sokaklar ve güvenlik
+- 📊 Anketler: Hesabım → Destek → Anketler. Yeni anket açılınca bildirim gelir; oy verince sonuçları yüzde olarak görürsün.
+- 🎻 Sokak müzisyenleri istekleri yalnızca geldikleri ilk 30 saniyede alır; istek şarkıları 45 saniye çalar. 10 istek çalınınca ya da 5 dakika dolunca giderler. İstek sayacı artık küçük ve müzisyenleri kapatmıyor.
+- 🐕 Sokak köpekleri arada havlıyor ve kedi görünce peşine düşüyor; kuş sürüleri cıvıldıyor. Zabıta sireni yeni kayıtla değişti.
+- 💬 Her tezgâha 10 yeni müşteri sözü; ambulans, itfaiye ve polise yeni sözler ve beş yeni kavga senaryosu.
+- 🚗 Farlar daha gerçekçi: arabaların kimi beyaz, kimi sarı farlı. Kaldırıma yanaşan itfaiye gibi geniş araçların içinden geçilmiyor, yanından dolanılıyor. Yaya geçidi ve yol çizgileri geri geldi.
+- 🌫️ Bazı gecelerin geç saatlerinde ve bazı sabahlar birkaç dakikalık hafif sis.
+- ↩️ Geri düğmesi artık hiç kaybolmuyor, kullanılamayınca sönük görünüyor; yanına İleri düğmesi geldi. Sıralamada bir sayfadan profile gidip dönünce aynı sayfada kalırsın.
+- 🎬 Tanıtım filmi yenilendi: ülkendeki il, ilçe ve mahalle sayıları, daha net yazılar; indirme düğmesi çalışıyor.
+
+## 0.41.0 — 2026-10-02 · Arkadaşlar, yeni banka ve müzisyen istekleri
+- 👥 Arkadaşlık sistemi ve profil sayfası: oyunculara dokununca profilleri açılır, arkadaş ekleyip istekleri yönetebilirsin. Sıralamadaki isimlere de dokunulabilir.
+- 🏦 Bankada yeni menüler: Hesap Hareketleri, Kart Ekstresi ve Ödemeler (kira, fatura, vergi, kart, kredi ve icra tek yerden). Vadeli hesaplara toplam bakiye, krediye limit ve kullanılan özeti eklendi.
+- 💳 Gerçekçi IBAN ve kart numaraları, göster/gizle düğmesiyle. Havaleyi IBAN ile de yapabilirsin.
+- 🎻 Müzisyenlere istek: her şarkının ilk 15 saniyesinde 50 ₺ ile şarkı iste, istersen başka bir oyuncuya hediye et. İstekler sırayla çalınır, anons herkes tarafından duyulur; müzisyenler istekler bitene kadar (en çok 10 dk) kalır.
+- 🏆 Servet sıralaması artık dükkân kasaları, depozitolar, raftaki stok ve tezgâh malzemelerini de sayar; kart, icra ve vergi borçlarını düşer. Tutarlar sağa hizalı.
+- 🎯 Görevler: acil durum görevi artık 112, 155 ya da 110 aramalarından herhangi biriyle tamamlanır; sandık bildirimi görevler bitmeden gelmez.
+- 🚗 Park eden ve park yerinden çıkan arabalar artık diğer arabalara ve yayalara girmiyor; gerekirse önce geri manevra yapıyor.
+- 🪟 Pencerelere geri düğmesi geldi; sekme değişirken pencere küçülüp büyümüyor. Büyük sayılar her yerde kısaltılarak yazılıyor (1,25 Mn · 3,4 Mr).
+
+## 0.40.2 — 2026-10-02 · Zayıf tabletlerde daha akıcı
+- 📱 Düşük kalitede binalar, ağaçlar ve zemin daha az ayrıntıyla çizilir; ekran kartının yükü yaklaşık %40 azaldı. Otomatik kalite artık sık sık değişip kısa takılmalar yapmaz.
+- 🎬 Tanıtım filmindeki büyük yazılar yeniden renkli.
+
+## 0.40.1 — 2026-10-02 · Belediye ihaleleri ve sayı yazımı
+- 🏛️ Belediye ihalelerinin bedeli artık il belediyesinin kasasından ödenir; kasası yetmeyen belediye ihaleye çıkmaz.
+- 🔢 Miktar ve tutarlar seçtiğin dilin yazımıyla gösterilir; fiyat girerken 12,5 de 12.5 de doğru anlaşılır.
+
+## 0.40.0 — 2026-10-02 · Akıcı oyun, yeni tanıtım filmi ve gerçekçi şehir
+- ⚡ Tablet ve telefonda takılmalar azaldı: ekran kartına göre otomatik kalite, daha az çizim, ilk görüşte donma yok, cihaz daha az ısınır.
+- 🎬 Baştan çekilmiş yeni tanıtım filmi: altın saatten geceye mahallenin bir günü.
+- 🏙️ Çevredeki şehir yenilendi: dükkânlı zemin katlar, balkonlar, kiremit çatılar, güneş kolektörleri, yaya geçitleri, parklar, çınar ve serviler; gece vitrinler ve sokaklar aydınlanır, karda çatılar beyazlar.
+- 🚗 Arabalar ve yayalar ekranın kenarında birden kaybolmaz; gece farlar iki yandan yolu aydınlatır, arabalar ara sıra selektör yapar.
+- 🔔 Bildirimlere dokununca ilgili bölüm (Hesabım, Ayarlar…) açılır; kiralık dükkânlarda numara görünür, taşımadan önce yerini görebilirsin.
+- 🎻 Müzisyenler çalgılarını gerçekten çalıyor, sokak kedisi yürüyüp oturuyor.
+
+## 0.39.0 — 2026-10-02 · İş makineleri ve müteahhitlik
+- 🚜 Yeni tesis: İş makinesi fabrikası. Ekskavatör, beko loder, greyder, yol silindiri, mobil vinç, çöp kamyonu, yol süpürme, itfaiye ve kar küreme aracı üret.
+- 🏛️ 81 il belediyesi, Karayolları, DSİ, AFAD ve TOKİ artık ihaleyle araç, iş makinesi ve yapım işi alıyor. İhaleler ekranında Mal alımı / İş makinesi / Yapım işi filtreleri var.
+- 🚧 Müteahhit ol: Yol ve altyapı müteahhitliği kur, asfalt yol, parke kaldırım ve sulama kanalı yap; İnşaat şirketin mobil vinçle okul da yapar. İş makineleri ambarında durur, işte harcanmaz.
+- 🛢️ Yeni tesis: Asfalt plenti (kum, çakıl ve bitümden sıcak asfalt). Belediyeler ve Karayolları asfalt da alıyor.
+- 🌍 Üretim tesislerinin adları, açıklamaları ve kamu ihaleleri artık tüm dillerde.
+
+## 0.38.0 — 2026-10-02 · Vergi Dairesi açıldı
+- 🧾 Devlet ve Piyasalar menüsüne Vergi Dairesi eklendi: KDV %20, şahıs işletmelerine gelir vergisi, şirketlere kurumlar vergisi (kâra göre %15–%30).
+- 📬 Vergi artık kendiliğinden kesilmez: her dönem sonunda beyannamen düzenlenir ve sana ödeme talimatı gelir. Geciken her ay %5 ceza işler, 6 ay ödenmeyen borç icraya gider.
+- ⚖️ İcrada banka mevduatları dondurulur; 3 ekonomi günü içinde ödenmeyen borç mevduattan otomatik tahsil edilir.
+- 🌍 Oyunun tamamı 10 dile çevrildi; sunucu mesajları da artık senin dilinde.
+- 📦 Müzik, intro, model ve dokular ilk kullanımda cihazına kaydedilir; zayıf bağlantıda oyun daha hızlı açılır.
+- 🛠️ Tezgâh kazancını toplarken takılma, berberde yersiz "ürün bitti" uyarısı ve bazı cihazlarda görünmeyen simgeler düzeltildi.

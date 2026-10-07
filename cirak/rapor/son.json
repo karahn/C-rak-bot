@@ -1,0 +1,262 @@
+{
+ "test": {
+  "ts": "2026-10-07 16:17:12",
+  "adimlar": [],
+  "dns": "104.21.58.78",
+  "guncel_surum": "0.57.14",
+  "son_surumler": [
+   {
+    "surum": "0.57.14",
+    "tarih": "2026-10-07",
+    "baslik": "Koyu tema her yerde"
+   },
+   {
+    "surum": "0.57.13",
+    "tarih": "2026-10-07",
+    "baslik": "Sokak ve pencere düzeltmeleri"
+   },
+   {
+    "surum": "0.57.12",
+    "tarih": "2026-10-07",
+    "baslik": "İkinci el pazarı açıldı"
+   },
+   {
+    "surum": "0.57.11",
+    "tarih": "2026-10-07",
+    "baslik": "Dükkân türünü bulmak kolaylaştı"
+   },
+   {
+    "surum": "0.57.10",
+    "tarih": "2026-10-07",
+    "baslik": "Mini oyunlar telefonda düzeltildi"
+   },
+   {
+    "surum": "0.57.9",
+    "tarih": "2026-10-06",
+    "baslik": "Kalp masajı ve toplu sipariş düzeltmeleri"
+   },
+   {
+    "surum": "0.57.8",
+    "tarih": "2026-10-06",
+    "baslik": "Güneş ve ay: açık ya da koyu balonlar"
+   },
+   {
+    "surum": "0.57.7",
+    "tarih": "2026-10-06",
+    "baslik": "Kalabalık ilçede her zaman kiralık dükkân"
+   },
+   {
+    "surum": "0.57.6",
+    "tarih": "2026-10-06",
+    "baslik": "Raflar satış hızına göre, yeni kasa dökümü"
+   },
+   {
+    "surum": "0.57.5",
+    "tarih": "2026-10-06",
+    "baslik": "Enflasyon, ülkene göre acil numaralar ve daha az bildirim"
+   },
+   {
+    "surum": "0.57.4",
+    "tarih": "2026-10-06",
+    "baslik": "Raflar, kasa dökümü, gar, havalimanı ve yaban hayatı"
+   },
+   {
+    "surum": "0.57.3",
+    "tarih": "2026-10-06",
+    "baslik": "Şehre yeni yapılar, hava ve yangın"
+   }
+  ],
+  "toplam_surum": 79,
+  "captcha": {
+   "anahtar": "0d03048c0e977148b781f0ef",
+   "uzunluk": 8582
+  },
+  "cerezli_durum": {
+   "sunucuZamani": 1791389834512,
+   "takvim": {
+    "ms": 1791400634512,
+    "yil": 2026,
+    "ay": 9,
+    "ayAdi": "Ekim",
+    "gunNo": 7,
+    "haftaGunu": "Çarşamba",
+    "haftaGunuNo": 3,
+    "haftaSonu": false,
+    "saat": 19,
+    "dakika": 17,
+    "mevsim": "sonbahar",
+    "mevsimAdi": "Sonbahar",
+    "metin": "7 Ekim 2026, Çarşamba"
+   },
+   "oyuncu": null,
+   "aktifIsler": [],
+   "okunmamis": 0,
+   "okunmamisBildirim": 0,
+   "arkadasIstek": 0,
+   "yeniHareket": 0,
+   "vergiBekleyen": 0,
+   "ekipUyesi": false,
+   "bitenUretim": 0,
+   "esnaf": false,
+   "bonusVar": false,
+   "bonusGun": null,
+   "miniOyun": null,
+   "hapis": null,
+   "odulluVideo": null,
+   "sezonOdul": 0,
+   "hava": null,
+   "yasam": null,
+   "davetSayisi": 0,
+   "etkinlik": {
+    "aktif": false,
+    "carpan": 1,
+    "bitis": 0,
+    "baslik": ""
+   },
+   "bakim": {
+    "acik": false,
+    "mesaj": ""
+   },
+   "ozelGun": null,
+   "camiIsik": null,
+   "vaka": null
+  },
+  "giris_var": false
+ },
+ "durum": {
+  "ts": "2026-10-07 16:17:14",
+  "uclar": {
+   "durum": {
+    "sunucuZamani": 1791389834701,
+    "takvim": {
+     "ms": 1791400634701,
+     "yil": 2026,
+     "ay": 9,
+     "ayAdi": "Ekim",
+     "gunNo": 7,
+     "haftaGunu": "Çarşamba",
+     "haftaGunuNo": 3,
+     "haftaSonu": false,
+     "saat": 19,
+     "dakika": 17,
+     "mevsim": "sonbahar",
+     "mevsimAdi": "Sonbahar",
+     "metin": "7 Ekim 2026, Çarşamba"
+    },
+    "oyuncu": null,
+    "aktifIsler": [],
+    "okunmamis": 0,
+    "okunmamisBildirim": 0,
+    "arkadasIstek": 0,
+    "yeniHareket": 0,
+    "vergiBekleyen": 0,
+    "ekipUyesi": false,
+    "bitenUretim": 0,
+    "esnaf": false,
+    "bonusVar": false,
+    "bonusGun": null,
+    "miniOyun": null,
+    "hapis": null,
+    "odulluVideo": null,
+    "sezonOdul": 0,
+    "hava": null,
+    "yasam": null,
+    "davetSayisi": 0,
+    "etkinlik": {
+     "aktif": false,
+     "carpan": 1,
+     "bitis": 0,
+     "baslik": ""
+    },
+    "bakim": {
+     "acik": false,
+     "mesaj": ""
+    },
+    "ozelGun": null,
+    "camiIsik": null,
+    "vaka": null
+   },
+   "banka": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "vergi": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "vaka": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "isletmelerim": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "seyyar": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "gorevler": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "hareketler": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "finans": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "siralama": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "ligler": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "mahalle": {
+    "hata": "Bulunamadı."
+   },
+   "yetenekler": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "tedarik": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "pazar": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "sigorta": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "kiralama": {
+    "hata": "Bulunamadı."
+   },
+   "etkinlikler": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   },
+   "mini-oyun/sira?kod=genel": {
+    "hata": "Oturumun kapanmış, tekrar giriş yap."
+   }
+  }
+ },
+ "yenilikler": {
+  "toplam_surum": 79,
+  "ozetlenen": 60,
+  "ilk": {
+   "surum": "0.57.14",
+   "tarih": "2026-10-07",
+   "baslik": "Koyu tema her yerde",
+   "maddeler": [
+    "🌙 Koyu tema artık yalnızca harita balonlarını değil bütün menüleri ve pencereleri de koyulaştırıyor: işlerim, dükkân, banka, pazar, mesajlar ve diğerleri gece gözü yormuyor.",
+    "🔎 Kiralık dükkân ekranı yenilendi: daha şık arama kutusu, iki yanında ok düğmeleri olan kayan kategori şeridi (bilgisayarda fareyle de kayıyor), işaret kutulu filtreler ve sonuç sayısı.",
+    "🛣️ Sokaklar penceresinin adı artık \"Görünüm seç\": her sokakta kaç dükkân olduğu, kaçının dolu, kaçının kiralık olduğu ve kaç dükkânının orada bulunduğu ayrı ayrı yazıyor; bulunduğun sokak işaretli."
+   ]
+  },
+  "son": {
+   "surum": "0.38.0",
+   "tarih": "2026-10-02",
+   "baslik": "Vergi Dairesi açıldı",
+   "maddeler": [
+    "🧾 Devlet ve Piyasalar menüsüne Vergi Dairesi eklendi: KDV %20, şahıs işletmelerine gelir vergisi, şirketlere kurumlar vergisi (kâra göre %15–%30).",
+    "📬 Vergi artık kendiliğinden kesilmez: her dönem sonunda beyannamen düzenlenir ve sana ödeme talimatı gelir. Geciken her ay %5 ceza işler, 6 ay ödenmeyen borç icraya gider.",
+    "⚖️ İcrada banka mevduatları dondurulur; 3 ekonomi günü içinde ödenmeyen borç mevduattan otomatik tahsil edilir.",
+    "🌍 Oyunun tamamı 10 dile çevrildi; sunucu mesajları da artık senin dilinde.",
+    "📦 Müzik, intro, model ve dokular ilk kullanımda cihazına kaydedilir; zayıf bağlantıda oyun daha hızlı açılır.",
+    "🛠️ Tezgâh kazancını toplarken takılma, berberde yersiz \"ürün bitti\" uyarısı ve bazı cihazlarda görünmeyen simgeler düzeltildi."
+   ]
+  }
+ }
+}
