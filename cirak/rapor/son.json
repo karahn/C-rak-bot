@@ -2,9 +2,9 @@
  "cerez-kontrol": {
   "tamam": true,
   "oyuncu": "Kalfa19",
-  "seviye": 2,
-  "tp": 11,
-  "nakit_kurus": 549660,
+  "seviye": 3,
+  "tp": 44,
+  "nakit_kurus": 6677379,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -24,7 +24,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 549660,
+   "nakit": 6677379,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -63,8 +63,8 @@
       6,
       12
      ],
-     "limit": 600000,
-     "engel": "3. seviyede açılır.",
+     "limit": 2400000,
+     "engel": null,
      "enAz": 1000000
     },
     {
@@ -80,7 +80,7 @@
       12,
       24
      ],
-     "limit": 1000000,
+     "limit": 4100000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000
     }
@@ -91,7 +91,7 @@
    "karaListe": 0,
    "net": 0,
    "krediNotu": {
-    "puan": 920,
+    "puan": 958,
     "bant": "Orta riskli",
     "renk": "#F08A24"
    },
@@ -100,1295 +100,1547 @@
    "masak": null
   },
   "takvim": {
-   "ms": 1791412209368,
+   "ms": 1791419338216,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
-   "gunNo": 7,
-   "haftaGunu": "Çarşamba",
-   "haftaGunuNo": 3,
+   "gunNo": 8,
+   "haftaGunu": "Perşembe",
+   "haftaGunuNo": 4,
    "haftaSonu": false,
-   "saat": 22,
-   "dakika": 30,
+   "saat": 0,
+   "dakika": 28,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
-   "metin": "7 Ekim 2026, Çarşamba"
+   "metin": "8 Ekim 2026, Perşembe"
   }
  },
- "bot": {
-  "olay": "kosu_bitti",
-  "tur": 16,
-  "kazanc": 4759.4,
-  "servis": 61,
-  "bahsis": 13,
-  "bakiye": 10193.6,
-  "gecen_dk": 2.1,
-  "ts": 1791401535929,
-  "komut_sifirlandi": true
- },
- "ham": {
-  "ts": "2026-10-07 19:32:15",
+ "durum": {
+  "ts": "2026-10-07 21:28:58",
   "uclar": {
-   "cadde": {
-    "yerler": [
+   "durum": {
+    "sunucuZamani": 1791408539010,
+    "takvim": {
+     "ms": 1791419339010,
+     "yil": 2026,
+     "ay": 9,
+     "ayAdi": "Ekim",
+     "gunNo": 8,
+     "haftaGunu": "Perşembe",
+     "haftaGunuNo": 4,
+     "haftaSonu": false,
+     "saat": 0,
+     "dakika": 28,
+     "mevsim": "sonbahar",
+     "mevsimAdi": "Sonbahar",
+     "metin": "8 Ekim 2026, Perşembe"
+    },
+    "oyuncu": {
+     "yetenekBos": 0,
+     "id": 1521,
+     "kullaniciAdi": "Kalfa19",
+     "test": false,
+     "dil": "tr",
+     "ulke": {
+      "kod": "TR",
+      "konumId": "ulke:TR"
+     },
+     "endeks": 1,
+     "acil": {
+      "itfaiye": "110",
+      "polis": "155",
+      "ambulans": "112"
+     },
+     "paraBirimi": "TRY",
+     "dunyaKonumu": {
+      "il": "tr:il:6",
+      "ilce": "tr:ilce:2034",
+      "mahalle": "tr:mahalle:1728"
+     },
+     "kullaniciAdiYeniden": 0,
+     "bakiye": 6677379,
+     "tecrube": 44,
+     "seviye": 3,
+     "seviyeAlt": 32,
+     "seviyeUst": 88,
+     "davetKodu": "YCS57C",
+     "sifreVar": true,
+     "foto": null,
+     "eposta": "t••••••@gmail.com",
+     "il": {
+      "id": 6,
+      "ad": "Ankara",
+      "nufus": 5910320,
+      "kiyi": false,
+      "buyuksehir": true,
+      "bolge": "İç Anadolu"
+     },
+     "ilce": {
+      "id": 2034,
+      "ad": "Pursaklar",
+      "nufus": 168881
+     },
+     "mahalle": {
+      "id": 1728,
+      "ad": "Fatih Mahallesi"
+     },
+     "vergiNo": "1734201916",
+     "vergiDairesi": "Pursaklar Vergi Dairesi",
+     "odemeTercihi": "nakit"
+    },
+    "aktifIsler": [
      {
-      "no": 1,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.3,
-      "kat": 4,
-      "tohum": 843992663,
-      "kira": 800000,
-      "isletme": {
-       "id": 3069,
-       "tur": "kuafor",
-       "turAdi": "Kuaför",
-       "simge": "💇",
-       "ad": "Aydın Kuaför",
-       "durum": "acik",
-       "saat": [
-        9,
-        21
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
+      "id": 80851,
+      "isKodu": "pazar",
+      "isAdi": "Pazar tezgâhı",
+      "simge": "🧦",
+      "sure": "Tam gün",
+      "calisan": "ben",
+      "baslangic": 1791408475882,
+      "bitis": 1791409075882,
+      "malzeme": 343000,
+      "cirakUcreti": 0,
+      "bonus": 14498,
+      "servis": 7,
+      "ciro": 689120,
+      "ceza": 0,
+      "bitti": false,
+      "zabita": [],
+      "siparis": null,
+      "hizlandi": false,
+      "videoBonus": false,
+      "videoYevmiye": false,
+      "videoZabita": false
      },
      {
-      "no": 2,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "buyuk",
-      "boyutAdi": "Büyük",
-      "m2": 180,
-      "genislik": 14.4,
-      "kat": 6,
-      "tohum": 151569957,
-      "kira": 3600000,
-      "isletme": {
-       "id": 31512,
-       "tur": "bakkal",
-       "turAdi": "Bakkal",
-       "simge": "🏪",
-       "ad": "Güneş Bakkal",
-       "durum": "acik",
-       "saat": [
-        7,
-        23
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
+      "id": 80852,
+      "isKodu": "simit",
+      "isAdi": "Simitçi",
+      "simge": "🥯",
+      "sure": "Tam gün",
+      "calisan": "cirak",
+      "baslangic": 1791408480018,
+      "bitis": 1791409080018,
+      "malzeme": 196000,
+      "cirakUcreti": 100000,
+      "bonus": 7623,
+      "servis": 7,
+      "ciro": 368833,
+      "ceza": 0,
+      "bitti": false,
+      "zabita": [],
+      "siparis": null,
+      "hizlandi": false,
+      "videoBonus": false,
+      "videoYevmiye": false,
+      "videoZabita": false
      },
      {
-      "no": 3,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.6,
-      "kat": 6,
-      "tohum": 554413212,
-      "kira": 800000,
-      "isletme": {
-       "id": 34183,
-       "tur": "camasirhane",
-       "turAdi": "Çamaşırhane",
-       "simge": "🫧",
-       "ad": "Doğan Çamaşırhane",
-       "durum": "acik",
-       "saat": [
-        8,
-        22
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 4,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "buyuk",
-      "boyutAdi": "Büyük",
-      "m2": 180,
-      "genislik": 14.2,
-      "kat": 5,
-      "tohum": 739204267,
-      "kira": 3600000,
-      "isletme": {
-       "id": 10558,
-       "tur": "giyim",
-       "turAdi": "Giyim mağazası",
-       "simge": "👕",
-       "ad": "Şen Giyim mağazası",
-       "durum": "acik",
-       "saat": [
-        10,
-        21
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 5,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.2,
-      "kat": 4,
-      "tohum": 549191145,
-      "kira": 800000,
-      "isletme": {
-       "id": 35560,
-       "tur": "ev_yemekleri",
-       "turAdi": "Ev yemekleri",
-       "simge": "🥘",
-       "ad": "Aydın Ev yemekleri",
-       "durum": "acik",
-       "saat": [
-        11,
-        21
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 6,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 9.1,
-      "kat": 6,
-      "tohum": 367452912,
-      "kira": 800000,
-      "isletme": {
-       "id": 11678,
-       "tur": "eczane",
-       "turAdi": "Eczane",
-       "simge": "💊",
-       "ad": "Hülya Eczanesi",
-       "durum": "acik",
-       "saat": [
-        0,
-        24
-       ],
-       "ozel": "hulya",
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 7,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11,
-      "kat": 6,
-      "tohum": 273641651,
-      "kira": 1800000,
-      "isletme": {
-       "id": 4145,
-       "tur": "kuyumcu",
-       "turAdi": "Kuyumcu",
-       "simge": "💍",
-       "ad": "Şen Kuyumcu",
-       "durum": "acik",
-       "saat": [
-        10,
-        20
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 8,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.8,
-      "kat": 6,
-      "tohum": 163425863,
-      "kira": 800000,
-      "isletme": {
-       "id": 3091,
-       "tur": "kasap",
-       "turAdi": "Kasap",
-       "simge": "🥩",
-       "ad": "Lale Kasap",
-       "durum": "acik",
-       "saat": [
-        8,
-        20
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 9,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "buyuk",
-      "boyutAdi": "Büyük",
-      "m2": 180,
-      "genislik": 13.2,
-      "kat": 7,
-      "tohum": 337529267,
-      "kira": 3600000,
-      "isletme": null
-     },
-     {
-      "no": 10,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.4,
-      "kat": 4,
-      "tohum": 932435127,
-      "kira": 800000,
-      "isletme": {
-       "id": 11679,
-       "tur": "gumruk_musaviri",
-       "turAdi": "Gümrük müşaviri",
-       "simge": "🛃",
-       "ad": "Şükrü Gümrükleme",
-       "durum": "acik",
-       "saat": [
-        0,
-        24
-       ],
-       "ozel": "sukru",
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 11,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.6,
-      "kat": 6,
-      "tohum": 787151902,
-      "kira": 800000,
-      "isletme": {
-       "id": 8657,
-       "tur": "elektrikci",
-       "turAdi": "Elektrikçi",
-       "simge": "💡",
-       "ad": "Yıldız Elektrikçi",
-       "durum": "acik",
-       "saat": [
-        8,
-        21
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 12,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11.3,
-      "kat": 5,
-      "tohum": 255391259,
-      "kira": 1800000,
-      "isletme": {
-       "id": 36271,
-       "tur": "bilgisayarci",
-       "turAdi": "Bilgisayarcı",
-       "simge": "💻",
-       "ad": "Derece Bilgisayar",
-       "durum": "acik",
-       "saat": [
-        0,
-        24
-       ],
-       "ozel": "derece",
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 13,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.5,
-      "kat": 7,
-      "tohum": 700609993,
-      "kira": 800000,
-      "isletme": {
-       "id": 39090,
-       "tur": "emlakci",
-       "turAdi": "Emlakçı",
-       "simge": "🏠",
-       "ad": "Karahan Emlakçı",
-       "durum": "acik",
-       "saat": [
-        9,
-        19
-       ],
-       "sahip": "Karahan",
-       "bot": false,
-       "benim": false,
-       "tabela": {
-        "neon": "#FFD23F",
-        "yazi": "daktilo"
+      "id": 80853,
+      "isKodu": "pamuk",
+      "isAdi": "Pamuk şeker ve balon",
+      "simge": "🎈",
+      "sure": "Tam gün",
+      "calisan": "cirak",
+      "baslangic": 1791408480271,
+      "bitis": 1791409080271,
+      "malzeme": 39200,
+      "cirakUcreti": 100000,
+      "bonus": 8572,
+      "servis": 7,
+      "ciro": 155548,
+      "ceza": 0,
+      "bitti": false,
+      "zabita": [
+       {
+        "ms": 1791408580670,
+        "tur": "kontrol"
        }
-      }
+      ],
+      "siparis": null,
+      "hizlandi": false,
+      "videoBonus": false,
+      "videoYevmiye": false,
+      "videoZabita": false
      },
      {
-      "no": 14,
-      "sira": 0,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.2,
-      "kat": 4,
-      "tohum": 70761055,
-      "kira": 800000,
-      "isletme": {
-       "id": 36573,
-       "tur": "ziraat_bayi",
-       "turAdi": "Ziraat bayisi",
-       "simge": "🌱",
-       "ad": "Gül Ziraat bayisi",
-       "durum": "acik",
-       "saat": [
-        8,
-        19
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 15,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 10.9,
-      "kat": 3,
-      "tohum": 418533679,
-      "kira": 1800000,
-      "isletme": {
-       "id": 3087,
-       "tur": "yapi_marketi",
-       "turAdi": "Yapı marketi",
-       "simge": "🏗️",
-       "ad": "Öz Yapı marketi",
-       "durum": "acik",
-       "saat": [
-        9,
-        21
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 16,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.3,
-      "kat": 3,
-      "tohum": 797215137,
-      "kira": 800000,
-      "isletme": {
-       "id": 39803,
-       "tur": "optik",
-       "turAdi": "Optik",
-       "simge": "👓",
-       "ad": "Şen Optik",
-       "durum": "acik",
-       "saat": [
-        10,
-        20
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 17,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 9.1,
-      "kat": 3,
-      "tohum": 520909751,
-      "kira": 800000,
-      "isletme": {
-       "id": 37286,
-       "tur": "cay_ocagi",
-       "turAdi": "Çay ocağı",
-       "simge": "🍵",
-       "ad": "Can Çay ocağı",
-       "durum": "acik",
-       "saat": [
-        6,
-        22
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 18,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 9.1,
-      "kat": 5,
-      "tohum": 354479150,
-      "kira": 800000,
-      "isletme": {
-       "id": 36756,
-       "tur": "donerci",
-       "turAdi": "Dönerci",
-       "simge": "🌯",
-       "ad": "Ege Dönerci",
-       "durum": "acik",
-       "saat": [
-        10,
-        24
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 19,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "buyuk",
-      "boyutAdi": "Büyük",
-      "m2": 180,
-      "genislik": 13.9,
-      "kat": 6,
-      "tohum": 497258972,
-      "kira": 3600000,
-      "isletme": null
-     },
-     {
-      "no": 20,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "buyuk",
-      "boyutAdi": "Büyük",
-      "m2": 180,
-      "genislik": 13.3,
-      "kat": 5,
-      "tohum": 589485529,
-      "kira": 3600000,
-      "isletme": {
-       "id": 10238,
-       "tur": "nalbur",
-       "turAdi": "Nalbur",
-       "simge": "🔨",
-       "ad": "Pınar Nalbur",
-       "durum": "acik",
-       "saat": [
-        8,
-        20
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 21,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.8,
-      "kat": 3,
-      "tohum": 240946588,
-      "kira": 800000,
-      "isletme": {
-       "id": 39975,
-       "tur": "kunduraci",
-       "turAdi": "Ayakkabı tamircisi",
-       "simge": "👞",
-       "ad": "Ayakkabı tamircisi",
-       "durum": "acik",
-       "saat": [
-        8,
-        20
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 22,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 12,
-      "kat": 4,
-      "tohum": 915577923,
-      "kira": 1800000,
-      "isletme": {
-       "id": 11677,
-       "tur": "mobilya",
-       "turAdi": "Mobilya",
-       "simge": "🛋️",
-       "ad": "Tefon Mobilya",
-       "durum": "acik",
-       "saat": [
-        0,
-        24
-       ],
-       "ozel": "tefon",
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 23,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11,
-      "kat": 4,
-      "tohum": 41418412,
-      "kira": 1800000,
-      "isletme": {
-       "id": 28956,
-       "tur": "market",
-       "turAdi": "Market",
-       "simge": "🛒",
-       "ad": "Barış Market",
-       "durum": "acik",
-       "saat": [
-        8,
-        23
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 24,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.2,
-      "kat": 4,
-      "tohum": 579473221,
-      "kira": 800000,
-      "isletme": {
-       "id": 38497,
-       "tur": "berber",
-       "turAdi": "Berber",
-       "simge": "💈",
-       "ad": "Şen Berber",
-       "durum": "acik",
-       "saat": [
-        9,
-        21
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 25,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.3,
-      "kat": 3,
-      "tohum": 607875111,
-      "kira": 800000,
-      "isletme": null
-     },
-     {
-      "no": 26,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "buyuk",
-      "boyutAdi": "Büyük",
-      "m2": 180,
-      "genislik": 13.3,
-      "kat": 5,
-      "tohum": 441078485,
-      "kira": 3600000,
-      "isletme": {
-       "id": 8743,
-       "tur": "tatlici",
-       "turAdi": "Tatlıcı",
-       "simge": "🍮",
-       "ad": "Çınar Tatlıcı",
-       "durum": "acik",
-       "saat": [
-        10,
-        23
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 27,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11,
-      "kat": 3,
-      "tohum": 61285625,
-      "kira": 1800000,
-      "isletme": {
-       "id": 3086,
-       "tur": "lokanta",
-       "turAdi": "Lokanta",
-       "simge": "🍲",
-       "ad": "Kardeşler Lokanta",
-       "durum": "acik",
-       "saat": [
-        11,
-        22
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 28,
-      "sira": 1,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11.5,
-      "kat": 4,
-      "tohum": 840404309,
-      "kira": 1800000,
-      "isletme": null
-     },
-     {
-      "no": 29,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8,
-      "kat": 4,
-      "tohum": 542850872,
-      "kira": 800000,
-      "isletme": {
-       "id": 3074,
-       "tur": "kuruyemis",
-       "turAdi": "Kuruyemişçi",
-       "simge": "🥜",
-       "ad": "Şen Kuruyemişçi",
-       "durum": "acik",
-       "saat": [
-        9,
-        22
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 30,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11.7,
-      "kat": 3,
-      "tohum": 312464030,
-      "kira": 1800000,
-      "isletme": {
-       "id": 33288,
-       "tur": "optik",
-       "turAdi": "Optik",
-       "simge": "👓",
-       "ad": "Şen Optik",
-       "durum": "acik",
-       "saat": [
-        10,
-        20
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 31,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "buyuk",
-      "boyutAdi": "Büyük",
-      "m2": 180,
-      "genislik": 14.2,
-      "kat": 4,
-      "tohum": 205124393,
-      "kira": 3600000,
-      "isletme": {
-       "id": 9698,
-       "tur": "kafe",
-       "turAdi": "Kafe",
-       "simge": "☕",
-       "ad": "Güneş Kafe",
-       "durum": "acik",
-       "saat": [
-        8,
-        24
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 32,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.1,
-      "kat": 3,
-      "tohum": 186560048,
-      "kira": 800000,
-      "isletme": {
-       "id": 4272,
-       "tur": "lokanta",
-       "turAdi": "Lokanta",
-       "simge": "🍲",
-       "ad": "Deniz Lokanta",
-       "durum": "acik",
-       "saat": [
-        11,
-        22
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 33,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 12,
-      "kat": 3,
-      "tohum": 713154600,
-      "kira": 1800000,
-      "isletme": null
-     },
-     {
-      "no": 34,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.9,
-      "kat": 6,
-      "tohum": 918023977,
-      "kira": 800000,
-      "isletme": {
-       "id": 3071,
-       "tur": "bufe",
-       "turAdi": "Büfe",
-       "simge": "🥤",
-       "ad": "Doğan Büfe",
-       "durum": "acik",
-       "saat": [
-        6,
-        24
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 35,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11.7,
-      "kat": 6,
-      "tohum": 35141394,
-      "kira": 1800000,
-      "isletme": {
-       "id": 29475,
-       "tur": "kuruyemis",
-       "turAdi": "Kuruyemişçi",
-       "simge": "🥜",
-       "ad": "Umut Kuruyemişçi",
-       "durum": "acik",
-       "saat": [
-        9,
-        22
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 36,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8.8,
-      "kat": 5,
-      "tohum": 22458469,
-      "kira": 800000,
-      "isletme": null
-     },
-     {
-      "no": 37,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11.6,
-      "kat": 4,
-      "tohum": 959142159,
-      "kira": 1800000,
-      "isletme": null
-     },
-     {
-      "no": 38,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 10.7,
-      "kat": 6,
-      "tohum": 18978003,
-      "kira": 1800000,
-      "isletme": {
-       "id": 3080,
-       "tur": "ayakkabici",
-       "turAdi": "Ayakkabıcı",
-       "simge": "👟",
-       "ad": "Yeşil Ayakkabıcı",
-       "durum": "acik",
-       "saat": [
-        10,
-        21
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 39,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11.5,
-      "kat": 3,
-      "tohum": 370264884,
-      "kira": 1800000,
-      "isletme": null
-     },
-     {
-      "no": 40,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 9.1,
-      "kat": 6,
-      "tohum": 354456077,
-      "kira": 800000,
-      "isletme": {
-       "id": 3886,
-       "tur": "kirtasiye",
-       "turAdi": "Kırtasiye",
-       "simge": "✏️",
-       "ad": "Lale Kırtasiye",
-       "durum": "acik",
-       "saat": [
-        8,
-        20
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 41,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "kucuk",
-      "boyutAdi": "Küçük",
-      "m2": 40,
-      "genislik": 8,
-      "kat": 6,
-      "tohum": 674507863,
-      "kira": 800000,
-      "isletme": {
-       "id": 7989,
-       "tur": "terzi",
-       "turAdi": "Terzi",
-       "simge": "🧵",
-       "ad": "Bereket Terzi",
-       "durum": "acik",
-       "saat": [
-        9,
-        19
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
-     },
-     {
-      "no": 42,
-      "sira": 2,
-      "sokak": 0,
-      "boyut": "orta",
-      "boyutAdi": "Orta",
-      "m2": 90,
-      "genislik": 11.2,
-      "kat": 6,
-      "tohum": 696927529,
-      "kira": 1800000,
-      "isletme": {
-       "id": 7081,
-       "tur": "emlakci",
-       "turAdi": "Emlakçı",
-       "simge": "🏠",
-       "ad": "Çınar Emlakçı",
-       "durum": "acik",
-       "saat": [
-        9,
-        19
-       ],
-       "sahip": "Mahalle esnafı",
-       "bot": true,
-       "benim": false,
-       "tabela": null
-      }
+      "id": 80854,
+      "isKodu": "semsiye",
+      "isAdi": "Şemsiye satıcısı",
+      "simge": "☂️",
+      "sure": "Tam gün",
+      "calisan": "cirak",
+      "baslangic": 1791408480495,
+      "bitis": 1791409080495,
+      "malzeme": 88200,
+      "cirakUcreti": 100000,
+      "bonus": 4649,
+      "servis": 7,
+      "ciro": 177264,
+      "ceza": 0,
+      "bitti": false,
+      "zabita": [],
+      "siparis": null,
+      "hizlandi": false,
+      "videoBonus": false,
+      "videoYevmiye": false,
+      "videoZabita": false
      }
     ],
-    "sokak": {
-     "secili": 0,
-     "liste": [
+    "okunmamis": 1,
+    "okunmamisBildirim": 7,
+    "arkadasIstek": 0,
+    "yeniHareket": 99,
+    "vergiBekleyen": 0,
+    "ekipUyesi": false,
+    "bitenUretim": 0,
+    "esnaf": false,
+    "bonusVar": false,
+    "bonusGun": null,
+    "miniOyun": null,
+    "hapis": null,
+    "odulluVideo": null,
+    "sezonOdul": 0,
+    "hava": {
+     "tur": "parcali",
+     "ad": "Parçalı bulutlu",
+     "ikon": "☁️",
+     "sicaklik": 11,
+     "hissedilen": 10,
+     "ruzgar": 5,
+     "bulut": 30,
+     "yagis": 0,
+     "simsek": false,
+     "dolu": false,
+     "tipi": false,
+     "gunduz": false,
+     "sonraki": [
       {
-       "no": 0,
-       "toplam": 42,
-       "bos": 8,
-       "benim": 0
+       "ms": 1791414000000,
+       "tur": "parcali",
+       "ikon": "☁️",
+       "sicaklik": 10
+      },
+      {
+       "ms": 1791421200000,
+       "tur": "parcali",
+       "ikon": "☁️",
+       "sicaklik": 9
+      },
+      {
+       "ms": 1791428400000,
+       "tur": "parcali",
+       "ikon": "☁️",
+       "sicaklik": 9
+      },
+      {
+       "ms": 1791435600000,
+       "tur": "parcali",
+       "ikon": "⛅",
+       "sicaklik": 9
+      },
+      {
+       "ms": 1791442800000,
+       "tur": "parcali",
+       "ikon": "⛅",
+       "sicaklik": 15
+      },
+      {
+       "ms": 1791450000000,
+       "tur": "parcali",
+       "ikon": "⛅",
+       "sicaklik": 20
       }
      ],
-     "toplamSokak": 1,
-     "toplamBos": 8
+     "kaynak": "Open-Meteo.com"
     },
-    "belediye": {
-     "ilceId": 2034,
-     "kasa": 10785702,
-     "baskan": {
-      "id": null,
-      "ad": "Belediye Botu",
-      "bot": true,
-      "sistem": false
-     }
+    "yasam": {
+     "keyif": 66,
+     "seviye": "Keyfi yerinde",
+     "simge": "🙂",
+     "renk": "#3A86FF",
+     "carpan": 1,
+     "dincBitis": 0,
+     "tatil": null,
+     "mekan": null
     },
-    "isimler": {
-     "kaynak": "osm",
-     "merkez": [
-      40.03956,
-      32.90742
-     ],
-     "merkezKaynagi": "belediye",
-     "mahalle": "Tevfik İleri Mahallesi",
-     "anaCadde": "D140",
-     "arkaSokak": "Polat Sokak",
-     "batiSokak": "Metin Sokak",
-     "doguSokak": "Mizan Sokak",
-     "meydan": "Meydan"
+    "davetSayisi": 0,
+    "etkinlik": {
+     "aktif": false,
+     "carpan": 1,
+     "bitis": 0,
+     "baslik": ""
     },
-    "reklamlar": [
-     {
-      "id": 39090,
-      "ad": "Karahan Emlakçı",
-      "tur": "emlakci",
-      "yerNo": 13,
-      "arac": true
-     }
-    ],
-    "bilboardlar": [
-     {
-      "no": 1,
-      "reklamlar": []
-     },
-     {
-      "no": 2,
-      "reklamlar": []
-     },
-     {
-      "no": 3,
-      "reklamlar": []
-     }
-    ],
-    "dolasanlar": [],
-    "havaiFisekler": [],
-    "kutlamalar": [],
-    "arabam": null,
-    "calisma": null,
-    "devlet": [
-     {
-      "tur": "kaymakamlik",
-      "ad": "T.C. PURSAKLAR KAYMAKAMLIĞI"
-     },
-     {
-      "tur": "belediye",
-      "ad": "PURSAKLAR BELEDİYESİ"
-     },
-     {
-      "tur": "plaza",
-      "ad": "ANKARA PLAZA"
-     },
-     {
-      "tur": "hastane",
-      "ad": "PURSAKLAR DEVLET HASTANESİ"
-     },
-     {
-      "tur": "emniyet",
-      "ad": "PURSAKLAR İLÇE EMNİYET MÜDÜRLÜĞÜ"
-     },
-     {
-      "tur": "itfaiye",
-      "ad": "PURSAKLAR İTFAİYE İSTASYONU"
-     },
-     {
-      "tur": "universite",
-      "ad": "ANKARA ÜNİVERSİTESİ"
-     },
-     {
-      "tur": "teknik",
-      "ad": "ANKARA TEKNİK ÜNİVERSİTESİ"
-     },
-     {
-      "tur": "nar",
-      "ad": "NAR OIL"
-     },
-     {
-      "tur": "must",
-      "ad": "MUST OIL"
-     },
-     {
-      "tur": "otogar",
-      "ad": "ANKARA AŞTİ"
-     },
-     {
-      "tur": "gar",
-      "ad": "ANKARA GARI"
-     },
-     {
-      "tur": "yht",
-      "ad": "ANKARA YHT GARI"
-     },
-     {
-      "tur": "havalimani",
-      "ad": "ANKARA ESENBOĞA HAVALİMANI"
-     }
-    ],
-    "kamu": {
-     "kilise": false,
-     "yerler": {
-      "cami1": {
-       "ad": "Şükrü Tefon Camii",
-       "bagis": false,
-       "sonraki": 1791417600000
-      },
-      "ilkokul": {
-       "ad": "Yunus Emre İlkokulu",
-       "bagis": false,
-       "sonraki": null
-      },
-      "ortaokul": {
-       "ad": "Kâzım Karabekir Ortaokulu",
-       "bagis": false,
-       "sonraki": null
-      },
-      "lise": {
-       "ad": "Nene Hatun Anadolu Lisesi",
-       "bagis": false,
-       "sonraki": null
-      },
-      "park": {
-       "ad": "Kurtuluş Parkı",
-       "bagis": false,
-       "sonraki": null
-      },
-      "millet": {
-       "ad": "Pursaklar Millet Bahçesi",
-       "bagis": false,
-       "sonraki": null
-      },
-      "kutuphane": {
-       "ad": "Evliya Çelebi Halk Kütüphanesi",
-       "bagis": false,
-       "sonraki": null
-      },
-      "spor": {
-       "ad": "Naim Süleymanoğlu Spor Salonu",
-       "bagis": false,
-       "sonraki": null
-      },
-      "kultur": {
-       "ad": "Cemal Reşit Rey Kültür Merkezi",
-       "bagis": false,
-       "sonraki": null
+    "bakim": {
+     "acik": false,
+     "mesaj": ""
+    },
+    "ozelGun": null,
+    "camiIsik": null,
+    "vaka": {
+     "acik": [
+      {
+       "id": 246,
+       "tur": "kriz",
+       "durum": "acik",
+       "baslangic": 1791408442310,
+       "son": 1791408622310,
+       "veri": {
+        "yer": "tezgah",
+        "isletmeAd": null,
+        "yerNo": null
+       },
+       "sonuc": null,
+       "kapanis": null
       }
+     ],
+     "itibar": 500
+    }
+   },
+   "banka": {
+    "vadesiz": 0,
+    "nakit": 6677379,
+    "vadeliler": [],
+    "krediler": [],
+    "vadeler": [
+     {
+      "gun": 7,
+      "ad": "1 hafta",
+      "faiz": 36
+     },
+     {
+      "gun": 30,
+      "ad": "1 ay",
+      "faiz": 40
+     },
+     {
+      "gun": 90,
+      "ad": "3 ay",
+      "faiz": 42
+     },
+     {
+      "gun": 365,
+      "ad": "1 yıl",
+      "faiz": 45
+     }
+    ],
+    "krediTurleri": [
+     {
+      "kod": "isletme",
+      "ad": "İşletme kredisi",
+      "simge": "💼",
+      "aciklama": "Stok, kira ve maaş gibi günlük ihtiyaçlar için.",
+      "faiz": 57,
+      "temelFaiz": 54,
+      "odaIndirimi": 3,
+      "taksitler": [
+       3,
+       6,
+       12
+      ],
+      "limit": 2400000,
+      "engel": null,
+      "enAz": 1000000
+     },
+     {
+      "kod": "makine",
+      "ad": "Makine-teçhizat kredisi",
+      "simge": "🏭",
+      "aciklama": "Tesis kurmak ve büyütmek için; en az bir tesisin olmalı.",
+      "faiz": 50,
+      "temelFaiz": 44,
+      "odaIndirimi": 0,
+      "taksitler": [
+       6,
+       12,
+       24
+      ],
+      "limit": 4100000,
+      "engel": "15. seviyede açılır.",
+      "enAz": 1000000
+     }
+    ],
+    "stopaj": 15,
+    "tahsis": 0.5,
+    "ekonomiGunuMs": 28800000,
+    "karaListe": 0,
+    "net": 0,
+    "krediNotu": {
+     "puan": 959,
+     "bant": "Orta riskli",
+     "renk": "#F08A24"
+    },
+    "hesapNo": "TR11 0077 7049 1600 7396 8972 10",
+    "donuk": false,
+    "masak": null
+   },
+   "vergi": {
+    "vergiNo": "1734201916",
+    "daire": "Pursaklar",
+    "tur": "sahis",
+    "turAdi": "Gelir vergisi",
+    "donem": {
+     "no": 2073,
+     "ad": "14.10.2026",
+     "bitis": 1791936000000,
+     "ciro": 0,
+     "alis": 0,
+     "kar": 0,
+     "kdv": 0,
+     "gelir": 0,
+     "varlik": {
+      "tutar": 0,
+      "oran": 3,
+      "matrah": 0,
+      "servet": 8233779
      }
     },
-    "secim": {
-     "afisler": [],
-     "araclar": [],
-     "miting": null
+    "beyanlar": [],
+    "borc": 0,
+    "kurallar": {
+     "kdv": 20,
+     "dilimler": [
+      {
+       "ust": 25000000,
+       "oran": 15
+      },
+      {
+       "ust": 100000000,
+       "oran": 20
+      },
+      {
+       "ust": 500000000,
+       "oran": 27
+      },
+      {
+       "ust": null,
+       "oran": 30
+      }
+     ],
+     "odemeGun": 10,
+     "ceza": 5,
+     "icraAy": 6,
+     "ekonomiGunuMs": 28800000,
+     "varlik": {
+      "muafiyet": 500000000,
+      "oranlar": [
+       {
+        "ust": 25000000,
+        "oran": 3
+       },
+       {
+        "ust": 100000000,
+        "oran": 6
+       },
+       {
+        "ust": 500000000,
+        "oran": 10
+       },
+       {
+        "ust": null,
+        "oran": 15
+       }
+      ]
+     },
+     "taksitAralik": 5,
+     "taksitTolerans": 3,
+     "yapilandirma": {
+      "pesin": 50,
+      "taksit": 25
+     },
+     "enAzKismi": 10000
+    }
+   },
+   "vaka": {
+    "sunucuZamani": 1791408543665,
+    "acik": [
+     {
+      "id": 246,
+      "tur": "kriz",
+      "durum": "acik",
+      "baslangic": 1791408442310,
+      "son": 1791408622310,
+      "veri": {
+       "yer": "tezgah",
+       "isletmeAd": null,
+       "yerNo": null
+      },
+      "sonuc": null,
+      "kapanis": null
+     }
+    ],
+    "gecmis": [],
+    "bugun": 1,
+    "gunluk": 3,
+    "itibar": {
+     "puan": 500,
+     "band": "orta",
+     "oran": 0,
+     "musteri": 0,
+     "tezgah": 0,
+     "kredi": 0,
+     "hareketler": []
+    },
+    "guvenlik": {
+     "secenekler": [
+      {
+       "kod": "tup",
+       "ad": "Yangın tüpü ve dedektör",
+       "simge": "🧯",
+       "fiyat": 800000,
+       "aciklama": "Yangında yanan mal %30 yerine %12 olur."
+      },
+      {
+       "kod": "alarm",
+       "ad": "Alarm ve kamera",
+       "simge": "🚨",
+       "fiyat": 1500000,
+       "aciklama": "Sen aramasan da alarm polisi çağırır; hırsız yakalanır."
+      }
+     ],
+     "dukkanlar": []
+    }
+   },
+   "isletmelerim": [],
+   "seyyar": {
+    "takvim": {
+     "ms": 1791419346587,
+     "yil": 2026,
+     "ay": 9,
+     "ayAdi": "Ekim",
+     "gunNo": 8,
+     "haftaGunu": "Perşembe",
+     "haftaGunuNo": 4,
+     "haftaSonu": false,
+     "saat": 0,
+     "dakika": 29,
+     "mevsim": "sonbahar",
+     "mevsimAdi": "Sonbahar",
+     "metin": "8 Ekim 2026, Perşembe"
+    },
+    "nufusCarpani": 1.05572215751436,
+    "izin": {
+     "var": true,
+     "bitis": 1791988071167,
+     "ucret": 127500
+    },
+    "cirakla": true,
+    "yevmiye": 100000,
+    "aktifler": [
+     {
+      "id": 80851,
+      "isKodu": "pazar",
+      "isAdi": "Pazar tezgâhı",
+      "simge": "🧦",
+      "sure": "Tam gün",
+      "calisan": "ben",
+      "baslangic": 1791408475882,
+      "bitis": 1791409075882,
+      "malzeme": 343000,
+      "cirakUcreti": 0,
+      "bonus": 14498,
+      "servis": 7,
+      "ciro": 689120,
+      "ceza": 0,
+      "bitti": false,
+      "zabita": [],
+      "siparis": null,
+      "hizlandi": false,
+      "videoBonus": false,
+      "videoYevmiye": false,
+      "videoZabita": false
+     },
+     {
+      "id": 80852,
+      "isKodu": "simit",
+      "isAdi": "Simitçi",
+      "simge": "🥯",
+      "sure": "Tam gün",
+      "calisan": "cirak",
+      "baslangic": 1791408480018,
+      "bitis": 1791409080018,
+      "malzeme": 196000,
+      "cirakUcreti": 100000,
+      "bonus": 7623,
+      "servis": 7,
+      "ciro": 368833,
+      "ceza": 0,
+      "bitti": false,
+      "zabita": [],
+      "siparis": null,
+      "hizlandi": false,
+      "videoBonus": false,
+      "videoYevmiye": false,
+      "videoZabita": false
+     },
+     {
+      "id": 80853,
+      "isKodu": "pamuk",
+      "isAdi": "Pamuk şeker ve balon",
+      "simge": "🎈",
+      "sure": "Tam gün",
+      "calisan": "cirak",
+      "baslangic": 1791408480271,
+      "bitis": 1791409080271,
+      "malzeme": 39200,
+      "cirakUcreti": 100000,
+      "bonus": 8572,
+      "servis": 7,
+      "ciro": 155548,
+      "ceza": 0,
+      "bitti": false,
+      "zabita": [
+       {
+        "ms": 1791408580670,
+        "tur": "kontrol"
+       }
+      ],
+      "siparis": null,
+      "hizlandi": false,
+      "videoBonus": false,
+      "videoYevmiye": false,
+      "videoZabita": false
+     },
+     {
+      "id": 80854,
+      "isKodu": "semsiye",
+      "isAdi": "Şemsiye satıcısı",
+      "simge": "☂️",
+      "sure": "Tam gün",
+      "calisan": "cirak",
+      "baslangic": 1791408480495,
+      "bitis": 1791409080495,
+      "malzeme": 88200,
+      "cirakUcreti": 100000,
+      "bonus": 4649,
+      "servis": 7,
+      "ciro": 177264,
+      "ceza": 0,
+      "bitti": false,
+      "zabita": [],
+      "siparis": null,
+      "hizlandi": false,
+      "videoBonus": false,
+      "videoYevmiye": false,
+      "videoZabita": false
+     }
+    ],
+    "isler": [
+     {
+      "kod": "ayakkabi",
+      "ad": "Ayakkabı boyacısı",
+      "simge": "👞",
+      "aciklama": "Kalabalık bir köşede ayakkabı boyarsın. Masrafı az, kazancı sabit.",
+      "ekipmanAdi": "Boya sandığı ve fırçalar",
+      "ekipman": 150000,
+      "geriSatis": 75000,
+      "seviye": 1,
+      "sahip": true,
+      "kilitli": false,
+      "mevsimCarpani": 1.05,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": null,
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 1838,
+        "cirakUcreti": 12500,
+        "tahminiNet": 1832
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 3675,
+        "cirakUcreti": 25000,
+        "tahminiNet": 3665
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 7350,
+        "cirakUcreti": 50000,
+        "tahminiNet": 7331
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 14700,
+        "cirakUcreti": 100000,
+        "tahminiNet": 14662
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 44100,
+        "cirakUcreti": 300000,
+        "tahminiNet": 21809
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 102900,
+        "cirakUcreti": 700000,
+        "tahminiNet": 50888
+       }
+      ]
+     },
+     {
+      "kod": "su",
+      "ad": "Su ve mendil satıcısı",
+      "simge": "💧",
+      "aciklama": "Trafikte ve parklarda su, mendil satarsın. Yazın çok iş yapar.",
+      "ekipmanAdi": "Soğutucu kova",
+      "ekipman": 80000,
+      "geriSatis": 40000,
+      "seviye": 1,
+      "sahip": true,
+      "kilitli": false,
+      "mevsimCarpani": 0.9,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": null,
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 8575,
+        "cirakUcreti": 12500,
+        "tahminiNet": -3435
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 17150,
+        "cirakUcreti": 25000,
+        "tahminiNet": -6870
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 34300,
+        "cirakUcreti": 50000,
+        "tahminiNet": -13739
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 68600,
+        "cirakUcreti": 100000,
+        "tahminiNet": -27478
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 205800,
+        "cirakUcreti": 300000,
+        "tahminiNet": -64290
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 480200,
+        "cirakUcreti": 700000,
+        "tahminiNet": -150010
+       }
+      ]
+     },
+     {
+      "kod": "semsiye",
+      "ad": "Şemsiye satıcısı",
+      "simge": "☂️",
+      "aciklama": "Yağmurlu günlerin kazananı. Güneşli günlerde az satar.",
+      "ekipmanAdi": "Seyyar askılık",
+      "ekipman": 50000,
+      "geriSatis": 25000,
+      "seviye": 1,
+      "sahip": true,
+      "kilitli": false,
+      "mevsimCarpani": 1.2,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": {
+       "id": 80854,
+       "isKodu": "semsiye",
+       "isAdi": "Şemsiye satıcısı",
+       "simge": "☂️",
+       "sure": "Tam gün",
+       "calisan": "cirak",
+       "baslangic": 1791408480495,
+       "bitis": 1791409080495,
+       "malzeme": 88200,
+       "cirakUcreti": 100000,
+       "bonus": 4649,
+       "servis": 7,
+       "ciro": 177264,
+       "ceza": 0,
+       "bitti": false,
+       "zabita": [],
+       "siparis": null,
+       "hizlandi": false,
+       "videoBonus": false,
+       "videoYevmiye": false,
+       "videoZabita": false
+      },
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 11025,
+        "cirakUcreti": 12500,
+        "tahminiNet": -3365
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 22050,
+        "cirakUcreti": 25000,
+        "tahminiNet": -6729
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 44100,
+        "cirakUcreti": 50000,
+        "tahminiNet": -13459
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 88200,
+        "cirakUcreti": 100000,
+        "tahminiNet": -26918
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 264600,
+        "cirakUcreti": 300000,
+        "tahminiNet": -80753
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 617400,
+        "cirakUcreti": 700000,
+        "tahminiNet": -188424
+       }
+      ]
+     },
+     {
+      "kod": "pamuk",
+      "ad": "Pamuk şeker ve balon",
+      "simge": "🎈",
+      "aciklama": "Parklarda çocuklara satış. Hafta sonları çok daha iyi.",
+      "ekipmanAdi": "Pamuk şeker makinesi",
+      "ekipman": 400000,
+      "geriSatis": 200000,
+      "seviye": 1,
+      "sahip": true,
+      "kilitli": false,
+      "mevsimCarpani": 0.9,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": {
+       "id": 80853,
+       "isKodu": "pamuk",
+       "isAdi": "Pamuk şeker ve balon",
+       "simge": "🎈",
+       "sure": "Tam gün",
+       "calisan": "cirak",
+       "baslangic": 1791408480271,
+       "bitis": 1791409080271,
+       "malzeme": 39200,
+       "cirakUcreti": 100000,
+       "bonus": 8572,
+       "servis": 7,
+       "ciro": 155548,
+       "ceza": 0,
+       "bitti": false,
+       "zabita": [
+        {
+         "ms": 1791408580670,
+         "tur": "kontrol"
+        }
+       ],
+       "siparis": null,
+       "hizlandi": false,
+       "videoBonus": false,
+       "videoYevmiye": false,
+       "videoZabita": false
+      },
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 4900,
+        "cirakUcreti": 12500,
+        "tahminiNet": 1500
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 9800,
+        "cirakUcreti": 25000,
+        "tahminiNet": 3001
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 19600,
+        "cirakUcreti": 50000,
+        "tahminiNet": 6001
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 39200,
+        "cirakUcreti": 100000,
+        "tahminiNet": 12002
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 117600,
+        "cirakUcreti": 300000,
+        "tahminiNet": 100807
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 274400,
+        "cirakUcreti": 700000,
+        "tahminiNet": 235217
+       }
+      ]
+     },
+     {
+      "kod": "simit",
+      "ad": "Simitçi",
+      "simge": "🥯",
+      "aciklama": "Fırından aldığın simitleri sabah erkenden satarsın. Her mevsim iş var.",
+      "ekipmanAdi": "Simit tablası ve sehpa",
+      "ekipman": 300000,
+      "geriSatis": 150000,
+      "seviye": 1,
+      "sahip": true,
+      "kilitli": false,
+      "mevsimCarpani": 1,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": {
+       "id": 80852,
+       "isKodu": "simit",
+       "isAdi": "Simitçi",
+       "simge": "🥯",
+       "sure": "Tam gün",
+       "calisan": "cirak",
+       "baslangic": 1791408480018,
+       "bitis": 1791409080018,
+       "malzeme": 196000,
+       "cirakUcreti": 100000,
+       "bonus": 7623,
+       "servis": 7,
+       "ciro": 368833,
+       "ceza": 0,
+       "bitti": false,
+       "zabita": [],
+       "siparis": null,
+       "hizlandi": false,
+       "videoBonus": false,
+       "videoYevmiye": false,
+       "videoZabita": false
+      },
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 24500,
+        "cirakUcreti": 12500,
+        "tahminiNet": 5001
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 49000,
+        "cirakUcreti": 25000,
+        "tahminiNet": 10001
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 98000,
+        "cirakUcreti": 50000,
+        "tahminiNet": 20002
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 196000,
+        "cirakUcreti": 100000,
+        "tahminiNet": 40005
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 588000,
+        "cirakUcreti": 300000,
+        "tahminiNet": 91214
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 1372000,
+        "cirakUcreti": 700000,
+        "tahminiNet": 212832
+       }
+      ]
+     },
+     {
+      "kod": "pazar",
+      "ad": "Pazar tezgâhı",
+      "simge": "🧦",
+      "aciklama": "Semt pazarlarında çorap, tişört ve ev eşyası satarsın.",
+      "ekipmanAdi": "Tezgâh, branda ve ilk mal",
+      "ekipman": 800000,
+      "geriSatis": 400000,
+      "seviye": 2,
+      "sahip": true,
+      "kilitli": false,
+      "mevsimCarpani": 1.05,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": {
+       "id": 80851,
+       "isKodu": "pazar",
+       "isAdi": "Pazar tezgâhı",
+       "simge": "🧦",
+       "sure": "Tam gün",
+       "calisan": "ben",
+       "baslangic": 1791408475882,
+       "bitis": 1791409075882,
+       "malzeme": 343000,
+       "cirakUcreti": 0,
+       "bonus": 14498,
+       "servis": 7,
+       "ciro": 689120,
+       "ceza": 0,
+       "bitti": false,
+       "zabita": [],
+       "siparis": null,
+       "hizlandi": false,
+       "videoBonus": false,
+       "videoYevmiye": false,
+       "videoZabita": false
+      },
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 42875,
+        "cirakUcreti": 12500,
+        "tahminiNet": 21066
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 85750,
+        "cirakUcreti": 25000,
+        "tahminiNet": 42132
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 171500,
+        "cirakUcreti": 50000,
+        "tahminiNet": 84264
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 343000,
+        "cirakUcreti": 100000,
+        "tahminiNet": 168529
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 1029000,
+        "cirakUcreti": 300000,
+        "tahminiNet": 662836
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 2401000,
+        "cirakUcreti": 700000,
+        "tahminiNet": 1546617
+       }
+      ]
+     },
+     {
+      "kod": "misir",
+      "ad": "Mısırcı",
+      "simge": "🌽",
+      "aciklama": "Haşlanmış ve közlenmiş mısır. Sahil ve parklarda yazın çok satar.",
+      "ekipmanAdi": "Mısır arabası",
+      "ekipman": 2500000,
+      "geriSatis": 1250000,
+      "seviye": 3,
+      "sahip": false,
+      "kilitli": false,
+      "mevsimCarpani": 1,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": null,
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 14700,
+        "cirakUcreti": 12500,
+        "tahminiNet": 20401
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 29400,
+        "cirakUcreti": 25000,
+        "tahminiNet": 40801
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 58800,
+        "cirakUcreti": 50000,
+        "tahminiNet": 81603
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 117600,
+        "cirakUcreti": 100000,
+        "tahminiNet": 163205
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 352800,
+        "cirakUcreti": 300000,
+        "tahminiNet": 554897
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 823200,
+        "cirakUcreti": 700000,
+        "tahminiNet": 1294759
+       }
+      ]
+     },
+     {
+      "kod": "kestane",
+      "ad": "Kestaneci",
+      "simge": "🌰",
+      "aciklama": "Kış aylarının vazgeçilmezi. Yazın neredeyse hiç satmaz.",
+      "ekipmanAdi": "Kestane arabası",
+      "ekipman": 2500000,
+      "geriSatis": 1250000,
+      "seviye": 3,
+      "sahip": false,
+      "kilitli": false,
+      "mevsimCarpani": 1.2,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": null,
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 30625,
+        "cirakUcreti": 12500,
+        "tahminiNet": 40876
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 61250,
+        "cirakUcreti": 25000,
+        "tahminiNet": 81752
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 122500,
+        "cirakUcreti": 50000,
+        "tahminiNet": 163505
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 245000,
+        "cirakUcreti": 100000,
+        "tahminiNet": 327009
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 735000,
+        "cirakUcreti": 300000,
+        "tahminiNet": 1067429
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 1715000,
+        "cirakUcreti": 700000,
+        "tahminiNet": 2490668
+       }
+      ]
+     },
+     {
+      "kod": "midye",
+      "ad": "Midyeci",
+      "simge": "🦪",
+      "aciklama": "Kıyı illerinde çok satar. Yaz aylarında talep düşer.",
+      "ekipmanAdi": "Midye tablası ve soğutucu",
+      "ekipman": 1500000,
+      "geriSatis": 750000,
+      "seviye": 4,
+      "sahip": false,
+      "kilitli": true,
+      "mevsimCarpani": 1.1,
+      "havaCarpani": 1,
+      "kiyiCarpani": 0.7,
+      "aktif": null,
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 36750,
+        "cirakUcreti": 12500,
+        "tahminiNet": 15431
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 73500,
+        "cirakUcreti": 25000,
+        "tahminiNet": 30862
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 147000,
+        "cirakUcreti": 50000,
+        "tahminiNet": 61724
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 294000,
+        "cirakUcreti": 100000,
+        "tahminiNet": 123447
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 882000,
+        "cirakUcreti": 300000,
+        "tahminiNet": 481223
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 2058000,
+        "cirakUcreti": 700000,
+        "tahminiNet": 1122854
+       }
+      ]
+     },
+     {
+      "kod": "dondurma",
+      "ad": "Seyyar dondurmacı",
+      "simge": "🍦",
+      "aciklama": "Yazın en kârlı seyyar iş. Kışın satış neredeyse durur.",
+      "ekipmanAdi": "Dondurma arabası",
+      "ekipman": 4500000,
+      "geriSatis": 2250000,
+      "seviye": 4,
+      "sahip": false,
+      "kilitli": true,
+      "mevsimCarpani": 0.7,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": null,
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 30625,
+        "cirakUcreti": 12500,
+        "tahminiNet": 20576
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 61250,
+        "cirakUcreti": 25000,
+        "tahminiNet": 41152
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 122500,
+        "cirakUcreti": 50000,
+        "tahminiNet": 82304
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 245000,
+        "cirakUcreti": 100000,
+        "tahminiNet": 164607
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 735000,
+        "cirakUcreti": 300000,
+        "tahminiNet": 646703
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 1715000,
+        "cirakUcreti": 700000,
+        "tahminiNet": 1508975
+       }
+      ]
+     },
+     {
+      "kod": "gozleme",
+      "ad": "Gözlemeci",
+      "simge": "🥞",
+      "aciklama": "Pazar yerlerinde ve piknik alanlarında sıcak gözleme.",
+      "ekipmanAdi": "Tezgâh, sac ve tüp",
+      "ekipman": 3500000,
+      "geriSatis": 1750000,
+      "seviye": 5,
+      "sahip": false,
+      "kilitli": true,
+      "mevsimCarpani": 1,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": null,
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 30625,
+        "cirakUcreti": 12500,
+        "tahminiNet": 43676
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 61250,
+        "cirakUcreti": 25000,
+        "tahminiNet": 87352
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 122500,
+        "cirakUcreti": 50000,
+        "tahminiNet": 174705
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 245000,
+        "cirakUcreti": 100000,
+        "tahminiNet": 349410
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 735000,
+        "cirakUcreti": 300000,
+        "tahminiNet": 1226792
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 1715000,
+        "cirakUcreti": 700000,
+        "tahminiNet": 2862514
+       }
+      ]
+     },
+     {
+      "kod": "kokorec",
+      "ad": "Kokoreççi",
+      "simge": "🔥",
+      "aciklama": "Gece geç saatlere kadar satış. Seyyar işlerin en kazançlısı.",
+      "ekipmanAdi": "Kokoreç arabası",
+      "ekipman": 8000000,
+      "geriSatis": 4000000,
+      "seviye": 6,
+      "sahip": false,
+      "kilitli": true,
+      "mevsimCarpani": 1.05,
+      "havaCarpani": 1,
+      "kiyiCarpani": 1,
+      "aktif": null,
+      "sureler": [
+       {
+        "kod": "saat1",
+        "ad": "1 saat",
+        "gercekMs": 75000,
+        "malzeme": 49000,
+        "cirakUcreti": 12500,
+        "tahminiNet": 85502
+       },
+       {
+        "kod": "saat2",
+        "ad": "2 saat",
+        "gercekMs": 150000,
+        "malzeme": 98000,
+        "cirakUcreti": 25000,
+        "tahminiNet": 171004
+       },
+       {
+        "kod": "yarim",
+        "ad": "Yarım gün",
+        "gercekMs": 300000,
+        "malzeme": 196000,
+        "cirakUcreti": 50000,
+        "tahminiNet": 342008
+       },
+       {
+        "kod": "tam",
+        "ad": "Tam gün",
+        "gercekMs": 600000,
+        "malzeme": 392000,
+        "cirakUcreti": 100000,
+        "tahminiNet": 684016
+       },
+       {
+        "kod": "uc",
+        "ad": "3 gün",
+        "gercekMs": 5400000,
+        "malzeme": 1176000,
+        "cirakUcreti": 300000,
+        "tahminiNet": 2354453
+       },
+       {
+        "kod": "hafta",
+        "ad": "1 hafta",
+        "gercekMs": 12600000,
+        "malzeme": 2744000,
+        "cirakUcreti": 700000,
+        "tahminiNet": 5493725
+       }
+      ]
+     }
+    ],
+    "gorunum": {
+     "desen": null,
+     "isik": false
     }
    },
    "gorevler": {
-    "gun": "2026-10-07",
-    "gunSonu": 1791406817485,
+    "gun": "2026-10-08",
+    "gunSonu": 1791493208033,
     "alindi": false,
-    "odul": 187500,
+    "odul": 225000,
     "tecrube": 4,
     "gorevler": [
      {
-      "kod": "siparis",
-      "simge": "📦",
-      "ad": "Bir toplu siparişi zamanında yetiştir",
-      "n": 1,
+      "kod": "yardim",
+      "simge": "🤝",
+      "ad": "Mahallede birine yardım et",
+      "n": 0,
       "hedef": 1,
       "para": false,
-      "tamam": true
+      "tamam": false
+     },
+     {
+      "kod": "mini_oyun",
+      "simge": "🎮",
+      "ad": "2 mini oyun oyna",
+      "n": 0,
+      "hedef": 2,
+      "para": false,
+      "tamam": false
      },
      {
       "kod": "mini_yildiz",
@@ -1398,1036 +1650,3959 @@
       "hedef": 1,
       "para": false,
       "tamam": false
-     },
-     {
-      "kod": "is_bitir",
-      "simge": "✅",
-      "ad": "2 iş bitir ve kazancını topla",
-      "n": 2,
-      "hedef": 2,
-      "para": false,
-      "tamam": true
      }
     ]
    },
-   "bonus": {
-    "oduller": [
-     100000,
-     150000,
-     200000,
-     300000,
-     400000,
-     500000,
-     1000000
-    ],
-    "alinan": 1,
-    "bugunAlindi": true,
-    "siradaki": null,
-    "sonraki": 1791406800000,
-    "bugunNo": 1,
-    "simdi": 1791401538906
-   },
-   "isletmelerim": [],
-   "kiralama": {
-    "hata": "Bulunamadı."
-   },
-   "uretim": {
-    "tesisler": [],
-    "zaman": 1791401543175
-   },
-   "mezat": {
-    "acik": [
+   "hareketler": {
+    "liste": [
      {
-      "id": 73,
-      "urun": "findik_kabuklu",
-      "ad": "Kabuklu fındık",
-      "birim": "kg",
-      "simge": "🌾",
-      "miktar": 48450,
-      "taban": 657951000,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 657951000,
-      "bitis": 1791404359600,
-      "kalan": 2814985,
-      "piyasa": 678300000,
-      "durum": "acik",
-      "katildim": false
+      "id": 478617,
+      "tutar": 359,
+      "bakiyeSonrasi": 6677379,
+      "tur": "seyyar_servis",
+      "aciklama": "Şemsiye satıcısı: müşteriye servis",
+      "zaman": 1791408523110
+     },
+     {
+      "id": 478616,
+      "tutar": 5000,
+      "bakiyeSonrasi": 6677020,
+      "tur": "seyyar_servis",
+      "aciklama": "Pamuk şeker ve balon: toplu sipariş",
+      "zaman": 1791408522423
+     },
+     {
+      "id": 478615,
+      "tutar": 376,
+      "bakiyeSonrasi": 6672020,
+      "tur": "seyyar_servis",
+      "aciklama": "Pamuk şeker ve balon: müşteriye servis",
+      "zaman": 1791408521340
+     },
+     {
+      "id": 478614,
+      "tutar": 825,
+      "bakiyeSonrasi": 6671644,
+      "tur": "seyyar_servis",
+      "aciklama": "Simitçi: müşteriye servis",
+      "zaman": 1791408520673
+     },
+     {
+      "id": 478613,
+      "tutar": 2204,
+      "bakiyeSonrasi": 6670819,
+      "tur": "seyyar_servis",
+      "aciklama": "Pazar tezgâhı: müşteriye servis",
+      "zaman": 1791408520008
+     },
+     {
+      "id": 478612,
+      "tutar": 886,
+      "bakiyeSonrasi": 6668615,
+      "tur": "seyyar_servis",
+      "aciklama": "Şemsiye satıcısı: bahşiş",
+      "zaman": 1791408515138
+     },
+     {
+      "id": 478611,
+      "tutar": 328,
+      "bakiyeSonrasi": 6667729,
+      "tur": "seyyar_servis",
+      "aciklama": "Pamuk şeker ve balon: müşteriye servis",
+      "zaman": 1791408514451
+     },
+     {
+      "id": 478610,
+      "tutar": 1056,
+      "bakiyeSonrasi": 6667401,
+      "tur": "seyyar_servis",
+      "aciklama": "Simitçi: müşteriye servis",
+      "zaman": 1791408513773
+     },
+     {
+      "id": 478609,
+      "tutar": 1843,
+      "bakiyeSonrasi": 6666345,
+      "tur": "seyyar_servis",
+      "aciklama": "Pazar tezgâhı: müşteriye servis",
+      "zaman": 1791408513090
+     },
+     {
+      "id": 478606,
+      "tutar": 541,
+      "bakiyeSonrasi": 6664502,
+      "tur": "seyyar_servis",
+      "aciklama": "Şemsiye satıcısı: müşteriye servis",
+      "zaman": 1791408508799
+     },
+     {
+      "id": 478604,
+      "tutar": 328,
+      "bakiyeSonrasi": 6663961,
+      "tur": "seyyar_servis",
+      "aciklama": "Pamuk şeker ve balon: müşteriye servis",
+      "zaman": 1791408508134
+     },
+     {
+      "id": 478603,
+      "tutar": 961,
+      "bakiyeSonrasi": 6663633,
+      "tur": "seyyar_servis",
+      "aciklama": "Simitçi: müşteriye servis",
+      "zaman": 1791408507453
+     },
+     {
+      "id": 478602,
+      "tutar": 3552,
+      "bakiyeSonrasi": 6662672,
+      "tur": "seyyar_servis",
+      "aciklama": "Pazar tezgâhı: bahşiş",
+      "zaman": 1791408506768
+     },
+     {
+      "id": 478600,
+      "tutar": 1032,
+      "bakiyeSonrasi": 6659120,
+      "tur": "seyyar_servis",
+      "aciklama": "Şemsiye satıcısı: bahşiş",
+      "zaman": 1791408502390
+     },
+     {
+      "id": 478599,
+      "tutar": 812,
+      "bakiyeSonrasi": 6658088,
+      "tur": "seyyar_servis",
+      "aciklama": "Pamuk şeker ve balon: bahşiş",
+      "zaman": 1791408501705
+     },
+     {
+      "id": 478598,
+      "tutar": 2122,
+      "bakiyeSonrasi": 6657276,
+      "tur": "seyyar_servis",
+      "aciklama": "Simitçi: bahşiş",
+      "zaman": 1791408501014
+     },
+     {
+      "id": 478597,
+      "tutar": 1519,
+      "bakiyeSonrasi": 6655154,
+      "tur": "seyyar_servis",
+      "aciklama": "Pazar tezgâhı: müşteriye servis",
+      "zaman": 1791408500335
+     },
+     {
+      "id": 478596,
+      "tutar": 498,
+      "bakiyeSonrasi": 6653635,
+      "tur": "seyyar_servis",
+      "aciklama": "Şemsiye satıcısı: müşteriye servis",
+      "zaman": 1791408495935
+     },
+     {
+      "id": 478595,
+      "tutar": 459,
+      "bakiyeSonrasi": 6653137,
+      "tur": "seyyar_servis",
+      "aciklama": "Pamuk şeker ve balon: müşteriye servis",
+      "zaman": 1791408495265
+     },
+     {
+      "id": 478594,
+      "tutar": 957,
+      "bakiyeSonrasi": 6652678,
+      "tur": "seyyar_servis",
+      "aciklama": "Simitçi: müşteriye servis",
+      "zaman": 1791408494587
+     },
+     {
+      "id": 478593,
+      "tutar": 1805,
+      "bakiyeSonrasi": 6651721,
+      "tur": "seyyar_servis",
+      "aciklama": "Pazar tezgâhı: müşteriye servis",
+      "zaman": 1791408493921
+     },
+     {
+      "id": 478591,
+      "tutar": 481,
+      "bakiyeSonrasi": 6649916,
+      "tur": "seyyar_servis",
+      "aciklama": "Şemsiye satıcısı: müşteriye servis",
+      "zaman": 1791408489151
+     },
+     {
+      "id": 478590,
+      "tutar": 792,
+      "bakiyeSonrasi": 6649435,
+      "tur": "seyyar_servis",
+      "aciklama": "Pamuk şeker ve balon: bahşiş",
+      "zaman": 1791408488469
+     },
+     {
+      "id": 478589,
+      "tutar": 837,
+      "bakiyeSonrasi": 6648643,
+      "tur": "seyyar_servis",
+      "aciklama": "Simitçi: müşteriye servis",
+      "zaman": 1791408487797
+     },
+     {
+      "id": 478588,
+      "tutar": 1559,
+      "bakiyeSonrasi": 6647806,
+      "tur": "seyyar_servis",
+      "aciklama": "Pazar tezgâhı: müşteriye servis",
+      "zaman": 1791408487132
+     }
+    ],
+    "devam": true,
+    "bakiye": 6677379,
+    "hareket": 478617,
+    "gorulen": 0
+   },
+   "finans": {
+    "not": {
+     "puan": 959,
+     "bant": "Orta riskli",
+     "renk": "#F08A24",
+     "bantlar": [
+      {
+       "alt": 1,
+       "ust": 699,
+       "ad": "En riskli",
+       "renk": "#D7263D"
+      },
+      {
+       "alt": 700,
+       "ust": 1099,
+       "ad": "Orta riskli",
+       "renk": "#F08A24"
+      },
+      {
+       "alt": 1100,
+       "ust": 1499,
+       "ad": "Az riskli",
+       "renk": "#E8C21A"
+      },
+      {
+       "alt": 1500,
+       "ust": 1699,
+       "ad": "İyi",
+       "renk": "#7BC043"
+      },
+      {
+       "alt": 1700,
+       "ust": 1900,
+       "ad": "Çok iyi",
+       "renk": "#1FA055"
+      }
+     ],
+     "bilesenler": [
+      {
+       "ad": "Başlangıç",
+       "puan": 900,
+       "aciklama": "Her yeni hesap orta riskten başlar."
+      },
+      {
+       "ad": "Hesap yaşı",
+       "puan": 1,
+       "aciklama": "0 gündür oyunda."
+      },
+      {
+       "ad": "Seviye",
+       "puan": 12,
+       "aciklama": "3. seviye."
+      },
+      {
+       "ad": "Servet",
+       "puan": 46,
+       "aciklama": "Toplam servet 82.338 ₺."
+      },
+      {
+       "ad": "Ödeme geçmişi",
+       "puan": 0,
+       "aciklama": "Henüz kredi ya da kart geçmişin yok."
+      }
+     ],
+     "enAz": 1,
+     "enCok": 1900
+    },
+    "vergiNo": "1734201916",
+    "odemeTercihi": "nakit",
+    "kart": null,
+    "teklif": {
+     "limit": 2800000,
+     "engel": null
+    },
+    "limitArtis": 0,
+    "hareketler": [],
+    "icralar": [],
+    "kurallar": {
+     "enAzNot": 600,
+     "enAzLimit": 250000,
+     "enCokLimit": 1500000000,
+     "asgariSinir": 5000000,
+     "akdi": 4.25,
+     "gecikme": 4.55,
+     "icraDonem": 3,
+     "icraKesinti": 25,
+     "icraMasraf": 10
+    }
+   },
+   "siralama": {
+    "liste": [
+     {
+      "id": 14,
+      "kullaniciAdi": "Karahan",
+      "bakiye": 355678536,
+      "servet": 5039871900,
+      "foto": "api/profil/14.jpg?s=1791021665868",
+      "il": "Ankara",
+      "sirket": null,
+      "seviye": 10,
+      "gr": {
+       "c": "sampiyon",
+       "r": "sezon",
+       "e": 1
+      },
+      "cevrimici": false
+     },
+     {
+      "id": 31,
+      "kullaniciAdi": "ybey",
+      "bakiye": 400466,
+      "servet": 1929173348,
+      "foto": "api/profil/31.jpg?s=1791213974386",
+      "il": "Ankara",
+      "sirket": null,
+      "seviye": 8,
+      "gr": {
+       "c": null,
+       "r": null,
+       "e": 1
+      },
+      "cevrimici": false
+     },
+     {
+      "id": 108,
+      "kullaniciAdi": "Baykemal",
+      "bakiye": 4519451,
+      "servet": 1919336675,
+      "foto": "api/profil/108.jpg?s=1790886066775",
+      "il": "Ankara",
+      "sirket": null,
+      "seviye": 10,
+      "gr": {
+       "c": "sampiyon",
+       "r": "gokkusagi",
+       "e": 1
+      },
+      "cevrimici": true
+     },
+     {
+      "id": 134,
+      "kullaniciAdi": "arastirmaci42",
+      "bakiye": 1234801539,
+      "servet": 1548013442,
+      "foto": null,
+      "il": "Ankara",
+      "sirket": null,
+      "seviye": 6,
+      "cevrimici": false
+     },
+     {
+      "id": 178,
+      "kullaniciAdi": "CLSoft",
+      "bakiye": 3446967,
+      "servet": 1458443578,
+      "foto": "api/profil/178.jpg?s=1791307022939",
+      "il": "Ankara",
+      "sirket": null,
+      "seviye": 9,
+      "gr": {
+       "c": null,
+       "r": "gokkusagi",
+       "e": 1
+      },
+      "cevrimici": true
+     },
+     {
+      "id": 23,
+      "kullaniciAdi": "Husrain",
+      "bakiye": 101743440,
+      "servet": 1372398401,
+      "foto": "api/profil/23.jpg?s=1790686755103",
+      "il": "İzmir",
+      "sirket": null,
+      "seviye": 8,
+      "gr": {
+       "c": "gokkusagi",
+       "r": "gokkusagi",
+       "e": 1
+      },
+      "cevrimici": false
+     },
+     {
+      "id": 142,
+      "kullaniciAdi": "xxxtentactionfanclun",
+      "bakiye": 121330,
+      "servet": 1201722735,
+      "foto": null,
+      "il": "Eskişehir",
+      "sirket": null,
+      "seviye": 7,
+      "cevrimici": true
+     },
+     {
+      "id": 1,
+      "kullaniciAdi": "tefon",
+      "bakiye": 27534635,
+      "servet": 1092917382,
+      "foto": "api/profil/1.jpg?s=1790596428197",
+      "il": "Eskişehir",
+      "sirket": null,
+      "seviye": 10,
+      "gr": {
+       "c": null,
+       "r": null,
+       "o": "y"
+      },
+      "cevrimici": false
+     },
+     {
+      "id": 12,
+      "kullaniciAdi": "ZanY",
+      "bakiye": 2432943,
+      "servet": 1082145630,
+      "foto": null,
+      "il": "Eskişehir",
+      "sirket": null,
+      "seviye": 9,
+      "cevrimici": false
+     },
+     {
+      "id": 115,
+      "kullaniciAdi": "Voldemord",
+      "bakiye": 24191698,
+      "servet": 1044842744,
+      "foto": "api/profil/115.jpg?s=1791306772865",
+      "il": "Ankara",
+      "sirket": null,
+      "seviye": 10,
+      "gr": {
+       "c": null,
+       "r": null,
+       "e": 1
+      },
+      "cevrimici": true
+     },
+     {
+      "id": 123,
+      "kullaniciAdi": "YargıTay",
+      "bakiye": 4134376,
+      "servet": 990286189,
+      "foto": "api/profil/123.jpg?s=1791315327114",
+      "il": "İstanbul",
+      "sirket": null,
+      "seviye": 9,
+      "gr": {
+       "c": null,
+       "r": null,
+       "e": 1
+      },
+      "cevrimici": true
+     },
+     {
+      "id": 6,
+      "kullaniciAdi": "kayra",
+      "bakiye": 79694929,
+      "servet": 981920921,
+      "foto": null,
+      "il": "Eskişehir",
+      "sirket": null,
+      "seviye": 7,
+      "cevrimici": false
      },
      {
       "id": 72,
-      "urun": "icecek_dolabi_1",
-      "ad": "Tek kapaklı içecek dolabı (400 L · 300 şişe)",
-      "birim": "adet",
-      "simge": "🏭",
-      "miktar": 38,
-      "taban": 81092000,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 81092000,
-      "bitis": 1791405557406,
-      "kalan": 4012791,
-      "piyasa": 83600000,
-      "durum": "acik",
-      "katildim": false
+      "kullaniciAdi": "Muhammet",
+      "bakiye": 109067846,
+      "servet": 882615353,
+      "foto": "api/profil/72.jpg?s=1790788218814",
+      "il": "Gaziantep",
+      "sirket": null,
+      "seviye": 8,
+      "cevrimici": false
      },
      {
-      "id": 75,
-      "urun": "gazete",
-      "ad": "Gazete",
-      "birim": "adet",
-      "simge": "🏭",
-      "miktar": 167870,
-      "taban": 81417000,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 81417000,
-      "bitis": 1791409058518,
-      "kalan": 7513903,
-      "piyasa": 83935000,
-      "durum": "acik",
-      "katildim": false
+      "id": 7,
+      "kullaniciAdi": "Erhan",
+      "bakiye": 4994,
+      "servet": 737546393,
+      "foto": "api/profil/7.jpg?s=1790531368804",
+      "il": "Eskişehir",
+      "sirket": null,
+      "seviye": 8,
+      "gr": {
+       "c": null,
+       "r": null,
+       "e": 1
+      },
+      "cevrimici": false
      },
      {
-      "id": 74,
-      "urun": "asfalt",
-      "ad": "Asfalt (sıcak karışım)",
-      "birim": "ton",
-      "simge": "🏭",
-      "miktar": 2340,
-      "taban": 635544000,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 635544000,
-      "bitis": 1791410038869,
-      "kalan": 8494254,
-      "piyasa": 655200000,
-      "durum": "acik",
-      "katildim": false
+      "id": 166,
+      "kullaniciAdi": "fuat",
+      "bakiye": 237479029,
+      "servet": 622617412,
+      "foto": null,
+      "il": "Ankara",
+      "sirket": null,
+      "seviye": 6,
+      "cevrimici": false
+     },
+     {
+      "id": 111,
+      "kullaniciAdi": "Asil",
+      "bakiye": 31753679,
+      "servet": 545842667,
+      "foto": "api/profil/111.jpg?s=1790853028172",
+      "il": "Manisa",
+      "sirket": null,
+      "seviye": 7,
+      "gr": {
+       "c": "sezon",
+       "r": "sezon",
+       "e": 1
+      },
+      "cevrimici": true
+     },
+     {
+      "id": 4,
+      "kullaniciAdi": "Neji",
+      "bakiye": 327039223,
+      "servet": 437833352,
+      "foto": "api/profil/4.jpg?s=1790460352210",
+      "il": "Eskişehir",
+      "sirket": null,
+      "seviye": 8,
+      "gr": {
+       "c": null,
+       "r": null,
+       "o": "y"
+      },
+      "cevrimici": false
+     },
+     {
+      "id": 73,
+      "kullaniciAdi": "muharem",
+      "bakiye": 9846742,
+      "servet": 407341487,
+      "foto": "api/profil/73.jpg?s=1791010797508",
+      "il": "Adana",
+      "sirket": null,
+      "seviye": 7,
+      "cevrimici": false
+     },
+     {
+      "id": 213,
+      "kullaniciAdi": "AnkaranınBebeSİ",
+      "bakiye": 4028058,
+      "servet": 385904448,
+      "foto": null,
+      "il": "Ankara",
+      "sirket": null,
+      "seviye": 7,
+      "gr": {
+       "c": null,
+       "r": null,
+       "e": 1
+      },
+      "cevrimici": false
+     },
+     {
+      "id": 76,
+      "kullaniciAdi": "Emreaksu",
+      "bakiye": 36083069,
+      "servet": 261219309,
+      "foto": "api/profil/76.jpg?s=1790791135700",
+      "il": "Şanlıurfa",
+      "sirket": null,
+      "seviye": 5,
+      "cevrimici": false
+     },
+     {
+      "id": 91,
+      "kullaniciAdi": "Mertcan09",
+      "bakiye": 20068257,
+      "servet": 208374156,
+      "foto": "api/profil/91.jpg?s=1790978293699",
+      "il": "Aydın",
+      "sirket": null,
+      "seviye": 7,
+      "gr": {
+       "c": null,
+       "r": null,
+       "e": 1
+      },
+      "cevrimici": false
+     },
+     {
+      "id": 185,
+      "kullaniciAdi": "Azad",
+      "bakiye": 5,
+      "servet": 200156202,
+      "foto": null,
+      "il": "Elazığ",
+      "sirket": null,
+      "seviye": 7,
+      "cevrimici": false
+     },
+     {
+      "id": 44,
+      "kullaniciAdi": "mert",
+      "bakiye": 114723433,
+      "servet": 196183930,
+      "foto": "api/profil/44.jpg?s=1790744318290",
+      "il": "Zonguldak",
+      "sirket": null,
+      "seviye": 6,
+      "gr": {
+       "c": "neon",
+       "r": null
+      },
+      "cevrimici": false
+     },
+     {
+      "id": 110,
+      "kullaniciAdi": "ali",
+      "bakiye": 6369938,
+      "servet": 114868562,
+      "foto": null,
+      "il": "Adana",
+      "sirket": null,
+      "seviye": 6,
+      "cevrimici": false
+     },
+     {
+      "id": 163,
+      "kullaniciAdi": "mirco310",
+      "bakiye": 3508,
+      "servet": 113497521,
+      "foto": "api/profil/163.jpg?s=1790975632156",
+      "il": "İstanbul",
+      "sirket": null,
+      "seviye": 6,
+      "cevrimici": false
      }
     ],
-    "biten": [
-     {
-      "id": 70,
-      "urun": "yumurta",
-      "ad": "Yumurta (10 lu)",
-      "birim": "paket",
-      "simge": "🐄",
-      "miktar": 42660,
-      "taban": 186210900,
-      "enYuksek": 186210900,
-      "lider": "Karahan",
-      "benim": false,
-      "enAz": 195521500,
-      "bitis": 1791398662907,
-      "kalan": 0,
-      "piyasa": 182968740,
-      "durum": "bitti"
-     },
-     {
-      "id": 71,
-      "urun": "seker",
-      "ad": "Şeker (1 kg)",
-      "birim": "paket",
-      "simge": "🏭",
-      "miktar": 152410,
-      "taban": 517432000,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 517432000,
-      "bitis": 1791396776640,
-      "kalan": 0,
-      "piyasa": 533435000,
-      "durum": "satilmadi"
-     },
-     {
-      "id": 69,
-      "urun": "yz_modeli",
-      "ad": "Yapay zekâ modeli lisansı",
-      "birim": "adet",
-      "simge": "💻",
-      "miktar": 2,
-      "taban": 485000000,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 485000000,
-      "bitis": 1791393222304,
-      "kalan": 0,
-      "piyasa": 500000000,
-      "durum": "satilmadi"
-     },
-     {
-      "id": 68,
-      "urun": "uydu",
-      "ad": "Haberleşme uydusu",
-      "birim": "adet",
-      "simge": "💻",
-      "miktar": 1,
-      "taban": 87300000000,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 87300000000,
-      "bitis": 1791391373708,
-      "kalan": 0,
-      "piyasa": 90000000000,
-      "durum": "satilmadi"
-     },
-     {
-      "id": 67,
-      "urun": "silisyum",
-      "ad": "Silisyum plaka (wafer)",
-      "birim": "adet",
-      "simge": "💻",
-      "miktar": 20,
-      "taban": 23280000,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 23280000,
-      "bitis": 1791389195358,
-      "kalan": 0,
-      "piyasa": 24000000,
-      "durum": "satilmadi"
-     },
-     {
-      "id": 65,
-      "urun": "enerji_icecegi",
-      "ad": "Enerji içeceği",
-      "birim": "kutu",
-      "simge": "🧃",
-      "miktar": 26340,
-      "taban": 71539400,
-      "enYuksek": 0,
-      "lider": null,
-      "benim": false,
-      "enAz": 71539400,
-      "bitis": 1791388403730,
-      "kalan": 0,
-      "piyasa": 73752000,
-      "durum": "satilmadi"
-     }
-    ],
-    "sunucuZamani": 1791401544615
-   },
-   "harita": [
-    {
-     "id": 1,
-     "ad": "Adana",
-     "nufus": 2283609,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Akdeniz",
-     "oyuncu": 10,
-     "tezgah": 46
-    },
-    {
-     "id": 2,
-     "ad": "Adıyaman",
-     "nufus": 617821,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 1
-    },
-    {
-     "id": 3,
-     "ad": "Afyonkarahisar",
-     "nufus": 751808,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Ege",
-     "oyuncu": 1,
-     "tezgah": 2
-    },
-    {
-     "id": 4,
-     "ad": "Ağrı",
-     "nufus": 491489,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 2,
-     "tezgah": 14
-    },
-    {
-     "id": 5,
-     "ad": "Amasya",
-     "nufus": 342242,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 3,
-     "tezgah": 7
-    },
-    {
-     "id": 6,
-     "ad": "Ankara",
-     "nufus": 5910320,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "İç Anadolu",
-     "oyuncu": 36,
-     "tezgah": 167
-    },
-    {
-     "id": 7,
-     "ad": "Antalya",
-     "nufus": 2777677,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Akdeniz",
-     "oyuncu": 5,
-     "tezgah": 20
-    },
-    {
-     "id": 8,
-     "ad": "Artvin",
-     "nufus": 167531,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 2,
-     "tezgah": 5
-    },
-    {
-     "id": 9,
-     "ad": "Aydın",
-     "nufus": 1172107,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Ege",
-     "oyuncu": 4,
-     "tezgah": 21
-    },
-    {
-     "id": 10,
-     "ad": "Balıkesir",
-     "nufus": 1284517,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Marmara",
-     "oyuncu": 10,
-     "tezgah": 28
-    },
-    {
-     "id": 11,
-     "ad": "Bilecik",
-     "nufus": 228995,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Marmara",
-     "oyuncu": 2,
-     "tezgah": 5
-    },
-    {
-     "id": 12,
-     "ad": "Bingöl",
-     "nufus": 282299,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 0
-    },
-    {
-     "id": 13,
-     "ad": "Bitlis",
-     "nufus": 360423,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 0
-    },
-    {
-     "id": 14,
-     "ad": "Bolu",
-     "nufus": 327173,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 1,
-     "tezgah": 3
-    },
-    {
-     "id": 15,
-     "ad": "Burdur",
-     "nufus": 277226,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Akdeniz",
-     "oyuncu": 1,
-     "tezgah": 7
-    },
-    {
-     "id": 16,
-     "ad": "Bursa",
-     "nufus": 3263011,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Marmara",
-     "oyuncu": 15,
-     "tezgah": 38
-    },
-    {
-     "id": 17,
-     "ad": "Çanakkale",
-     "nufus": 573976,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Marmara",
-     "oyuncu": 1,
-     "tezgah": 5
-    },
-    {
-     "id": 18,
-     "ad": "Çankırı",
-     "nufus": 200549,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Marmara",
-     "oyuncu": 3,
-     "tezgah": 5
-    },
-    {
-     "id": 19,
-     "ad": "Çorum",
-     "nufus": 519590,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 3,
-     "tezgah": 7
-    },
-    {
-     "id": 20,
-     "ad": "Denizli",
-     "nufus": 1060975,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Ege",
-     "oyuncu": 4,
-     "tezgah": 7
-    },
-    {
-     "id": 21,
-     "ad": "Diyarbakır",
-     "nufus": 1852356,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 5,
-     "tezgah": 9
-    },
-    {
-     "id": 22,
-     "ad": "Edirne",
-     "nufus": 422438,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Marmara",
-     "oyuncu": 2,
-     "tezgah": 2
-    },
-    {
-     "id": 23,
-     "ad": "Elazığ",
-     "nufus": 605678,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 2,
-     "tezgah": 9
-    },
-    {
-     "id": 24,
-     "ad": "Erzincan",
-     "nufus": 239625,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 2
-    },
-    {
-     "id": 25,
-     "ad": "Erzurum",
-     "nufus": 736877,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 0
-    },
-    {
-     "id": 26,
-     "ad": "Eskişehir",
-     "nufus": 927956,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "İç Anadolu",
-     "oyuncu": 13,
-     "tezgah": 84
-    },
-    {
-     "id": 27,
-     "ad": "Gaziantep",
-     "nufus": 2222415,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 5,
-     "tezgah": 23
-    },
-    {
-     "id": 28,
-     "ad": "Giresun",
-     "nufus": 455074,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 2,
-     "tezgah": 5
-    },
-    {
-     "id": 29,
-     "ad": "Gümüşhane",
-     "nufus": 138807,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 1,
-     "tezgah": 0
-    },
-    {
-     "id": 30,
-     "ad": "Hakkari",
-     "nufus": 279681,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 2,
-     "tezgah": 2
-    },
-    {
-     "id": 31,
-     "ad": "Hatay",
-     "nufus": 1577531,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Akdeniz",
-     "oyuncu": 5,
-     "tezgah": 18
-    },
-    {
-     "id": 32,
-     "ad": "Isparta",
-     "nufus": 445303,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Akdeniz",
-     "oyuncu": 2,
-     "tezgah": 11
-    },
-    {
-     "id": 33,
-     "ad": "Mersin",
-     "nufus": 1956428,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Akdeniz",
-     "oyuncu": 6,
-     "tezgah": 12
-    },
-    {
-     "id": 34,
-     "ad": "İstanbul",
-     "nufus": 15754053,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Marmara",
-     "oyuncu": 55,
-     "tezgah": 175
-    },
-    {
-     "id": 35,
-     "ad": "İzmir",
-     "nufus": 4504185,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Ege",
-     "oyuncu": 24,
-     "tezgah": 67
-    },
-    {
-     "id": 36,
-     "ad": "Kars",
-     "nufus": 268991,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 37,
-     "ad": "Kastamonu",
-     "nufus": 379934,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 38,
-     "ad": "Kayseri",
-     "nufus": 1458991,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "İç Anadolu",
-     "oyuncu": 4,
-     "tezgah": 6
-    },
-    {
-     "id": 39,
-     "ad": "Kırklareli",
-     "nufus": 379595,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Marmara",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 40,
-     "ad": "Kırşehir",
-     "nufus": 242777,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "İç Anadolu",
-     "oyuncu": 1,
-     "tezgah": 0
-    },
-    {
-     "id": 41,
-     "ad": "Kocaeli",
-     "nufus": 2161171,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Marmara",
-     "oyuncu": 5,
-     "tezgah": 18
-    },
-    {
-     "id": 42,
-     "ad": "Konya",
-     "nufus": 2343409,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "İç Anadolu",
-     "oyuncu": 10,
-     "tezgah": 23
-    },
-    {
-     "id": 43,
-     "ad": "Kütahya",
-     "nufus": 570478,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Ege",
-     "oyuncu": 2,
-     "tezgah": 2
-    },
-    {
-     "id": 44,
-     "ad": "Malatya",
-     "nufus": 755854,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 4,
-     "tezgah": 15
-    },
-    {
-     "id": 45,
-     "ad": "Manisa",
-     "nufus": 1477756,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Ege",
-     "oyuncu": 2,
-     "tezgah": 16
-    },
-    {
-     "id": 46,
-     "ad": "Kahramanmaraş",
-     "nufus": 1146278,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Akdeniz",
-     "oyuncu": 3,
-     "tezgah": 3
-    },
-    {
-     "id": 47,
-     "ad": "Mardin",
-     "nufus": 903576,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 3
-    },
-    {
-     "id": 48,
-     "ad": "Muğla",
-     "nufus": 1099547,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Ege",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 49,
-     "ad": "Muş",
-     "nufus": 389127,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 0
-    },
-    {
-     "id": 50,
-     "ad": "Nevşehir",
-     "nufus": 320150,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "İç Anadolu",
-     "oyuncu": 1,
-     "tezgah": 1
-    },
-    {
-     "id": 51,
-     "ad": "Niğde",
-     "nufus": 374492,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "İç Anadolu",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 52,
-     "ad": "Ordu",
-     "nufus": 768087,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Karadeniz",
-     "oyuncu": 1,
-     "tezgah": 5
-    },
-    {
-     "id": 53,
-     "ad": "Rize",
-     "nufus": 346947,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 3,
-     "tezgah": 6
-    },
-    {
-     "id": 54,
-     "ad": "Sakarya",
-     "nufus": 1123693,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Marmara",
-     "oyuncu": 4,
-     "tezgah": 12
-    },
-    {
-     "id": 55,
-     "ad": "Samsun",
-     "nufus": 1392403,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Karadeniz",
-     "oyuncu": 5,
-     "tezgah": 11
-    },
-    {
-     "id": 56,
-     "ad": "Siirt",
-     "nufus": 332369,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 57,
-     "ad": "Sinop",
-     "nufus": 225848,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 4,
-     "tezgah": 8
-    },
-    {
-     "id": 58,
-     "ad": "Sivas",
-     "nufus": 631401,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "İç Anadolu",
-     "oyuncu": 3,
-     "tezgah": 12
-    },
-    {
-     "id": 59,
-     "ad": "Tekirdağ",
-     "nufus": 1208441,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Marmara",
-     "oyuncu": 7,
-     "tezgah": 17
-    },
-    {
-     "id": 60,
-     "ad": "Tokat",
-     "nufus": 614141,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 2,
-     "tezgah": 4
-    },
-    {
-     "id": 61,
-     "ad": "Trabzon",
-     "nufus": 823323,
-     "kiyi": true,
-     "buyuksehir": true,
-     "bolge": "Karadeniz",
-     "oyuncu": 6,
-     "tezgah": 14
-    },
-    {
-     "id": 62,
-     "ad": "Tunceli",
-     "nufus": 85083,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 63,
-     "ad": "Şanlıurfa",
-     "nufus": 2265800,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 2,
-     "tezgah": 11
-    },
-    {
-     "id": 64,
-     "ad": "Uşak",
-     "nufus": 374405,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Ege",
-     "oyuncu": 1,
-     "tezgah": 7
-    },
-    {
-     "id": 65,
-     "ad": "Van",
-     "nufus": 1112013,
-     "kiyi": false,
-     "buyuksehir": true,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 4,
-     "tezgah": 15
-    },
-    {
-     "id": 66,
-     "ad": "Yozgat",
-     "nufus": 413208,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "İç Anadolu",
-     "oyuncu": 1,
-     "tezgah": 2
-    },
-    {
-     "id": 67,
-     "ad": "Zonguldak",
-     "nufus": 585203,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 2,
-     "tezgah": 6
-    },
-    {
-     "id": 68,
-     "ad": "Aksaray",
-     "nufus": 441136,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "İç Anadolu",
-     "oyuncu": 1,
-     "tezgah": 3
-    },
-    {
-     "id": 69,
-     "ad": "Bayburt",
-     "nufus": 82836,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 70,
-     "ad": "Karaman",
-     "nufus": 262355,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "İç Anadolu",
-     "oyuncu": 3,
-     "tezgah": 11
-    },
-    {
-     "id": 71,
-     "ad": "Kırıkkale",
-     "nufus": 282830,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "İç Anadolu",
-     "oyuncu": 0,
-     "tezgah": 0
-    },
-    {
-     "id": 72,
-     "ad": "Batman",
-     "nufus": 662626,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 3,
-     "tezgah": 2
-    },
-    {
-     "id": 73,
-     "ad": "Şırnak",
-     "nufus": 573666,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 1
-    },
-    {
-     "id": 74,
-     "ad": "Bartın",
-     "nufus": 206663,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 2,
-     "tezgah": 3
-    },
-    {
-     "id": 75,
-     "ad": "Ardahan",
-     "nufus": 90392,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 2,
-     "tezgah": 4
-    },
-    {
-     "id": 76,
-     "ad": "Iğdır",
-     "nufus": 205071,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Doğu Anadolu",
-     "oyuncu": 1,
-     "tezgah": 0
-    },
-    {
-     "id": 77,
-     "ad": "Yalova",
-     "nufus": 311635,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Marmara",
-     "oyuncu": 1,
-     "tezgah": 1
-    },
-    {
-     "id": 78,
-     "ad": "Karabük",
-     "nufus": 249614,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 1,
-     "tezgah": 1
-    },
-    {
-     "id": 79,
-     "ad": "Kilis",
-     "nufus": 157363,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Güneydoğu Anadolu",
-     "oyuncu": 2,
-     "tezgah": 2
-    },
-    {
-     "id": 80,
-     "ad": "Osmaniye",
-     "nufus": 564123,
-     "kiyi": false,
-     "buyuksehir": false,
-     "bolge": "Akdeniz",
-     "oyuncu": 4,
-     "tezgah": 10
-    },
-    {
-     "id": 81,
-     "ad": "Düzce",
-     "nufus": 415622,
-     "kiyi": true,
-     "buyuksehir": false,
-     "bolge": "Karadeniz",
-     "oyuncu": 2,
-     "tezgah": 12
+    "devam": true,
+    "benimSiram": 60,
+    "toplamOyuncu": 345,
+    "benimId": 1521,
+    "benimServet": 8233779,
+    "tur": "servet",
+    "kapsam": "turkiye",
+    "yer": {
+     "il": "Ankara",
+     "ilce": "Pursaklar"
     }
-   ]
+   },
+   "ligler": {
+    "hafta": "2026-10-05",
+    "bitis": 1791752400000,
+    "oduller": [
+     5000000,
+     2500000,
+     1000000
+    ],
+    "ligler": [
+     {
+      "kod": "ciftci",
+      "ad": "Çiftçi ligi",
+      "simge": "🌾",
+      "aciklama": "Tarım, hayvancılık ve ormancılıkta üretilen ürünlerin değeri",
+      "liste": [],
+      "benimPuan": 0,
+      "benimSiram": null
+     },
+     {
+      "kod": "sanayici",
+      "ad": "Sanayici ligi",
+      "simge": "🏭",
+      "aciklama": "Fabrika, maden ve santrallerin ürettiği değer",
+      "liste": [],
+      "benimPuan": 0,
+      "benimSiram": null
+     },
+     {
+      "kod": "tuccar",
+      "ad": "Tüccar ligi",
+      "simge": "⚖️",
+      "aciklama": "Toptan pazarda ve tedarik sözleşmeleriyle yapılan satışlar",
+      "liste": [
+       {
+        "id": 14,
+        "puan": 158780520,
+        "kullaniciAdi": "Karahan",
+        "foto": "api/profil/14.jpg?s=1791021665868",
+        "il": "Ankara",
+        "cevrimici": false
+       },
+       {
+        "id": 73,
+        "puan": 2200000,
+        "kullaniciAdi": "muharem",
+        "foto": "api/profil/73.jpg?s=1791010797508",
+        "il": "Adana",
+        "cevrimici": false
+       },
+       {
+        "id": 86,
+        "puan": 1164400,
+        "kullaniciAdi": "Burak",
+        "foto": "api/profil/86.jpg?s=1790797088790",
+        "il": "İstanbul",
+        "cevrimici": false
+       },
+       {
+        "id": 185,
+        "puan": 111000,
+        "kullaniciAdi": "Azad",
+        "foto": null,
+        "il": "Elazığ",
+        "cevrimici": false
+       },
+       {
+        "id": 91,
+        "puan": 29108,
+        "kullaniciAdi": "Mertcan09",
+        "foto": "api/profil/91.jpg?s=1790978293699",
+        "il": "Aydın",
+        "cevrimici": false
+       }
+      ],
+      "benimPuan": 0,
+      "benimSiram": null
+     }
+    ],
+    "gecenHafta": [
+     {
+      "lig": "tuccar",
+      "sira": 1,
+      "puan": 2205000,
+      "odul": 5000000,
+      "kullaniciAdi": "muharem"
+     },
+     {
+      "lig": "tuccar",
+      "sira": 2,
+      "puan": 1941023,
+      "odul": 2500000,
+      "kullaniciAdi": "Karahan"
+     },
+     {
+      "lig": "tuccar",
+      "sira": 3,
+      "puan": 1662816,
+      "odul": 1000000,
+      "kullaniciAdi": "Muhammet"
+     }
+    ]
+   },
+   "mahalle": {
+    "hata": "Bulunamadı."
+   },
+   "yetenekler": {
+    "puan": 2,
+    "kullanilan": 2,
+    "bos": 0,
+    "enCok": 5,
+    "sifirlamaUcreti": 3000000,
+    "liste": [
+     {
+      "kod": "satis",
+      "simge": "🗣️",
+      "ad": "Satış ustası",
+      "derece": 1,
+      "simdi": "Tezgâh satışların %3 artar.",
+      "sonraki": "Tezgâh satışların %6 artar."
+     },
+     {
+      "kod": "pazarlik",
+      "simge": "🤝",
+      "ad": "Pazarlıkçı",
+      "derece": 1,
+      "simdi": "Toptancıdan, pazardan ve tezgâh malzemesini alırken %2 ucuza alırsın.",
+      "sonraki": "Toptancıdan, pazardan ve tezgâh malzemesini alırken %4 ucuza alırsın."
+     },
+     {
+      "kod": "tuccar",
+      "simge": "⚖️",
+      "ad": "Tüccar",
+      "derece": 0,
+      "simdi": "Toptan pazara satarken %0 daha iyi fiyat alırsın.",
+      "sonraki": "Toptan pazara satarken %2 daha iyi fiyat alırsın."
+     },
+     {
+      "kod": "verimli",
+      "simge": "⚙️",
+      "ad": "Verimli üretim",
+      "derece": 0,
+      "simdi": "Tesislerindeki üretim %0 daha kısa sürer.",
+      "sonraki": "Tesislerindeki üretim %4 daha kısa sürer."
+     },
+     {
+      "kod": "yonetim",
+      "simge": "📋",
+      "ad": "İyi yönetici",
+      "derece": 0,
+      "simdi": "Çırak yevmiyesi ve üretim giderleri %0 azalır.",
+      "sonraki": "Çırak yevmiyesi ve üretim giderleri %4 azalır."
+     },
+     {
+      "kod": "itibar",
+      "simge": "🏅",
+      "ad": "Esnaf itibarı",
+      "derece": 0,
+      "simdi": "Zabıta cezaları %0 hafif olur.",
+      "sonraki": "Zabıta cezaları %12 hafif olur."
+     }
+    ]
+   },
+   "tedarik": {
+    "benim": [],
+    "teklifler": [],
+    "teminatOrani": 20,
+    "aralikGunleri": [
+     1,
+     3,
+     7
+    ],
+    "enCokTeslim": 12,
+    "ekonomiGunuMs": 28800000
+   },
+   "pazar": [
+    {
+     "kod": "bugday",
+     "ad": "Buğday",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 1200,
+     "degisim": 0,
+     "sistemAlir": 996,
+     "sistemSatar": 1343,
+     "ilanSayisi": 1,
+     "enUcuzIlan": 1300
+    },
+    {
+     "kod": "arpa",
+     "ad": "Arpa",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 900,
+     "degisim": 0,
+     "sistemAlir": 747,
+     "sistemSatar": 1006,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "misir",
+     "ad": "Mısır",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 950,
+     "degisim": 0,
+     "sistemAlir": 788,
+     "sistemSatar": 1062,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "celtik",
+     "ad": "Çeltik",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 2000,
+     "degisim": 0,
+     "sistemAlir": 1660,
+     "sistemSatar": 2237,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "nohut",
+     "ad": "Nohut",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 5000,
+     "degisim": 0,
+     "sistemAlir": 4149,
+     "sistemSatar": 5594,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "mercimek",
+     "ad": "Kırmızı mercimek",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 4500,
+     "degisim": 0,
+     "sistemAlir": 3734,
+     "sistemSatar": 5034,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "aycicegi",
+     "ad": "Ayçiçeği",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 1700,
+     "degisim": 0,
+     "sistemAlir": 1411,
+     "sistemSatar": 1902,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "seker_pancari",
+     "ad": "Şeker pancarı",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 300,
+     "degisim": 0,
+     "sistemAlir": 249,
+     "sistemSatar": 335,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "pamuk",
+     "ad": "Kütlü pamuk",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 2500,
+     "degisim": 0,
+     "sistemAlir": 2075,
+     "sistemSatar": 2797,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yonca",
+     "ad": "Yonca (kuru ot)",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 800,
+     "degisim": 0,
+     "sistemAlir": 664,
+     "sistemSatar": 895,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "domates",
+     "ad": "Domates",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 1800,
+     "degisim": 0,
+     "sistemAlir": 1494,
+     "sistemSatar": 2014,
+     "ilanSayisi": 1,
+     "enUcuzIlan": 1900
+    },
+    {
+     "kod": "salatalik",
+     "ad": "Salatalık",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 1500,
+     "degisim": 0,
+     "sistemAlir": 1245,
+     "sistemSatar": 1678,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "patates",
+     "ad": "Patates",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 1200,
+     "degisim": 0,
+     "sistemAlir": 996,
+     "sistemSatar": 1343,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "sogan",
+     "ad": "Soğan",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 1000,
+     "degisim": 0,
+     "sistemAlir": 830,
+     "sistemSatar": 1119,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "muz",
+     "ad": "Muz",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 4500,
+     "degisim": 0,
+     "sistemAlir": 3734,
+     "sistemSatar": 5034,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yas_cay",
+     "ad": "Yaş çay yaprağı",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 1800,
+     "degisim": 0,
+     "sistemAlir": 1494,
+     "sistemSatar": 2014,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "findik_kabuklu",
+     "ad": "Kabuklu fındık",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 14000,
+     "degisim": 0,
+     "sistemAlir": 11618,
+     "sistemSatar": 15662,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "fistik_kabuklu",
+     "ad": "Kabuklu Antep fıstığı",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 30000,
+     "degisim": 0,
+     "sistemAlir": 24895,
+     "sistemSatar": 33562,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "zeytin_dane",
+     "ad": "Zeytin (dane)",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 3500,
+     "degisim": 0,
+     "sistemAlir": 2904,
+     "sistemSatar": 3915,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "uzum",
+     "ad": "Üzüm",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 2200,
+     "degisim": 0,
+     "sistemAlir": 1826,
+     "sistemSatar": 2461,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "incir",
+     "ad": "İncir",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 6000,
+     "degisim": 0,
+     "sistemAlir": 4979,
+     "sistemSatar": 6712,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "elma",
+     "ad": "Elma",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 2000,
+     "degisim": 0,
+     "sistemAlir": 1660,
+     "sistemSatar": 2237,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "portakal",
+     "ad": "Portakal",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 1800,
+     "degisim": 0,
+     "sistemAlir": 1494,
+     "sistemSatar": 2014,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "limon",
+     "ad": "Limon",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": false,
+     "fiyat": 2500,
+     "degisim": 0,
+     "sistemAlir": 2075,
+     "sistemSatar": 2797,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tomruk",
+     "ad": "Tomruk",
+     "birim": "m³",
+     "grup": "orman",
+     "ithal": false,
+     "fiyat": 350000,
+     "degisim": 0,
+     "sistemAlir": 290444,
+     "sistemSatar": 391555,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cig_sut",
+     "ad": "Çiğ süt",
+     "birim": "L",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 1700,
+     "degisim": 0,
+     "sistemAlir": 1411,
+     "sistemSatar": 1902,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yumurta",
+     "ad": "Yumurta (10 lu)",
+     "birim": "paket",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 4301,
+     "degisim": -4.4,
+     "sistemAlir": 3569,
+     "sistemSatar": 4812,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "bal",
+     "ad": "Bal",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 40000,
+     "degisim": 0,
+     "sistemAlir": 33194,
+     "sistemSatar": 44749,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yun",
+     "ad": "Yapağı (yün)",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 4000,
+     "degisim": 0,
+     "sistemAlir": 3319,
+     "sistemSatar": 4475,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "buzagi",
+     "ad": "Besilik buzağı",
+     "birim": "baş",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 1800000,
+     "degisim": 0,
+     "sistemAlir": 1493712,
+     "sistemSatar": 2013712,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "dana",
+     "ad": "Besi danası (canlı)",
+     "birim": "baş",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 7500000,
+     "degisim": 0,
+     "sistemAlir": 6223800,
+     "sistemSatar": 8390466,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kuzu",
+     "ad": "Kuzu (canlı)",
+     "birim": "baş",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 650000,
+     "degisim": 0,
+     "sistemAlir": 539396,
+     "sistemSatar": 727174,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "civciv",
+     "ad": "Civciv",
+     "birim": "adet",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 2500,
+     "degisim": 0,
+     "sistemAlir": 2075,
+     "sistemSatar": 2797,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "pilic",
+     "ad": "Etlik piliç (canlı)",
+     "birim": "adet",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 13000,
+     "degisim": 0,
+     "sistemAlir": 10788,
+     "sistemSatar": 14543,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yem",
+     "ad": "Karma yem",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 1500,
+     "degisim": 0,
+     "sistemAlir": 1245,
+     "sistemSatar": 1678,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kuspe",
+     "ad": "Ayçiçek küspesi",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 800,
+     "degisim": 0,
+     "sistemAlir": 664,
+     "sistemSatar": 895,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "deri",
+     "ad": "Ham deri",
+     "birim": "adet",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 120000,
+     "degisim": 0,
+     "sistemAlir": 99581,
+     "sistemSatar": 134247,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yavru_balik",
+     "ad": "Yavru balık",
+     "birim": "adet",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 600,
+     "degisim": 0,
+     "sistemAlir": 498,
+     "sistemSatar": 671,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "balik_yemi",
+     "ad": "Balık yemi",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 4000,
+     "degisim": 0,
+     "sistemAlir": 3319,
+     "sistemSatar": 4475,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "levrek",
+     "ad": "Levrek",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 30000,
+     "degisim": 0,
+     "sistemAlir": 24895,
+     "sistemSatar": 33562,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cipura",
+     "ad": "Çipura",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 28000,
+     "degisim": 0,
+     "sistemAlir": 23236,
+     "sistemSatar": 31325,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "alabalik",
+     "ad": "Alabalık",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 20000,
+     "degisim": 0,
+     "sistemAlir": 16597,
+     "sistemSatar": 22374,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "hamsi",
+     "ad": "Hamsi",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 12000,
+     "degisim": 0,
+     "sistemAlir": 9958,
+     "sistemSatar": 13425,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "istavrit",
+     "ad": "İstavrit",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 14000,
+     "degisim": 0,
+     "sistemAlir": 11618,
+     "sistemSatar": 15662,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "palamut",
+     "ad": "Palamut",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 26000,
+     "degisim": 0,
+     "sistemAlir": 21576,
+     "sistemSatar": 29087,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "lufer",
+     "ad": "Lüfer",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 65000,
+     "degisim": 0,
+     "sistemAlir": 53940,
+     "sistemSatar": 72717,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "sardalya",
+     "ad": "Sardalya",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 13000,
+     "degisim": 0,
+     "sistemAlir": 10788,
+     "sistemSatar": 14543,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "barbun",
+     "ad": "Barbun",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 48000,
+     "degisim": 0,
+     "sistemAlir": 39832,
+     "sistemSatar": 53699,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kalkan",
+     "ad": "Kalkan",
+     "birim": "kg",
+     "grup": "hayvan",
+     "ithal": false,
+     "fiyat": 95000,
+     "degisim": 0,
+     "sistemAlir": 78835,
+     "sistemSatar": 106279,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tas_komuru",
+     "ad": "Taş kömürü",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 650000,
+     "degisim": 0,
+     "sistemAlir": 539396,
+     "sistemSatar": 727174,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "linyit",
+     "ad": "Linyit",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 250000,
+     "degisim": 0,
+     "sistemAlir": 207460,
+     "sistemSatar": 279682,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "bor",
+     "ad": "Bor (tinkal)",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 900000,
+     "degisim": 0,
+     "sistemAlir": 746856,
+     "sistemSatar": 1006856,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "mermer",
+     "ad": "Mermer blok",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 600000,
+     "degisim": 0,
+     "sistemAlir": 497904,
+     "sistemSatar": 671237,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "krom",
+     "ad": "Krom cevheri",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 1100000,
+     "degisim": 0,
+     "sistemAlir": 912824,
+     "sistemSatar": 1230602,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "bakir_konsantre",
+     "ad": "Bakır konsantresi",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 6500000,
+     "degisim": 0,
+     "sistemAlir": 5393960,
+     "sistemSatar": 7271737,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "demir_cevheri",
+     "ad": "Demir cevheri",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 350000,
+     "degisim": 0,
+     "sistemAlir": 290444,
+     "sistemSatar": 391555,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "altin",
+     "ad": "Altın (külçe)",
+     "birim": "gram",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 150000,
+     "degisim": 0,
+     "sistemAlir": 124476,
+     "sistemSatar": 167809,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tuz",
+     "ad": "Tuz",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 300000,
+     "degisim": 0,
+     "sistemAlir": 248952,
+     "sistemSatar": 335619,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "ham_petrol",
+     "ad": "Ham petrol",
+     "birim": "varil",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 280000,
+     "degisim": 0,
+     "sistemAlir": 232355,
+     "sistemSatar": 313244,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kirec_tasi",
+     "ad": "Kireç taşı",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 45000,
+     "degisim": 0,
+     "sistemAlir": 37343,
+     "sistemSatar": 50343,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kum",
+     "ad": "Kum ve çakıl",
+     "birim": "ton",
+     "grup": "maden",
+     "ithal": false,
+     "fiyat": 40000,
+     "degisim": 0,
+     "sistemAlir": 33194,
+     "sistemSatar": 44749,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "elektrik",
+     "ad": "Elektrik",
+     "birim": "MWh",
+     "grup": "enerji",
+     "ithal": false,
+     "fiyat": 260000,
+     "degisim": 0,
+     "sistemAlir": 215758,
+     "sistemSatar": 290870,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "un",
+     "ad": "Un",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2500,
+     "degisim": 0,
+     "sistemAlir": 2075,
+     "sistemSatar": 2797,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kepek",
+     "ad": "Kepek",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 900,
+     "degisim": 0,
+     "sistemAlir": 747,
+     "sistemSatar": 1006,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "ekmek",
+     "ad": "Ekmek",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 900,
+     "degisim": 0,
+     "sistemAlir": 747,
+     "sistemSatar": 1006,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "simit",
+     "ad": "Simit",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 700,
+     "degisim": 0,
+     "sistemAlir": 581,
+     "sistemSatar": 783,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "makarna",
+     "ad": "Makarna",
+     "birim": "paket",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 1800,
+     "degisim": 0,
+     "sistemAlir": 1494,
+     "sistemSatar": 2014,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "sut",
+     "ad": "Süt (1 L)",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 3000,
+     "degisim": 0,
+     "sistemAlir": 2490,
+     "sistemSatar": 3357,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "ayran",
+     "ad": "Ayran",
+     "birim": "adet",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 800,
+     "degisim": 0,
+     "sistemAlir": 664,
+     "sistemSatar": 895,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "beyaz_peynir",
+     "ad": "Beyaz peynir",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 25000,
+     "degisim": 0,
+     "sistemAlir": 20746,
+     "sistemSatar": 27968,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kasar",
+     "ad": "Kaşar",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 38000,
+     "degisim": 0,
+     "sistemAlir": 31534,
+     "sistemSatar": 42511,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kiyma",
+     "ad": "Dana kıyma",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 45000,
+     "degisim": 0,
+     "sistemAlir": 37343,
+     "sistemSatar": 50343,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kusbasi",
+     "ad": "Kuşbaşı",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 50000,
+     "degisim": 0,
+     "sistemAlir": 41492,
+     "sistemSatar": 55936,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tavuk",
+     "ad": "Tavuk but",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 12000,
+     "degisim": 0,
+     "sistemAlir": 9958,
+     "sistemSatar": 13425,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tavuk_gogus",
+     "ad": "Tavuk göğsü",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 17000,
+     "degisim": 0,
+     "sistemAlir": 14107,
+     "sistemSatar": 19019,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kanat",
+     "ad": "Kanat",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 13000,
+     "degisim": 0,
+     "sistemAlir": 10788,
+     "sistemSatar": 14543,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "sucuk",
+     "ad": "Sucuk",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 60000,
+     "degisim": 0,
+     "sistemAlir": 49790,
+     "sistemSatar": 67124,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yag",
+     "ad": "Ayçiçek yağı (1 L)",
+     "birim": "şişe",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 6000,
+     "degisim": 0,
+     "sistemAlir": 4979,
+     "sistemSatar": 6712,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "zeytinyagi",
+     "ad": "Zeytinyağı",
+     "birim": "L",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 35000,
+     "degisim": 0,
+     "sistemAlir": 29044,
+     "sistemSatar": 39156,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "zeytin",
+     "ad": "Sofralık zeytin",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 15000,
+     "degisim": 0,
+     "sistemAlir": 12448,
+     "sistemSatar": 16781,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "seker",
+     "ad": "Şeker (1 kg)",
+     "birim": "paket",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 3500,
+     "degisim": 0,
+     "sistemAlir": 2904,
+     "sistemSatar": 3915,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "salca",
+     "ad": "Domates salçası",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 18000,
+     "degisim": 0,
+     "sistemAlir": 14937,
+     "sistemSatar": 20137,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "meyve_suyu",
+     "ad": "Meyve suyu (1 L)",
+     "birim": "kutu",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 5000,
+     "degisim": 0,
+     "sistemAlir": 4149,
+     "sistemSatar": 5594,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cay",
+     "ad": "Çay (1 kg)",
+     "birim": "paket",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 17000,
+     "degisim": 0,
+     "sistemAlir": 14107,
+     "sistemSatar": 19019,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "findik",
+     "ad": "İç fındık",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 50000,
+     "degisim": 0,
+     "sistemAlir": 41492,
+     "sistemSatar": 55936,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "fistik",
+     "ad": "İç Antep fıstığı",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 90000,
+     "degisim": 0,
+     "sistemAlir": 74686,
+     "sistemSatar": 100685,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "iplik",
+     "ad": "Pamuk ipliği",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 14000,
+     "degisim": 0,
+     "sistemAlir": 11618,
+     "sistemSatar": 15662,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kumas",
+     "ad": "Kumaş",
+     "birim": "metre",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 7000,
+     "degisim": 0,
+     "sistemAlir": 5809,
+     "sistemSatar": 7831,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tisort",
+     "ad": "Tişört",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 18000,
+     "degisim": 0,
+     "sistemAlir": 14937,
+     "sistemSatar": 20137,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "gomlek",
+     "ad": "Gömlek",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 35000,
+     "degisim": 0,
+     "sistemAlir": 29044,
+     "sistemSatar": 39156,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "pantolon",
+     "ad": "Pantolon",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 45000,
+     "degisim": 0,
+     "sistemAlir": 37343,
+     "sistemSatar": 50343,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "klasik_ayakkabi",
+     "ad": "Klasik ayakkabı",
+     "birim": "çift",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 100000,
+     "degisim": 0,
+     "sistemAlir": 82984,
+     "sistemSatar": 111873,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "el_cantasi",
+     "ad": "El çantası",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 50000,
+     "degisim": 0,
+     "sistemAlir": 41492,
+     "sistemSatar": 55936,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cuzdan",
+     "ad": "Cüzdan",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 20000,
+     "degisim": 0,
+     "sistemAlir": 16597,
+     "sistemSatar": 22374,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kereste",
+     "ad": "Kereste",
+     "birim": "m³",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 1000000,
+     "degisim": 0,
+     "sistemAlir": 829840,
+     "sistemSatar": 1118729,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "masa",
+     "ad": "Masa",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 1200000,
+     "degisim": 0,
+     "sistemAlir": 995808,
+     "sistemSatar": 1342475,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "sandalye",
+     "ad": "Sandalye",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 150000,
+     "degisim": 0,
+     "sistemAlir": 124476,
+     "sistemSatar": 167809,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "koltuk",
+     "ad": "Koltuk takımı",
+     "birim": "takım",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 3000000,
+     "degisim": 0,
+     "sistemAlir": 2489520,
+     "sistemSatar": 3356186,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "celik",
+     "ad": "İnşaat demiri (çelik)",
+     "birim": "ton",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2600000,
+     "degisim": 0,
+     "sistemAlir": 2157584,
+     "sistemSatar": 2908695,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cimento",
+     "ad": "Çimento",
+     "birim": "ton",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 300000,
+     "degisim": 0,
+     "sistemAlir": 248952,
+     "sistemSatar": 335619,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cam",
+     "ad": "Düz cam",
+     "birim": "ton",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 1500000,
+     "degisim": 0,
+     "sistemAlir": 1244760,
+     "sistemSatar": 1678093,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "plastik",
+     "ad": "Plastik hammadde",
+     "birim": "ton",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 5000000,
+     "degisim": 0,
+     "sistemAlir": 4149200,
+     "sistemSatar": 5593644,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "deterjan",
+     "ad": "Deterjan",
+     "birim": "paket",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 9000,
+     "degisim": 0,
+     "sistemAlir": 7469,
+     "sistemSatar": 10069,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "etken_madde",
+     "ad": "İlaç etken maddesi",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": true,
+     "fiyat": 800000,
+     "degisim": 0,
+     "sistemAlir": 663872,
+     "sistemSatar": 894983,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "agri_kesici",
+     "ad": "Ağrı kesici",
+     "birim": "kutu",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 4000,
+     "degisim": 0,
+     "sistemAlir": 3319,
+     "sistemSatar": 4475,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "vitamin",
+     "ad": "Vitamin",
+     "birim": "kutu",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 25000,
+     "degisim": 0,
+     "sistemAlir": 20746,
+     "sistemSatar": 27968,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "akaryakit",
+     "ad": "Akaryakıt (motorin)",
+     "birim": "L",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 4500,
+     "degisim": 0,
+     "sistemAlir": 3734,
+     "sistemSatar": 5034,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "bakir",
+     "ad": "Bakır katot",
+     "birim": "ton",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 42000000,
+     "degisim": 0,
+     "sistemAlir": 34853280,
+     "sistemSatar": 46986610,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cip",
+     "ad": "Elektronik çip",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 150000,
+     "degisim": 0,
+     "sistemAlir": 124476,
+     "sistemSatar": 167809,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "buzdolabi",
+     "ad": "Buzdolabı",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2500000,
+     "degisim": 0,
+     "sistemAlir": 2074600,
+     "sistemSatar": 2796822,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "camasir",
+     "ad": "Çamaşır makinesi",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2000000,
+     "degisim": 0,
+     "sistemAlir": 1659680,
+     "sistemSatar": 2237458,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "masaustu_pc",
+     "ad": "Masaüstü bilgisayar",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2500000,
+     "degisim": 0,
+     "sistemAlir": 2074600,
+     "sistemSatar": 2796822,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "monitor",
+     "ad": "Monitör",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 450000,
+     "degisim": 0,
+     "sistemAlir": 373428,
+     "sistemSatar": 503428,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "televizyon",
+     "ad": "Televizyon",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 1800000,
+     "degisim": 0,
+     "sistemAlir": 1493712,
+     "sistemSatar": 2013712,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "telefon",
+     "ad": "Akıllı telefon",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 1500000,
+     "degisim": 0,
+     "sistemAlir": 1244760,
+     "sistemSatar": 1678093,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "otomobil",
+     "ad": "Otomobil",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 110000000,
+     "degisim": 0,
+     "sistemAlir": 91282400,
+     "sistemSatar": 123060168,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "konut",
+     "ad": "Konut (daire)",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 320000000,
+     "degisim": 0,
+     "sistemAlir": 265548800,
+     "sistemSatar": 357993216,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "ceyrek",
+     "ad": "Çeyrek altın",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 420000,
+     "degisim": 0,
+     "sistemAlir": 348533,
+     "sistemSatar": 469866,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "bilezik",
+     "ad": "Bilezik (22 ayar)",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 4500000,
+     "degisim": 0,
+     "sistemAlir": 3734280,
+     "sistemSatar": 5034280,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "antibiyotik",
+     "ad": "Antibiyotik",
+     "birim": "kutu",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 18000,
+     "degisim": 0,
+     "sistemAlir": 14937,
+     "sistemSatar": 20137,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "serum",
+     "ad": "Serum",
+     "birim": "şişe",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 6000,
+     "degisim": 0,
+     "sistemAlir": 4979,
+     "sistemSatar": 6712,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tibbi_cihaz",
+     "ad": "Tıbbi cihaz (monitör)",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 9000000,
+     "degisim": 0,
+     "sistemAlir": 7468560,
+     "sistemSatar": 10068559,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "batarya",
+     "ad": "Lityum batarya paketi",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 35000000,
+     "degisim": 0,
+     "sistemAlir": 29044400,
+     "sistemSatar": 39155508,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "lityum",
+     "ad": "Lityum karbonat",
+     "birim": "kg",
+     "grup": "maden",
+     "ithal": true,
+     "fiyat": 90000,
+     "degisim": 0,
+     "sistemAlir": 74686,
+     "sistemSatar": 100685,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "elektrikli_otomobil",
+     "ad": "Elektrikli otomobil",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 160000000,
+     "degisim": 0,
+     "sistemAlir": 132774400,
+     "sistemSatar": 178996608,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "ekskavator",
+     "ad": "Ekskavatör (paletli)",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 900000000,
+     "degisim": 0,
+     "sistemAlir": 746856000,
+     "sistemSatar": 1006855920,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kepce",
+     "ad": "Beko loder (kazıcı yükleyici)",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 500000000,
+     "degisim": 0,
+     "sistemAlir": 414920000,
+     "sistemSatar": 559364400,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "greyder",
+     "ad": "Greyder",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 1400000000,
+     "degisim": 0,
+     "sistemAlir": 1161776000,
+     "sistemSatar": 1566220320,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "silindir",
+     "ad": "Yol silindiri",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 600000000,
+     "degisim": 0,
+     "sistemAlir": 497904000,
+     "sistemSatar": 671237280,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "vinc",
+     "ad": "Mobil vinç",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 1800000000,
+     "degisim": 0,
+     "sistemAlir": 1493712000,
+     "sistemSatar": 2013711840,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cop_kamyonu",
+     "ad": "Çöp kamyonu (sıkıştırmalı)",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 700000000,
+     "degisim": 0,
+     "sistemAlir": 580888000,
+     "sistemSatar": 783110160,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yol_supurge",
+     "ad": "Yol süpürme aracı",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 600000000,
+     "degisim": 0,
+     "sistemAlir": 497904000,
+     "sistemSatar": 671237280,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "itfaiye_araci",
+     "ad": "İtfaiye aracı",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 1400000000,
+     "degisim": 0,
+     "sistemAlir": 1161776000,
+     "sistemSatar": 1566220320,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kar_kureme",
+     "ad": "Kar küreme aracı",
+     "birim": "adet",
+     "grup": "makine",
+     "ithal": false,
+     "fiyat": 800000000,
+     "degisim": 0,
+     "sistemAlir": 663872000,
+     "sistemSatar": 894983040,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "asfalt",
+     "ad": "Asfalt (sıcak karışım)",
+     "birim": "ton",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 280000,
+     "degisim": 0,
+     "sistemAlir": 232355,
+     "sistemSatar": 313244,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "silisyum",
+     "ad": "Silisyum plaka (wafer)",
+     "birim": "adet",
+     "grup": "teknoloji",
+     "ithal": true,
+     "fiyat": 1200000,
+     "degisim": 0,
+     "sistemAlir": 995808,
+     "sistemSatar": 1342475,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "sunucu",
+     "ad": "Sunucu (GPU)",
+     "birim": "adet",
+     "grup": "teknoloji",
+     "ithal": false,
+     "fiyat": 90000000,
+     "degisim": 0,
+     "sistemAlir": 74685600,
+     "sistemSatar": 100685592,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yazilim_lisansi",
+     "ad": "Kurumsal yazılım lisansı",
+     "birim": "adet",
+     "grup": "teknoloji",
+     "ithal": false,
+     "fiyat": 6000000,
+     "degisim": 0,
+     "sistemAlir": 4979040,
+     "sistemSatar": 6712373,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "yz_modeli",
+     "ad": "Yapay zekâ modeli lisansı",
+     "birim": "adet",
+     "grup": "teknoloji",
+     "ithal": false,
+     "fiyat": 250000000,
+     "degisim": 0,
+     "sistemAlir": 207460000,
+     "sistemSatar": 279682200,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "bulut_hizmeti",
+     "ad": "Bulut hizmeti (aylık abonelik)",
+     "birim": "adet",
+     "grup": "teknoloji",
+     "ithal": false,
+     "fiyat": 4000000,
+     "degisim": 0,
+     "sistemAlir": 3319360,
+     "sistemSatar": 4474915,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "patent",
+     "ad": "Patent",
+     "birim": "adet",
+     "grup": "teknoloji",
+     "ithal": false,
+     "fiyat": 150000000,
+     "degisim": 0,
+     "sistemAlir": 124476000,
+     "sistemSatar": 167809320,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "asi",
+     "ad": "Aşı",
+     "birim": "doz",
+     "grup": "teknoloji",
+     "ithal": false,
+     "fiyat": 45000,
+     "degisim": 0,
+     "sistemAlir": 37343,
+     "sistemSatar": 50343,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "uydu",
+     "ad": "Haberleşme uydusu",
+     "birim": "adet",
+     "grup": "teknoloji",
+     "ithal": false,
+     "fiyat": 90000000000,
+     "degisim": 0,
+     "sistemAlir": 74685600000,
+     "sistemSatar": 100685592000,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kompozit",
+     "ad": "Karbon kompozit",
+     "birim": "kg",
+     "grup": "savunma",
+     "ithal": false,
+     "fiyat": 350000,
+     "degisim": 0,
+     "sistemAlir": 290444,
+     "sistemSatar": 391555,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "zirhli_arac",
+     "ad": "Zırhlı araç",
+     "birim": "adet",
+     "grup": "savunma",
+     "ithal": false,
+     "fiyat": 1800000000,
+     "degisim": 0,
+     "sistemAlir": 1493712000,
+     "sistemSatar": 2013711840,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "iha",
+     "ad": "İnsansız hava aracı (İHA)",
+     "birim": "adet",
+     "grup": "savunma",
+     "ithal": false,
+     "fiyat": 6000000000,
+     "degisim": 0,
+     "sistemAlir": 4979040000,
+     "sistemSatar": 6712372800,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "radar",
+     "ad": "Radar sistemi",
+     "birim": "adet",
+     "grup": "savunma",
+     "ithal": false,
+     "fiyat": 4000000000,
+     "degisim": 0,
+     "sistemAlir": 3319360000,
+     "sistemSatar": 4474915200,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "firkateyn",
+     "ad": "Hücumbot",
+     "birim": "adet",
+     "grup": "savunma",
+     "ithal": false,
+     "fiyat": 90000000000,
+     "degisim": 0,
+     "sistemAlir": 74685600000,
+     "sistemSatar": 100685592000,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "ucak_parcasi",
+     "ad": "Uçak gövde parçası",
+     "birim": "adet",
+     "grup": "savunma",
+     "ithal": false,
+     "fiyat": 250000000,
+     "degisim": 0,
+     "sistemAlir": 207460000,
+     "sistemSatar": 279682200,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "plastik_atik",
+     "ad": "Plastik atık",
+     "birim": "ton",
+     "grup": "geri_donusum",
+     "ithal": true,
+     "fiyat": 800000,
+     "degisim": 0,
+     "sistemAlir": 663872,
+     "sistemSatar": 894983,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cam_atik",
+     "ad": "Cam atık",
+     "birim": "ton",
+     "grup": "geri_donusum",
+     "ithal": true,
+     "fiyat": 250000,
+     "degisim": 0,
+     "sistemAlir": 207460,
+     "sistemSatar": 279682,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "metal_hurda",
+     "ad": "Metal hurda",
+     "birim": "ton",
+     "grup": "geri_donusum",
+     "ithal": true,
+     "fiyat": 800000,
+     "degisim": 0,
+     "sistemAlir": 663872,
+     "sistemSatar": 894983,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "su",
+     "ad": "Su (0,5 L)",
+     "birim": "adet",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 400,
+     "degisim": 0,
+     "sistemAlir": 332,
+     "sistemSatar": 448,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "gazoz",
+     "ad": "Gazoz",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 1500,
+     "degisim": 0,
+     "sistemAlir": 1245,
+     "sistemSatar": 1678,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "soda",
+     "ad": "Maden suyu",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 800,
+     "degisim": 0,
+     "sistemAlir": 664,
+     "sistemSatar": 895,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kakao",
+     "ad": "Kakao çekirdeği",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": true,
+     "fiyat": 22000,
+     "degisim": 0,
+     "sistemAlir": 18256,
+     "sistemSatar": 24612,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cikolata",
+     "ad": "Çikolata",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 1500,
+     "degisim": 0,
+     "sistemAlir": 1245,
+     "sistemSatar": 1678,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "biskuvi",
+     "ad": "Bisküvi",
+     "birim": "paket",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2000,
+     "degisim": 0,
+     "sistemAlir": 1660,
+     "sistemSatar": 2237,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kurabiye",
+     "ad": "Kurabiye",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 25000,
+     "degisim": 0,
+     "sistemAlir": 20746,
+     "sistemSatar": 27968,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cips",
+     "ad": "Cips",
+     "birim": "paket",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2000,
+     "degisim": 0,
+     "sistemAlir": 1660,
+     "sistemSatar": 2237,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kagit",
+     "ad": "Kâğıt",
+     "birim": "ton",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 3200000,
+     "degisim": 0,
+     "sistemAlir": 2655488,
+     "sistemSatar": 3579932,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "karton_koli",
+     "ad": "Karton koli",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2500,
+     "degisim": 0,
+     "sistemAlir": 2075,
+     "sistemSatar": 2797,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tuvalet_kagidi",
+     "ad": "Tuvalet kâğıdı",
+     "birim": "paket",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 9000,
+     "degisim": 0,
+     "sistemAlir": 7469,
+     "sistemSatar": 10069,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "gazete",
+     "ad": "Gazete",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 500,
+     "degisim": 0,
+     "sistemAlir": 415,
+     "sistemSatar": 560,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "dergi",
+     "ad": "Dergi",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 4000,
+     "degisim": 0,
+     "sistemAlir": 3319,
+     "sistemSatar": 4475,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "defter",
+     "ad": "Defter",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2500,
+     "degisim": 0,
+     "sistemAlir": 2075,
+     "sistemSatar": 2797,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "pvc_boru",
+     "ad": "PVC boru",
+     "birim": "metre",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 7000,
+     "degisim": 0,
+     "sistemAlir": 5809,
+     "sistemSatar": 7831,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "saklama_kabi",
+     "ad": "Saklama kabı seti",
+     "birim": "set",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 32000,
+     "degisim": 0,
+     "sistemAlir": 26555,
+     "sistemSatar": 35799,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "cop_poseti",
+     "ad": "Çöp poşeti",
+     "birim": "rulo",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 3500,
+     "degisim": 0,
+     "sistemAlir": 2904,
+     "sistemSatar": 3915,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kaucuk",
+     "ad": "Doğal kauçuk",
+     "birim": "kg",
+     "grup": "sanayi",
+     "ithal": true,
+     "fiyat": 9000,
+     "degisim": 0,
+     "sistemAlir": 7469,
+     "sistemSatar": 10069,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "lastik",
+     "ad": "Lastik",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 250000,
+     "degisim": 0,
+     "sistemAlir": 207460,
+     "sistemSatar": 279682,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "seramik_paket",
+     "ad": "Seramik karo",
+     "birim": "paket",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 70000,
+     "degisim": 0,
+     "sistemAlir": 58089,
+     "sistemSatar": 78311,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "lavabo",
+     "ad": "Lavabo",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 210000,
+     "degisim": 0,
+     "sistemAlir": 174266,
+     "sistemSatar": 234933,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "tabak",
+     "ad": "Tabak takımı",
+     "birim": "takım",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 80000,
+     "degisim": 0,
+     "sistemAlir": 66387,
+     "sistemSatar": 89499,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "gubre_cuval",
+     "ad": "Gübre",
+     "birim": "çuval",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 65000,
+     "degisim": 0,
+     "sistemAlir": 53940,
+     "sistemSatar": 72717,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "mermer_plaka",
+     "ad": "Mermer plaka",
+     "birim": "m²",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 90000,
+     "degisim": 0,
+     "sistemAlir": 74686,
+     "sistemSatar": 100685,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "kola",
+     "ad": "Kola (1 L)",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 2200,
+     "degisim": 0,
+     "sistemAlir": 1826,
+     "sistemSatar": 2461,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "portakalli_gazoz",
+     "ad": "Portakallı gazoz (1 L)",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 2000,
+     "degisim": 0,
+     "sistemAlir": 1660,
+     "sistemSatar": 2237,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "soguk_cay",
+     "ad": "Soğuk çay (0,5 L)",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 1500,
+     "degisim": 0,
+     "sistemAlir": 1245,
+     "sistemSatar": 1678,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "sise_limonata",
+     "ad": "Limonata (1 L)",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 2800,
+     "degisim": 0,
+     "sistemAlir": 2324,
+     "sistemSatar": 3132,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "meyveli_soda",
+     "ad": "Meyveli soda",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 1000,
+     "degisim": 0,
+     "sistemAlir": 830,
+     "sistemSatar": 1119,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "serbet",
+     "ad": "Ramazan şerbeti (1 L)",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 3200,
+     "degisim": 0,
+     "sistemAlir": 2655,
+     "sistemSatar": 3580,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "salgam",
+     "ad": "Şalgam suyu (1 L)",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 2400,
+     "degisim": 0,
+     "sistemAlir": 1992,
+     "sistemSatar": 2685,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "enerji_icecegi",
+     "ad": "Enerji içeceği",
+     "birim": "kutu",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 2800,
+     "degisim": 0,
+     "sistemAlir": 2324,
+     "sistemSatar": 3132,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "boza",
+     "ad": "Boza (1 L)",
+     "birim": "şişe",
+     "grup": "icecek",
+     "ithal": false,
+     "fiyat": 3500,
+     "degisim": 0,
+     "sistemAlir": 2904,
+     "sistemSatar": 3915,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "siyah_havuc",
+     "ad": "Siyah havuç",
+     "birim": "kg",
+     "grup": "tarim",
+     "ithal": true,
+     "fiyat": 2200,
+     "degisim": 0,
+     "sistemAlir": 1826,
+     "sistemSatar": 2461,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "icecek_dolabi_1",
+     "ad": "Tek kapaklı içecek dolabı (400 L · 300 şişe)",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 2200000,
+     "degisim": 0,
+     "sistemAlir": 1825648,
+     "sistemSatar": 2461203,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "icecek_dolabi_2",
+     "ad": "Çift kapaklı içecek dolabı (800 L · 600 şişe)",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 4000000,
+     "degisim": 0,
+     "sistemAlir": 3319360,
+     "sistemSatar": 4474915,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    },
+    {
+     "kod": "icecek_dolabi_3",
+     "ad": "Üç kapaklı içecek dolabı (1200 L · 900 şişe)",
+     "birim": "adet",
+     "grup": "sanayi",
+     "ithal": false,
+     "fiyat": 5600000,
+     "degisim": 0,
+     "sistemAlir": 4647104,
+     "sistemSatar": 6264881,
+     "ilanSayisi": 0,
+     "enUcuzIlan": null
+    }
+   ],
+   "sigorta": {
+    "sirketim": null,
+    "liste": [],
+    "kurulus": {
+     "seviye": 25,
+     "harc": 25000000,
+     "enAzSermaye": 500000000,
+     "karsilik": 250000000,
+     "oranAraligi": [
+      60,
+      150
+     ],
+     "vergi": 0.1
+    },
+    "kurabilir": false
+   },
+   "kiralama": {
+    "hata": "Bulunamadı."
+   },
+   "etkinlikler": {
+    "katalog": [
+     {
+      "kod": "sinema",
+      "ad": "Sinema",
+      "simge": "🎬",
+      "kategori": "Kültür-sanat",
+      "fiyat": 27560,
+      "sure": 150,
+      "keyif": 12,
+      "aciklama": "Vizyondaki film, mısır ve kola."
+     },
+     {
+      "kod": "tiyatro",
+      "ad": "Tiyatro",
+      "simge": "🎭",
+      "kategori": "Kültür-sanat",
+      "fiyat": 44520,
+      "sure": 150,
+      "keyif": 15,
+      "aciklama": "Şehir tiyatrolarında akşam oyunu."
+     },
+     {
+      "kod": "konser",
+      "ad": "Konser",
+      "simge": "🎤",
+      "kategori": "Kültür-sanat",
+      "fiyat": 95400,
+      "sure": 180,
+      "keyif": 20,
+      "aciklama": "Açık hava konserinde en önden."
+     },
+     {
+      "kod": "opera",
+      "ad": "Opera ve bale",
+      "simge": "🩰",
+      "kategori": "Kültür-sanat",
+      "fiyat": 79500,
+      "sure": 170,
+      "keyif": 16,
+      "aciklama": "Kuğu Gölü ya da Carmen; şık bir akşam."
+     },
+     {
+      "kod": "standup",
+      "ad": "Stand-up gösterisi",
+      "simge": "😂",
+      "kategori": "Kültür-sanat",
+      "fiyat": 50880,
+      "sure": 100,
+      "keyif": 16,
+      "aciklama": "Gözünden yaş gelene kadar gül."
+     },
+     {
+      "kod": "muze",
+      "ad": "Müze gezisi",
+      "simge": "🏛️",
+      "kategori": "Kültür-sanat",
+      "fiyat": 19080,
+      "sure": 120,
+      "keyif": 9,
+      "aciklama": "Arkeoloji ya da modern sanat müzesi."
+     },
+     {
+      "kod": "sergi",
+      "ad": "Sanat sergisi",
+      "simge": "🖼️",
+      "kategori": "Kültür-sanat",
+      "fiyat": 12720,
+      "sure": 90,
+      "keyif": 8,
+      "aciklama": "Genç ressamların karma sergisi."
+     },
+     {
+      "kod": "kitap",
+      "ad": "Kitap kulübü",
+      "simge": "📚",
+      "kategori": "Kültür-sanat",
+      "fiyat": 8480,
+      "sure": 90,
+      "keyif": 7,
+      "aciklama": "Ayın kitabı, çay ve sohbet."
+     },
+     {
+      "kod": "festival",
+      "ad": "Festival",
+      "simge": "🎪",
+      "kategori": "Kültür-sanat",
+      "fiyat": 68900,
+      "sure": 240,
+      "keyif": 22,
+      "aciklama": "Yemek, müzik ve sokak gösterileri."
+     },
+     {
+      "kod": "mac",
+      "ad": "Maç izleme (stadyum)",
+      "simge": "🏟️",
+      "kategori": "Spor",
+      "fiyat": 74200,
+      "sure": 150,
+      "keyif": 18,
+      "aciklama": "Tribünde marşlar, heyecan dorukta."
+     },
+     {
+      "kod": "halisaha",
+      "ad": "Halı saha maçı",
+      "simge": "⚽",
+      "kategori": "Spor",
+      "fiyat": 15900,
+      "sure": 90,
+      "keyif": 14,
+      "aciklama": "Yedi yedi, kaybeden çayları ısmarlar."
+     },
+     {
+      "kod": "basketbol",
+      "ad": "Basketbol",
+      "simge": "🏀",
+      "kategori": "Spor",
+      "fiyat": 10600,
+      "sure": 90,
+      "keyif": 12,
+      "aciklama": "Parkta üçe üç maç."
+     },
+     {
+      "kod": "bowling",
+      "ad": "Bowling",
+      "simge": "🎳",
+      "kategori": "Spor",
+      "fiyat": 33920,
+      "sure": 90,
+      "keyif": 13,
+      "aciklama": "Strike yapan bir tur ısmarlar."
+     },
+     {
+      "kod": "bilardo",
+      "ad": "Bilardo",
+      "simge": "🎱",
+      "kategori": "Spor",
+      "fiyat": 16960,
+      "sure": 90,
+      "keyif": 10,
+      "aciklama": "Amerikan ya da üç top."
+     },
+     {
+      "kod": "karting",
+      "ad": "Karting",
+      "simge": "🏎️",
+      "kategori": "Macera",
+      "fiyat": 90100,
+      "sure": 60,
+      "keyif": 20,
+      "aciklama": "Pistte tur rekoru kimde kalacak?"
+     },
+     {
+      "kod": "paintball",
+      "ad": "Paintball",
+      "simge": "🔫",
+      "kategori": "Macera",
+      "fiyat": 63600,
+      "sure": 120,
+      "keyif": 19,
+      "aciklama": "İki takım, bol boya."
+     },
+     {
+      "kod": "kacis",
+      "ad": "Kaçış odası",
+      "simge": "🔐",
+      "kategori": "Macera",
+      "fiyat": 42400,
+      "sure": 75,
+      "keyif": 15,
+      "aciklama": "60 dakikada şifreyi çöz, dışarı çık."
+     },
+     {
+      "kod": "lunapark",
+      "ad": "Lunapark",
+      "simge": "🎡",
+      "kategori": "Macera",
+      "fiyat": 58300,
+      "sure": 180,
+      "keyif": 18,
+      "aciklama": "Dönme dolap, çarpışan otolar, pamuk şeker."
+     },
+     {
+      "kod": "tirmanis",
+      "ad": "Tırmanış duvarı",
+      "simge": "🧗",
+      "kategori": "Macera",
+      "fiyat": 37100,
+      "sure": 90,
+      "keyif": 14,
+      "aciklama": "Emniyet ipini takın, zirveye!"
+     },
+     {
+      "kod": "tekne",
+      "ad": "Tekne turu",
+      "simge": "⛵",
+      "kategori": "Doğa",
+      "fiyat": 53000,
+      "sure": 150,
+      "keyif": 17,
+      "aciklama": "Kıyı boyunca gün batımı turu."
+     },
+     {
+      "kod": "piknik",
+      "ad": "Piknik",
+      "simge": "🧺",
+      "kategori": "Doğa",
+      "fiyat": 15900,
+      "sure": 240,
+      "keyif": 14,
+      "aciklama": "Çimenlere örtü, semaver, top oyunu."
+     },
+     {
+      "kod": "mangal",
+      "ad": "Mangal",
+      "simge": "🍖",
+      "kategori": "Doğa",
+      "fiyat": 37100,
+      "sure": 240,
+      "keyif": 16,
+      "aciklama": "Köfte, közlenmiş biber, soğuk ayran."
+     },
+     {
+      "kod": "yuruyus",
+      "ad": "Doğa yürüyüşü",
+      "simge": "🥾",
+      "kategori": "Doğa",
+      "fiyat": 6360,
+      "sure": 180,
+      "keyif": 13,
+      "aciklama": "Orman yolunda temiz hava."
+     },
+     {
+      "kod": "bisiklet",
+      "ad": "Bisiklet turu",
+      "simge": "🚴",
+      "kategori": "Doğa",
+      "fiyat": 12720,
+      "sure": 120,
+      "keyif": 13,
+      "aciklama": "Sahil yolunda pedal çevir."
+     },
+     {
+      "kod": "balik",
+      "ad": "Balık tutma",
+      "simge": "🎣",
+      "kategori": "Doğa",
+      "fiyat": 9540,
+      "sure": 180,
+      "keyif": 11,
+      "aciklama": "Oltalar suya, sabır zamanı."
+     },
+     {
+      "kod": "kamp",
+      "ad": "Kamp",
+      "simge": "🏕️",
+      "kategori": "Doğa",
+      "fiyat": 42400,
+      "sure": 360,
+      "keyif": 22,
+      "aciklama": "Çadır, kamp ateşi, yıldızlar."
+     },
+     {
+      "kod": "hayvanat",
+      "ad": "Hayvanat bahçesi",
+      "simge": "🦒",
+      "kategori": "Aile",
+      "fiyat": 23320,
+      "sure": 150,
+      "keyif": 11,
+      "aciklama": "Zürafalar, filler ve penguenler."
+     },
+     {
+      "kod": "akvaryum",
+      "ad": "Akvaryum",
+      "simge": "🐠",
+      "kategori": "Aile",
+      "fiyat": 31800,
+      "sure": 120,
+      "keyif": 11,
+      "aciklama": "Köpekbalığı tünelinde yürüyüş."
+     },
+     {
+      "kod": "kahvalti",
+      "ad": "Serpme kahvaltı",
+      "simge": "🍳",
+      "kategori": "Yeme-içme",
+      "fiyat": 47700,
+      "sure": 120,
+      "keyif": 14,
+      "aciklama": "Boğaz manzarası, sınırsız çay."
+     },
+     {
+      "kod": "karaoke",
+      "ad": "Karaoke",
+      "simge": "🎙️",
+      "kategori": "Eğlence",
+      "fiyat": 40280,
+      "sure": 120,
+      "keyif": 17,
+      "aciklama": "Sesin olmasa da yüreğin var."
+     },
+     {
+      "kod": "dans",
+      "ad": "Dans kursu",
+      "simge": "💃",
+      "kategori": "Eğlence",
+      "fiyat": 29680,
+      "sure": 90,
+      "keyif": 13,
+      "aciklama": "Salsa, tango ya da zeybek."
+     },
+     {
+      "kod": "okey",
+      "ad": "Okey ve tavla turnuvası",
+      "simge": "🀄",
+      "kategori": "Eğlence",
+      "fiyat": 7420,
+      "sure": 120,
+      "keyif": 10,
+      "aciklama": "Kıraathanede dörtlü masa."
+     },
+     {
+      "kod": "satranc",
+      "ad": "Satranç",
+      "simge": "♟️",
+      "kategori": "Eğlence",
+      "fiyat": 4240,
+      "sure": 90,
+      "keyif": 8,
+      "aciklama": "Parkta dostça bir oyun."
+     },
+     {
+      "kod": "spa",
+      "ad": "Hamam ve spa",
+      "simge": "🧖",
+      "kategori": "Dinlenme",
+      "fiyat": 84800,
+      "sure": 150,
+      "keyif": 18,
+      "aciklama": "Kese, köpük masajı ve sauna."
+     },
+     {
+      "kod": "yoga",
+      "ad": "Yoga",
+      "simge": "🧘",
+      "kategori": "Dinlenme",
+      "fiyat": 21200,
+      "sure": 75,
+      "keyif": 12,
+      "aciklama": "Parkta sabah yogası."
+     },
+     {
+      "kod": "havuz",
+      "ad": "Yüzme havuzu",
+      "simge": "🏊",
+      "kategori": "Dinlenme",
+      "fiyat": 26500,
+      "sure": 120,
+      "keyif": 13,
+      "aciklama": "Kulaç at, güneşlen."
+     }
+    ],
+    "davetler": [],
+    "odalar": [
+     {
+      "id": 464,
+      "tur": "etkinlik",
+      "hedef": "yuruyus",
+      "ad": "Keyif turu",
+      "simge": "🥾",
+      "turAdi": "Doğa yürüyüşü",
+      "yer": null,
+      "sahip": "Kalfa19",
+      "benimMi": true,
+      "durumum": "sahip",
+      "bas": 1791403697192,
+      "bitis": 1791414497192,
+      "bitti": false,
+      "basladi": true,
+      "fiyat": 6360,
+      "keyif": 13,
+      "uyeler": [
+       {
+        "id": 1521,
+        "ad": "Kalfa19",
+        "durum": "sahip",
+        "il": "Ankara",
+        "seviye": 3,
+        "foto": null
+       }
+      ]
+     },
+     {
+      "id": 461,
+      "tur": "etkinlik",
+      "hedef": "yuruyus",
+      "ad": "Keyif turu",
+      "simge": "🥾",
+      "turAdi": "Doğa yürüyüşü",
+      "yer": null,
+      "sahip": "Kalfa19",
+      "benimMi": true,
+      "durumum": "sahip",
+      "bas": 1791402144508,
+      "bitis": 1791412944508,
+      "bitti": false,
+      "basladi": true,
+      "fiyat": 6360,
+      "keyif": 13,
+      "uyeler": [
+       {
+        "id": 1521,
+        "ad": "Kalfa19",
+        "durum": "sahip",
+        "il": "Ankara",
+        "seviye": 3,
+        "foto": null
+       }
+      ]
+     },
+     {
+      "id": 453,
+      "tur": "etkinlik",
+      "hedef": "yuruyus",
+      "ad": "Keyif turu",
+      "simge": "🥾",
+      "turAdi": "Doğa yürüyüşü",
+      "yer": null,
+      "sahip": "Kalfa19",
+      "benimMi": true,
+      "durumum": "sahip",
+      "bas": 1791401413942,
+      "bitis": 1791412213942,
+      "bitti": false,
+      "basladi": true,
+      "fiyat": 6360,
+      "keyif": 13,
+      "uyeler": [
+       {
+        "id": 1521,
+        "ad": "Kalfa19",
+        "durum": "sahip",
+        "il": "Ankara",
+        "seviye": 3,
+        "foto": null
+       }
+      ]
+     }
+    ]
+   },
+   "mini-oyun/sira?kod=genel": {
+    "kod": "genel",
+    "hafta": "2026-10-05",
+    "bitis": 1791752400000,
+    "odul": [
+     10000000,
+     6000000,
+     4000000,
+     1500000,
+     1500000,
+     1000000,
+     1000000,
+     1000000,
+     1000000,
+     1000000
+    ],
+    "enCok": 4500,
+    "liste": [
+     {
+      "sira": 1,
+      "oyuncuId": 14,
+      "kullaniciAdi": "Karahan",
+      "puan": 3738,
+      "oyun": 43,
+      "ben": false
+     },
+     {
+      "sira": 2,
+      "oyuncuId": 182,
+      "kullaniciAdi": "EzelBayraktar",
+      "puan": 3519,
+      "oyun": 43,
+      "ben": false
+     },
+     {
+      "sira": 3,
+      "oyuncuId": 91,
+      "kullaniciAdi": "Mertcan09",
+      "puan": 3120,
+      "oyun": 37,
+      "ben": false
+     },
+     {
+      "sira": 4,
+      "oyuncuId": 7,
+      "kullaniciAdi": "Erhan",
+      "puan": 1872,
+      "oyun": 26,
+      "ben": false
+     },
+     {
+      "sira": 5,
+      "oyuncuId": 6,
+      "kullaniciAdi": "kayra",
+      "puan": 1346,
+      "oyun": 18,
+      "ben": false
+     },
+     {
+      "sira": 6,
+      "oyuncuId": 185,
+      "kullaniciAdi": "Azad",
+      "puan": 1209,
+      "oyun": 17,
+      "ben": false
+     },
+     {
+      "sira": 7,
+      "oyuncuId": 17,
+      "kullaniciAdi": "Lykia",
+      "puan": 1186,
+      "oyun": 16,
+      "ben": false
+     },
+     {
+      "sira": 8,
+      "oyuncuId": 1503,
+      "kullaniciAdi": "osmanlı",
+      "puan": 1179,
+      "oyun": 18,
+      "ben": false
+     },
+     {
+      "sira": 9,
+      "oyuncuId": 1501,
+      "kullaniciAdi": "Eray37Eren",
+      "puan": 1068,
+      "oyun": 12,
+      "ben": false
+     },
+     {
+      "sira": 10,
+      "oyuncuId": 134,
+      "kullaniciAdi": "arastirmaci42",
+      "puan": 1037,
+      "oyun": 12,
+      "ben": false
+     },
+     {
+      "sira": 11,
+      "oyuncuId": 12,
+      "kullaniciAdi": "ZanY",
+      "puan": 1010,
+      "oyun": 19,
+      "ben": false
+     },
+     {
+      "sira": 12,
+      "oyuncuId": 188,
+      "kullaniciAdi": "ömer",
+      "puan": 931,
+      "oyun": 15,
+      "ben": false
+     },
+     {
+      "sira": 13,
+      "oyuncuId": 142,
+      "kullaniciAdi": "xxxtentactionfanclun",
+      "puan": 903,
+      "oyun": 12,
+      "ben": false
+     },
+     {
+      "sira": 14,
+      "oyuncuId": 86,
+      "kullaniciAdi": "Burak",
+      "puan": 845,
+      "oyun": 13,
+      "ben": false
+     },
+     {
+      "sira": 15,
+      "oyuncuId": 4,
+      "kullaniciAdi": "Neji",
+      "puan": 797,
+      "oyun": 10,
+      "ben": false
+     },
+     {
+      "sira": 16,
+      "oyuncuId": 1,
+      "kullaniciAdi": "tefon",
+      "puan": 759,
+      "oyun": 13,
+      "ben": false
+     },
+     {
+      "sira": 17,
+      "oyuncuId": 1502,
+      "kullaniciAdi": "abdullah",
+      "puan": 705,
+      "oyun": 9,
+      "ben": false
+     },
+     {
+      "sira": 18,
+      "oyuncuId": 245,
+      "kullaniciAdi": "enesboyraci",
+      "puan": 673,
+      "oyun": 12,
+      "ben": false
+     },
+     {
+      "sira": 19,
+      "oyuncuId": 1511,
+      "kullaniciAdi": "MUHAMMED_ATAS",
+      "puan": 670,
+      "oyun": 9,
+      "ben": false
+     },
+     {
+      "sira": 20,
+      "oyuncuId": 192,
+      "kullaniciAdi": "Navi_",
+      "puan": 589,
+      "oyun": 8,
+      "ben": false
+     }
+    ],
+    "benim": null
+   }
   }
+ },
+ "bot": {
+  "olay": "kosu_bitti",
+  "tur": 6,
+  "kazanc": 608.2,
+  "servis": 24,
+  "bahsis": 7,
+  "bakiye": 67381.98,
+  "gecen_dk": 0.8,
+  "ts": 1791408615461
  }
 }

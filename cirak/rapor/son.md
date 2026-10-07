@@ -1,46 +1,57 @@
 # Çırak raporu — cerez-kontrol
 
-**Zaman:** 2026-10-07 19:32:27 UTC
+**Zaman:** 2026-10-07 21:30:15 UTC
 
 ## Oyuncu
 
 - Ad: **Kalfa19**
-- Seviye: 2 · TP: 11
-- Nakit: 5496.6 ₺
+- Seviye: 3 · TP: 44
+- Nakit: 66773.79 ₺
 - Konum: Ankara / Pursaklar / Fatih Mahallesi
+
+
+---
+
+# Çırak raporu — durum
+
+**Zaman:** 2026-10-07 21:28:58 UTC
+
+## Uçlar
+
+- `durum` → {"sunucuZamani": 1791408539010, "takvim": {"ms": 1791419339010, "yil": 2026, "ay": 9, "ayAdi": "Ekim", "gunNo": 8, "haftaGunu": "Perşembe", "haftaGunuNo": 4, "haftaSonu": false, "saat": 0, "dakika": 28, "mevsim": "sonbahar", "mevsimAdi": "Sonbahar", "metin": "8 Ekim 2026, Perşembe"}, "oyuncu": {"yet…
+- `banka` → {"vadesiz": 0, "nakit": 6677379, "vadeliler": [], "krediler": [], "vadeler": [{"gun": 7, "ad": "1 hafta", "faiz": 36}, {"gun": 30, "ad": "1 ay", "faiz": 40}, {"gun": 90, "ad": "3 ay", "faiz": 42}, {"gun": 365, "ad": "1 yıl", "faiz": 45}], "krediTurleri": [{"kod": "isletme", "ad": "İşletme kredisi", …
+- `vergi` → {"vergiNo": "1734201916", "daire": "Pursaklar", "tur": "sahis", "turAdi": "Gelir vergisi", "donem": {"no": 2073, "ad": "14.10.2026", "bitis": 1791936000000, "ciro": 0, "alis": 0, "kar": 0, "kdv": 0, "gelir": 0, "varlik": {"tutar": 0, "oran": 3, "matrah": 0, "servet": 8233779}}, "beyanlar": [], "borc…
+- `vaka` → {"sunucuZamani": 1791408543665, "acik": [{"id": 246, "tur": "kriz", "durum": "acik", "baslangic": 1791408442310, "son": 1791408622310, "veri": {"yer": "tezgah", "isletmeAd": null, "yerNo": null}, "sonuc": null, "kapanis": null}], "gecmis": [], "bugun": 1, "gunluk": 3, "itibar": {"puan": 500, "band":…
+- `isletmelerim` → []
+- `seyyar` → {"takvim": {"ms": 1791419346587, "yil": 2026, "ay": 9, "ayAdi": "Ekim", "gunNo": 8, "haftaGunu": "Perşembe", "haftaGunuNo": 4, "haftaSonu": false, "saat": 0, "dakika": 29, "mevsim": "sonbahar", "mevsimAdi": "Sonbahar", "metin": "8 Ekim 2026, Perşembe"}, "nufusCarpani": 1.05572215751436, "izin": {"va…
+- `gorevler` → {"gun": "2026-10-08", "gunSonu": 1791493208033, "alindi": false, "odul": 225000, "tecrube": 4, "gorevler": [{"kod": "yardim", "simge": "🤝", "ad": "Mahallede birine yardım et", "n": 0, "hedef": 1, "para": false, "tamam": false}, {"kod": "mini_oyun", "simge": "🎮", "ad": "2 mini oyun oyna", "n": 0, "he…
+- `hareketler` → {"liste": [{"id": 478617, "tutar": 359, "bakiyeSonrasi": 6677379, "tur": "seyyar_servis", "aciklama": "Şemsiye satıcısı: müşteriye servis", "zaman": 1791408523110}, {"id": 478616, "tutar": 5000, "bakiyeSonrasi": 6677020, "tur": "seyyar_servis", "aciklama": "Pamuk şeker ve balon: toplu sipariş", "zam…
+- `finans` → {"not": {"puan": 959, "bant": "Orta riskli", "renk": "#F08A24", "bantlar": [{"alt": 1, "ust": 699, "ad": "En riskli", "renk": "#D7263D"}, {"alt": 700, "ust": 1099, "ad": "Orta riskli", "renk": "#F08A24"}, {"alt": 1100, "ust": 1499, "ad": "Az riskli", "renk": "#E8C21A"}, {"alt": 1500, "ust": 1699, "a…
+- `siralama` → {"liste": [{"id": 14, "kullaniciAdi": "Karahan", "bakiye": 355678536, "servet": 5039871900, "foto": "api/profil/14.jpg?s=1791021665868", "il": "Ankara", "sirket": null, "seviye": 10, "gr": {"c": "sampiyon", "r": "sezon", "e": 1}, "cevrimici": false}, {"id": 31, "kullaniciAdi": "ybey", "bakiye": 4004…
+- `ligler` → {"hafta": "2026-10-05", "bitis": 1791752400000, "oduller": [5000000, 2500000, 1000000], "ligler": [{"kod": "ciftci", "ad": "Çiftçi ligi", "simge": "🌾", "aciklama": "Tarım, hayvancılık ve ormancılıkta üretilen ürünlerin değeri", "liste": [], "benimPuan": 0, "benimSiram": null}, {"kod": "sanayici", "a…
+- `mahalle` → {"hata": "Bulunamadı."}
+- `yetenekler` → {"puan": 2, "kullanilan": 2, "bos": 0, "enCok": 5, "sifirlamaUcreti": 3000000, "liste": [{"kod": "satis", "simge": "🗣️", "ad": "Satış ustası", "derece": 1, "simdi": "Tezgâh satışların %3 artar.", "sonraki": "Tezgâh satışların %6 artar."}, {"kod": "pazarlik", "simge": "🤝", "ad": "Pazarlıkçı", "derece…
+- `tedarik` → {"benim": [], "teklifler": [], "teminatOrani": 20, "aralikGunleri": [1, 3, 7], "enCokTeslim": 12, "ekonomiGunuMs": 28800000}
+- `pazar` → [{"kod": "bugday", "ad": "Buğday", "birim": "kg", "grup": "tarim", "ithal": false, "fiyat": 1200, "degisim": 0, "sistemAlir": 996, "sistemSatar": 1343, "ilanSayisi": 1, "enUcuzIlan": 1300}, {"kod": "arpa", "ad": "Arpa", "birim": "kg", "grup": "tarim", "ithal": false, "fiyat": 900, "degisim": 0, "sis…
+- `sigorta` → {"sirketim": null, "liste": [], "kurulus": {"seviye": 25, "harc": 25000000, "enAzSermaye": 500000000, "karsilik": 250000000, "oranAraligi": [60, 150], "vergi": 0.1}, "kurabilir": false}
+- `kiralama` → {"hata": "Bulunamadı."}
+- `etkinlikler` → {"katalog": [{"kod": "sinema", "ad": "Sinema", "simge": "🎬", "kategori": "Kültür-sanat", "fiyat": 27560, "sure": 150, "keyif": 12, "aciklama": "Vizyondaki film, mısır ve kola."}, {"kod": "tiyatro", "ad": "Tiyatro", "simge": "🎭", "kategori": "Kültür-sanat", "fiyat": 44520, "sure": 150, "keyif": 15, "…
+- `mini-oyun/sira?kod=genel` → {"kod": "genel", "hafta": "2026-10-05", "bitis": 1791752400000, "odul": [10000000, 6000000, 4000000, 1500000, 1500000, 1000000, 1000000, 1000000, 1000000, 1000000], "enCok": 4500, "liste": [{"sira": 1, "oyuncuId": 14, "kullaniciAdi": "Karahan", "puan": 3738, "oyun": 43, "ben": false}, {"sira": 2, "o…
 
 
 ---
 
 # Çırak raporu — bot
 
-**Zaman:** 1791401535929 UTC
+**Zaman:** 1791408615461 UTC
 
 ## Bot koşusu
 
 | Alan | Değer |
 |---|---|
-| Süre | 2.1 dk |
-| Tur | 16 |
-| Kazanç | 4759.4 ₺ |
-| Servis | 61 |
-| Bahşiş | 13 |
-| Bakiye | 10193.6 ₺ |
-
-
----
-
-# Çırak raporu — ham
-
-**Zaman:** 2026-10-07 19:32:15 UTC
-
-## Uçlar
-
-- `cadde` → {"yerler": [{"no": 1, "sira": 0, "sokak": 0, "boyut": "kucuk", "boyutAdi": "Küçük", "m2": 40, "genislik": 8.3, "kat": 4, "tohum": 843992663, "kira": 800000, "isletme": {"id": 3069, "tur": "kuafor", "turAdi": "Kuaför", "simge": "💇", "ad": "Aydın Kuaför", "durum": "acik", "saat": [9, 21], "sahip": "Ma…
-- `gorevler` → {"gun": "2026-10-07", "gunSonu": 1791406817485, "alindi": false, "odul": 187500, "tecrube": 4, "gorevler": [{"kod": "siparis", "simge": "📦", "ad": "Bir toplu siparişi zamanında yetiştir", "n": 1, "hedef": 1, "para": false, "tamam": true}, {"kod": "mini_yildiz", "simge": "🌟", "ad": "Bir mini oyunda ü…
-- `bonus` → {"oduller": [100000, 150000, 200000, 300000, 400000, 500000, 1000000], "alinan": 1, "bugunAlindi": true, "siradaki": null, "sonraki": 1791406800000, "bugunNo": 1, "simdi": 1791401538906}
-- `isletmelerim` → []
-- `kiralama` → {"hata": "Bulunamadı."}
-- `uretim` → {"tesisler": [], "zaman": 1791401543175}
-- `mezat` → {"acik": [{"id": 73, "urun": "findik_kabuklu", "ad": "Kabuklu fındık", "birim": "kg", "simge": "🌾", "miktar": 48450, "taban": 657951000, "enYuksek": 0, "lider": null, "benim": false, "enAz": 657951000, "bitis": 1791404359600, "kalan": 2814985, "piyasa": 678300000, "durum": "acik", "katildim": false}…
-- `harita` → [{"id": 1, "ad": "Adana", "nufus": 2283609, "kiyi": true, "buyuksehir": true, "bolge": "Akdeniz", "oyuncu": 10, "tezgah": 46}, {"id": 2, "ad": "Adıyaman", "nufus": 617821, "kiyi": false, "buyuksehir": false, "bolge": "Güneydoğu Anadolu", "oyuncu": 1, "tezgah": 1}, {"id": 3, "ad": "Afyonkarahisar", "…
+| Süre | 0.8 dk |
+| Tur | 6 |
+| Kazanç | 608.2 ₺ |
+| Servis | 24 |
+| Bahşiş | 7 |
+| Bakiye | 67381.98 ₺ |
