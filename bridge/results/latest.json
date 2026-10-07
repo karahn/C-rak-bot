@@ -1,7 +1,7 @@
 {
-  "time_utc": "2026-10-07T22:16:59.000176+00:00",
+  "time_utc": "2026-10-07T22:18:17.976811+00:00",
   "command": {
-    "id": "2026-10-07-check-status-debug-001",
+    "id": "2026-10-07-check-status-candidates-001",
     "operation": "status"
   },
   "ok": false,
