@@ -1,0 +1,21 @@
+{"olay": "kosu_basladi", "sure_dk": 0.8, "bakiye": 632.44, "ts": 1791401066488}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3877491", "sonuc": {"tutar": 27500, "tecrube": 1, "metin": "Cüzdanı sahibine verdin. Sevinçten sana bir ödül bıraktı.", "bakiye": 90744, "hareket": 470833}, "ts": 1791401068961}
+{"olay": "keyif_atlandi", "neden": "bakiye_dusuk", "bakiye": 907.44, "keyif": 63, "ts": 1791401070185}
+{"olay": "topladi", "adet": 5, "net": 2920.82, "ts": 1791401070934}
+{"olay": "ben_basla", "kod": "pazar", "id": 79451, "ts": 1791401071151}
+{"olay": "tur_hata", "tur": 1, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401071151}
+{"olay": "cirak_basla", "kod": "simit", "id": 79452, "ts": 1791401075458}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 79453, "ts": 1791401075715}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 79454, "ts": 1791401075942}
+{"olay": "tur_hata", "tur": 2, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401075942}
+{"olay": "tur_hata", "tur": 3, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401079680}
+{"olay": "tur_hata", "tur": 4, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401083353}
+{"olay": "tur_hata", "tur": 5, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401087066}
+{"olay": "tur_hata", "tur": 6, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401091223}
+{"olay": "tur_hata", "tur": 7, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401094944}
+{"olay": "tur_hata", "tur": 8, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401098656}
+{"olay": "tur_hata", "tur": 9, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401102348}
+{"olay": "tur_hata", "tur": 10, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401106432}
+{"olay": "tur_hata", "tur": 11, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401110152}
+{"olay": "tur_hata", "tur": 12, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401114366}
+{"olay": "kosu_bitti", "tur": 12, "kazanc": 2920.8, "servis": 0, "bahsis": 0, "bakiye": 5496.6, "gecen_dk": 0.9, "ts": 1791401117113}
