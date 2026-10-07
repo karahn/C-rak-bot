@@ -1,14 +1,446 @@
 {
-  "time_utc": "2026-10-07T11:33:54.011296+00:00",
+  "time_utc": "2026-10-07T11:41:17.931596+00:00",
   "command": {
-    "id": "2026-10-07-password-reset-challenge-002",
-    "operation": "password_reset_challenge"
+    "id": "2026-10-07-maintain-businesses-stalls-001",
+    "operation": "maintain_businesses_and_stalls",
+    "max_stock_cost_kurus": 100000000
   },
   "ok": true,
   "data": {
-    "challenge": {
-      "anahtar": "248909d93360a6d9e273864f",
-      "resim": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgNTIiIHdpZHRoPSIxNTAiIGhlaWdodD0iNTIiPjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iI0YzRjZGQyIvPjxjaXJjbGUgY3g9IjMyLjYiIGN5PSI0Ni4zIiByPSIxLjciIGZpbGw9ImhzbCgyNjMsNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSI5NC43IiBjeT0iMjMuMCIgcj0iMS43IiBmaWxsPSJoc2woMzM0LDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iMzkuOCIgY3k9IjE4LjYiIHI9IjEuNSIgZmlsbD0iaHNsKDEwMCw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjkwLjQiIGN5PSIzOS45IiByPSIwLjciIGZpbGw9ImhzbCgyMjksNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSI5OC45IiBjeT0iNTEuMyIgcj0iMC45IiBmaWxsPSJoc2woMzEzLDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iODAuNiIgY3k9IjcuOSIgcj0iMC43IiBmaWxsPSJoc2woMjc5LDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iMTQzLjciIGN5PSIyMi43IiByPSIwLjgiIGZpbGw9ImhzbCg4Niw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9Ijg2LjAiIGN5PSIzNi41IiByPSIxLjMiIGZpbGw9ImhzbCgxMjksNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSIzMy4wIiBjeT0iNDAuMyIgcj0iMC45IiBmaWxsPSJoc2woMTgsNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSI5Mi4yIiBjeT0iMjkuOCIgcj0iMS4wIiBmaWxsPSJoc2woOSw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjE0NS4yIiBjeT0iMzguNCIgcj0iMS40IiBmaWxsPSJoc2woNzksNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSIxMjUuNSIgY3k9IjIzLjUiIHI9IjEuMCIgZmlsbD0iaHNsKDM0Miw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjY1LjIiIGN5PSI0OS40IiByPSIxLjIiIGZpbGw9ImhzbCgyMyw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjY0LjkiIGN5PSI1MS44IiByPSIxLjAiIGZpbGw9ImhzbCgzNyw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjE3LjUiIGN5PSI0NC40IiByPSIxLjMiIGZpbGw9ImhzbCgyMyw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjM5LjUiIGN5PSI4LjgiIHI9IjEuNSIgZmlsbD0iaHNsKDc5LDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iMTYuNiIgY3k9IjI1LjQiIHI9IjAuNyIgZmlsbD0iaHNsKDIwMCw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjkzLjkiIGN5PSIzMy4yIiByPSIxLjYiIGZpbGw9ImhzbCgxODksNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSIxMjguNyIgY3k9IjQyLjkiIHI9IjEuNyIgZmlsbD0iaHNsKDE3NSw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9Ijg4LjMiIGN5PSI0Ni45IiByPSIxLjgiIGZpbGw9ImhzbCg5NCw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjUuMyIgY3k9IjMxLjEiIHI9IjEuMyIgZmlsbD0iaHNsKDExNSw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjE0Mi41IiBjeT0iMzUuNyIgcj0iMC44IiBmaWxsPSJoc2woMjY3LDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iOTguMiIgY3k9IjM1LjEiIHI9IjAuOCIgZmlsbD0iaHNsKDI3LDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iOTIuNyIgY3k9IjQyLjMiIHI9IjEuNyIgZmlsbD0iaHNsKDEwMyw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjEwMS45IiBjeT0iNDQuNCIgcj0iMS41IiBmaWxsPSJoc2woOTEsNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSIxMC42IiBjeT0iNDkuMiIgcj0iMS42IiBmaWxsPSJoc2woMzQ5LDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iNDQuNSIgY3k9IjM0LjEiIHI9IjEuNCIgZmlsbD0iaHNsKDEwNyw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjEzNi45IiBjeT0iNDAuNyIgcj0iMC43IiBmaWxsPSJoc2woNDcsNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSIxOS40IiBjeT0iMzEuMiIgcj0iMS4zIiBmaWxsPSJoc2woMTc4LDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iNjAuNiIgY3k9IjM0LjAiIHI9IjEuMiIgZmlsbD0iaHNsKDI1NCw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjQ3LjEiIGN5PSIyOS4yIiByPSIxLjQiIGZpbGw9ImhzbCg4LDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iMTAxLjEiIGN5PSI0NS4wIiByPSIxLjIiIGZpbGw9ImhzbCg1Niw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjI1LjIiIGN5PSI0NS4zIiByPSIwLjgiIGZpbGw9ImhzbCgzNDcsNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSIxMC42IiBjeT0iNTAuMyIgcj0iMS4zIiBmaWxsPSJoc2woNDQsNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSIzMC4zIiBjeT0iMTEuNSIgcj0iMS43IiBmaWxsPSJoc2woMzMsNDAlLDcwJSkiLz48Y2lyY2xlIGN4PSIxMDEuNiIgY3k9IjMwLjgiIHI9IjEuNCIgZmlsbD0iaHNsKDExLDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iNjkuMiIgY3k9IjUxLjEiIHI9IjAuOCIgZmlsbD0iaHNsKDMxNSw0MCUsNzAlKSIvPjxjaXJjbGUgY3g9IjAuMiIgY3k9IjM5LjYiIHI9IjEuMCIgZmlsbD0iaHNsKDkyLDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iMS40IiBjeT0iMjUuMiIgcj0iMS43IiBmaWxsPSJoc2woMTkwLDQwJSw3MCUpIi8+PGNpcmNsZSBjeD0iNTQuNyIgY3k9IjQ3LjIiIHI9IjEuMyIgZmlsbD0iaHNsKDE2Niw0MCUsNzAlKSIvPjxwYXRoIGQ9Ik0xMS43IDM2LjUgQzU0LjEgMzcuMSA4MS4xIDUxLjEgMTQyLjEgNDYuOSIgc3Ryb2tlPSJoc2woMTk5LDM1JSw2MCUpIiBzdHJva2Utd2lkdGg9IjEuMSIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik01LjYgMjguMiBDMzkuMCAzMC44IDkyLjEgMjguNyAxNDYuMiAxMC4zIiBzdHJva2U9ImhzbCgyMzEsMzUlLDYwJSkiIHN0cm9rZS13aWR0aD0iMi4wIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE4LjQgMjcuNiBDNTMuMCA5LjEgOTguMSAzOS4zIDE0Ny42IDM2LjMiIHN0cm9rZT0iaHNsKDIxNSwzNSUsNjAlKSIgc3Ryb2tlLXdpZHRoPSIxLjAiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTE3LjkgMjkuMUwxMjcuNyAyNi42TTY4LjMgMjAuNkw2NS4wIDIyLjlNODkuOCAzMi4zTDg3LjggNDIuNE02Ny44IDE2LjFMNjguMSAxOC45IiBzdHJva2U9ImhzbCgyMjksNTUlLDMxJSkiIHN0cm9rZS13aWR0aD0iMy4zMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTExOC4xIDE0LjlMMTI2LjQgMTMuMk04My4wIDE0LjRMODguMiAxMy44TTI5LjEgNy4xTDI3LjYgMzcuMk0xMTAuOCAxNy4wTDExOC4xIDE0LjkiIHN0cm9rZT0iaHNsKDIzNCw1NSUsMjclKSIgc3Ryb2tlLXdpZHRoPSIyLjY2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNNjAuOCAxMy40TDY3LjkgMTQuNk0yMS4zIDI0LjVMMjQuNiAyMy4zTTY4LjEgMTguOUw2OC4zIDIwLjZNODMuNiAyOC42TDg5LjMgMjcuOE02NS4wIDIyLjlMNjIuNCAyMy43IiBzdHJva2U9ImhzbCgyNDksNTUlLDMzJSkiIHN0cm9rZS13aWR0aD0iMi45NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTk0LjMgMTIuNkw5Mi41IDIyLjhNNTQuMCAzNy4wTDQ3LjkgMzQuNk02MC44IDQwLjFMNTQuMCAzNy4wTTkyLjUgMjIuOEw4OS44IDMyLjMiIHN0cm9rZT0iaHNsKDIwNCw1NSUsMzUlKSIgc3Ryb2tlLXdpZHRoPSIzLjE4IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTA0LjIgMjAuNEwxMDEuMiAyNy43TTEwMi45IDMyLjBMMTA1LjEgMjQuNU03LjMgMzYuMEw2LjAgMzIuNk0xMDYuOCA4LjJMMTAzLjYgMC4yIiBzdHJva2U9ImhzbCgyNTAsMzAlLDY1JSkiIHN0cm9rZS13aWR0aD0iMC45OSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTQ4LjcgMTQuOUw0NS4xIDE3LjNNMTM2LjAgNDQuMEwxMzQuOCAzNy4wTTEyMi41IDM5LjJMMTE4LjAgMzYuNk0xMTEuMCAyNi4xTDExMC44IDMxLjEiIHN0cm9rZT0iaHNsKDE5OSwzMCUsNjklKSIgc3Ryb2tlLXdpZHRoPSIwLjkwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNNTMuOSAxMi43TDYwLjggMTMuNE02Ny45IDE0LjZMNjcuOCAxNi4xTTEzLjAgMTIuM0wyMS4zIDkuNk04OS4zIDI3LjhMOTQuMiAyNy4wTTIxLjMgOS42TDI5LjEgNy4xTTI4LjYgMjEuN0wzMS40IDIxLjIiIHN0cm9rZT0iaHNsKDIxOSw1NSUsMzQlKSIgc3Ryb2tlLXdpZHRoPSIzLjA3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTA4LjcgNDAuMkwxMDUuNiA0MC42TTY5LjAgMTQuN0w2Ny4yIDEyLjBNNjcuNiAyNi41TDY3LjMgMzIuMU0xNDAuOCAyMy42TDE0Mi40IDI4LjQiIHN0cm9rZT0iaHNsKDIzMiwzMCUsNzIlKSIgc3Ryb2tlLXdpZHRoPSIxLjEzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMjEuNyAzMy44TDI5LjIgMzAuMk0xMjMuMiA4LjNMMTI1LjkgNS4xTTEyMy4xIDkuMkwxMjAuOCAyLjlNMTA0LjYgMzEuNkwxMDkuMSAyOS41IiBzdHJva2U9ImhzbCgyNDUsMzAlLDcwJSkiIHN0cm9rZS13aWR0aD0iMC44MiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEzLjQgNy4wTDEwLjggMC4xTTEwLjUgMzAuMEwxMS45IDM2LjZNNDUuMyAxNy4zTDUxLjQgMTEuN00zNy40IDE5LjZMMzkuOCAxMi4xIiBzdHJva2U9ImhzbCgyNDgsMzAlLDczJSkiIHN0cm9rZS13aWR0aD0iMS4xNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE4LjggMTMuN0wxMy4wIDkuNU05Ny4yIDE0LjhMOTIuNSAyMC4wTTEzMi4xIDQwLjRMMTMyLjggMzUuOU0xMjIuMyAxNi45TDEyMy4wIDE5LjkiIHN0cm9rZT0iaHNsKDE5MCwzMCUsNjclKSIgc3Ryb2tlLXdpZHRoPSIxLjEzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTI1LjAgMjcuNUwxMjMuMSA0MS42TTU4LjYgMjUuOEw2NC44IDMzLjRNODguMiAxMy44TDk0LjMgMTIuNiIgc3Ryb2tlPSJoc2woMjE3LDU1JSwyMyUpIiBzdHJva2Utd2lkdGg9IjMuMTMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMzAuNyAyMC45TDEyNy44IDIyLjlNNzQuMyAyNS44TDczLjIgMTkuOSIgc3Ryb2tlPSJoc2woMjEwLDMwJSw3MCUpIiBzdHJva2Utd2lkdGg9IjEuMTgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik00IDMxLjEgUTc1IDI5LjIgMTQ2IDIxLjUiIHN0cm9rZT0iIzVCNkI4QyIgc3Ryb2tlLXdpZHRoPSIxLjIiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuNyIvPjwvc3ZnPg=="
-    }
+    "collections": [
+      {
+        "id": 5522,
+        "ad": "Araştırma Şarküter",
+        "before": 64114780,
+        "response": {
+          "tutar": 64114780
+        }
+      },
+      {
+        "id": 7820,
+        "ad": "Araştırma Kargo",
+        "before": 83498269,
+        "response": {
+          "tutar": 83498269
+        }
+      },
+      {
+        "id": 8338,
+        "ad": "Araştırma Çilingir",
+        "before": 22091527,
+        "response": {
+          "tutar": 22091527
+        }
+      },
+      {
+        "id": 8397,
+        "ad": "Araştırma Fotoğraf",
+        "before": 288825164,
+        "response": {
+          "tutar": 288825164
+        }
+      },
+      {
+        "id": 8442,
+        "ad": "Araştırma Elektrik",
+        "before": 61731862,
+        "response": {
+          "tutar": 61731862
+        }
+      },
+      {
+        "id": 8815,
+        "ad": "Araştırma Otopark",
+        "before": 27546581,
+        "response": {
+          "tutar": 27546581
+        }
+      },
+      {
+        "id": 8858,
+        "ad": "Araştırma Oto Yıka",
+        "before": 230515748,
+        "response": {
+          "tutar": 230515748
+        }
+      },
+      {
+        "id": 9659,
+        "ad": "Araştırma Oto Serv",
+        "before": 431512246,
+        "response": {
+          "tutar": 431512246
+        }
+      },
+      {
+        "id": 31939,
+        "ad": "Araştırma Emlak",
+        "before": 62749024,
+        "response": {
+          "tutar": 62749024
+        }
+      }
+    ],
+    "stock_cost_planned": 4790500,
+    "stocking": [
+      {
+        "id": 5522,
+        "ad": "Araştırma Şarküter",
+        "each": 13,
+        "planned_cost": 4790500,
+        "bought": [
+          {
+            "urun": "beyaz_peynir",
+            "miktar": 13,
+            "response": {
+              "tutar": 325000,
+              "ambardan": 0
+            }
+          },
+          {
+            "urun": "zeytin",
+            "miktar": 13,
+            "response": {
+              "tutar": 195000,
+              "ambardan": 0
+            }
+          },
+          {
+            "urun": "tereyagi",
+            "miktar": 13,
+            "response": {
+              "tutar": 546000,
+              "ambardan": 0
+            }
+          },
+          {
+            "urun": "labne",
+            "miktar": 13,
+            "response": {
+              "tutar": 84500,
+              "ambardan": 0
+            }
+          }
+        ],
+        "errors": [
+          {
+            "urun": "kasar",
+            "error": "API isletme/5522/stok: {'hata': 'Kaşar rafında yalnızca 10 kg boş yer var.'}"
+          },
+          {
+            "urun": "sucuk",
+            "error": "API isletme/5522/stok: {'hata': 'Sucuk rafında yalnızca 5 kg boş yer var.'}"
+          },
+          {
+            "urun": "pastirma",
+            "error": "API isletme/5522/stok: {'hata': 'Pastırma rafında yalnızca 10 kg boş yer var.'}"
+          },
+          {
+            "urun": "hindi_fume",
+            "error": "API isletme/5522/stok: {'hata': 'Hindi füme rafında yalnızca 7 kg boş yer var.'}"
+          }
+        ],
+        "auto_supply": null,
+        "auto_error": null
+      }
+    ],
+    "stalls": {
+      "collected": [
+        {
+          "id": 69065,
+          "isKodu": "pazar",
+          "sureKodu": "tam",
+          "isAdi": "Pazar tezgâhı",
+          "simge": "🧦",
+          "calisan": "ben",
+          "ciro": 720858,
+          "bonus": 8076,
+          "servis": 8,
+          "malzeme": 350000,
+          "cirakUcreti": 0,
+          "ceza": 0,
+          "net": 378934,
+          "olaylar": [
+            {
+              "gun": 1,
+              "tur": "kotu",
+              "metin": "Durgun bir gündü, az müşteri geldi."
+            }
+          ],
+          "tecrube": 7,
+          "seviyeAtladi": null,
+          "sertifika": null
+        },
+        {
+          "id": 69066,
+          "isKodu": "simit",
+          "sureKodu": "tam",
+          "isAdi": "Simitçi",
+          "simge": "🥯",
+          "calisan": "cirak",
+          "ciro": 425064,
+          "bonus": 5521,
+          "servis": 8,
+          "malzeme": 200000,
+          "cirakUcreti": 100000,
+          "ceza": 0,
+          "net": 130585,
+          "olaylar": [],
+          "tecrube": 0,
+          "seviyeAtladi": null,
+          "sertifika": null
+        },
+        {
+          "id": 69067,
+          "isKodu": "pamuk",
+          "sureKodu": "tam",
+          "isAdi": "Pamuk şeker ve balon",
+          "simge": "🎈",
+          "calisan": "cirak",
+          "ciro": 185387,
+          "bonus": 2791,
+          "servis": 8,
+          "malzeme": 40000,
+          "cirakUcreti": 100000,
+          "ceza": 0,
+          "net": 48178,
+          "olaylar": [
+            {
+              "gun": 1,
+              "tur": "iyi",
+              "metin": "Zabıta kontrole geldi, iznin tamamdı. \"Kolay gelsin\" deyip gitti.",
+              "kontrol": {
+                "ms": 1791325430298
+              }
+            }
+          ],
+          "tecrube": 0,
+          "seviyeAtladi": null,
+          "sertifika": null
+        },
+        {
+          "id": 69068,
+          "isKodu": "semsiye",
+          "sureKodu": "tam",
+          "isAdi": "Şemsiye satıcısı",
+          "simge": "☂️",
+          "calisan": "cirak",
+          "ciro": 196389,
+          "bonus": 2865,
+          "servis": 8,
+          "malzeme": 90000,
+          "cirakUcreti": 100000,
+          "ceza": 0,
+          "net": 9254,
+          "olaylar": [],
+          "tecrube": 0,
+          "seviyeAtladi": null,
+          "sertifika": null
+        },
+        {
+          "id": 69069,
+          "isKodu": "kestane",
+          "sureKodu": "tam",
+          "isAdi": "Kestaneci",
+          "simge": "🌰",
+          "calisan": "cirak",
+          "ciro": 922723,
+          "bonus": 11422,
+          "servis": 8,
+          "malzeme": 250000,
+          "cirakUcreti": 100000,
+          "ceza": 0,
+          "net": 584145,
+          "olaylar": [
+            {
+              "gun": 1,
+              "tur": "iyi",
+              "metin": "Zabıta kontrole geldi, iznin tamamdı. \"Kolay gelsin\" deyip gitti.",
+              "kontrol": {
+                "ms": 1791324992952
+              }
+            }
+          ],
+          "tecrube": 0,
+          "seviyeAtladi": null,
+          "sertifika": null
+        },
+        {
+          "id": 69070,
+          "isKodu": "misir",
+          "sureKodu": "tam",
+          "isAdi": "Mısırcı",
+          "simge": "🌽",
+          "calisan": "cirak",
+          "ciro": 485581,
+          "bonus": 6907,
+          "servis": 8,
+          "malzeme": 120000,
+          "cirakUcreti": 100000,
+          "ceza": 0,
+          "net": 272488,
+          "olaylar": [
+            {
+              "gun": 1,
+              "tur": "iyi",
+              "metin": "Zabıta kontrole geldi, iznin tamamdı. \"Kolay gelsin\" deyip gitti.",
+              "kontrol": {
+                "ms": 1791324807909
+              }
+            }
+          ],
+          "tecrube": 0,
+          "seviyeAtladi": null,
+          "sertifika": null
+        }
+      ],
+      "permit": null,
+      "started": [
+        {
+          "kod": "pazar",
+          "response": {
+            "id": 75080,
+            "calisan": "ben"
+          }
+        },
+        {
+          "kod": "simit",
+          "response": {
+            "id": 75081,
+            "calisan": "cirak"
+          }
+        },
+        {
+          "kod": "pamuk",
+          "response": {
+            "id": 75082,
+            "calisan": "cirak"
+          }
+        },
+        {
+          "kod": "semsiye",
+          "response": {
+            "id": 75083,
+            "calisan": "cirak"
+          }
+        },
+        {
+          "kod": "kestane",
+          "response": {
+            "id": 75084,
+            "calisan": "cirak"
+          }
+        },
+        {
+          "kod": "misir",
+          "response": {
+            "id": 75085,
+            "calisan": "cirak"
+          }
+        }
+      ]
+    },
+    "businesses_after": [
+      {
+        "id": 5522,
+        "ad": "Araştırma Şarküter",
+        "tur": "sarkuteri",
+        "durum": "acik",
+        "hizmet": false,
+        "kasa": 0,
+        "doluluk": 131,
+        "kapasite": 189,
+        "otoTedarik": true
+      },
+      {
+        "id": 7820,
+        "ad": "Araştırma Kargo",
+        "tur": "kargo",
+        "durum": "acik",
+        "hizmet": true,
+        "kasa": 0,
+        "doluluk": 0,
+        "kapasite": 400,
+        "otoTedarik": true
+      },
+      {
+        "id": 8338,
+        "ad": "Araştırma Çilingir",
+        "tur": "cilingir",
+        "durum": "acik",
+        "hizmet": true,
+        "kasa": 0,
+        "doluluk": 0,
+        "kapasite": 400,
+        "otoTedarik": true
+      },
+      {
+        "id": 8397,
+        "ad": "Araştırma Fotoğraf",
+        "tur": "fotografci",
+        "durum": "acik",
+        "hizmet": true,
+        "kasa": 0,
+        "doluluk": 0,
+        "kapasite": 400,
+        "otoTedarik": true
+      },
+      {
+        "id": 8442,
+        "ad": "Araştırma Elektrik",
+        "tur": "elektrikci",
+        "durum": "acik",
+        "hizmet": true,
+        "kasa": 0,
+        "doluluk": 0,
+        "kapasite": 400,
+        "otoTedarik": true
+      },
+      {
+        "id": 8815,
+        "ad": "Araştırma Otopark",
+        "tur": "otopark",
+        "durum": "acik",
+        "hizmet": true,
+        "kasa": 0,
+        "doluluk": 0,
+        "kapasite": 1200,
+        "otoTedarik": true
+      },
+      {
+        "id": 8858,
+        "ad": "Araştırma Oto Yıka",
+        "tur": "oto_yikama",
+        "durum": "acik",
+        "hizmet": true,
+        "kasa": 0,
+        "doluluk": 0,
+        "kapasite": 1200,
+        "otoTedarik": true
+      },
+      {
+        "id": 9659,
+        "ad": "Araştırma Oto Serv",
+        "tur": "oto_servis",
+        "durum": "acik",
+        "hizmet": true,
+        "kasa": 0,
+        "doluluk": 0,
+        "kapasite": 1200,
+        "otoTedarik": true
+      },
+      {
+        "id": 31939,
+        "ad": "Araştırma Emlak",
+        "tur": "emlakci",
+        "durum": "acik",
+        "hizmet": true,
+        "kasa": 0,
+        "doluluk": 0,
+        "kapasite": 1200,
+        "otoTedarik": true
+      }
+    ],
+    "balance_after": 1281895370
   }
 }
