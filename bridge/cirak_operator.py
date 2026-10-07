@@ -321,6 +321,75 @@ def maintain_businesses_and_stalls_operation(api: Api, command: dict[str, Any]) 
     }
 
 
+def finish_inventory_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
+    import re
+
+    require_account(api)
+    raw_shops = api.call("isletmelerim")
+    shops = raw_shops if isinstance(raw_shops, list) else (
+        raw_shops.get("isletmeler") or raw_shops.get("liste") or []
+    )
+    maximum = int(command.get("max_stock_cost_kurus") or 0)
+    spent = 0
+    results = []
+    for listed in shops:
+        shop_id = int(listed.get("id") or 0)
+        if not shop_id:
+            continue
+        shop = api.call(f"isletme/{shop_id}")
+        products = shop.get("urunler") or []
+        if shop.get("hizmet") or shop.get("durum") != "acik" or not products:
+            continue
+        actions = []
+        for product in products:
+            fresh = api.call(f"isletme/{shop_id}")
+            remaining = max(0, int(fresh.get("kapasite") or 0) - int(fresh.get("doluluk") or 0))
+            if remaining <= 0:
+                break
+            amount = remaining
+            response = None
+            try:
+                estimated = int(product.get("toptan") or 0) * amount
+                if maximum <= 0 or spent + estimated > maximum:
+                    raise OperatorError("Safety stop: inventory cost limit reached")
+                response = api.call(
+                    f"isletme/{shop_id}/stok",
+                    {"urun": product["kod"], "miktar": amount},
+                )
+            except OperatorError as exc:
+                match = re.search(r"yalnızca (\d+)", str(exc), flags=re.IGNORECASE)
+                if not match:
+                    actions.append({"urun": product.get("kod"), "error": str(exc)})
+                    continue
+                amount = int(match.group(1))
+                if amount <= 0:
+                    continue
+                estimated = int(product.get("toptan") or 0) * amount
+                if maximum <= 0 or spent + estimated > maximum:
+                    raise OperatorError("Safety stop: inventory cost limit reached")
+                response = api.call(
+                    f"isletme/{shop_id}/stok",
+                    {"urun": product["kod"], "miktar": amount},
+                )
+            spent += int(product.get("toptan") or 0) * amount
+            actions.append({"urun": product.get("kod"), "miktar": amount, "response": response})
+        final = api.call(f"isletme/{shop_id}")
+        if not final.get("otoTedarik"):
+            api.call(f"isletme/{shop_id}/oto", {"acik": True})
+            final = api.call(f"isletme/{shop_id}")
+        results.append({
+            "id": shop_id, "ad": final.get("ad"), "actions": actions,
+            "doluluk": final.get("doluluk"), "kapasite": final.get("kapasite"),
+            "otoTedarik": final.get("otoTedarik"),
+        })
+    status = require_account(api)
+    return {
+        "spent_estimate": spent,
+        "shops": results,
+        "balance_after": int((status.get("oyuncu") or {}).get("bakiye") or 0),
+    }
+
+
 def password_reset_challenge_operation(api: Api) -> dict[str, Any]:
     challenge = api.call("dogrulama")
     if not challenge.get("anahtar") or not challenge.get("resim"):
@@ -340,6 +409,8 @@ def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
         return password_reset_challenge_operation(api)
     if operation == "maintain_businesses_and_stalls":
         return maintain_businesses_and_stalls_operation(api, command)
+    if operation == "finish_inventory":
+        return finish_inventory_operation(api, command)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 
