@@ -356,9 +356,48 @@ def gorev_bot(op, komut):
     return ozet
 
 
+def gorev_ana_js(op, komut):
+    """Ana oyun kodunu (/ana.js) indirir, API uçlarını ve dükkân mekaniklerini çıkarır."""
+    import re
+    KAY = os.path.join(KOK, "kaynak")
+    os.makedirs(KAY, exist_ok=True)
+    yol = komut.get("dosya") or "/ana.js?v=0.57.15"
+    url = yol if yol.startswith("http") else "https://oyunsitem.com/cirak/" + yol.lstrip("/")
+    txt = cek_metin(op, url, limit=8_000_000)
+    if not txt:
+        return {"hata": "indirilemedi", "url": url}
+    yaz(os.path.join(KAY, "ana.js"), txt)
+
+    # API çağrı kalıpları: api('rota'), await A('rota'), fetch('/cirak/api/...')
+    uclar = set()
+    for kal in [r"""api\(\s*['"`]([^'"`]{2,60})['"`]""",
+                r"""['"`](/?(?:cirak/)?api/[^'"`]{2,60})['"`]""",
+                r"""['"`]([a-z][a-z0-9-]{1,20}/[a-z0-9{}_.-]{1,30})['"`]"""]:
+        for m in re.finditer(kal, txt):
+            aday = m.group(1).strip("/")
+            if any(x in aday for x in (".js", ".png", ".jpg", "http", "assets", ".json", ".css")):
+                continue
+            uclar.add(aday)
+    yaz(os.path.join(KAY, "api-uclari-ana.txt"), "\n".join(sorted(uclar)))
+
+    # dükkân açma/kiralama ile ilgili kod parçaları
+    ilgi = []
+    for anahtar in ("kirala", "kiralik", "isletme/ac", "dukkan", "kurulum", "depozito", "ruhsat"):
+        for m in list(re.finditer(anahtar, txt, re.I))[:6]:
+            parca = re.sub(r"\s+", " ", txt[max(0, m.start() - 160): m.start() + 200])
+            ilgi.append("%s >> %s" % (anahtar, parca))
+    yaz(os.path.join(KAY, "kiralama-izleri.txt"), "\n\n".join(ilgi[:60]))
+
+    return {"boyut": len(txt), "api_ucu_sayisi": len(uclar),
+            "kirala_gecen": len(re.findall("kirala", txt, re.I)),
+            "ornek_uclar": sorted(uclar)[:60],
+            "ilgi_ornekleri": ilgi[:6]}
+
+
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
-            "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif}
+            "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif,
+            "ana-js": gorev_ana_js}
 
 
 # ---------------------------------------------------------------- özet yaz
