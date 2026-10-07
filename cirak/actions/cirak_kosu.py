@@ -45,7 +45,7 @@ def simdi() -> str:
 
 
 def oturum():
-    """Çerez kavanozu: önce dosya, sonra TEZGAH_CEREZ ortam değişkeni."""
+    """Çerez kavanozu: önce TEZGAH_CEREZ gizli anahtarı, sonra dosya."""
     cj = http.cookiejar.MozillaCookieJar(CEREZ_DOSYA)
     if os.path.exists(CEREZ_DOSYA):
         try:
@@ -54,6 +54,7 @@ def oturum():
             print("! cerez dosyasi okunamadi:", e)
     env = (os.environ.get("TEZGAH_CEREZ") or "").strip()
     if env:
+        cj.clear("oyunsitem.com", "/", "tezgah_oturum")
         cj.set_cookie(
             http.cookiejar.Cookie(
                 0, "tezgah_oturum", env, None, False, "oyunsitem.com", False,
@@ -450,10 +451,105 @@ def gorev_ana_js(op, komut):
             "ornek_uclar": sorted(uclar)[:80], "ilgi_ornekleri": ilgi[:8]}
 
 
+def mesaj_gonder(op, alici: str, metin: str):
+    """DM gönderir (300 karakter sınırı)."""
+    metin = (metin or "").strip()[:295]
+    return cek(op, "mesaj", {"alici": alici, "metin": metin})
+
+
+def gorev_arkadas_istek(op, komut):
+    """Karahan'a arkadaşlık isteği gönderir / gelen isteği kabul eder + mesaj yollar."""
+    hedef_id = int(komut.get("arkadas_id") or 14)
+    hedef_ad = komut.get("arkadas_ad") or "Karahan"
+    a = cek(op, "arkadaslar") or {}
+    arkadaslar = {x.get("id"): x for x in (a.get("arkadaslar") or [])}
+    giden = {x.get("id") for x in (a.get("giden") or [])}
+    gelen = {x.get("id") for x in (a.get("gelen") or [])}
+    sonuc = {"arkadas_mi": hedef_id in arkadaslar, "giden_istek_var": hedef_id in giden,
+             "gelen_istek_var": hedef_id in gelen}
+
+    if hedef_id in gelen:
+        sonuc["kabul"] = cek(op, "arkadas/kabul", {"id": hedef_id})
+    elif hedef_id not in arkadaslar and hedef_id not in giden:
+        sonuc["istek"] = cek(op, "arkadas/istek", {"id": hedef_id})
+    time.sleep(2)
+
+    # mesaj(lar)
+    sonuc["mesajlar"] = []
+    for m in (komut.get("mesajlar") or []):
+        alici = m.get("alici") or hedef_ad
+        r = mesaj_gonder(op, alici, m.get("metin") or "")
+        sonuc["mesajlar"].append({"alici": alici, "sonuc": r})
+        time.sleep(11)   # mesajlar arası ~11 sn (oyun kuralı)
+
+    # son durum
+    time.sleep(1)
+    a2 = cek(op, "arkadaslar") or {}
+    sonuc["son_durum"] = {"arkadas": [x.get("ad") for x in (a2.get("arkadaslar") or [])],
+                          "giden": [x.get("ad") for x in (a2.get("giden") or [])],
+                          "gelen": [x.get("ad") for x in (a2.get("gelen") or [])]}
+    return sonuc
+
+
+def gorev_mesaj(op, komut):
+    """komut.mesajlar listesindeki DM'leri gönderir."""
+    sonuc = []
+    for m in (komut.get("mesajlar") or []):
+        r = mesaj_gonder(op, m.get("alici") or "Karahan", m.get("metin") or "")
+        sonuc.append({"alici": m.get("alici"), "sonuc": r})
+        time.sleep(11)
+    return {"mesajlar": sonuc}
+
+
+def gorev_oda(op, komut):
+    """Meslek odalarını okur; üye olduğumuz odanın aylık eğitimini (TP) alır."""
+    od = cek(op, "odalar") or {}
+    sonuc = {"odalar": [], "egitim": []}
+    for o in (od.get("odalar") or []):
+        sonuc["odalar"].append({k: o.get(k) for k in
+                                ("kod", "ad", "uye", "aktif", "egitimAlindi", "aidat", "borc",
+                                 "baskan", "kasa", "uyeler", "tp")})
+        if o.get("uye") and o.get("aktif") and not o.get("egitimAlindi"):
+            r = cek(op, "oda/egitim", {"oda": o.get("kod")})
+            sonuc["egitim"].append({"oda": o.get("kod"), "sonuc": r})
+            time.sleep(2)
+    sonuc["uyelikler"] = [o.get("ad") for o in (od.get("odalar") or []) if o.get("uye")]
+    return sonuc
+
+
+def zincir(bekle_sn: int = 0):
+    """Aynı iş akışını yeniden tetikler (7/24 zincir). GITHUB_TOKEN'ın actions:write izni gerekir."""
+    import base64 as b64
+    import re as _re
+    if bekle_sn:
+        time.sleep(bekle_sn)
+    try:
+        cfg = open(os.path.join(".git", "config"), encoding="utf-8").read()
+        m = _re.search(r"extraheader\s*=\s*Authorization:\s*basic\s+(\S+)", cfg)
+        if not m:
+            return {"hata": "token_okunamadi"}
+        tok = b64.b64decode(m.group(1)).decode(errors="replace").split(":", 1)[1]
+    except Exception as e:
+        return {"hata": repr(e)[:200]}
+    istek = urllib.request.Request(
+        "https://api.github.com/repos/karahn/C-rak-bot/actions/workflows/cirak-bot.yml/dispatches",
+        data=json.dumps({"ref": "arena/71f59bcb-c-rak-bot"}).encode(), method="POST",
+        headers={"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json",
+                 "Content-Type": "application/json", "User-Agent": "cirak-bot"})
+    try:
+        with urllib.request.urlopen(istek, timeout=30) as r:
+            return {"durum": r.status}
+    except urllib.error.HTTPError as e:
+        return {"http": e.code, "govde": e.read().decode()[:200]}
+    except Exception as e:
+        return {"hata": repr(e)[:200]}
+
+
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
             "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif,
-            "ana-js": gorev_ana_js, "cadde-tara": gorev_cadde_tara}
+            "ana-js": gorev_ana_js, "cadde-tara": gorev_cadde_tara,
+            "arkadas-istek": gorev_arkadas_istek, "mesaj": gorev_mesaj, "oda": gorev_oda}
 
 
 # ---------------------------------------------------------------- özet yaz
@@ -519,6 +615,12 @@ def main() -> int:
     yaz(os.path.join(RAK, "son-%s.json" % damga), json.dumps(ozetler, ensure_ascii=False, indent=1))
     md = "\n\n---\n\n".join(insan_ozeti(v, k) for k, v in ozetler.items())
     yaz(os.path.join(RAK, "son.md"), md)
+
+    # 7/24 zincir: kendini yeniden tetikle (GITHUB_TOKEN actions:write gerektirir)
+    if komut.get("zincir"):
+        z = zincir(bekle_sn=int(komut.get("zincir_bekle_sn") or 5))
+        print("zincir:", json.dumps(z, ensure_ascii=False))
+        yaz(os.path.join(RAK, "zincir.json"), json.dumps({"ts": simdi(), "sonuc": z}, ensure_ascii=False, indent=1))
 
     # Actions arayüzünde görünen özet
     adim = os.environ.get("GITHUB_STEP_SUMMARY")

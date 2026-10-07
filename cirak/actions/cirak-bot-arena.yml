@@ -1,7 +1,7 @@
 name: Cirak Bot (arena)
 
-# Bu dosya ARENA dalinda durur; komut.json degisince bot OTOMATIK calisir.
-# Elle calistirmak: Actions -> "Cirak Bot (arena)" -> Run workflow
+# KURULUM (bir kez): Actions -> "set up a workflow yourself" -> bu icerik -> Commit (dal: arena).
+# Tetikleme: cirak/komut.json degisince + elle "Run workflow" + zincir (bot kendini yeniden tetikler).
 
 on:
   push:
@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: cirak-bot
@@ -19,7 +20,7 @@ concurrency:
 jobs:
   kosu:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
 

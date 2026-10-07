@@ -1,10 +1,18 @@
 {
- "gorevler": [
-  "cerez-kontrol",
-  "durum",
-  "bot"
- ],
- "sure_dk": 0.8,
- "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. Uzun grind için sure_dk değerini artır (ben ayarlarım).",
- "kosu": 13
+  "gorevler": ["cerez-kontrol", "arkadas-istek", "oda", "ham", "ana-js", "cadde-tara", "bot"],
+  "arkadas_id": 14,
+  "arkadas_ad": "Karahan",
+  "mesajlar": [
+    {
+      "alici": "Karahan",
+      "metin": "Patron, arkadaşlık isteğimi yolladım (Kalfa19). Kabul edince parayı gönderebilirsin. Botlar tezgâhta çalışıyor: 632₺'den 67.381₺'ye çıktık. Dükkân açma uçlarını çözüyorum, kargo + oto yıkama ilk sırada."
+    }
+  ],
+  "adaylar": ["ana.js", "js/ana.js", "/ana.js", "cirak/ana.js"],
+  "ilceler": ["2034"],
+  "uclar": ["kiralama", "kiralik", "dukkan/kirala", "isletme/kirala", "dukkan/ac", "oda/kayit", "oda/uye", "oda/secim", "kiralama?ilce=2034", "kiralama/2034"],
+  "sure_dk": 30,
+  "zincir": false,
+  "not": "Arkadaşlık isteği + mesaj + oda (TP eğitimi) + dükkân açma ucu keşfi + ana oyun kodu + Pursaklar taraması + 30 dk grind.",
+  "kosu": 13
 }
