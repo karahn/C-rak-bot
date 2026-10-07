@@ -1,5 +1,4 @@
 {
-  "id": "2026-10-07-recovery-email-001",
-  "operation": "request_recovery_email",
-  "email": "tmrk1623@gmail.com"
+  "id": "2026-10-07-recovery-monitor-001",
+  "operation": "status"
 }
