@@ -1,0 +1,8 @@
+doku/ahsap.jpg
+doku/asfalt.jpg
+doku/cim.jpg
+doku/kiremit.jpg
+doku/parke.jpg
+doku/siva.jpg
+doku/tugla.jpg
+model/insan.glb
