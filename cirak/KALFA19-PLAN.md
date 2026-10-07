@@ -72,3 +72,27 @@ Bu strateji korunacak:
 **Komut verme:** `cirak/komut.json` değişir → koşu otomatik başlar (veya Actions → Run workflow).
 **Hafif mod** (`sure_dk ≈ 0.8`): ~1 dakika → ücretsiz dakika bütçesi korunur.
 **Uzun grind** (`sure_dk = 20`): ~20 dakika (ayda ~2.000 dk sınırına dikkat).
+
+
+---
+
+## 👤 KARAHAN'IN DESENİ (7 Ekim taraması)
+- **Ankara'nın her ilçesinde 1 Emlakçı** (no 13, küçük parsel) → imza işi emlakçı.
+- Kart: SV10 · TP 2.578 · servet 49,8 M ₺ · **Türkiye #1** · 60 işletme · 12 tezgâh.
+- Bizimle **arkadaşlık yoktu**; istek gönderiliyor (bot).
+- Bize **1.000.000 ₺** gönderecek → stoksuz dükkânlar açılacak.
+
+## 🎯 KARAHAN'IN TALİMATLARI (7 Ekim gece) — UYGULAMA LİSTESİ
+| # | Talimat | Durum |
+|---|---|---|
+| 1 | Arkadaşlık isteği gönder | ✅ bota eklendi (sıradaki koşuda) |
+| 2 | "Ekledim" mesajı gönder | ✅ mesaj kuyruğa alındı |
+| 3 | 1M ₺ gelince stoksuz dükkân aç | ✅ dukkan-ac görevi hazır (kargo+oto yıkama ilk) |
+| 4 | Kargo / Emlakçı / Oto servis / Oto yıkama | ✅ hedef listesinde |
+| 5 | Otopark ASLA | ✅ otopark_yasak: true |
+| 6 | Seviye atlayınca dükkânları bildir | ✅ seviye-bildir görevi DM atıyor |
+| 7 | Botlar sürekli çalışsın, tezgâh TP getirsin | ✅ bot görevi; 7/24 için 7-24-KURULUM.md |
+| 8 | Güncellemeleri takip et + not ekle | 🔄 her koşuda yenilikler çekiliyor |
+| 9 | Esnaf odasına kayıt + eğitim (TP) | ✅ oda görevi |
+| 10 | Başkanlık seçiminde Karahan'a oy | ⏳ oylama 8-14'ü; oda üyeliği gerekli |
+| 11 | Gerekirse repo public | ⏳ 7-24-KURULUM.md (önce çerez → secret) |
