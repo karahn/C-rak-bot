@@ -1,13 +1,9 @@
 {
-  "time_utc": "2026-10-07T22:15:47.067434+00:00",
+  "time_utc": "2026-10-07T22:16:59.000176+00:00",
   "command": {
-    "id": "2026-10-07-transfer-and-maintain-002",
-    "operation": "transfer_and_maintain",
-    "iban": "TR820077706416007162205383",
-    "amount_kurus": 100000000,
-    "aciklama": "Günlük kâr payı 2",
-    "max_stock_cost_kurus": 15000000
+    "id": "2026-10-07-check-status-debug-001",
+    "operation": "status"
   },
   "ok": false,
-  "error": "Safety stop: expected 'arastirmaci42', API returned None"
+  "error": "Safety stop: expected 'arastirmaci42', API returned None (detail=None, keys=['sunucuZamani', 'takvim', 'oyuncu', 'aktifIsler', 'okunmamis', 'okunmamisBildirim', 'arkadasIstek', 'yeniHareket', 'vergiBekleyen', 'ekipUyesi', 'bitenUretim', 'esnaf', 'bonusVar', 'bonusGun', 'miniOyun', 'hapis', 'odulluVideo', 'sezonOdul', 'hava', 'yasam', 'davetSayisi', 'etkinlik', 'bakim', 'ozelGun', 'camiIsik', 'vaka'])"
 }
