@@ -182,6 +182,13 @@ def request_recovery_email_operation(api: Api, command: dict[str, Any]) -> dict[
     return {"already_linked": False, "request_sent": True, "response": response}
 
 
+def password_reset_challenge_operation(api: Api) -> dict[str, Any]:
+    challenge = api.call("dogrulama")
+    if not challenge.get("anahtar") or not challenge.get("resim"):
+        raise OperatorError("Password reset challenge was not returned")
+    return {"challenge": challenge}
+
+
 def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
     operation = command.get("operation")
     if operation == "status":
@@ -190,6 +197,8 @@ def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
         return pay_tax_operation(api, command)
     if operation == "request_recovery_email":
         return request_recovery_email_operation(api, command)
+    if operation == "password_reset_challenge":
+        return password_reset_challenge_operation(api)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 
