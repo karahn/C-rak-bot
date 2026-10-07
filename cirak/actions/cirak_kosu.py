@@ -278,9 +278,33 @@ def gorev_yenilikler(op, komut):
             "ilk": ozet[0] if ozet else None, "son": ozet[-1] if ozet else None}
 
 
+def gorev_bot(op, komut):
+    """Uzun koşu: tezgâh grind + sokak olayları + günlük ödüller + keyif."""
+    import importlib.util
+    yol_mod = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bot_cekirdek.py")
+    spec = importlib.util.spec_from_file_location("bot_cekirdek", yol_mod)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+
+    LOG_DOSYA = os.path.join(KOK, "loglar", "kosu.jsonl")
+
+    def logla(k):
+        os.makedirs(os.path.dirname(LOG_DOSYA), exist_ok=True)
+        k["ts"] = int(time.time() * 1000)
+        with open(LOG_DOSYA, "a", encoding="utf-8") as f:
+            f.write(json.dumps(k, ensure_ascii=False) + "\n")
+
+    def kalp(notu=""):
+        yaz(os.path.join(KOK, "kalp.txt"), "%d %s\n" % (int(time.time() * 1000), notu))
+
+    sure = int(komut.get("sure_dk") or 20)
+    bot = mod.Bot(cek, logla, kalp, sure_dk=sure)
+    return bot.kos()
+
+
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
-            "captcha-ornek": gorev_captcha_ornek}
+            "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot}
 
 
 # ---------------------------------------------------------------- özet yaz
