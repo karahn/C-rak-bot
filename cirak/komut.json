@@ -1,6 +1,6 @@
 {
-  "gorevler": ["test", "durum", "yenilikler"],
-  "not": "Bu dosyayı değiştirmek GitHub Actions koşusunu tetikler. Görevler: test | durum | ham | yenilikler",
-  "uclar": null,
-  "kosu": 2
+  "gorevler": ["cerez-kontrol", "kaynak", "captcha-ornek"],
+  "adet": 5,
+  "not": "Görevler: test | durum | ham | yenilikler | cerez-kontrol | kaynak | captcha-ornek",
+  "kosu": 3
 }

@@ -157,6 +157,95 @@ def gorev_ham(op, komut):
     return rapor
 
 
+def cek_metin(op, url: str, limit: int = 4_000_000):
+    """JSON olmayan ham metin (HTML/JS) indirir."""
+    req = urllib.request.Request(url, headers={"Accept": "*/*"})
+    try:
+        with op.open(req, timeout=40) as r:
+            return r.read(limit).decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return ""
+    except Exception:
+        return ""
+
+
+def gorev_cerez_kontrol(op, komut):
+    """Çerez hâlâ geçerli mi? Oyuncuyu ve kısa durumu döner."""
+    d = cek(op, "durum")
+    o = (d or {}).get("oyuncu") if isinstance(d, dict) else None
+    if o:
+        b = cek(op, "banka") or {}
+        return {
+            "tamam": True,
+            "oyuncu": o.get("kullaniciAdi"), "seviye": o.get("seviye"), "tp": o.get("tecrube"),
+            "nakit_kurus": o.get("bakiye"), "il": o.get("il"), "ilce": o.get("ilce"), "mahalle": o.get("mahalle"),
+            "banka": b, "takvim": (d or {}).get("takvim"),
+        }
+    return {"tamam": False, "hata": (d or {}).get("hata") if isinstance(d, dict) else d}
+
+
+def gorev_kaynak(op, komut):
+    """Oyunun güncel kaynak kodunu indirir; çerez adını ve API uçlarını çıkarır."""
+    import re
+    KAY = os.path.join(KOK, "kaynak")
+    os.makedirs(KAY, exist_ok=True)
+    html = cek_metin(op, "https://oyunsitem.com/cirak/")
+    srcs = re.findall(r'<script[^>]+src="([^"]+)"', html) + re.findall(r'<link[^>]+href="([^"]+\.js[^"]*)"', html)
+    srcs = [s for s in dict.fromkeys(srcs)][:10]
+    kayitlar, api_uclari, cerez_izleri = [], set(), []
+    for s in srcs:
+        url = s if s.startswith("http") else "https://oyunsitem.com/cirak/" + s.lstrip("/")
+        txt = cek_metin(op, url)
+        if not txt:
+            kayitlar.append({"src": s, "boyut": 0, "not": "indirilemedi"})
+            continue
+        ad = os.path.basename(s.split("?")[0]) or ("kaynak-%d.js" % len(kayitlar))
+        yaz(os.path.join(KAY, ad), txt)
+        for m in re.finditer(r'cookie', txt, re.I):
+            ctx = re.sub(r"\s+", " ", txt[max(0, m.start() - 100): m.start() + 140])
+            if ctx not in cerez_izleri:
+                cerez_izleri.append(ctx)
+        for m in re.finditer(r'["\'`]([a-z0-9][a-z0-9\-]{1,24}(?:/[a-z0-9\-{}.]{1,24}){1,3})["\'`]', txt):
+            aday = m.group(1)
+            if any(k in aday for k in (".js", ".jsx", ".json", "http", "www.", ".png", ".css", "assets")):
+                continue
+            api_uclari.add(aday)
+        kayitlar.append({"src": s, "boyut": len(txt), "ad": ad})
+        time.sleep(0.6)
+    yaz(os.path.join(KAY, "api-uclari.txt"),
+        "\n".join(sorted(api_uclari)))
+    yaz(os.path.join(KAY, "cerez-izleri.txt"),
+        "\n\n".join(cerez_izleri[:80]))
+    return {"html_uzunluk": len(html), "scriptler": kayitlar,
+            "cerez_izi_sayisi": len(cerez_izleri), "api_ucu_sayisi": len(api_uclari),
+            "tezgah_geciyor": any("tezgah" in t for t in cerez_izleri),
+            "ornek_uclar": sorted(api_uclari)[:40]}
+
+
+def gorev_captcha_ornek(op, komut):
+    """Captcha örnekleri indirir (çözücü geliştirmek için)."""
+    import base64 as b64
+    import re
+    KAY = os.path.join(KOK, "kaynak", "captcha")
+    os.makedirs(KAY, exist_ok=True)
+    adet = int(komut.get("adet") or 5)
+    ornekler = []
+    for i in range(adet):
+        d = cek(op, "dogrulama")
+        resim = (d or {}).get("resim") or ""
+        m = re.match(r"data:image/svg\+xml;base64,(.*)", resim, re.S)
+        svg = b64.b64decode(m.group(1)).decode("utf-8", "replace") if m else ""
+        ad = "captcha-%02d.svg" % (i + 1)
+        yaz(os.path.join(KAY, ad), svg)
+        kalinliklar = re.findall(r'stroke-width="([\d.]+)"', svg)
+        ornekler.append({"ad": ad, "anahtar": (d or {}).get("anahtar"), "boyut": len(svg),
+                         "path_sayisi": len(re.findall(r"<path", svg)),
+                         "kalinliklar": kalinliklar[:24],
+                         "daire_sayisi": len(re.findall(r"<circle", svg))})
+        time.sleep(2)
+    return {"ornekler": ornekler}
+
+
 def gorev_yenilikler(op, komut):
     """Sürüm notlarını COMPAK özetler (tüm dilleri atmak için)."""
     ham = cek(op, "yenilikler")
@@ -189,7 +278,9 @@ def gorev_yenilikler(op, komut):
             "ilk": ozet[0] if ozet else None, "son": ozet[-1] if ozet else None}
 
 
-GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler}
+GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
+            "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
+            "captcha-ornek": gorev_captcha_ornek}
 
 
 # ---------------------------------------------------------------- özet yaz
