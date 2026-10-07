@@ -638,12 +638,57 @@ def gorev_dukkan_ac(op, komut):
     return sonuc
 
 
+def gorev_mesaj_oku(op, komut):
+    """Karahan'dan gelen mesajları okur; istenirse akıllıca cevap yazar."""
+    kisi = komut.get("kisi") or komut.get("arkadas_ad") or "Karahan"
+    r = cek(op, "mesajlar/%s" % kisi) or {}
+    ms = r.get("mesajlar") or []
+    alanlar = ("id", "giden", "metin", "ts", "zaman", "tarih")
+    kayit = [{k: m.get(k) for k in alanlar if k in m} for m in ms]
+    gelenler = [m for m in ms if not m.get("giden")]
+    son_gelen = gelenler[-1] if gelenler else None
+    sonuc = {"kisi": kisi, "toplam": len(ms), "gelen_adet": len(gelenler),
+             "son_gelen": son_gelen, "son_mesajlar": kayit[-10:], "ham_hata": r.get("hata")}
+    if komut.get("oto_cevap") and son_gelen:
+        metin = (son_gelen.get("metin") or "").lower()
+        para_var = any(x in metin for x in ("para", "milyon", "gönder", "yollad", "havale", "iban", "hesab"))
+        if para_var:
+            cevap = ("Parayı aldım patron, sağ ol! Hemen kargo + oto yıkama açıyorum. "
+                     "SV5'te oto servis, SV6'da emlakçı sırada. Tezgâhlar tam gaz, kasa büyüyor.")
+        else:
+            cevap = ("Mesajını aldım patron! Tezgâhlar çalışıyor, servisle kazandırıyor. "
+                     "Dükkân ucunu çözdüm; para geçince kargo + oto yıkama açıyorum.")
+        sonuc["cevap"] = mesaj_gonder(op, kisi, cevap)
+        sonuc["cevap_metni"] = cevap
+    return sonuc
+
+
+def gorev_havale(op, komut):
+    """Gelen havaleleri listeler (Karahan'ın 1M ₺ gönderip göndermediğini görmek için)."""
+    hv = cek(op, "banka/havale") or {}
+    gecmis = hv.get("gecmis") or []
+    gelen = [{"id": g.get("id"), "kim": g.get("kim"), "tutar": (g.get("tutar") or 0) / 100,
+              "aciklama": g.get("aciklama"), "giden": g.get("giden"), "ts": g.get("ts") or g.get("zaman")}
+             for g in gecmis]
+    return {"toplam": len(gelen), "gelenler": [g for g in gelen if not g.get("giden")][-10:],
+            "son_hareketler": gelen[-10:], "ham": {k: v for k, v in hv.items() if k != "gecmis"}}
+
+
+def gorev_banka(op, komut):
+    """Banka durumu + IBAN (Karahan para gönderecekse lazım)."""
+    b = cek(op, "banka") or {}
+    return {"nakit": (b.get("nakit") or 0) / 100, "vadesiz": (b.get("vadesiz") or 0) / 100,
+            "iban": b.get("iban"), "vadeliler": b.get("vadeliler"), "krediler": b.get("krediler"),
+            "ham_anahtarlar": list(b.keys())}
+
+
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
             "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif,
             "ana-js": gorev_ana_js, "cadde-tara": gorev_cadde_tara,
             "arkadas-istek": gorev_arkadas_istek, "mesaj": gorev_mesaj, "oda": gorev_oda,
-            "seviye-bildir": gorev_seviye_bildir, "dukkan-ac": gorev_dukkan_ac}
+            "seviye-bildir": gorev_seviye_bildir, "dukkan-ac": gorev_dukkan_ac,
+            "mesaj-oku": gorev_mesaj_oku, "havale": gorev_havale, "banka": gorev_banka}
 
 
 # ---------------------------------------------------------------- özet yaz
