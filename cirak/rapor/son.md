@@ -1,39 +1,46 @@
-# Çırak raporu — test
+# Çırak raporu — cerez-kontrol
 
-**Zaman:** 2026-10-07 16:17:12 UTC
+**Zaman:** 2026-10-07 17:17:02 UTC
+
+## Oyuncu
+
+- Ad: **Kalfa19**
+- Seviye: 2 · TP: 8
+- Nakit: 632.44 ₺
+- Konum: Ankara / Pursaklar / Fatih Mahallesi
 
 
 ---
 
 # Çırak raporu — durum
 
-**Zaman:** 2026-10-07 16:17:14 UTC
+**Zaman:** 2026-10-07 17:16:35 UTC
 
 ## Uçlar
 
-- `durum` → {"sunucuZamani": 1791389834701, "takvim": {"ms": 1791400634701, "yil": 2026, "ay": 9, "ayAdi": "Ekim", "gunNo": 7, "haftaGunu": "Çarşamba", "haftaGunuNo": 3, "haftaSonu": false, "saat": 19, "dakika": 17, "mevsim": "sonbahar", "mevsimAdi": "Sonbahar", "metin": "7 Ekim 2026, Çarşamba"}, "oyuncu": null…
-- `banka` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `vergi` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `vaka` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `isletmelerim` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `seyyar` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `gorevler` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `hareketler` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `finans` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `siralama` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `ligler` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
+- `durum` → {"sunucuZamani": 1791393395584, "takvim": {"ms": 1791404195584, "yil": 2026, "ay": 9, "ayAdi": "Ekim", "gunNo": 7, "haftaGunu": "Çarşamba", "haftaGunuNo": 3, "haftaSonu": false, "saat": 20, "dakika": 16, "mevsim": "sonbahar", "mevsimAdi": "Sonbahar", "metin": "7 Ekim 2026, Çarşamba"}, "oyuncu": {"ye…
+- `banka` → {"vadesiz": 0, "nakit": 63244, "vadeliler": [], "krediler": [], "vadeler": [{"gun": 7, "ad": "1 hafta", "faiz": 36}, {"gun": 30, "ad": "1 ay", "faiz": 40}, {"gun": 90, "ad": "3 ay", "faiz": 42}, {"gun": 365, "ad": "1 yıl", "faiz": 45}], "krediTurleri": [{"kod": "isletme", "ad": "İşletme kredisi", "s…
+- `vergi` → {"vergiNo": "1734201916", "daire": "Pursaklar", "tur": "sahis", "turAdi": "Gelir vergisi", "donem": {"no": 2073, "ad": "14.10.2026", "bitis": 1791936000000, "ciro": 0, "alis": 0, "kar": 0, "kdv": 0, "gelir": 0, "varlik": {"tutar": 0, "oran": 3, "matrah": 0, "servet": 1688244}}, "beyanlar": [], "borc…
+- `vaka` → {"sunucuZamani": 1791393400460, "acik": [], "gecmis": [], "bugun": 0, "gunluk": 3, "itibar": {"puan": 500, "band": "orta", "oran": 0, "musteri": 0, "tezgah": 0, "kredi": 0, "hareketler": []}, "guvenlik": {"secenekler": [{"kod": "tup", "ad": "Yangın tüpü ve dedektör", "simge": "🧯", "fiyat": 800000, "…
+- `isletmelerim` → []
+- `seyyar` → {"takvim": {"ms": 1791404203182, "yil": 2026, "ay": 9, "ayAdi": "Ekim", "gunNo": 7, "haftaGunu": "Çarşamba", "haftaGunuNo": 3, "haftaSonu": false, "saat": 20, "dakika": 16, "mevsim": "sonbahar", "mevsimAdi": "Sonbahar", "metin": "7 Ekim 2026, Çarşamba"}, "nufusCarpani": 1.05572215751436, "izin": {"v…
+- `gorevler` → {"gun": "2026-10-07", "gunSonu": 1791406844548, "alindi": false, "odul": 187500, "tecrube": 4, "gorevler": [{"kod": "siparis", "simge": "📦", "ad": "Bir toplu siparişi zamanında yetiştir", "n": 0, "hedef": 1, "para": false, "tamam": false}, {"kod": "mini_yildiz", "simge": "🌟", "ad": "Bir mini oyunda …
+- `hareketler` → {"liste": [{"id": 462259, "tutar": 1766, "bakiyeSonrasi": 63244, "tur": "seyyar_servis", "aciklama": "Simitçi: müşteriye servis", "zaman": 1791390246337}, {"id": 462249, "tutar": -100000, "bakiyeSonrasi": 61478, "tur": "cirak", "aciklama": "Şemsiye satıcısı: çırak yevmiyesi (Tam gün)", "zaman": 1791…
+- `finans` → {"not": {"puan": 919, "bant": "Orta riskli", "renk": "#F08A24", "bantlar": [{"alt": 1, "ust": 699, "ad": "En riskli", "renk": "#D7263D"}, {"alt": 700, "ust": 1099, "ad": "Orta riskli", "renk": "#F08A24"}, {"alt": 1100, "ust": 1499, "ad": "Az riskli", "renk": "#E8C21A"}, {"alt": 1500, "ust": 1699, "a…
+- `siralama` → {"liste": [{"id": 14, "kullaniciAdi": "Karahan", "bakiye": 329614228, "servet": 4965944712, "foto": "api/profil/14.jpg?s=1791021665868", "il": "Ankara", "sirket": null, "seviye": 10, "gr": {"c": "sampiyon", "r": "sezon", "e": 1}, "cevrimici": true}, {"id": 31, "kullaniciAdi": "ybey", "bakiye": 2549,…
+- `ligler` → {"hafta": "2026-10-05", "bitis": 1791752400000, "oduller": [5000000, 2500000, 1000000], "ligler": [{"kod": "ciftci", "ad": "Çiftçi ligi", "simge": "🌾", "aciklama": "Tarım, hayvancılık ve ormancılıkta üretilen ürünlerin değeri", "liste": [], "benimPuan": 0, "benimSiram": null}, {"kod": "sanayici", "a…
 - `mahalle` → {"hata": "Bulunamadı."}
-- `yetenekler` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `tedarik` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `pazar` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `sigorta` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
+- `yetenekler` → {"puan": 1, "kullanilan": 1, "bos": 0, "enCok": 5, "sifirlamaUcreti": 2000000, "liste": [{"kod": "satis", "simge": "🗣️", "ad": "Satış ustası", "derece": 0, "simdi": "Tezgâh satışların %0 artar.", "sonraki": "Tezgâh satışların %3 artar."}, {"kod": "pazarlik", "simge": "🤝", "ad": "Pazarlıkçı", "derece…
+- `tedarik` → {"benim": [], "teklifler": [], "teminatOrani": 20, "aralikGunleri": [1, 3, 7], "enCokTeslim": 12, "ekonomiGunuMs": 28800000}
+- `pazar` → [{"kod": "bugday", "ad": "Buğday", "birim": "kg", "grup": "tarim", "ithal": false, "fiyat": 1200, "degisim": 0, "sistemAlir": 997, "sistemSatar": 1342, "ilanSayisi": 1, "enUcuzIlan": 1300}, {"kod": "arpa", "ad": "Arpa", "birim": "kg", "grup": "tarim", "ithal": false, "fiyat": 900, "degisim": 0, "sis…
+- `sigorta` → {"sirketim": null, "liste": [], "kurulus": {"seviye": 25, "harc": 25000000, "enAzSermaye": 500000000, "karsilik": 250000000, "oranAraligi": [60, 150], "vergi": 0.1}, "kurabilir": false}
 - `kiralama` → {"hata": "Bulunamadı."}
-- `etkinlikler` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
-- `mini-oyun/sira?kod=genel` → {"hata": "Oturumun kapanmış, tekrar giriş yap."}
+- `etkinlikler` → {"katalog": [{"kod": "sinema", "ad": "Sinema", "simge": "🎬", "kategori": "Kültür-sanat", "fiyat": 27040, "sure": 150, "keyif": 12, "aciklama": "Vizyondaki film, mısır ve kola."}, {"kod": "tiyatro", "ad": "Tiyatro", "simge": "🎭", "kategori": "Kültür-sanat", "fiyat": 43680, "sure": 150, "keyif": 15, "…
+- `mini-oyun/sira?kod=genel` → {"kod": "genel", "hafta": "2026-10-05", "bitis": 1791752400000, "odul": [10000000, 6000000, 4000000, 1500000, 1500000, 1000000, 1000000, 1000000, 1000000, 1000000], "enCok": 4500, "liste": [{"sira": 1, "oyuncuId": 14, "kullaniciAdi": "Karahan", "puan": 3738, "oyun": 43, "ben": false}, {"sira": 2, "o…
 
 
 ---
 
-# Çırak raporu — yenilikler
+# Çırak raporu — bot
 
-**Zaman:** 2026-10-07 16:17:42 UTC
+**Zaman:** 2026-10-07 17:17:02 UTC
