@@ -1,6 +1,7 @@
 {
   "gorevler": ["cerez-kontrol", "kaynak", "captcha-ornek"],
   "adet": 5,
-  "not": "Görevler: test | durum | ham | yenilikler | cerez-kontrol | kaynak | captcha-ornek",
-  "kosu": 3
+  "sure_dk": 0,
+  "not": "Görevler: test | durum | ham | yenilikler | cerez-kontrol | kaynak | captcha-ornek | bot",
+  "kosu": 4
 }
