@@ -162,12 +162,34 @@ def pay_tax_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def request_recovery_email_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
+    status = require_account(api)
+    player = status.get("oyuncu") or {}
+    if player.get("eposta"):
+        return {"already_linked": True, "email_present": True}
+
+    email = str(command.get("email") or "").strip()
+    if "@" not in email or len(email) > 120:
+        raise OperatorError("Safety stop: a valid recovery email is required")
+
+    message = (
+        "arastirmaci42 hesabına açık oturumla erişiyorum; ancak hesap oluşturulurken "
+        "üretilen şifre kaydedilmemiş ve Hesabım bölümünde e-posta görünmüyor. "
+        "Şifre yenileme yapabilmem için bu formda belirttiğim e-posta adresini hesaba "
+        "bağlar mısınız? Aynı talebi 5 Ekim 2026 tarihinde de göndermiştim. Teşekkürler."
+    )
+    response = api.call("iletisim", {"eposta": email, "konu": "Hesabım", "metin": message})
+    return {"already_linked": False, "request_sent": True, "response": response}
+
+
 def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
     operation = command.get("operation")
     if operation == "status":
         return status_operation(api)
     if operation == "pay_tax":
         return pay_tax_operation(api, command)
+    if operation == "request_recovery_email":
+        return request_recovery_email_operation(api, command)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 
@@ -185,7 +207,10 @@ def main() -> int:
     }
     try:
         command = json.loads(args.command.read_text(encoding="utf-8"))
-        result["command"] = command
+        result["command"] = {
+            key: ("<redacted>" if key in {"email", "password", "cookie", "token"} else value)
+            for key, value in command.items()
+        }
         cookie = load_cookie(args.archive)
         result["data"] = run(command, Api(cookie))
         result["ok"] = True

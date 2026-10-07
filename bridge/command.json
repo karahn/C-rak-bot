@@ -1,4 +1,5 @@
 {
-  "id": "2026-10-07-post-tax-status-001",
-  "operation": "status"
+  "id": "2026-10-07-recovery-email-001",
+  "operation": "request_recovery_email",
+  "email": "tmrk1623@gmail.com"
 }
