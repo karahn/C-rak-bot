@@ -390,6 +390,43 @@ def finish_inventory_operation(api: Api, command: dict[str, Any]) -> dict[str, A
     }
 
 
+def start_google_link_operation(api: Api) -> dict[str, Any]:
+    require_account(api)
+    baglantilar = api.call("oauth/baglantilar")
+
+    class NoRedirect(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, req, fp, code, msg, headers, newurl):
+            return None
+
+    opener = urllib.request.build_opener(NoRedirect)
+    req = urllib.request.Request(
+        API_ROOT + "oauth/google/basla?bagla=1",
+        headers={
+            "Cookie": api.headers["Cookie"],
+            "Referer": "https://oyunsitem.com/cirak/",
+            "User-Agent": api.headers["User-Agent"],
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        },
+    )
+    link_url = None
+    try:
+        with opener.open(req, timeout=30) as resp:
+            link_url = resp.geturl()
+    except urllib.error.HTTPError as exc:
+        if exc.code in (301, 302, 303, 307, 308):
+            link_url = exc.headers.get("Location")
+        else:
+            raw = exc.read().decode("utf-8", errors="replace")
+            raise OperatorError(f"OAuth request HTTP {exc.code}: {raw}")
+    except Exception as exc:
+        raise OperatorError(f"OAuth request failed: {exc}")
+
+    return {
+        "baglantilar": baglantilar,
+        "google_auth_url": link_url,
+    }
+
+
 def submit_password_reset_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
     email = str(command.get("email") or "").strip()
     code = str(command.get("verification_code") or "").strip()
@@ -428,6 +465,8 @@ def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
         return finish_inventory_operation(api, command)
     if operation == "submit_password_reset":
         return submit_password_reset_operation(api, command)
+    if operation == "start_google_link":
+        return start_google_link_operation(api)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 
