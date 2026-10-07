@@ -1,8 +1,10 @@
 {
-  "gorevler": ["cerez-kontrol", "ham", "ana-js", "bot"],
-  "sure_dk": 25,
-  "dosya": "/ana.js?v=0.57.15",
-  "uclar": ["cadde?ilce=1745", "cadde/1745", "oyuncu-karti/14/isletmeler", "oyuncu-karti/14/isletme", "ilce/1745", "cadde?ilceId=1745"],
-  "not": "UZUN GRIND (25 dk) + kesif: Karahan'ın Keçiören'deki (ilce 1745) dükkanlarını bulma denemesi + ana oyun kodundan dükkan açma uçları.",
-  "kosu": 10
+ "gorevler": [
+  "cerez-kontrol",
+  "durum",
+  "bot"
+ ],
+ "sure_dk": 0.8,
+ "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. Uzun grind için sure_dk değerini artır (ben ayarlarım).",
+ "kosu": 11
 }

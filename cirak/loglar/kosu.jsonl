@@ -27,3 +27,27 @@
 {"olay": "cirak_basla", "kod": "pamuk", "id": 79523, "ts": 1791401431200}
 {"olay": "cirak_basla", "kod": "semsiye", "id": 79524, "ts": 1791401431445}
 {"olay": "kosu_bitti", "tur": 16, "kazanc": 4759.4, "servis": 61, "bahsis": 13, "bakiye": 10193.6, "gecen_dk": 2.1, "ts": 1791401535929}
+{"olay": "kosu_basladi", "sure_dk": 25.0, "bakiye": 35239.14, "ts": 1791403695573}
+{"olay": "keyif_yuruyus", "onceki": 68, "bakiye": 35239.14, "sonuc": {"id": 464, "fiyat": 6240, "keyif": 81, "davetEdilen": []}, "ts": 1791403697260}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622015", "sonuc": {"tutar": -2000, "tecrube": 1, "metin": "Kediyi besledin. Mırlayarak ayağına süründü.", "bakiye": 3719383, "hareket": 473860}, "ts": 1791403866652}
+{"olay": "topladi", "adet": 4, "net": 5700.89, "ts": 1791403902519}
+{"olay": "ben_basla", "kod": "pazar", "id": 79927, "ts": 1791403904540}
+{"olay": "cirak_basla", "kod": "simit", "id": 79928, "ts": 1791403908420}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 79929, "ts": 1791403908730}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 79930, "ts": 1791403908903}
+{"olay": "topladi", "adet": 1, "net": 5536.46, "ts": 1791404251248}
+{"olay": "ben_basla", "kod": "pazar", "id": 80018, "ts": 1791404251441}
+{"olay": "topladi", "adet": 3, "net": 3443.21, "ts": 1791404255782}
+{"olay": "cirak_basla", "kod": "simit", "id": 80019, "ts": 1791404259705}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 80020, "ts": 1791404259875}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 80021, "ts": 1791404260048}
+{"olay": "topladi", "adet": 1, "net": 4114.3, "ts": 1791404601686}
+{"olay": "ben_basla", "kod": "pazar", "id": 80077, "ts": 1791404602013}
+{"olay": "yetenek", "kod": "satis", "sonuc": {"puan": 2, "kullanilan": 2, "bos": 0, "enCok": 5, "sifirlamaUcreti": 3000000, "liste": [{"kod": "satis", "simge": "🗣️", "ad": "Satış ustası", "derece": 1, "simdi": "Tezgâh satışların %3 artar.", "sonraki": "Tezgâh satışların %6 artar."}, {"kod": "pazarlik", "simge": "🤝", "ad": "Pazarlıkçı", "derece": 1, "simdi": "Toptancıdan, pazardan ve tezgâh malzemesini alırken %2 ucuza alırsın.", "sonraki": "Toptancıdan, pazardan ve tezgâh malzemesini alırken %4 ucuza alırsın."}, {"kod": "tuccar", "simge": "⚖️", "ad": "Tüccar", "derece": 0, "simdi": "Toptan pazara satarken %0 daha iyi fiyat alırsın.", "sonraki": "Toptan pazara satarken %2 daha iyi fiyat alırsın."}, {"kod": "verimli", "simge": "⚙️", "ad": "Verimli üretim", "derece": 0, "simdi": "Tesislerindeki üretim %0 daha kısa sürer.", "sonraki": "Tesislerindeki üretim %4 daha kısa sürer."}, {"kod": "yonetim", "simge": "📋", "ad": "İyi yönetici", "derece": 0, "simdi": "Çırak yevmiyesi ve üretim giderleri %0 azalır.", "sonraki": "Çırak yevmiyesi ve üretim giderleri %4 azalır."}, {"kod": "itibar", "simge": "🏅", "ad": "Esnaf itibarı", "derece": 0, "simdi": "Zabıta cezaları %0 hafif olur.", "sonraki": "Zabıta cezaları %12 hafif olur."}]}, "ts": 1791404605936}
+{"olay": "topladi", "adet": 3, "net": 183.04, "ts": 1791404606482}
+{"olay": "cirak_basla", "kod": "simit", "id": 80079, "ts": 1791404610708}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 80080, "ts": 1791404611023}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 80081, "ts": 1791404611203}
+{"olay": "sokak", "tur": "ambulans", "id": "2034:ambulans:933023", "sonuc": {"tutar": 15000, "tecrube": 2, "metin": "İhbarın alındı. Ambulans yola çıktı; sağlık ekibine yer aç.", "bakiye": 5505710, "hareket": 475380}, "ts": 1791404902785}
+{"olay": "sokak", "tur": "kavga", "id": "2034:kavga:622015", "sonuc": {"tutar": 15000, "tecrube": 2, "metin": "İhbarın alındı. Polis ekibi yola çıktı; lütfen güvenli bir mesafede bekle.", "bakiye": 5520710, "hareket": 475381}, "ts": 1791404902955}
+{"olay": "kosu_bitti", "tur": 239, "kazanc": 32406.4, "servis": 941, "bahsis": 188, "bakiye": 56881.87, "gecen_dk": 25.0, "ts": 1791405197458}
