@@ -1,6 +1,6 @@
 {
-  "gorevler": ["cerez-kontrol", "durum", "bot"],
+  "gorevler": ["cerez-kontrol", "bot", "kesif"],
   "sure_dk": 0.8,
-  "not": "HAFIF MOD: oturum kontrolü + tam durum + tek tur (günlük ödül, sokak olayı, tezgâh servisi). Uzun grind için sure_dk'yı ben yükseltirim.",
-  "kosu": 5
+  "not": "HAFIF MOD: oturum + tek tur bot (günlük ödül, sokak, tezgâh servisi) + keşif (Karahan'ın kartı, tezgâh fiyatları, yeni uçlar).",
+  "kosu": 6
 }

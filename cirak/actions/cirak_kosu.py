@@ -284,6 +284,46 @@ VARSAYILAN_KOMUT = {"gorevler": ["cerez-kontrol", "durum", "bot"], "sure_dk": 0.
                     "kosu": 1}
 
 
+KESIF_ADAYLARI = [
+    "kiralama", "kiralik", "dukkan/kiralik", "cadde", "caddeler", "sokak", "sokaklar", "harita",
+    "mahalle", "mahalleler", "isletmeler", "dukkanlar", "komsular", "oyuncular",
+    "oyuncu-karti/14", "mezat", "proje", "kariyer", "tesisler", "uretim", "envanter",
+    "market", "magaza", "gorev", "gunluk", "sans", "cark", "sezon/kart", "pazar",
+]
+
+
+def gorev_kesif(op, komut):
+    """Bilinmeyen/yenilenmiş uçları keşfeder + Karahan'ın kartını ve tezgâh listesini çeker."""
+    rapor = {"ts": simdi(), "kesif": {}, "veri": {}}
+
+    # 1) aday uçlar: hangisi 404 değil?
+    adaylar = komut.get("adaylar") or KESIF_ADAYLARI
+    for u in adaylar:
+        r = cek(op, u, deneme=1)
+        if isinstance(r, dict) and r.get("hata") == "Bulunamadı.":
+            rapor["kesif"][u] = "yok"
+        elif isinstance(r, dict) and r.get("hata"):
+            rapor["kesif"][u] = "hata: %s" % str(r.get("hata"))[:80]
+        else:
+            anahtarlar = list(r.keys())[:12] if isinstance(r, dict) else "(liste %d)" % len(r or [])
+            rapor["kesif"][u] = {"anahtarlar": anahtarlar}
+        time.sleep(0.7)
+
+    # 2) Karahan'ın oyuncu kartı (id 14) — portföyünü öğren
+    rapor["veri"]["karahan"] = cek(op, "oyuncu-karti/14")
+    time.sleep(1.0)
+
+    # 3) Tezgâh (seyyar) tam listesi — bugünün işleri, izin, fiyatlar
+    rapor["veri"]["seyyar"] = cek(op, "seyyar")
+    time.sleep(1.0)
+
+    # 4) Görevler + bonus/sezon durumu
+    rapor["veri"]["gorevler"] = cek(op, "gorevler")
+    rapor["veri"]["bonus"] = cek(op, "bonus")
+    rapor["veri"]["sezon"] = cek(op, "sezon")
+    return rapor
+
+
 def gorev_bot(op, komut):
     """Uzun koşu: tezgâh grind + sokak olayları + günlük ödüller + keyif."""
     import importlib.util
@@ -304,7 +344,7 @@ def gorev_bot(op, komut):
         yaz(os.path.join(KOK, "kalp.txt"), "%d %s\n" % (int(time.time() * 1000), notu))
 
     sure = float(komut.get("sure_dk") or 0)
-    bot = mod.Bot(cek, logla, kalp, sure_dk=sure)
+    bot = mod.Bot(lambda rota, veri=None: cek(op, rota, veri), logla, kalp, sure_dk=sure)
     ozet = bot.kos()
 
     # Ağır koşudan sonra komutu hafif moda döndür → zamanlanmış koşular ucuz kalsın
@@ -318,7 +358,7 @@ def gorev_bot(op, komut):
 
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
-            "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot}
+            "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif}
 
 
 # ---------------------------------------------------------------- özet yaz
