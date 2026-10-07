@@ -89,8 +89,10 @@ def require_account(api: Api) -> dict[str, Any]:
     player = status.get("oyuncu") or {}
     username = player.get("kullaniciAdi")
     if username != EXPECTED_USER:
+        keys = list(status.keys()) if isinstance(status, dict) else str(type(status))
+        detail = status.get("hata") or status.get("mesaj") or status.get("misafir")
         raise OperatorError(
-            f"Safety stop: expected {EXPECTED_USER!r}, API returned {username!r}"
+            f"Safety stop: expected {EXPECTED_USER!r}, API returned {username!r} (detail={detail}, keys={keys})"
         )
     return status
 
