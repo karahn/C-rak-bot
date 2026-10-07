@@ -56,7 +56,7 @@ class Api:
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36",
         }
 
-    def call(self, route: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
+    def call(self, route: str, payload: dict[str, Any] | None = None) -> Any:
         url = API_ROOT + route
         body = json.dumps(payload, ensure_ascii=False).encode() if payload is not None else None
         request = urllib.request.Request(url, data=body, headers=self.headers)
@@ -77,9 +77,9 @@ class Api:
             data = json.loads(raw)
         except json.JSONDecodeError as exc:
             raise OperatorError(f"API {route}: non-JSON response") from exc
-        if not isinstance(data, dict):
+        if not isinstance(data, (dict, list)):
             raise OperatorError(f"API {route}: unexpected response type")
-        if data.get("hata"):
+        if isinstance(data, dict) and data.get("hata"):
             raise OperatorError(f"API {route}: {data['hata']}")
         return data
 
@@ -182,6 +182,145 @@ def request_recovery_email_operation(api: Api, command: dict[str, Any]) -> dict[
     return {"already_linked": False, "request_sent": True, "response": response}
 
 
+def maintain_businesses_and_stalls_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
+    require_account(api)
+    raw_shops = api.call("isletmelerim")
+    if isinstance(raw_shops, list):
+        shops = raw_shops
+    elif isinstance(raw_shops, dict):
+        shops = raw_shops.get("isletmeler") or raw_shops.get("liste") or []
+    else:
+        shops = []
+    if not shops:
+        raise OperatorError("No owned businesses were returned")
+
+    details = []
+    for shop in shops:
+        shop_id = int(shop.get("id") or 0)
+        if shop_id:
+            details.append(api.call(f"isletme/{shop_id}"))
+
+    collections = []
+    for shop in details:
+        amount = int(shop.get("kasa") or 0)
+        if amount <= 0:
+            continue
+        shop_id = int(shop["id"])
+        try:
+            response = api.call(f"isletme/{shop_id}/kasa", {})
+            collections.append({"id": shop_id, "ad": shop.get("ad"), "before": amount, "response": response})
+        except OperatorError as exc:
+            collections.append({"id": shop_id, "ad": shop.get("ad"), "before": amount, "error": str(exc)})
+
+    details = [api.call(f"isletme/{int(shop['id'])}") for shop in details]
+    stock_plan = []
+    for shop in details:
+        products = shop.get("urunler") or []
+        if shop.get("hizmet") or shop.get("durum") != "acik" or not products:
+            continue
+        empty = max(0, int(shop.get("kapasite") or 0) - int(shop.get("doluluk") or 0))
+        each = empty // len(products)
+        cost = sum(int(product.get("toptan") or 0) * each for product in products)
+        stock_plan.append({"shop": shop, "each": each, "cost": cost})
+
+    total_stock_cost = sum(row["cost"] for row in stock_plan)
+    maximum = int(command.get("max_stock_cost_kurus") or 0)
+    if maximum <= 0 or total_stock_cost > maximum:
+        raise OperatorError(
+            f"Safety stop after cash collection: stock cost {total_stock_cost} exceeds maximum {maximum}"
+        )
+    current = require_account(api)
+    available = int((current.get("oyuncu") or {}).get("bakiye") or 0)
+    if total_stock_cost > available:
+        raise OperatorError(
+            f"Safety stop after cash collection: balance {available}, stock cost {total_stock_cost}"
+        )
+
+    stocking = []
+    for row in stock_plan:
+        shop, each = row["shop"], row["each"]
+        shop_id = int(shop["id"])
+        bought = []
+        errors = []
+        if each > 0:
+            for product in shop.get("urunler") or []:
+                try:
+                    response = api.call(
+                        f"isletme/{shop_id}/stok",
+                        {"urun": product["kod"], "miktar": each},
+                    )
+                    bought.append({"urun": product["kod"], "miktar": each, "response": response})
+                except OperatorError as exc:
+                    errors.append({"urun": product.get("kod"), "error": str(exc)})
+        auto_response = None
+        auto_error = None
+        if not shop.get("otoTedarik"):
+            try:
+                auto_response = api.call(f"isletme/{shop_id}/oto", {"acik": True})
+            except OperatorError as exc:
+                auto_error = str(exc)
+        stocking.append({
+            "id": shop_id,
+            "ad": shop.get("ad"),
+            "each": each,
+            "planned_cost": row["cost"],
+            "bought": bought,
+            "errors": errors,
+            "auto_supply": auto_response,
+            "auto_error": auto_error,
+        })
+
+    stall_summary: dict[str, Any] = {"collected": None, "permit": None, "started": []}
+    try:
+        stall_summary["collected"] = api.call("seyyar/topla-hepsi", {})
+    except OperatorError as exc:
+        stall_summary["collect_note"] = str(exc)
+
+    stalls = api.call("seyyar")
+    permit_info = (stalls.get("izin") or {}) if isinstance(stalls, dict) else {}
+    if not permit_info.get("var"):
+        try:
+            stall_summary["permit"] = api.call("seyyar/izin", {})
+        except OperatorError as exc:
+            stall_summary["permit_error"] = str(exc)
+    stalls = api.call("seyyar")
+    jobs = {job.get("kod"): job for job in (stalls.get("isler") or [])}
+    active = {
+        job.get("isKodu") for job in (stalls.get("aktifler") or [])
+        if not job.get("bitti")
+    }
+    priorities = ["pazar", "simit", "pamuk", "semsiye", "kestane", "misir", "gozleme", "midye"]
+    for code in priorities:
+        job = jobs.get(code) or {}
+        if not job.get("sahip") or code in active:
+            continue
+        try:
+            response = api.call("seyyar/basla", {"isKodu": code, "sure": "tam"})
+            stall_summary["started"].append({"kod": code, "response": response})
+            active.add(code)
+        except OperatorError as exc:
+            stall_summary["started"].append({"kod": code, "error": str(exc)})
+
+    after_shops = []
+    for shop in details:
+        fresh = api.call(f"isletme/{int(shop['id'])}")
+        after_shops.append({
+            "id": fresh.get("id"), "ad": fresh.get("ad"), "tur": fresh.get("tur"),
+            "durum": fresh.get("durum"), "hizmet": fresh.get("hizmet"),
+            "kasa": fresh.get("kasa"), "doluluk": fresh.get("doluluk"),
+            "kapasite": fresh.get("kapasite"), "otoTedarik": fresh.get("otoTedarik"),
+        })
+    final_status = require_account(api)
+    return {
+        "collections": collections,
+        "stock_cost_planned": total_stock_cost,
+        "stocking": stocking,
+        "stalls": stall_summary,
+        "businesses_after": after_shops,
+        "balance_after": int((final_status.get("oyuncu") or {}).get("bakiye") or 0),
+    }
+
+
 def password_reset_challenge_operation(api: Api) -> dict[str, Any]:
     challenge = api.call("dogrulama")
     if not challenge.get("anahtar") or not challenge.get("resim"):
@@ -199,6 +338,8 @@ def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
         return request_recovery_email_operation(api, command)
     if operation == "password_reset_challenge":
         return password_reset_challenge_operation(api)
+    if operation == "maintain_businesses_and_stalls":
+        return maintain_businesses_and_stalls_operation(api, command)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 

@@ -1,4 +1,5 @@
 {
-  "id": "2026-10-07-password-reset-challenge-002",
-  "operation": "password_reset_challenge"
+  "id": "2026-10-07-maintain-businesses-stalls-001",
+  "operation": "maintain_businesses_and_stalls",
+  "max_stock_cost_kurus": 100000000
 }
