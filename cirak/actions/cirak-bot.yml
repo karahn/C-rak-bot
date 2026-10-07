@@ -1,0 +1,49 @@
+name: Cirak Bot
+
+# Bu dosyayı GitHub'da .github/workflows/cirak-bot.yml olarak oluştur.
+# Tetikleme: cirak/komut.json her değiştiğinde (veya elle "Run workflow").
+
+on:
+  push:
+    paths:
+      - 'cirak/komut.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cirak-bot
+  cancel-in-progress: false
+
+jobs:
+  kosu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Kosucuyu calistir
+        env:
+          TEZGAH_CEREZ: ${{ secrets.TEZGAH_CEREZ }}
+        run: python3 cirak/actions/cirak_kosu.py
+
+      - name: Sonuclari repoya kaydet
+        if: always()
+        run: |
+          git config user.name "cirak-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A cirak/
+          git commit -m "kosu $(date -u '+%Y-%m-%d %H:%M') UTC" || echo "degisiklik yok"
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && break
+            sleep 5
+          done

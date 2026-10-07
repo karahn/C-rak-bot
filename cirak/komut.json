@@ -1,0 +1,5 @@
+{
+  "gorevler": ["test"],
+  "not": "Bu dosyayı değiştirmek GitHub Actions koşusunu tetikler. Görevler: test | durum | ham",
+  "uclar": null
+}
