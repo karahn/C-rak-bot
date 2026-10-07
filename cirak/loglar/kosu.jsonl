@@ -19,3 +19,11 @@
 {"olay": "tur_hata", "tur": 11, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401110152}
 {"olay": "tur_hata", "tur": 12, "hata": "TypeError(\"'int' object is not callable\")", "ts": 1791401114366}
 {"olay": "kosu_bitti", "tur": 12, "kazanc": 2920.8, "servis": 0, "bahsis": 0, "bakiye": 5496.6, "gecen_dk": 0.9, "ts": 1791401117113}
+{"olay": "kosu_basladi", "sure_dk": 2.0, "bakiye": 5496.6, "ts": 1791401410693}
+{"olay": "keyif_yuruyus", "onceki": 60, "bakiye": 5496.6, "sonuc": {"id": 453, "fiyat": 6240, "keyif": 73, "davetEdilen": []}, "ts": 1791401414040}
+{"olay": "topladi", "adet": 4, "net": 3448.92, "ts": 1791401426186}
+{"olay": "ben_basla", "kod": "pazar", "id": 79521, "ts": 1791401426424}
+{"olay": "cirak_basla", "kod": "simit", "id": 79522, "ts": 1791401430977}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 79523, "ts": 1791401431200}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 79524, "ts": 1791401431445}
+{"olay": "kosu_bitti", "tur": 16, "kazanc": 4759.4, "servis": 61, "bahsis": 13, "bakiye": 10193.6, "gecen_dk": 2.1, "ts": 1791401535929}

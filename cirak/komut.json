@@ -1,7 +1,10 @@
 {
-  "gorevler": ["cerez-kontrol", "bot", "ham"],
-  "sure_dk": 2,
-  "uclar": ["cadde", "gorevler", "bonus", "isletmelerim", "kiralama", "uretim", "mezat", "harita"],
-  "not": "Bot: 2 dk grind (servis hatası düzeltildi) + Karahan'ın dükkânlarını bulma denemesi (cadde taraması).",
-  "kosu": 8
+ "gorevler": [
+  "cerez-kontrol",
+  "durum",
+  "bot"
+ ],
+ "sure_dk": 0.8,
+ "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. Uzun grind için sure_dk değerini artır (ben ayarlarım).",
+ "kosu": 9
 }
