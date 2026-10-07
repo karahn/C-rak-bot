@@ -1,7 +1,4 @@
 {
-  "id": "2026-10-07-submit-password-reset-002",
-  "operation": "submit_password_reset",
-  "email": "tmrk1623@gmail.com",
-  "verification_code": "5835",
-  "verification_key": "a6805d5244a69897825a8f69"
+  "id": "2026-10-07-after-reset-attempt-status-001",
+  "operation": "status"
 }
