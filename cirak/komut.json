@@ -1,15 +1,25 @@
 {
- "gorevler": [
-  "cerez-kontrol",
-  "banka",
-  "havale",
-  "mesaj-oku",
-  "oda",
-  "seviye-bildir",
-  "dukkan-ac",
-  "bot"
- ],
- "sure_dk": 3,
- "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. Uzun grind için sure_dk değerini artır (ben ayarlarım).",
- "kosu": 17
+  "gorevler": ["cerez-kontrol", "banka", "havale", "arkadas-istek", "mesaj-oku", "mesaj", "oda", "seviye-bildir", "dukkan-ac", "kaynak-indir", "bot"],
+  "arkadas_id": 14,
+  "arkadas_ad": "Karahan",
+  "kisi": "Karahan",
+  "oto_cevap": false,
+  "mesajlar": [
+    {
+      "alici": "Karahan",
+      "metin": "Patron IBAN: TR11 0077 7049 1600 7396 8972 10 (hesap adı Kalfa19). Parayı gönderince hemen kargo şubesi + oto yıkama açıyorum. Oto servis SV5'te, emlakçı SV6'da."
+    }
+  ],
+  "ilce": 2034,
+  "hedefler": ["kargo", "oto_yikama", "oto_servis", "emlakci"],
+  "adet": 2,
+  "rezerv": 20000,
+  "ad_kalibi": "Kalfa {tur}",
+  "otopark_yasak": true,
+  "dosyalar": ["js/devlet.js", "js/banka.js", "js/mahalle.js"],
+  "ara": ["oyVer", "oy ver", "aday", "baskan", "kiralama", "havale"],
+  "sure_dk": 4,
+  "zincir": false,
+  "not": "IBAN cevabı + arkadaşlık + havale kontrolü + oda + seviye + dükkân açma (para gelince kargo+oto yıkama) + oy uçlarını indirme + 4 dk grind.",
+  "kosu": 17
 }

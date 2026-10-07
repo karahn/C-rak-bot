@@ -474,13 +474,7 @@ def gorev_arkadas_istek(op, komut):
         sonuc["istek"] = cek(op, "arkadas/istek", {"id": hedef_id})
     time.sleep(2)
 
-    # mesaj(lar)
-    sonuc["mesajlar"] = []
-    for m in (komut.get("mesajlar") or []):
-        alici = m.get("alici") or hedef_ad
-        r = mesaj_gonder(op, alici, m.get("metin") or "")
-        sonuc["mesajlar"].append({"alici": alici, "sonuc": r})
-        time.sleep(11)   # mesajlar arası ~11 sn (oyun kuralı)
+    # NOT: mesaj gonderimi 'mesaj' gorevine tasindi (cift gonderim olmasin)
 
     # son durum
     time.sleep(1)
@@ -638,48 +632,103 @@ def gorev_dukkan_ac(op, komut):
     return sonuc
 
 
+IBAN_YEDEK = "TR11 0077 7049 1600 7396 8972 10"
+
+
+def iban_bul(op):
+    try:
+        hv = cek(op, "banka/havale") or {}
+        ham = hv.get("ham") if isinstance(hv.get("ham"), dict) else {}
+        h = hv.get("hesapNo") or ham.get("hesapNo")
+        if h:
+            return h
+    except Exception:
+        pass
+    return IBAN_YEDEK
+
+
 def gorev_mesaj_oku(op, komut):
-    """Karahan'dan gelen mesajları okur; istenirse akıllıca cevap yazar."""
+    """Karahan'dan gelen YENI mesajlari okur; gerekirse akillica cevap yazar (tekrar yazmaz)."""
     kisi = komut.get("kisi") or komut.get("arkadas_ad") or "Karahan"
     r = cek(op, "mesajlar/%s" % kisi) or {}
     ms = r.get("mesajlar") or []
-    alanlar = ("id", "giden", "metin", "ts", "zaman", "tarih")
+    alanlar = ("id", "benden", "giden", "metin", "zaman", "ts")
     kayit = [{k: m.get(k) for k in alanlar if k in m} for m in ms]
-    gelenler = [m for m in ms if not m.get("giden")]
+    gelenler = [m for m in ms if not (m.get("benden") or m.get("giden"))]
     son_gelen = gelenler[-1] if gelenler else None
+
+    durum_dosya = os.path.join(KOK, "mesaj-durum.json")
+    cevaplanan = 0
+    try:
+        cevaplanan = int(json.load(open(durum_dosya, encoding="utf-8")).get("son_id") or 0)
+    except Exception:
+        pass
+
     sonuc = {"kisi": kisi, "toplam": len(ms), "gelen_adet": len(gelenler),
-             "son_gelen": son_gelen, "son_mesajlar": kayit[-10:], "ham_hata": r.get("hata")}
-    if komut.get("oto_cevap") and son_gelen:
+             "son_gelen": son_gelen, "cevaplanan_id": cevaplanan, "son_mesajlar": kayit[-10:]}
+    yeni = bool(son_gelen) and (son_gelen.get("id") or 0) > cevaplanan
+    if yeni and komut.get("oto_cevap"):
         metin = (son_gelen.get("metin") or "").lower()
-        para_var = any(x in metin for x in ("para", "milyon", "gönder", "yollad", "havale", "iban", "hesab"))
-        if para_var:
-            cevap = ("Parayı aldım patron, sağ ol! Hemen kargo + oto yıkama açıyorum. "
-                     "SV5'te oto servis, SV6'da emlakçı sırada. Tezgâhlar tam gaz, kasa büyüyor.")
+        if "iban" in metin or "hesap" in metin:
+            cevap = ("Patron IBAN: %s - hesap adi Kalfa19. Gonderince hemen kargo (81.000 TL) + oto yikama "
+                     "aciyorum. Tezgahlar tam gaz!" % iban_bul(op))
+        elif any(x in metin for x in ("para", "milyon", "gonder", "yollad", "havale")):
+            cevap = ("Mesajini aldim patron! IBAN: %s - parayi gonder, dukkanlari diziyorum: "
+                     "kargo + oto yikama ilk sirada." % iban_bul(op))
         else:
-            cevap = ("Mesajını aldım patron! Tezgâhlar çalışıyor, servisle kazandırıyor. "
-                     "Dükkân ucunu çözdüm; para geçince kargo + oto yıkama açıyorum.")
+            cevap = ("Mesajini aldim patron! Kasa 97.655 TL, tezgahlar calisiyor, oda uyeligim var. "
+                     "Plan hazir: kargo + oto yikama, sonra oto servis (SV5) + emlakci (SV6).")
         sonuc["cevap"] = mesaj_gonder(op, kisi, cevap)
         sonuc["cevap_metni"] = cevap
+    if son_gelen:
+        try:
+            json.dump({"son_id": son_gelen.get("id"), "ts": simdi()}, open(durum_dosya, "w", encoding="utf-8"),
+                      ensure_ascii=False, indent=1)
+        except Exception as e:
+            sonuc["durum_yazma_hatasi"] = repr(e)
     return sonuc
 
 
-def gorev_havale(op, komut):
-    """Gelen havaleleri listeler (Karahan'ın 1M ₺ gönderip göndermediğini görmek için)."""
-    hv = cek(op, "banka/havale") or {}
-    gecmis = hv.get("gecmis") or []
-    gelen = [{"id": g.get("id"), "kim": g.get("kim"), "tutar": (g.get("tutar") or 0) / 100,
-              "aciklama": g.get("aciklama"), "giden": g.get("giden"), "ts": g.get("ts") or g.get("zaman")}
-             for g in gecmis]
-    return {"toplam": len(gelen), "gelenler": [g for g in gelen if not g.get("giden")][-10:],
-            "son_hareketler": gelen[-10:], "ham": {k: v for k, v in hv.items() if k != "gecmis"}}
+def gorev_secim(op, komut):
+    """Secimleri okur; Karahan aday ise raporlar (oy ucu netlesince oy verilecek)."""
+    s = cek(op, "secim") or {}
+    k14 = cek(op, "oyuncu-karti/14") or {}
+    sonuc = {"secim": s}
+    metin = json.dumps(s, ensure_ascii=False).lower()
+    sonuc["karahan_geciyor"] = "karahan" in metin
+    if isinstance(s, dict):
+        for anahtar in ("adaylar", "adaylik", "secimler", "makamlar", "oylamalar"):
+            if s.get(anahtar):
+                sonuc[anahtar] = s.get(anahtar)
+    sonuc["iliski"] = k14.get("iliski")
+    return sonuc
 
 
-def gorev_banka(op, komut):
-    """Banka durumu + IBAN (Karahan para gönderecekse lazım)."""
-    b = cek(op, "banka") or {}
-    return {"nakit": (b.get("nakit") or 0) / 100, "vadesiz": (b.get("vadesiz") or 0) / 100,
-            "iban": b.get("iban"), "vadeliler": b.get("vadeliler"), "krediler": b.get("krediler"),
-            "ham_anahtarlar": list(b.keys())}
+def gorev_kaynak_indir(op, komut):
+    """Listedeki JS dosyalarini indirir ve 'ara' kelimelerini baglamiyla cikarir."""
+    import re
+    KAY = os.path.join(KOK, "kaynak")
+    os.makedirs(KAY, exist_ok=True)
+    dosyalar = komut.get("dosyalar") or ["js/devlet.js", "js/banka.js"]
+    ara = komut.get("ara") or ["oy", "aday", "baskan"]
+    sonuc = {"inenler": [], "bulgular": {}}
+    for d in dosyalar:
+        url = d if d.startswith("http") else "https://oyunsitem.com/cirak/" + d.lstrip("/")
+        kod, govde = cek_metin_kod(op, url)
+        ad = d.split("/")[-1].split("?")[0]
+        sonuc["inenler"].append({"dosya": d, "kod": kod, "boyut": len(govde)})
+        if kod == 200 and len(govde) > 500:
+            yaz(os.path.join(KAY, ad), govde)
+            bulgular = []
+            for kelime in ara:
+                for m in list(re.finditer(re.escape(kelime), govde, re.I))[:4]:
+                    parca = re.sub(r"\s+", " ", govde[max(0, m.start() - 150): m.start() + 170])
+                    bulgular.append("[%s] %s" % (kelime, parca))
+            if bulgular:
+                yaz(os.path.join(KAY, "ara-" + ad + ".txt"), "\n\n".join(bulgular[:60]))
+                sonuc["bulgular"][ad] = bulgular[:10]
+        time.sleep(0.5)
+    return sonuc
 
 
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
@@ -688,7 +737,8 @@ GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilik
             "ana-js": gorev_ana_js, "cadde-tara": gorev_cadde_tara,
             "arkadas-istek": gorev_arkadas_istek, "mesaj": gorev_mesaj, "oda": gorev_oda,
             "seviye-bildir": gorev_seviye_bildir, "dukkan-ac": gorev_dukkan_ac,
-            "mesaj-oku": gorev_mesaj_oku, "havale": gorev_havale, "banka": gorev_banka}
+            "mesaj-oku": gorev_mesaj_oku, "havale": gorev_havale, "banka": gorev_banka,
+            "secim": gorev_secim, "kaynak-indir": gorev_kaynak_indir}
 
 
 # ---------------------------------------------------------------- özet yaz
