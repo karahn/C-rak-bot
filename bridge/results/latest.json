@@ -1,10 +1,193 @@
 {
-  "time_utc": "2026-10-07T13:08:39.232089+00:00",
+  "time_utc": "2026-10-07T13:09:14.183635+00:00",
   "command": {
-    "id": "2026-10-07-check-liquidation-001",
+    "id": "2026-10-07-check-liquidation-002",
     "operation": "check_liquidation_and_transfer",
     "iban": "TR820077706416007162205383"
   },
-  "ok": false,
-  "error": "'list' object has no attribute 'get'"
+  "ok": true,
+  "data": {
+    "target_iban": "TR820077706416007162205383",
+    "alici": {
+      "id": 14,
+      "ad": "Karahan",
+      "hesapNo": "TR82 0077 7064 1600 7162 2053 83"
+    },
+    "alici_error": null,
+    "havale_info": {
+      "hesapNo": "TR06 0077 7098 0600 5694 4967 03",
+      "sinir": 100000000,
+      "bugun": 0,
+      "engel": null,
+      "gecmis": [
+        {
+          "id": 9,
+          "giden": false,
+          "kim": "Karahan",
+          "tutar": 10000000,
+          "aciklama": null,
+          "zaman": 1791073858552
+        },
+        {
+          "id": 4,
+          "giden": false,
+          "kim": "Karahan",
+          "tutar": 5000000,
+          "aciklama": "stok yardımı",
+          "zaman": 1790933942070
+        },
+        {
+          "id": 3,
+          "giden": false,
+          "kim": "Karahan",
+          "tutar": 2200000,
+          "aciklama": null,
+          "zaman": 1790932089039
+        },
+        {
+          "id": 2,
+          "giden": false,
+          "kim": "Karahan",
+          "tutar": 6000000,
+          "aciklama": "Ortaklık Payı 😘",
+          "zaman": 1790930968873
+        }
+      ]
+    },
+    "banka": {
+      "vadesiz": 0,
+      "nakit": 1279014870,
+      "vadeliler": [],
+      "krediler": [],
+      "vadeler": [
+        {
+          "gun": 7,
+          "ad": "1 hafta",
+          "faiz": 36
+        },
+        {
+          "gun": 30,
+          "ad": "1 ay",
+          "faiz": 40
+        },
+        {
+          "gun": 90,
+          "ad": "3 ay",
+          "faiz": 42
+        },
+        {
+          "gun": 365,
+          "ad": "1 yıl",
+          "faiz": 45
+        }
+      ],
+      "krediTurleri": [
+        {
+          "kod": "isletme",
+          "ad": "İşletme kredisi",
+          "simge": "💼",
+          "aciklama": "Stok, kira ve maaş gibi günlük ihtiyaçlar için.",
+          "faiz": 51,
+          "temelFaiz": 54,
+          "odaIndirimi": 3,
+          "taksitler": [
+            3,
+            6,
+            12
+          ],
+          "limit": 446900000,
+          "engel": null,
+          "enAz": 1000000
+        },
+        {
+          "kod": "makine",
+          "ad": "Makine-teçhizat kredisi",
+          "simge": "🏭",
+          "aciklama": "Tesis kurmak ve büyütmek için; en az bir tesisin olmalı.",
+          "faiz": 44,
+          "temelFaiz": 44,
+          "odaIndirimi": 0,
+          "taksitler": [
+            6,
+            12,
+            24
+          ],
+          "limit": 744900000,
+          "engel": "15. seviyede açılır.",
+          "enAz": 1000000
+        }
+      ],
+      "stopaj": 15,
+      "tahsis": 0.5,
+      "ekonomiGunuMs": 28800000,
+      "karaListe": 0,
+      "net": 0,
+      "krediNotu": {
+        "puan": 1109,
+        "bant": "Az riskli",
+        "renk": "#E8C21A"
+      },
+      "hesapNo": "TR06 0077 7098 0600 5694 4967 03",
+      "donuk": false,
+      "masak": null
+    },
+    "isletmeler_count": 9,
+    "isletmeler": [
+      {
+        "id": 5522,
+        "tur": "sarkuteri",
+        "ad": "Araştırma Şarküter",
+        "kasa": 4640468
+      },
+      {
+        "id": 7820,
+        "tur": "kargo",
+        "ad": "Araştırma Kargo",
+        "kasa": 3652810
+      },
+      {
+        "id": 8338,
+        "tur": "cilingir",
+        "ad": "Araştırma Çilingir",
+        "kasa": 848292
+      },
+      {
+        "id": 8397,
+        "tur": "fotografci",
+        "ad": "Araştırma Fotoğraf",
+        "kasa": 10267210
+      },
+      {
+        "id": 8442,
+        "tur": "elektrikci",
+        "ad": "Araştırma Elektrik",
+        "kasa": 2516162
+      },
+      {
+        "id": 8815,
+        "tur": "otopark",
+        "ad": "Araştırma Otopark",
+        "kasa": 377230
+      },
+      {
+        "id": 8858,
+        "tur": "oto_yikama",
+        "ad": "Araştırma Oto Yıka",
+        "kasa": 9326940
+      },
+      {
+        "id": 9659,
+        "tur": "oto_servis",
+        "ad": "Araştırma Oto Serv",
+        "kasa": 20491550
+      },
+      {
+        "id": 31939,
+        "tur": "emlakci",
+        "ad": "Araştırma Emlak",
+        "kasa": 4331128
+      }
+    ],
+    "seyyar_sahip": []
+  }
 }
