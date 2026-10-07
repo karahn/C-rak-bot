@@ -1,1 +1,1 @@
-1791405194536 tur=239 kazanc=32406 servis=941
+1791407700999 tur=8 kazanc=6558 servis=29

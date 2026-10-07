@@ -51,3 +51,13 @@
 {"olay": "sokak", "tur": "ambulans", "id": "2034:ambulans:933023", "sonuc": {"tutar": 15000, "tecrube": 2, "metin": "İhbarın alındı. Ambulans yola çıktı; sağlık ekibine yer aç.", "bakiye": 5505710, "hareket": 475380}, "ts": 1791404902785}
 {"olay": "sokak", "tur": "kavga", "id": "2034:kavga:622015", "sonuc": {"tutar": 15000, "tecrube": 2, "metin": "İhbarın alındı. Polis ekibi yola çıktı; lütfen güvenli bir mesafede bekle.", "bakiye": 5520710, "hareket": 475381}, "ts": 1791404902955}
 {"olay": "kosu_bitti", "tur": 239, "kazanc": 32406.4, "servis": 941, "bahsis": 188, "bakiye": 56881.87, "gecen_dk": 25.0, "ts": 1791405197458}
+{"olay": "kosu_basladi", "sure_dk": 0.8, "bakiye": 56881.87, "ts": 1791407650057}
+{"olay": "gunluk", "sonuc": {"bonus": {"gun": 2, "tutar": 150000, "izin": false}}, "ts": 1791407650768}
+{"olay": "keyif_yuruyus", "onceki": 72, "bakiye": 58381.87, "sonuc": {"hata": "Aynı anda en çok 3 etkinlik düzenleyebilirsin."}, "ts": 1791407652554}
+{"olay": "topladi", "adet": 4, "net": 6110.82, "ts": 1791407653384}
+{"olay": "ben_basla", "kod": "pazar", "id": 80680, "ts": 1791407653589}
+{"olay": "gunluk", "sonuc": {"sezon": {"alinan": [{"kademe": 2, "sira": "ucretsiz", "tutar": 200000}], "para": 200000}}, "ts": 1791407657032}
+{"olay": "cirak_basla", "kod": "simit", "id": 80691, "ts": 1791407657565}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 80692, "ts": 1791407657768}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 80693, "ts": 1791407658214}
+{"olay": "kosu_bitti", "tur": 8, "kazanc": 6557.8, "servis": 29, "bahsis": 6, "bakiye": 63299.33, "gecen_dk": 0.9, "ts": 1791407703669}
