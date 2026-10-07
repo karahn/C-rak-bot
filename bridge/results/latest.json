@@ -1,193 +1,526 @@
 {
-  "time_utc": "2026-10-07T13:09:14.183635+00:00",
+  "time_utc": "2026-10-07T13:12:58.108521+00:00",
   "command": {
-    "id": "2026-10-07-check-liquidation-002",
-    "operation": "check_liquidation_and_transfer",
-    "iban": "TR820077706416007162205383"
+    "id": "2026-10-07-transfer-and-maintain-001",
+    "operation": "transfer_and_maintain",
+    "iban": "TR820077706416007162205383",
+    "amount_kurus": 100000000,
+    "aciklama": "Günlük kâr payı",
+    "max_stock_cost_kurus": 15000000
   },
   "ok": true,
   "data": {
-    "target_iban": "TR820077706416007162205383",
-    "alici": {
-      "id": 14,
-      "ad": "Karahan",
-      "hesapNo": "TR82 0077 7064 1600 7162 2053 83"
-    },
-    "alici_error": null,
-    "havale_info": {
-      "hesapNo": "TR06 0077 7098 0600 5694 4967 03",
-      "sinir": 100000000,
-      "bugun": 0,
-      "engel": null,
-      "gecmis": [
-        {
-          "id": 9,
-          "giden": false,
-          "kim": "Karahan",
-          "tutar": 10000000,
-          "aciklama": null,
-          "zaman": 1791073858552
-        },
-        {
-          "id": 4,
-          "giden": false,
-          "kim": "Karahan",
-          "tutar": 5000000,
-          "aciklama": "stok yardımı",
-          "zaman": 1790933942070
-        },
-        {
-          "id": 3,
-          "giden": false,
-          "kim": "Karahan",
-          "tutar": 2200000,
-          "aciklama": null,
-          "zaman": 1790932089039
-        },
-        {
-          "id": 2,
-          "giden": false,
-          "kim": "Karahan",
-          "tutar": 6000000,
-          "aciklama": "Ortaklık Payı 😘",
-          "zaman": 1790930968873
-        }
-      ]
-    },
-    "banka": {
-      "vadesiz": 0,
-      "nakit": 1279014870,
-      "vadeliler": [],
-      "krediler": [],
-      "vadeler": [
-        {
-          "gun": 7,
-          "ad": "1 hafta",
-          "faiz": 36
-        },
-        {
-          "gun": 30,
-          "ad": "1 ay",
-          "faiz": 40
-        },
-        {
-          "gun": 90,
-          "ad": "3 ay",
-          "faiz": 42
-        },
-        {
-          "gun": 365,
-          "ad": "1 yıl",
-          "faiz": 45
-        }
-      ],
-      "krediTurleri": [
-        {
-          "kod": "isletme",
-          "ad": "İşletme kredisi",
-          "simge": "💼",
-          "aciklama": "Stok, kira ve maaş gibi günlük ihtiyaçlar için.",
-          "faiz": 51,
-          "temelFaiz": 54,
-          "odaIndirimi": 3,
-          "taksitler": [
-            3,
-            6,
-            12
-          ],
-          "limit": 446900000,
-          "engel": null,
-          "enAz": 1000000
-        },
-        {
-          "kod": "makine",
-          "ad": "Makine-teçhizat kredisi",
-          "simge": "🏭",
-          "aciklama": "Tesis kurmak ve büyütmek için; en az bir tesisin olmalı.",
-          "faiz": 44,
-          "temelFaiz": 44,
-          "odaIndirimi": 0,
-          "taksitler": [
-            6,
-            12,
-            24
-          ],
-          "limit": 744900000,
-          "engel": "15. seviyede açılır.",
-          "enAz": 1000000
-        }
-      ],
-      "stopaj": 15,
-      "tahsis": 0.5,
-      "ekonomiGunuMs": 28800000,
-      "karaListe": 0,
-      "net": 0,
-      "krediNotu": {
-        "puan": 1109,
-        "bant": "Az riskli",
-        "renk": "#E8C21A"
+    "transfer": {
+      "alici": {
+        "id": 14,
+        "ad": "Karahan",
+        "hesapNo": "TR82 0077 7064 1600 7162 2053 83"
       },
-      "hesapNo": "TR06 0077 7098 0600 5694 4967 03",
-      "donuk": false,
-      "masak": null
-    },
-    "isletmeler_count": 9,
-    "isletmeler": [
-      {
-        "id": 5522,
-        "tur": "sarkuteri",
-        "ad": "Araştırma Şarküter",
-        "kasa": 4640468
-      },
-      {
-        "id": 7820,
-        "tur": "kargo",
-        "ad": "Araştırma Kargo",
-        "kasa": 3652810
-      },
-      {
-        "id": 8338,
-        "tur": "cilingir",
-        "ad": "Araştırma Çilingir",
-        "kasa": 848292
-      },
-      {
-        "id": 8397,
-        "tur": "fotografci",
-        "ad": "Araştırma Fotoğraf",
-        "kasa": 10267210
-      },
-      {
-        "id": 8442,
-        "tur": "elektrikci",
-        "ad": "Araştırma Elektrik",
-        "kasa": 2516162
-      },
-      {
-        "id": 8815,
-        "tur": "otopark",
-        "ad": "Araştırma Otopark",
-        "kasa": 377230
-      },
-      {
-        "id": 8858,
-        "tur": "oto_yikama",
-        "ad": "Araştırma Oto Yıka",
-        "kasa": 9326940
-      },
-      {
-        "id": 9659,
-        "tur": "oto_servis",
-        "ad": "Araştırma Oto Serv",
-        "kasa": 20491550
-      },
-      {
-        "id": 31939,
-        "tur": "emlakci",
-        "ad": "Araştırma Emlak",
-        "kasa": 4331128
+      "amount_sent_kurus": 100000000,
+      "response": {
+        "id": 38,
+        "alici": "Karahan",
+        "tutar": 100000000,
+        "vadesiz": 0,
+        "masak": null
       }
-    ],
-    "seyyar_sahip": []
+    },
+    "maintenance": {
+      "collections": [
+        {
+          "id": 5522,
+          "ad": "Araştırma Şarküter",
+          "before": 4640468,
+          "response": {
+            "tutar": 4640468
+          }
+        },
+        {
+          "id": 7820,
+          "ad": "Araştırma Kargo",
+          "before": 3652810,
+          "response": {
+            "tutar": 3652810
+          }
+        },
+        {
+          "id": 8338,
+          "ad": "Araştırma Çilingir",
+          "before": 848292,
+          "response": {
+            "tutar": 848292
+          }
+        },
+        {
+          "id": 8397,
+          "ad": "Araştırma Fotoğraf",
+          "before": 10267210,
+          "response": {
+            "tutar": 10267210
+          }
+        },
+        {
+          "id": 8442,
+          "ad": "Araştırma Elektrik",
+          "before": 2516162,
+          "response": {
+            "tutar": 2516162
+          }
+        },
+        {
+          "id": 8815,
+          "ad": "Araştırma Otopark",
+          "before": 377230,
+          "response": {
+            "tutar": 377230
+          }
+        },
+        {
+          "id": 8858,
+          "ad": "Araştırma Oto Yıka",
+          "before": 9326940,
+          "response": {
+            "tutar": 9326940
+          }
+        },
+        {
+          "id": 9659,
+          "ad": "Araştırma Oto Serv",
+          "before": 20491550,
+          "response": {
+            "tutar": 20491550
+          }
+        },
+        {
+          "id": 31939,
+          "ad": "Araştırma Emlak",
+          "before": 4331128,
+          "response": {
+            "tutar": 4331128
+          }
+        }
+      ],
+      "stock_cost_planned": 4053500,
+      "stocking": [
+        {
+          "id": 5522,
+          "ad": "Araştırma Şarküter",
+          "each": 11,
+          "planned_cost": 4053500,
+          "bought": [
+            {
+              "urun": "beyaz_peynir",
+              "miktar": 11,
+              "response": {
+                "tutar": 275000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "kasar",
+              "miktar": 11,
+              "response": {
+                "tutar": 418000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "zeytin",
+              "miktar": 11,
+              "response": {
+                "tutar": 165000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "tereyagi",
+              "miktar": 11,
+              "response": {
+                "tutar": 462000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "labne",
+              "miktar": 11,
+              "response": {
+                "tutar": 71500,
+                "ambardan": 0
+              }
+            }
+          ],
+          "errors": [
+            {
+              "urun": "sucuk",
+              "error": "API isletme/5522/stok: {'hata': 'Sucuk rafında yalnızca 3 kg boş yer var.'}"
+            },
+            {
+              "urun": "pastirma",
+              "error": "API isletme/5522/stok: {'hata': 'Pastırma rafında yalnızca 3 kg boş yer var.'}"
+            },
+            {
+              "urun": "hindi_fume",
+              "error": "API isletme/5522/stok: {'hata': 'Hindi füme rafında yalnızca 7 kg boş yer var.'}"
+            }
+          ],
+          "auto_supply": null,
+          "auto_error": null
+        }
+      ],
+      "stalls": {
+        "collected": [
+          {
+            "id": 75080,
+            "isKodu": "pazar",
+            "sureKodu": "tam",
+            "isAdi": "Pazar tezgâhı",
+            "simge": "🧦",
+            "calisan": "ben",
+            "ciro": 1007303,
+            "bonus": 0,
+            "servis": 0,
+            "malzeme": 350000,
+            "cirakUcreti": 0,
+            "ceza": 0,
+            "net": 657303,
+            "olaylar": [],
+            "tecrube": 7,
+            "seviyeAtladi": null,
+            "sertifika": null
+          },
+          {
+            "id": 75081,
+            "isKodu": "simit",
+            "sureKodu": "tam",
+            "isAdi": "Simitçi",
+            "simge": "🥯",
+            "calisan": "cirak",
+            "ciro": 428428,
+            "bonus": 0,
+            "servis": 0,
+            "malzeme": 200000,
+            "cirakUcreti": 100000,
+            "ceza": 0,
+            "net": 128428,
+            "olaylar": [],
+            "tecrube": 0,
+            "seviyeAtladi": null,
+            "sertifika": null
+          },
+          {
+            "id": 75082,
+            "isKodu": "pamuk",
+            "sureKodu": "tam",
+            "isAdi": "Pamuk şeker ve balon",
+            "simge": "🎈",
+            "calisan": "cirak",
+            "ciro": 265574,
+            "bonus": 0,
+            "servis": 0,
+            "malzeme": 40000,
+            "cirakUcreti": 100000,
+            "ceza": 0,
+            "net": 125574,
+            "olaylar": [
+              {
+                "gun": 1,
+                "tur": "iyi",
+                "metin": "Yakında maç ve konser vardı, müşteri çoktu."
+              }
+            ],
+            "tecrube": 0,
+            "seviyeAtladi": null,
+            "sertifika": null
+          },
+          {
+            "id": 75083,
+            "isKodu": "semsiye",
+            "sureKodu": "tam",
+            "isAdi": "Şemsiye satıcısı",
+            "simge": "☂️",
+            "calisan": "cirak",
+            "ciro": 234452,
+            "bonus": 0,
+            "servis": 0,
+            "malzeme": 90000,
+            "cirakUcreti": 100000,
+            "ceza": 0,
+            "net": 44452,
+            "olaylar": [],
+            "tecrube": 0,
+            "seviyeAtladi": null,
+            "sertifika": null
+          },
+          {
+            "id": 75084,
+            "isKodu": "kestane",
+            "sureKodu": "tam",
+            "isAdi": "Kestaneci",
+            "simge": "🌰",
+            "calisan": "cirak",
+            "ciro": 892924,
+            "bonus": 0,
+            "servis": 0,
+            "malzeme": 250000,
+            "cirakUcreti": 100000,
+            "ceza": 0,
+            "net": 542924,
+            "olaylar": [],
+            "tecrube": 0,
+            "seviyeAtladi": null,
+            "sertifika": null
+          },
+          {
+            "id": 75085,
+            "isKodu": "misir",
+            "sureKodu": "tam",
+            "isAdi": "Mısırcı",
+            "simge": "🌽",
+            "calisan": "cirak",
+            "ciro": 536698,
+            "bonus": 0,
+            "servis": 0,
+            "malzeme": 120000,
+            "cirakUcreti": 100000,
+            "ceza": 0,
+            "net": 316698,
+            "olaylar": [],
+            "tecrube": 0,
+            "seviyeAtladi": null,
+            "sertifika": null
+          }
+        ],
+        "permit": null,
+        "started": [
+          {
+            "kod": "pazar",
+            "response": {
+              "id": 75740,
+              "calisan": "ben"
+            }
+          },
+          {
+            "kod": "simit",
+            "response": {
+              "id": 75741,
+              "calisan": "cirak"
+            }
+          },
+          {
+            "kod": "pamuk",
+            "response": {
+              "id": 75742,
+              "calisan": "cirak"
+            }
+          },
+          {
+            "kod": "semsiye",
+            "response": {
+              "id": 75743,
+              "calisan": "cirak"
+            }
+          },
+          {
+            "kod": "kestane",
+            "response": {
+              "id": 75744,
+              "calisan": "cirak"
+            }
+          },
+          {
+            "kod": "misir",
+            "response": {
+              "id": 75745,
+              "calisan": "cirak"
+            }
+          }
+        ]
+      },
+      "businesses_after": [
+        {
+          "id": 5522,
+          "ad": "Araştırma Şarküter",
+          "tur": "sarkuteri",
+          "durum": "acik",
+          "hizmet": false,
+          "kasa": 0,
+          "doluluk": 152,
+          "kapasite": 189,
+          "otoTedarik": true
+        },
+        {
+          "id": 7820,
+          "ad": "Araştırma Kargo",
+          "tur": "kargo",
+          "durum": "acik",
+          "hizmet": true,
+          "kasa": 0,
+          "doluluk": 0,
+          "kapasite": 400,
+          "otoTedarik": true
+        },
+        {
+          "id": 8338,
+          "ad": "Araştırma Çilingir",
+          "tur": "cilingir",
+          "durum": "acik",
+          "hizmet": true,
+          "kasa": 0,
+          "doluluk": 0,
+          "kapasite": 400,
+          "otoTedarik": true
+        },
+        {
+          "id": 8397,
+          "ad": "Araştırma Fotoğraf",
+          "tur": "fotografci",
+          "durum": "acik",
+          "hizmet": true,
+          "kasa": 0,
+          "doluluk": 0,
+          "kapasite": 400,
+          "otoTedarik": true
+        },
+        {
+          "id": 8442,
+          "ad": "Araştırma Elektrik",
+          "tur": "elektrikci",
+          "durum": "acik",
+          "hizmet": true,
+          "kasa": 0,
+          "doluluk": 0,
+          "kapasite": 400,
+          "otoTedarik": true
+        },
+        {
+          "id": 8815,
+          "ad": "Araştırma Otopark",
+          "tur": "otopark",
+          "durum": "acik",
+          "hizmet": true,
+          "kasa": 0,
+          "doluluk": 0,
+          "kapasite": 1200,
+          "otoTedarik": true
+        },
+        {
+          "id": 8858,
+          "ad": "Araştırma Oto Yıka",
+          "tur": "oto_yikama",
+          "durum": "acik",
+          "hizmet": true,
+          "kasa": 0,
+          "doluluk": 0,
+          "kapasite": 1200,
+          "otoTedarik": true
+        },
+        {
+          "id": 9659,
+          "ad": "Araştırma Oto Serv",
+          "tur": "oto_servis",
+          "durum": "acik",
+          "hizmet": true,
+          "kasa": 0,
+          "doluluk": 0,
+          "kapasite": 1200,
+          "otoTedarik": true
+        },
+        {
+          "id": 31939,
+          "ad": "Araştırma Emlak",
+          "tur": "emlakci",
+          "durum": "acik",
+          "hizmet": true,
+          "kasa": 0,
+          "doluluk": 0,
+          "kapasite": 1200,
+          "otoTedarik": true
+        }
+      ],
+      "balance_after": 1235890539
+    },
+    "finish_inventory": {
+      "spent_estimate": 1364000,
+      "shops": [
+        {
+          "id": 5522,
+          "ad": "Araştırma Şarküter",
+          "actions": [
+            {
+              "urun": "beyaz_peynir",
+              "miktar": 6,
+              "response": {
+                "tutar": 150000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "kasar",
+              "error": "API isletme/5522/stok: {'hata': 'Kaşar rafı dolu (21 kg). Satıldıkça yer açılır.'}"
+            },
+            {
+              "urun": "zeytin",
+              "miktar": 15,
+              "response": {
+                "tutar": 225000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "sucuk",
+              "miktar": 3,
+              "response": {
+                "tutar": 180000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "pastirma",
+              "miktar": 3,
+              "response": {
+                "tutar": 390000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "tereyagi",
+              "miktar": 1,
+              "response": {
+                "tutar": 42000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "labne",
+              "miktar": 2,
+              "response": {
+                "tutar": 13000,
+                "ambardan": 0
+              }
+            },
+            {
+              "urun": "hindi_fume",
+              "miktar": 7,
+              "response": {
+                "tutar": 364000,
+                "ambardan": 0
+              }
+            }
+          ],
+          "doluluk": 189,
+          "kapasite": 189,
+          "otoTedarik": true
+        }
+      ],
+      "balance_after": 1234526539
+    },
+    "final_bank": {
+      "nakit": 1234526539,
+      "vadesiz": 0
+    },
+    "final_player": {
+      "bakiye": 1234526539,
+      "tecrube": 476
+    }
   }
 }
