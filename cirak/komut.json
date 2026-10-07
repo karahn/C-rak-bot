@@ -1,10 +1,36 @@
 {
- "gorevler": [
-  "cerez-kontrol",
-  "durum",
-  "bot"
- ],
- "sure_dk": 0.8,
- "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. Uzun grind için sure_dk değerini artır (ben ayarlarım).",
- "kosu": 11
+  "gorevler": ["cerez-kontrol", "ana-js", "cadde-tara", "bot"],
+  "sure_dk": 6,
+  "adaylar": ["ana.js", "js/ana.js", "/ana.js", "cirak/ana.js"],
+  "sahip": "Karahan",
+  "kendi": "Kalfa19",
+  "ilceler": [
+    {"id": 1872, "ad": "Akyurt"},
+    {"id": 1130, "ad": "Altındağ"},
+    {"id": 1157, "ad": "Ayaş"},
+    {"id": 1167, "ad": "Bala"},
+    {"id": 1187, "ad": "Beypazarı"},
+    {"id": 1227, "ad": "Çamlıdere"},
+    {"id": 1231, "ad": "Çankaya"},
+    {"id": 1260, "ad": "Çubuk"},
+    {"id": 1302, "ad": "Elmadağ"},
+    {"id": 1922, "ad": "Etimesgut"},
+    {"id": 1924, "ad": "Evren"},
+    {"id": 1744, "ad": "Gölbaşı"},
+    {"id": 1365, "ad": "Güdül"},
+    {"id": 1387, "ad": "Haymana"},
+    {"id": 1815, "ad": "Kahramankazan"},
+    {"id": 1427, "ad": "Kalecik"},
+    {"id": 1745, "ad": "Keçiören"},
+    {"id": 1473, "ad": "Kızılcahamam"},
+    {"id": 1746, "ad": "Mamak"},
+    {"id": 1539, "ad": "Nallıhan"},
+    {"id": 1578, "ad": "Polatlı"},
+    {"id": 2034, "ad": "Pursaklar"},
+    {"id": 1747, "ad": "Sincan"},
+    {"id": 1658, "ad": "Şereflikoçhisar"},
+    {"id": 1723, "ad": "Yenimahalle"}
+  ],
+  "not": "Ankara'nın 25 ilçesini tara → Karahan'ın dükkân türlerini çıkar (çakışmama stratejisi) + Pursaklar boş parselleri/kiraları. Ayrıca ana oyun kodunu indirip dükkân açma uçlarını çıkar. 6 dk grind.",
+  "kosu": 12
 }

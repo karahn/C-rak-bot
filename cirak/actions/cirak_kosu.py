@@ -356,19 +356,77 @@ def gorev_bot(op, komut):
     return ozet
 
 
+def cek_metin_kod(op, url: str, limit: int = 8_000_000):
+    """Ham metin indirir; (http_kodu, metin) döner."""
+    req = urllib.request.Request(url, headers={"Accept": "*/*", "Referer": "https://oyunsitem.com/cirak/"})
+    try:
+        with op.open(req, timeout=45) as r:
+            return r.status, r.read(limit).decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return e.code, ""
+    except Exception as e:
+        return 0, "%s: %s" % (type(e).__name__, e)
+
+
+def gorev_cadde_tara(op, komut):
+    """Verilen ilçeleri tarar; belirtilen sahibin dükkânlarını ve boş parselleri listeler."""
+    import collections
+    ilceler = komut.get("ilceler") or []
+    sahip = komut.get("sahip") or "Karahan"
+    rapor = {"ts": simdi(), "sahip": sahip, "ilceler": {}, "bulunan": [], "ozet_tur": {}, "bos_parseller": {}}
+    tur_say = collections.Counter()
+    for il in ilceler:
+        if isinstance(il, dict):
+            iid, ad = il.get("id"), il.get("ad")
+        else:
+            iid, ad = il, str(il)
+        r = cek(op, "cadde?ilce=%s" % iid, deneme=2)
+        yerler = (r or {}).get("yerler") or []
+        sahibi, benim, bos = [], [], []
+        for y in yerler:
+            i = y.get("isletme") or {}
+            if i.get("sahip") == sahip:
+                sahibi.append(y)
+                tur_say[i.get("turAdi") or i.get("tur")] += 1
+                rapor["bulunan"].append({
+                    "ilce": ad, "no": y.get("no"), "boyut": y.get("boyutAdi"),
+                    "tur": i.get("tur"), "turAdi": i.get("turAdi"), "ad": i.get("ad"),
+                    "durum": i.get("durum"), "saat": i.get("saat"),
+                })
+            elif i.get("benim") or i.get("sahip") == komut.get("kendi"):
+                benim.append(y)
+            if not i:
+                bos.append({"no": y.get("no"), "boyut": y.get("boyutAdi"), "m2": y.get("m2"),
+                            "kira": (y.get("kira") or 0) / 100})
+        rapor["ilceler"][ad] = {"parsel": len(yerler), "bos": len(bos),
+                                "sahibinde": len(sahibi), "benim": len(benim)}
+        if bos:
+            rapor["bos_parseller"][ad] = bos
+        time.sleep(0.7)
+    rapor["ozet_tur"] = dict(tur_say.most_common())
+    rapor["toplam_bulunan"] = len(rapor["bulunan"])
+    return rapor
+
+
 def gorev_ana_js(op, komut):
-    """Ana oyun kodunu (/ana.js) indirir, API uçlarını ve dükkân mekaniklerini çıkarır."""
+    """Ana oyun kodunu indirir, API uçlarını ve dükkân mekaniklerini çıkarır."""
     import re
     KAY = os.path.join(KOK, "kaynak")
     os.makedirs(KAY, exist_ok=True)
-    yol = komut.get("dosya") or "/ana.js?v=0.57.15"
-    url = yol if yol.startswith("http") else "https://oyunsitem.com/cirak/" + yol.lstrip("/")
-    txt = cek_metin(op, url, limit=8_000_000)
+    adaylar = komut.get("adaylar") or ["ana.js", "js/ana.js", "/ana.js", "cirak/ana.js", "ana-v057.js"]
+    denemeler, txt, kullanilan = [], "", None
+    for aday in adaylar:
+        url = aday if aday.startswith("http") else "https://oyunsitem.com/cirak/" + aday.lstrip("/")
+        kod, govde = cek_metin_kod(op, url)
+        denemeler.append({"aday": aday, "kod": kod, "boyut": len(govde)})
+        if kod == 200 and len(govde) > 20000:
+            txt, kullanilan = govde, aday
+            break
+        time.sleep(0.6)
     if not txt:
-        return {"hata": "indirilemedi", "url": url}
+        return {"hata": "indirilemedi", "denemeler": denemeler}
     yaz(os.path.join(KAY, "ana.js"), txt)
 
-    # API çağrı kalıpları: api('rota'), await A('rota'), fetch('/cirak/api/...')
     uclar = set()
     for kal in [r"""api\(\s*['"`]([^'"`]{2,60})['"`]""",
                 r"""['"`](/?(?:cirak/)?api/[^'"`]{2,60})['"`]""",
@@ -380,24 +438,22 @@ def gorev_ana_js(op, komut):
             uclar.add(aday)
     yaz(os.path.join(KAY, "api-uclari-ana.txt"), "\n".join(sorted(uclar)))
 
-    # dükkân açma/kiralama ile ilgili kod parçaları
     ilgi = []
-    for anahtar in ("kirala", "kiralik", "isletme/ac", "dukkan", "kurulum", "depozito", "ruhsat"):
+    for anahtar in ("kirala", "kiralik", "kurulum", "depozito", "ruhsat", "isletme/ac", "dukkan"):
         for m in list(re.finditer(anahtar, txt, re.I))[:6]:
-            parca = re.sub(r"\s+", " ", txt[max(0, m.start() - 160): m.start() + 200])
-            ilgi.append("%s >> %s" % (anahtar, parca))
-    yaz(os.path.join(KAY, "kiralama-izleri.txt"), "\n\n".join(ilgi[:60]))
+            parca = re.sub(r"\s+", " ", txt[max(0, m.start() - 170): m.start() + 210])
+            ilgi.append("[%s] %s" % (anahtar, parca))
+    yaz(os.path.join(KAY, "kiralama-izleri.txt"), "\n\n".join(ilgi[:80]))
 
-    return {"boyut": len(txt), "api_ucu_sayisi": len(uclar),
-            "kirala_gecen": len(re.findall("kirala", txt, re.I)),
-            "ornek_uclar": sorted(uclar)[:60],
-            "ilgi_ornekleri": ilgi[:6]}
+    return {"boyut": len(txt), "kullanilan": kullanilan, "denemeler": denemeler,
+            "api_ucu_sayisi": len(uclar), "kirala_gecen": len(re.findall("kirala", txt, re.I)),
+            "ornek_uclar": sorted(uclar)[:80], "ilgi_ornekleri": ilgi[:8]}
 
 
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
             "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif,
-            "ana-js": gorev_ana_js}
+            "ana-js": gorev_ana_js, "cadde-tara": gorev_cadde_tara}
 
 
 # ---------------------------------------------------------------- özet yaz
