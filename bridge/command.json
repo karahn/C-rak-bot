@@ -1,4 +1,6 @@
 {
-  "id": "2026-10-07-status-001",
-  "operation": "status"
+  "id": "2026-10-07-pay-tax-001",
+  "operation": "pay_tax",
+  "expected_declaration_ids": [22],
+  "max_total_kurus": 36000000
 }

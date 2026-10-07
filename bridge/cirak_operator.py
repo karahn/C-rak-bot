@@ -107,10 +107,67 @@ def status_operation(api: Api) -> dict[str, Any]:
     }
 
 
+def pay_tax_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
+    status = require_account(api)
+    before_bank = api.call("banka")
+    before_tax = api.call("vergi")
+    pending = [
+        row for row in (before_tax.get("beyanlar") or [])
+        if row.get("durum") in {"bekliyor", "gecikti"} and int(row.get("kalan") or 0) > 0
+    ]
+    if not pending:
+        return {
+            "already_paid": True,
+            "durum": status,
+            "banka": before_bank,
+            "vergi": before_tax,
+        }
+
+    ids = sorted(int(row["id"]) for row in pending)
+    expected_ids = sorted(int(value) for value in command.get("expected_declaration_ids", []))
+    if expected_ids and ids != expected_ids:
+        raise OperatorError(f"Safety stop: pending tax IDs {ids}, expected {expected_ids}")
+
+    total = sum(int(row.get("kalan") or 0) for row in pending)
+    maximum = int(command.get("max_total_kurus") or 0)
+    if maximum <= 0 or total > maximum:
+        raise OperatorError(f"Safety stop: tax total {total} exceeds maximum {maximum}")
+
+    available = int(before_bank.get("nakit") or 0) + int(before_bank.get("vadesiz") or 0)
+    if available < total:
+        raise OperatorError(f"Safety stop: available funds {available}, tax total {total}")
+
+    payments = []
+    for row in pending:
+        payments.append({
+            "id": int(row["id"]),
+            "amount": int(row.get("kalan") or 0),
+            "response": api.call("vergi/ode", {"id": int(row["id"])}),
+        })
+
+    after_tax = api.call("vergi")
+    remaining = sum(
+        int(row.get("kalan") or 0)
+        for row in (after_tax.get("beyanlar") or [])
+        if row.get("durum") in {"bekliyor", "gecikti"}
+    )
+    if remaining:
+        raise OperatorError(f"Tax API returned but {remaining} kuruş remains")
+
+    return {
+        "already_paid": False,
+        "payments": payments,
+        "before": {"banka": before_bank, "vergi": before_tax},
+        "after": {"banka": api.call("banka"), "vergi": after_tax},
+    }
+
+
 def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
     operation = command.get("operation")
     if operation == "status":
         return status_operation(api)
+    if operation == "pay_tax":
+        return pay_tax_operation(api, command)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 
