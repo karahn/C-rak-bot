@@ -406,7 +406,8 @@ def check_liquidation_and_transfer_operation(api: Api, command: dict[str, Any]) 
     except Exception as exc:
         havale_info = {"error": str(exc)}
 
-    isletmeler = api.call("isletmelerim")
+    raw_isletmeler = api.call("isletmelerim")
+    isletmeler_list = raw_isletmeler if isinstance(raw_isletmeler, list) else (raw_isletmeler.get("liste") or raw_isletmeler.get("isletmeler") or [])
     seyyar = api.call("seyyar")
     banka = api.call("banka")
 
@@ -416,10 +417,10 @@ def check_liquidation_and_transfer_operation(api: Api, command: dict[str, Any]) 
         "alici_error": alici_error,
         "havale_info": havale_info,
         "banka": banka,
-        "isletmeler_count": len(isletmeler.get("liste") or []),
+        "isletmeler_count": len(isletmeler_list),
         "isletmeler": [
             {"id": x.get("id"), "tur": x.get("tur"), "ad": x.get("ad"), "kasa": x.get("kasa")}
-            for x in (isletmeler.get("liste") or [])
+            for x in isletmeler_list
         ],
         "seyyar_sahip": [
             {"kod": x.get("kod"), "ad": x.get("ad"), "fiyat": x.get("fiyat")}
