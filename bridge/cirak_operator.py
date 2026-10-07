@@ -390,6 +390,45 @@ def finish_inventory_operation(api: Api, command: dict[str, Any]) -> dict[str, A
     }
 
 
+def check_liquidation_and_transfer_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
+    require_account(api)
+    iban = str(command.get("iban") or "").replace(" ", "").strip()
+    alici_info = None
+    alici_error = None
+    try:
+        alici_info = api.call(f"banka/havale/alici?ad={iban}")
+    except Exception as exc:
+        alici_error = str(exc)
+
+    havale_info = None
+    try:
+        havale_info = api.call("banka/havale")
+    except Exception as exc:
+        havale_info = {"error": str(exc)}
+
+    isletmeler = api.call("isletmelerim")
+    seyyar = api.call("seyyar")
+    banka = api.call("banka")
+
+    return {
+        "target_iban": iban,
+        "alici": alici_info,
+        "alici_error": alici_error,
+        "havale_info": havale_info,
+        "banka": banka,
+        "isletmeler_count": len(isletmeler.get("liste") or []),
+        "isletmeler": [
+            {"id": x.get("id"), "tur": x.get("tur"), "ad": x.get("ad"), "kasa": x.get("kasa")}
+            for x in (isletmeler.get("liste") or [])
+        ],
+        "seyyar_sahip": [
+            {"kod": x.get("kod"), "ad": x.get("ad"), "fiyat": x.get("fiyat")}
+            for x in (seyyar.get("turler") or [])
+            if x.get("sahip")
+        ]
+    }
+
+
 def start_google_link_operation(api: Api) -> dict[str, Any]:
     require_account(api)
     baglantilar = api.call("oauth/baglantilar")
@@ -467,6 +506,8 @@ def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
         return submit_password_reset_operation(api, command)
     if operation == "start_google_link":
         return start_google_link_operation(api)
+    if operation == "check_liquidation_and_transfer":
+        return check_liquidation_and_transfer_operation(api, command)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 

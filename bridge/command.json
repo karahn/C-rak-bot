@@ -1,4 +1,5 @@
 {
-  "id": "2026-10-07-check-google-link-status-001",
-  "operation": "status"
+  "id": "2026-10-07-check-liquidation-001",
+  "operation": "check_liquidation_and_transfer",
+  "iban": "TR820077706416007162205383"
 }
