@@ -1,6 +1,11 @@
 name: Cirak Bot
 
 on:
+  push:
+    branches:
+      - 'arena/71f59bcb-c-rak-bot'
+    paths:
+      - 'cirak/komut.json'
   schedule:
     - cron: '7,37 * * * *'
   workflow_dispatch:
@@ -17,12 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 55
     steps:
-      - uses: actions/checkout@v4
+      - name: Arena dalini al
+        uses: actions/checkout@v4
         with:
           ref: arena/71f59bcb-c-rak-bot
           fetch-depth: 1
 
-      - uses: actions/setup-python@v5
+      - name: Python kur
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
