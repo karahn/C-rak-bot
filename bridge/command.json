@@ -1,8 +1,4 @@
 {
-  "id": "2026-10-07-transfer-and-maintain-001",
-  "operation": "transfer_and_maintain",
-  "iban": "TR820077706416007162205383",
-  "amount_kurus": 100000000,
-  "aciklama": "Günlük kâr payı",
-  "max_stock_cost_kurus": 15000000
+  "id": "2026-10-07-post-transfer-status-001",
+  "operation": "status"
 }
