@@ -1,446 +1,88 @@
 {
-  "time_utc": "2026-10-07T11:41:17.931596+00:00",
+  "time_utc": "2026-10-07T11:42:33.300733+00:00",
   "command": {
-    "id": "2026-10-07-maintain-businesses-stalls-001",
-    "operation": "maintain_businesses_and_stalls",
+    "id": "2026-10-07-finish-inventory-001",
+    "operation": "finish_inventory",
     "max_stock_cost_kurus": 100000000
   },
   "ok": true,
   "data": {
-    "collections": [
+    "spent_estimate": 2880500,
+    "shops": [
       {
         "id": 5522,
         "ad": "Araştırma Şarküter",
-        "before": 64114780,
-        "response": {
-          "tutar": 64114780
-        }
-      },
-      {
-        "id": 7820,
-        "ad": "Araştırma Kargo",
-        "before": 83498269,
-        "response": {
-          "tutar": 83498269
-        }
-      },
-      {
-        "id": 8338,
-        "ad": "Araştırma Çilingir",
-        "before": 22091527,
-        "response": {
-          "tutar": 22091527
-        }
-      },
-      {
-        "id": 8397,
-        "ad": "Araştırma Fotoğraf",
-        "before": 288825164,
-        "response": {
-          "tutar": 288825164
-        }
-      },
-      {
-        "id": 8442,
-        "ad": "Araştırma Elektrik",
-        "before": 61731862,
-        "response": {
-          "tutar": 61731862
-        }
-      },
-      {
-        "id": 8815,
-        "ad": "Araştırma Otopark",
-        "before": 27546581,
-        "response": {
-          "tutar": 27546581
-        }
-      },
-      {
-        "id": 8858,
-        "ad": "Araştırma Oto Yıka",
-        "before": 230515748,
-        "response": {
-          "tutar": 230515748
-        }
-      },
-      {
-        "id": 9659,
-        "ad": "Araştırma Oto Serv",
-        "before": 431512246,
-        "response": {
-          "tutar": 431512246
-        }
-      },
-      {
-        "id": 31939,
-        "ad": "Araştırma Emlak",
-        "before": 62749024,
-        "response": {
-          "tutar": 62749024
-        }
-      }
-    ],
-    "stock_cost_planned": 4790500,
-    "stocking": [
-      {
-        "id": 5522,
-        "ad": "Araştırma Şarküter",
-        "each": 13,
-        "planned_cost": 4790500,
-        "bought": [
+        "actions": [
           {
             "urun": "beyaz_peynir",
-            "miktar": 13,
+            "miktar": 1,
             "response": {
-              "tutar": 325000,
+              "tutar": 25000,
+              "ambardan": 0
+            }
+          },
+          {
+            "urun": "kasar",
+            "miktar": 10,
+            "response": {
+              "tutar": 380000,
               "ambardan": 0
             }
           },
           {
             "urun": "zeytin",
-            "miktar": 13,
+            "miktar": 16,
             "response": {
-              "tutar": 195000,
+              "tutar": 240000,
+              "ambardan": 0
+            }
+          },
+          {
+            "urun": "sucuk",
+            "miktar": 5,
+            "response": {
+              "tutar": 300000,
+              "ambardan": 0
+            }
+          },
+          {
+            "urun": "pastirma",
+            "miktar": 10,
+            "response": {
+              "tutar": 1300000,
               "ambardan": 0
             }
           },
           {
             "urun": "tereyagi",
-            "miktar": 13,
+            "miktar": 6,
             "response": {
-              "tutar": 546000,
+              "tutar": 252000,
               "ambardan": 0
             }
           },
           {
             "urun": "labne",
-            "miktar": 13,
+            "miktar": 3,
             "response": {
-              "tutar": 84500,
+              "tutar": 19500,
+              "ambardan": 0
+            }
+          },
+          {
+            "urun": "hindi_fume",
+            "miktar": 7,
+            "response": {
+              "tutar": 364000,
               "ambardan": 0
             }
           }
         ],
-        "errors": [
-          {
-            "urun": "kasar",
-            "error": "API isletme/5522/stok: {'hata': 'Kaşar rafında yalnızca 10 kg boş yer var.'}"
-          },
-          {
-            "urun": "sucuk",
-            "error": "API isletme/5522/stok: {'hata': 'Sucuk rafında yalnızca 5 kg boş yer var.'}"
-          },
-          {
-            "urun": "pastirma",
-            "error": "API isletme/5522/stok: {'hata': 'Pastırma rafında yalnızca 10 kg boş yer var.'}"
-          },
-          {
-            "urun": "hindi_fume",
-            "error": "API isletme/5522/stok: {'hata': 'Hindi füme rafında yalnızca 7 kg boş yer var.'}"
-          }
-        ],
-        "auto_supply": null,
-        "auto_error": null
-      }
-    ],
-    "stalls": {
-      "collected": [
-        {
-          "id": 69065,
-          "isKodu": "pazar",
-          "sureKodu": "tam",
-          "isAdi": "Pazar tezgâhı",
-          "simge": "🧦",
-          "calisan": "ben",
-          "ciro": 720858,
-          "bonus": 8076,
-          "servis": 8,
-          "malzeme": 350000,
-          "cirakUcreti": 0,
-          "ceza": 0,
-          "net": 378934,
-          "olaylar": [
-            {
-              "gun": 1,
-              "tur": "kotu",
-              "metin": "Durgun bir gündü, az müşteri geldi."
-            }
-          ],
-          "tecrube": 7,
-          "seviyeAtladi": null,
-          "sertifika": null
-        },
-        {
-          "id": 69066,
-          "isKodu": "simit",
-          "sureKodu": "tam",
-          "isAdi": "Simitçi",
-          "simge": "🥯",
-          "calisan": "cirak",
-          "ciro": 425064,
-          "bonus": 5521,
-          "servis": 8,
-          "malzeme": 200000,
-          "cirakUcreti": 100000,
-          "ceza": 0,
-          "net": 130585,
-          "olaylar": [],
-          "tecrube": 0,
-          "seviyeAtladi": null,
-          "sertifika": null
-        },
-        {
-          "id": 69067,
-          "isKodu": "pamuk",
-          "sureKodu": "tam",
-          "isAdi": "Pamuk şeker ve balon",
-          "simge": "🎈",
-          "calisan": "cirak",
-          "ciro": 185387,
-          "bonus": 2791,
-          "servis": 8,
-          "malzeme": 40000,
-          "cirakUcreti": 100000,
-          "ceza": 0,
-          "net": 48178,
-          "olaylar": [
-            {
-              "gun": 1,
-              "tur": "iyi",
-              "metin": "Zabıta kontrole geldi, iznin tamamdı. \"Kolay gelsin\" deyip gitti.",
-              "kontrol": {
-                "ms": 1791325430298
-              }
-            }
-          ],
-          "tecrube": 0,
-          "seviyeAtladi": null,
-          "sertifika": null
-        },
-        {
-          "id": 69068,
-          "isKodu": "semsiye",
-          "sureKodu": "tam",
-          "isAdi": "Şemsiye satıcısı",
-          "simge": "☂️",
-          "calisan": "cirak",
-          "ciro": 196389,
-          "bonus": 2865,
-          "servis": 8,
-          "malzeme": 90000,
-          "cirakUcreti": 100000,
-          "ceza": 0,
-          "net": 9254,
-          "olaylar": [],
-          "tecrube": 0,
-          "seviyeAtladi": null,
-          "sertifika": null
-        },
-        {
-          "id": 69069,
-          "isKodu": "kestane",
-          "sureKodu": "tam",
-          "isAdi": "Kestaneci",
-          "simge": "🌰",
-          "calisan": "cirak",
-          "ciro": 922723,
-          "bonus": 11422,
-          "servis": 8,
-          "malzeme": 250000,
-          "cirakUcreti": 100000,
-          "ceza": 0,
-          "net": 584145,
-          "olaylar": [
-            {
-              "gun": 1,
-              "tur": "iyi",
-              "metin": "Zabıta kontrole geldi, iznin tamamdı. \"Kolay gelsin\" deyip gitti.",
-              "kontrol": {
-                "ms": 1791324992952
-              }
-            }
-          ],
-          "tecrube": 0,
-          "seviyeAtladi": null,
-          "sertifika": null
-        },
-        {
-          "id": 69070,
-          "isKodu": "misir",
-          "sureKodu": "tam",
-          "isAdi": "Mısırcı",
-          "simge": "🌽",
-          "calisan": "cirak",
-          "ciro": 485581,
-          "bonus": 6907,
-          "servis": 8,
-          "malzeme": 120000,
-          "cirakUcreti": 100000,
-          "ceza": 0,
-          "net": 272488,
-          "olaylar": [
-            {
-              "gun": 1,
-              "tur": "iyi",
-              "metin": "Zabıta kontrole geldi, iznin tamamdı. \"Kolay gelsin\" deyip gitti.",
-              "kontrol": {
-                "ms": 1791324807909
-              }
-            }
-          ],
-          "tecrube": 0,
-          "seviyeAtladi": null,
-          "sertifika": null
-        }
-      ],
-      "permit": null,
-      "started": [
-        {
-          "kod": "pazar",
-          "response": {
-            "id": 75080,
-            "calisan": "ben"
-          }
-        },
-        {
-          "kod": "simit",
-          "response": {
-            "id": 75081,
-            "calisan": "cirak"
-          }
-        },
-        {
-          "kod": "pamuk",
-          "response": {
-            "id": 75082,
-            "calisan": "cirak"
-          }
-        },
-        {
-          "kod": "semsiye",
-          "response": {
-            "id": 75083,
-            "calisan": "cirak"
-          }
-        },
-        {
-          "kod": "kestane",
-          "response": {
-            "id": 75084,
-            "calisan": "cirak"
-          }
-        },
-        {
-          "kod": "misir",
-          "response": {
-            "id": 75085,
-            "calisan": "cirak"
-          }
-        }
-      ]
-    },
-    "businesses_after": [
-      {
-        "id": 5522,
-        "ad": "Araştırma Şarküter",
-        "tur": "sarkuteri",
-        "durum": "acik",
-        "hizmet": false,
-        "kasa": 0,
-        "doluluk": 131,
+        "doluluk": 189,
         "kapasite": 189,
         "otoTedarik": true
-      },
-      {
-        "id": 7820,
-        "ad": "Araştırma Kargo",
-        "tur": "kargo",
-        "durum": "acik",
-        "hizmet": true,
-        "kasa": 0,
-        "doluluk": 0,
-        "kapasite": 400,
-        "otoTedarik": true
-      },
-      {
-        "id": 8338,
-        "ad": "Araştırma Çilingir",
-        "tur": "cilingir",
-        "durum": "acik",
-        "hizmet": true,
-        "kasa": 0,
-        "doluluk": 0,
-        "kapasite": 400,
-        "otoTedarik": true
-      },
-      {
-        "id": 8397,
-        "ad": "Araştırma Fotoğraf",
-        "tur": "fotografci",
-        "durum": "acik",
-        "hizmet": true,
-        "kasa": 0,
-        "doluluk": 0,
-        "kapasite": 400,
-        "otoTedarik": true
-      },
-      {
-        "id": 8442,
-        "ad": "Araştırma Elektrik",
-        "tur": "elektrikci",
-        "durum": "acik",
-        "hizmet": true,
-        "kasa": 0,
-        "doluluk": 0,
-        "kapasite": 400,
-        "otoTedarik": true
-      },
-      {
-        "id": 8815,
-        "ad": "Araştırma Otopark",
-        "tur": "otopark",
-        "durum": "acik",
-        "hizmet": true,
-        "kasa": 0,
-        "doluluk": 0,
-        "kapasite": 1200,
-        "otoTedarik": true
-      },
-      {
-        "id": 8858,
-        "ad": "Araştırma Oto Yıka",
-        "tur": "oto_yikama",
-        "durum": "acik",
-        "hizmet": true,
-        "kasa": 0,
-        "doluluk": 0,
-        "kapasite": 1200,
-        "otoTedarik": true
-      },
-      {
-        "id": 9659,
-        "ad": "Araştırma Oto Serv",
-        "tur": "oto_servis",
-        "durum": "acik",
-        "hizmet": true,
-        "kasa": 0,
-        "doluluk": 0,
-        "kapasite": 1200,
-        "otoTedarik": true
-      },
-      {
-        "id": 31939,
-        "ad": "Araştırma Emlak",
-        "tur": "emlakci",
-        "durum": "acik",
-        "hizmet": true,
-        "kasa": 0,
-        "doluluk": 0,
-        "kapasite": 1200,
-        "otoTedarik": true
       }
     ],
-    "balance_after": 1281895370
+    "balance_after": 1279014870
   }
 }
