@@ -81,3 +81,6 @@
 {"olay": "cirak_basla", "kod": "pamuk", "id": 80935, "ts": 1791409085999}
 {"olay": "cirak_basla", "kod": "semsiye", "id": 80936, "ts": 1791409086233}
 {"olay": "kosu_bitti", "tur": 53, "kazanc": 9547.9, "servis": 206, "bahsis": 32, "bakiye": 74317.1, "gecen_dk": 6.1, "ts": 1791409230672}
+{"olay": "kosu_basladi", "sure_dk": 3.0, "bakiye": 96049.76, "ts": 1791411150035}
+{"olay": "keyif_yuruyus", "onceki": 54, "bakiye": 96049.76, "sonuc": {"hata": "Aynı anda en çok 3 etkinlik düzenleyebilirsin."}, "ts": 1791411152158}
+{"olay": "kosu_bitti", "tur": 27, "kazanc": 1605.6, "servis": 108, "bahsis": 28, "bakiye": 97655.41, "gecen_dk": 3.1, "ts": 1791411334848}

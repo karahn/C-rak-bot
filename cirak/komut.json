@@ -1,17 +1,15 @@
 {
-  "gorevler": ["cerez-kontrol", "banka", "havale", "mesaj-oku", "oda", "seviye-bildir", "dukkan-ac", "bot"],
-  "arkadas_id": 14,
-  "arkadas_ad": "Karahan",
-  "kisi": "Karahan",
-  "oto_cevap": true,
-  "ilce": 2034,
-  "hedefler": ["kargo", "oto_yikama", "emlakci", "oto_servis"],
-  "adet": 2,
-  "rezerv": 20000,
-  "ad_kalibi": "Kalfa {tur}",
-  "otopark_yasak": true,
-  "sure_dk": 3,
-  "zincir": false,
-  "not": "VARSAYILAN ÇALIŞMA DÜZENİ: oku+cevap yaz (Karahan), havale/banka kontrol, oda eğitimi (TP), seviye bildirimi, dükkân kiralama denemesi, 3 dk grind. Ağır grind için sure_dk'yı artır.",
-  "kosu": 16
+ "gorevler": [
+  "cerez-kontrol",
+  "banka",
+  "havale",
+  "mesaj-oku",
+  "oda",
+  "seviye-bildir",
+  "dukkan-ac",
+  "bot"
+ ],
+ "sure_dk": 3,
+ "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. Uzun grind için sure_dk değerini artır (ben ayarlarım).",
+ "kosu": 17
 }
