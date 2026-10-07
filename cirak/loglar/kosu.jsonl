@@ -72,3 +72,12 @@
 {"olay": "kosu_basladi", "sure_dk": 0.8, "bakiye": 66773.79, "ts": 1791408567244}
 {"olay": "keyif_yuruyus", "onceki": 66, "bakiye": 66773.79, "sonuc": {"hata": "Aynı anda en çok 3 etkinlik düzenleyebilirsin."}, "ts": 1791408569670}
 {"olay": "kosu_bitti", "tur": 6, "kazanc": 608.2, "servis": 24, "bahsis": 7, "bakiye": 67381.98, "gecen_dk": 0.8, "ts": 1791408615461}
+{"olay": "kosu_basladi", "sure_dk": 6.0, "bakiye": 67381.98, "ts": 1791408867668}
+{"olay": "keyif_yuruyus", "onceki": 66, "bakiye": 67381.98, "sonuc": {"hata": "Aynı anda en çok 3 etkinlik düzenleyebilirsin."}, "ts": 1791408870102}
+{"olay": "topladi", "adet": 1, "net": 4724.51, "ts": 1791409077080}
+{"olay": "ben_basla", "kod": "pazar", "id": 80933, "ts": 1791409077341}
+{"olay": "topladi", "adet": 3, "net": 2131.95, "ts": 1791409081514}
+{"olay": "cirak_basla", "kod": "simit", "id": 80934, "ts": 1791409085729}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 80935, "ts": 1791409085999}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 80936, "ts": 1791409086233}
+{"olay": "kosu_bitti", "tur": 53, "kazanc": 9547.9, "servis": 206, "bahsis": 32, "bakiye": 74317.1, "gecen_dk": 6.1, "ts": 1791409230672}
