@@ -10,8 +10,8 @@
   "rezerv": 20000,
   "ad_kalibi": "Kalfa {tur}",
   "otopark_yasak": true,
-  "sure_dk": 45,
+  "sure_dk": 3,
   "zincir": false,
-  "not": "Karahan'ın mesajını oku + cevap yaz + havale kontrol + oda + seviye bildirimi + dükkân açma (para geldiyse) + 45 dk grind.",
-  "kosu": 15
+  "not": "VARSAYILAN ÇALIŞMA DÜZENİ: oku+cevap yaz (Karahan), havale/banka kontrol, oda eğitimi (TP), seviye bildirimi, dükkân kiralama denemesi, 3 dk grind. Ağır grind için sure_dk'yı artır.",
+  "kosu": 16
 }

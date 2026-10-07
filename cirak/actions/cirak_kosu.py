@@ -279,7 +279,7 @@ def gorev_yenilikler(op, komut):
             "ilk": ozet[0] if ozet else None, "son": ozet[-1] if ozet else None}
 
 
-VARSAYILAN_KOMUT = {"gorevler": ["cerez-kontrol", "durum", "bot"], "sure_dk": 0.8,
+VARSAYILAN_KOMUT = {"gorevler": ["cerez-kontrol", "banka", "havale", "mesaj-oku", "oda", "seviye-bildir", "dukkan-ac", "bot"], "sure_dk": 3,
                     "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. "
                            "Uzun grind için sure_dk değerini artır (ben ayarlarım).",
                     "kosu": 1}
