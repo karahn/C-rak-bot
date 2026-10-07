@@ -68,11 +68,15 @@ class Bot:
         if simdi - self.son_sokak < 20:
             return
         self.son_sokak = simdi
+        bakiye = self.bakiye()
         r = self.cek("sokak") or {}
         sunucu = r.get("sunucuZamani", 0)
         for o in (r.get("olaylar") or []):
             eylem = EYLEM.get(o.get("tur"))
             if not eylem or o.get("katildi") or o.get("id") in self.katilinan:
+                continue
+            # Müzisyene bahşiş para harcar → zengin değilsek atla
+            if eylem == "bahsis" and bakiye < 5000:
                 continue
             if o.get("bas", 0) <= sunucu + 2500 <= o.get("bit", 0) + 4000:
                 k = self.cek("sokak/katil", {"id": o["id"], "eylem": eylem})
@@ -86,15 +90,22 @@ class Bot:
         if simdi - self.son_keyif < 1800:   # 30 dk'da bir
             return
         self.son_keyif = simdi
-        y = self.cek("yasam") or {}
+        bakiye = self.bakiye()
+        try:
+            y = self.cek("yasam") or {}
+        except Exception:
+            y = {}
         keyif = y.get("keyif") if isinstance(y, dict) else None
         try:
             k = float(str(keyif).replace("%", "")) if keyif is not None else 100
         except Exception:
             k = 100
-        if k < 80:
+        # Yeni hesapta para kısıtlı → ücretli etkinlik açma (min 1.000 ₺ şart)
+        if k < 80 and bakiye >= 1000:
             r = self.cek("etkinlik", {"kod": "yuruyus", "plan": "simdi", "not": "Keyif turu", "davetliler": []})
-            self.log({"olay": "keyif_yuruyus", "onceki": keyif, "sonuc": r})
+            self.log({"olay": "keyif_yuruyus", "onceki": keyif, "bakiye": bakiye, "sonuc": r})
+        elif k < 80:
+            self.log({"olay": "keyif_atlandi", "neden": "bakiye_dusuk", "bakiye": bakiye, "keyif": keyif})
         # davetleri kabul (≤500 ₺, keyif ≥10)
         e = self.cek("etkinlikler") or {}
         for d in (e.get("davetler") or []):
@@ -169,9 +180,10 @@ class Bot:
     def kos(self, log_yaz=None):
         import time as _t
         t0 = _t.time()
-        self.log({"olay": "kosu_basladi", "sure_dk": self.sure_dk, "bakiye": self.bakiye()})
+        sure_dk = max(0.7, float(self.sure_dk or 0))  # en az 1 tur (hafif mod)
+        self.log({"olay": "kosu_basladi", "sure_dk": sure_dk, "bakiye": self.bakiye()})
         tur = 0
-        while _t.time() - t0 < self.sure_dk * 60:
+        while _t.time() - t0 < sure_dk * 60:
             tur += 1
             try:
                 self.gunluk()

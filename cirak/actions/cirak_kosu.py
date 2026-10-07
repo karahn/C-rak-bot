@@ -278,6 +278,12 @@ def gorev_yenilikler(op, komut):
             "ilk": ozet[0] if ozet else None, "son": ozet[-1] if ozet else None}
 
 
+VARSAYILAN_KOMUT = {"gorevler": ["cerez-kontrol", "durum", "bot"], "sure_dk": 0.8,
+                    "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. "
+                           "Uzun grind için sure_dk değerini artır (ben ayarlarım).",
+                    "kosu": 1}
+
+
 def gorev_bot(op, komut):
     """Uzun koşu: tezgâh grind + sokak olayları + günlük ödüller + keyif."""
     import importlib.util
@@ -297,9 +303,17 @@ def gorev_bot(op, komut):
     def kalp(notu=""):
         yaz(os.path.join(KOK, "kalp.txt"), "%d %s\n" % (int(time.time() * 1000), notu))
 
-    sure = int(komut.get("sure_dk") or 20)
+    sure = float(komut.get("sure_dk") or 0)
     bot = mod.Bot(cek, logla, kalp, sure_dk=sure)
-    return bot.kos()
+    ozet = bot.kos()
+
+    # Ağır koşudan sonra komutu hafif moda döndür → zamanlanmış koşular ucuz kalsın
+    yeni = dict(VARSAYILAN_KOMUT)
+    yeni["kosu"] = int(komut.get("kosu") or 0) + 1
+    if sure >= 2:  # sadece gerçek grind koşusundan sonra sıfırla
+        yaz(KOMUT_DOSYA, json.dumps(yeni, ensure_ascii=False, indent=1))
+        ozet["komut_sifirlandi"] = True
+    return ozet
 
 
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
@@ -312,10 +326,17 @@ GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilik
 def insan_ozeti(rapor, ad: str) -> str:
     s = ["# Çırak raporu — %s" % ad, "", "**Zaman:** %s UTC" % rapor.get("ts", simdi()), ""]
     o = rapor.get("oyuncu")
-    if o:
+    if isinstance(o, dict):
         s += ["## Oyuncu", "", "| Alan | Değer |", "|---|---|",
               "| Ad | %s |" % o.get("kullaniciAdi"), "| Seviye | %s |" % o.get("seviye"),
               "| TP | %s |" % o.get("tecrube"), ""]
+    elif isinstance(o, str):
+        s += ["## Oyuncu", "", "- Ad: **%s**" % o,
+              "- Seviye: %s · TP: %s" % (rapor.get("seviye"), rapor.get("tp")),
+              "- Nakit: %s ₺" % ((rapor.get("nakit_kurus") or 0) / 100),
+              "- Konum: %s / %s / %s" % ((rapor.get("il") or {}).get("ad"),
+                                         (rapor.get("ilce") or {}).get("ad"),
+                                         (rapor.get("mahalle") or {}).get("ad")), ""]
     uclar = rapor.get("uclar") or {}
     if uclar:
         s += ["## Uçlar", ""]
@@ -323,6 +344,16 @@ def insan_ozeti(rapor, ad: str) -> str:
             ozet = json.dumps(v, ensure_ascii=False)
             s.append("- `%s` → %s" % (k, ozet[:300] + ("…" if len(ozet) > 300 else "")))
         s.append("")
+    # bot koşusu özeti
+    if rapor.get("olay") == "kosu_bitti":
+        s += ["## Bot koşusu", "",
+              "| Alan | Değer |", "|---|---|",
+              "| Süre | %s dk |" % rapor.get("gecen_dk"),
+              "| Tur | %s |" % rapor.get("tur"),
+              "| Kazanç | %s ₺ |" % rapor.get("kazanc"),
+              "| Servis | %s |" % rapor.get("servis"),
+              "| Bahşiş | %s |" % rapor.get("bahsis"),
+              "| Bakiye | %s ₺ |" % rapor.get("bakiye"), ""]
     return "\n".join(s)
 
 

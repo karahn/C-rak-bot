@@ -1,7 +1,6 @@
 {
-  "gorevler": ["cerez-kontrol", "kaynak", "captcha-ornek"],
-  "adet": 5,
-  "sure_dk": 0,
-  "not": "Görevler: test | durum | ham | yenilikler | cerez-kontrol | kaynak | captcha-ornek | bot",
-  "kosu": 4
+  "gorevler": ["cerez-kontrol", "durum", "bot"],
+  "sure_dk": 0.8,
+  "not": "HAFIF MOD: oturum kontrolü + tam durum + tek tur (günlük ödül, sokak olayı, tezgâh servisi). Uzun grind için sure_dk'yı ben yükseltirim.",
+  "kosu": 5
 }
