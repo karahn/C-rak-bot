@@ -1,5 +1,4 @@
 {
-  "id": "2026-10-07-finish-inventory-001",
-  "operation": "finish_inventory",
-  "max_stock_cost_kurus": 100000000
+  "id": "2026-10-07-post-maintenance-status-001",
+  "operation": "status"
 }
