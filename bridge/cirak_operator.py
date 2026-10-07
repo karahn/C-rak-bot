@@ -26,23 +26,29 @@ class OperatorError(RuntimeError):
     pass
 
 
-def load_cookie(archive: Path) -> str:
+def load_cookies(archive: Path) -> list[str]:
+    cookies = []
     with zipfile.ZipFile(archive) as zf:
-        try:
-            text = zf.read(COOKIE_MEMBER).decode("utf-8")
-        except KeyError as exc:
-            raise OperatorError(f"Archive does not contain {COOKIE_MEMBER}") from exc
-
-    for line in text.splitlines():
-        if not line or line.startswith("#"):
-            continue
-        fields = line.split("\t")
-        if len(fields) >= 7 and fields[-2] == COOKIE_NAME:
-            value = fields[-1].strip()
-            if len(value) < 20:
-                break
-            return value
-    raise OperatorError("The arastirmaci42 session cookie was not found")
+        for member in ["cirak/oturum_cerez.txt", "cirak/cerez.txt"]:
+            try:
+                text = zf.read(member).decode("utf-8")
+            except KeyError:
+                continue
+            for line in text.splitlines():
+                if not line or line.startswith("#"):
+                    continue
+                fields = line.split("	")
+                if len(fields) >= 7 and fields[-2] == COOKIE_NAME:
+                    value = fields[-1].strip()
+                    if len(value) >= 20 and value not in cookies:
+                        cookies.append(value)
+                elif COOKIE_NAME in line and "=" in line:
+                    val = line.split("=", 1)[1].split(";")[0].strip()
+                    if len(val) >= 20 and val not in cookies:
+                        cookies.append(val)
+    if not cookies:
+        raise OperatorError("No session cookie candidates found in archive")
+    return cookies
 
 
 class Api:
@@ -601,9 +607,37 @@ def main() -> int:
             key: ("<redacted>" if key in {"email", "password", "cookie", "token", "verification_code", "verification_key"} else value)
             for key, value in command.items()
         }
-        cookie = load_cookie(args.archive)
-        result["data"] = run(command, Api(cookie))
-        result["ok"] = True
+        candidates = load_cookies(args.archive)
+
+        last_error = None
+
+        for cookie in candidates:
+
+            api = Api(cookie)
+
+            try:
+
+                result["data"] = run(command, api)
+
+                result["ok"] = True
+
+                last_error = None
+
+                break
+
+            except OperatorError as exc:
+
+                if "Safety stop: expected" in str(exc):
+
+                    last_error = exc
+
+                    continue
+
+                raise
+
+        if last_error:
+
+            raise last_error
     except Exception as exc:  # Persist a sanitized failure for the controller.
         result["error"] = str(exc)
 
