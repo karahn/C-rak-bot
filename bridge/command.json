@@ -1,4 +1,4 @@
 {
-  "id": "2026-10-07-start-google-link-001",
-  "operation": "start_google_link"
+  "id": "2026-10-07-check-google-link-status-001",
+  "operation": "status"
 }
