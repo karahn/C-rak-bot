@@ -390,6 +390,21 @@ def finish_inventory_operation(api: Api, command: dict[str, Any]) -> dict[str, A
     }
 
 
+def submit_password_reset_operation(api: Api, command: dict[str, Any]) -> dict[str, Any]:
+    email = str(command.get("email") or "").strip()
+    code = str(command.get("verification_code") or "").strip()
+    key = str(command.get("verification_key") or "").strip()
+    if "@" not in email or not code or not key:
+        raise OperatorError("Password reset email, verification code and key are required")
+    response = api.call("sifremi-unuttum", {
+        "kim": email,
+        "dogrulamaKod": code,
+        "dogrulamaAnahtar": key,
+        "dil": "tr",
+    })
+    return {"request_sent": True, "response": response}
+
+
 def password_reset_challenge_operation(api: Api) -> dict[str, Any]:
     challenge = api.call("dogrulama")
     if not challenge.get("anahtar") or not challenge.get("resim"):
@@ -411,6 +426,8 @@ def run(command: dict[str, Any], api: Api) -> dict[str, Any]:
         return maintain_businesses_and_stalls_operation(api, command)
     if operation == "finish_inventory":
         return finish_inventory_operation(api, command)
+    if operation == "submit_password_reset":
+        return submit_password_reset_operation(api, command)
     raise OperatorError(f"Unsupported operation: {operation!r}")
 
 
@@ -429,7 +446,7 @@ def main() -> int:
     try:
         command = json.loads(args.command.read_text(encoding="utf-8"))
         result["command"] = {
-            key: ("<redacted>" if key in {"email", "password", "cookie", "token"} else value)
+            key: ("<redacted>" if key in {"email", "password", "cookie", "token", "verification_code", "verification_key"} else value)
             for key, value in command.items()
         }
         cookie = load_cookie(args.archive)

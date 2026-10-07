@@ -1,4 +1,7 @@
 {
-  "id": "2026-10-07-password-reset-challenge-003",
-  "operation": "password_reset_challenge"
+  "id": "2026-10-07-submit-password-reset-001",
+  "operation": "submit_password_reset",
+  "email": "tmrk1623@gmail.com",
+  "verification_code": "2537",
+  "verification_key": "26866b49dd9f7a85107a219f"
 }
