@@ -26,9 +26,19 @@ Bu strateji korunacak:
 
 | | |
 |---|---|
-| Nakit | **632,44 ₺** (vadesiz 0) |
-| Seviye | SV2 · TP 8 (her 400 TP'de seviye) |
+| Nakit | **67.381,98 ₺** (7 Ekim 21:30) — 632 ₺'den 106 kat! |
+| Seviye | **SV3** · TP 44 (her 400 TP'de seviye) |
 | İlçe nüfusu | Pursaklar (168.881) → kiralar Keçiören'e göre ucuz olmalı |
+
+### 📈 Kanıtlanmış kazanç (bot koşuları)
+| Koşu | Süre | Sonuç |
+|---|---|---|
+| 1. koşu | ~1 dk | 632 → 5.496 ₺ (hasat + cüzdan olayı) |
+| 2. koşu | ~2 dk | 5.496 → 10.193 ₺ (61 servis, 13 bahşiş) |
+| **3. koşu (uzun)** | **25 dk** | 35.239 → **56.881 ₺** (941 servis, 188 bahşiş, 239 tur) |
+| 4-6. koşular | ~1 dk ×3 | 56.881 → **67.381 ₺** |
+
+**Kanıt:** tezgâh servisi (müşteri balonlarına dokunma) en kârlı yol — 25 dakikada ~32.400 ₺.
 
 ### Aşama 1 — Tezgâhla sermaye (0 → 20.000 ₺)
 - 🎁 **Günlük ödül** her gün büyür; **7. gün bedava seyyar izni** (izin normalde 1.500 ₺/hafta)
