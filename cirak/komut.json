@@ -1,42 +1,27 @@
 {
-    "gorevler": [
-        "isletmeler",
-        "cerez-kontrol",
-        "banka",
-        "havale",
-        "arkadas-istek",
-        "mesaj-oku",
-        "mesaj",
-        "oda",
-        "seviye-bildir",
-        "dukkan-ac",
-        "bot",
-        "dukkan-yonet",
-        "gunluk-gorev",
-        "mini-oyun",
-        "esnaf-topla"
-    ],
-    "arkadas_id": 14,
-    "arkadas_ad": "Karahan",
-    "kisi": "Karahan",
-    "oto_cevap": true,
-    "mesajlar": [],
-    "ilce": 2034,
-    "hedefler": [
-        "fotografci",
-        "teknik_servis",
-        "oto_yedek_parca",
-        "elektrikci"
-    ],
-    "adet": 2,
-    "rezerv": 10000,
-    "ad_kalibi": "Kalfa {tur}",
-    "otopark_yasak": true,
+  "hesap_adi": "Kalfa19",
+  "gorevler": [
+    "cerez-kontrol",
+    "havale-kontrol",
+    "isletmeler",
+    "dukkan-yonet",
+    "dukkan-ac",
+    "bot"
+  ],
+  "bot_ayar": {
     "sure_dk": 50,
-    "zincir": true,
-    "zincir_butce_dk": 0,
-    "zincir_bekle_sn": 10,
-    "not": "HEDEF: Fotografci + Teknik servis + Oto yedek + Elektrikci. Banka kısıtlı - tezgahla para biriktir, yeterli olunca aç. SV5'te oto servis. YENİ: isletmeler, dukkan-yonet, gunluk-gorev, mini-oyun, esnaf-topla görevleri eklendi.",
-    "kosu": 26,
-    "mini_oyun_adet": 2
+    "bekle_sn": 15,
+    "tezgah_oncelik": ["kokorec", "pazar", "gozleme", "kestane"]
+  },
+  "dukkan_strateji": {
+    "hedefler": ["kargo", "oto_yikama", "sarkuteri", "cilingir", "elektrikci"],
+    "maks_seviye": 5,
+    "minimum_nakit": 50000
+  },
+  "koordinasyon": {
+    "rol": "destek_alici",
+    "destek_alinacaklar": ["Arastirmaci42", "Karahan"],
+    "mesaj_sablonu": "Merhaba, dükkân açmak için {miktar}₺'ye ihtiyacım var. Yardımcı olabilir misin?"
+  },
+  "notlar": "En fakir hesap, diğerlerinden destek bekliyor. Seviye 5'e uygun dükkanlar aç."
 }
