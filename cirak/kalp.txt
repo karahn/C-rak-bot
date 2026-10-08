@@ -1,1 +1,1 @@
-1791453352028 tur=53 kazanc=18826 servis=424 siparis=15/15
+1791459425141 tur=377 kazanc=115598 servis=3006 siparis=82/82
