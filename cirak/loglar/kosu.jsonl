@@ -84,3 +84,63 @@
 {"olay": "kosu_basladi", "sure_dk": 3.0, "bakiye": 96049.76, "ts": 1791411150035}
 {"olay": "keyif_yuruyus", "onceki": 54, "bakiye": 96049.76, "sonuc": {"hata": "Aynı anda en çok 3 etkinlik düzenleyebilirsin."}, "ts": 1791411152158}
 {"olay": "kosu_bitti", "tur": 27, "kazanc": 1605.6, "servis": 108, "bahsis": 28, "bakiye": 97655.41, "gecen_dk": 3.1, "ts": 1791411334848}
+{"olay": "kosu_basladi", "sure_dk": 50.0, "bakiye": 59304.86, "ts": 1791449465957}
+{"olay": "keyif_yuruyus", "onceki": 71, "bakiye": 59304.86, "sonuc": {"id": 503, "fiyat": 6480, "keyif": 84, "davetEdilen": []}, "ts": 1791449468002}
+{"olay": "topladi", "adet": 2, "net": 5660.88, "ts": 1791449564166}
+{"olay": "cirak_basla", "kod": "misir", "id": 85333, "ts": 1791449567787}
+{"olay": "cirak_basla", "kod": "midye", "id": 85334, "ts": 1791449567953}
+{"olay": "topladi", "adet": 1, "net": 4450.5, "ts": 1791449578351}
+{"olay": "cirak_basla", "kod": "kestane", "id": 85335, "ts": 1791449581978}
+{"olay": "topladi", "adet": 1, "net": 4952.38, "ts": 1791449908837}
+{"olay": "ben_basla", "kod": "pazar", "id": 85366, "ts": 1791449909010}
+{"olay": "topladi", "adet": 3, "net": 2793.58, "ts": 1791449926677}
+{"olay": "cirak_basla", "kod": "simit", "id": 85367, "ts": 1791449930617}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 85368, "ts": 1791449930782}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 85369, "ts": 1791449930944}
+{"olay": "topladi", "adet": 2, "net": 4334.17, "ts": 1791450260019}
+{"olay": "cirak_basla", "kod": "misir", "id": 85430, "ts": 1791450263649}
+{"olay": "cirak_basla", "kod": "midye", "id": 85431, "ts": 1791450263820}
+{"olay": "topladi", "adet": 1, "net": 4526.59, "ts": 1791450277946}
+{"olay": "sokak", "tur": "itfaiye", "id": "2034:itfaiye:466523", "sonuc": {"tutar": 16250, "tecrube": 2, "metin": "İhbarın alındı. İtfaiye yola çıktı; binadan uzak dur.", "bakiye": 8773713, "hareket": 499591}, "ts": 1791450281732}
+{"olay": "cirak_basla", "kod": "kestane", "id": 85444, "ts": 1791450282060}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622031", "sonuc": {"tutar": -2000, "tecrube": 1, "metin": "Kediyi besledin. Mırlayarak ayağına süründü.", "bakiye": 8520940, "hareket": 499705}, "ts": 1791450351218}
+{"olay": "topladi", "adet": 1, "net": 6792.82, "ts": 1791450601434}
+{"olay": "ben_basla", "kod": "pazar", "id": 85476, "ts": 1791450601600}
+{"olay": "sokak", "tur": "ambulans", "id": "2034:ambulans:933047", "sonuc": {"tutar": 16250, "tecrube": 2, "metin": "İhbarın alındı. Ambulans yola çıktı; sağlık ekibine yer aç.", "bakiye": 11013093, "hareket": 500030}, "ts": 1791450612394}
+{"olay": "topladi", "adet": 3, "net": 2007.05, "ts": 1791450624507}
+{"olay": "cirak_basla", "kod": "simit", "id": 85478, "ts": 1791450628112}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 85479, "ts": 1791450628280}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 85480, "ts": 1791450628450}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3877599", "sonuc": {"tutar": 32500, "tecrube": 1, "metin": "Cüzdanı sahibine verdin. Sevinçten sana bir ödül bıraktı.", "bakiye": 11448584, "hareket": 500406}, "ts": 1791450897768}
+{"olay": "sokak", "tur": "kavga", "id": "2034:kavga:622031", "sonuc": {"tutar": 16250, "tecrube": 2, "metin": "İhbarın alındı. Polis ekibi yola çıktı; lütfen güvenli bir mesafede bekle.", "bakiye": 11513406, "hareket": 500482}, "ts": 1791450940428}
+{"olay": "topladi", "adet": 2, "net": 6153.55, "ts": 1791450954816}
+{"olay": "cirak_basla", "kod": "misir", "id": 85532, "ts": 1791450958473}
+{"olay": "cirak_basla", "kod": "midye", "id": 85533, "ts": 1791450958631}
+{"olay": "topladi", "adet": 1, "net": 4710.75, "ts": 1791450976044}
+{"olay": "cirak_basla", "kod": "kestane", "id": 85536, "ts": 1791450979668}
+{"olay": "keyif_yuruyus", "onceki": 78, "bakiye": 125627.11, "sonuc": {"hata": "Aynı anda en çok 3 etkinlik düzenleyebilirsin."}, "ts": 1791451269128}
+{"olay": "topladi", "adet": 1, "net": 6081.68, "ts": 1791451298402}
+{"olay": "ben_basla", "kod": "pazar", "id": 85602, "ts": 1791451298570}
+{"olay": "gunluk", "sonuc": {"sezon": {"alinan": [{"kademe": 4, "sira": "ucretsiz", "tutar": 400000}], "para": 400000}}, "ts": 1791451301876}
+{"olay": "topladi", "adet": 3, "net": 1892.41, "ts": 1791451324446}
+{"olay": "cirak_basla", "kod": "simit", "id": 85604, "ts": 1791451328047}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 85605, "ts": 1791451328220}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 85606, "ts": 1791451328377}
+{"olay": "topladi", "adet": 2, "net": 6034.78, "ts": 1791451654825}
+{"olay": "cirak_basla", "kod": "misir", "id": 85658, "ts": 1791451658417}
+{"olay": "cirak_basla", "kod": "midye", "id": 85659, "ts": 1791451658575}
+{"olay": "topladi", "adet": 1, "net": 5395.28, "ts": 1791451672680}
+{"olay": "cirak_basla", "kod": "kestane", "id": 85660, "ts": 1791451676602}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3877601", "sonuc": {"tutar": 32500, "tecrube": 1, "metin": "Cüzdanı sahibine verdin. Sevinçten sana bir ödül bıraktı.", "bakiye": 14706035, "hareket": 501624}, "ts": 1791451747190}
+{"olay": "topladi", "adet": 1, "net": 5994.32, "ts": 1791451991758}
+{"olay": "ben_basla", "kod": "pazar", "id": 85710, "ts": 1791451991915}
+{"olay": "topladi", "adet": 3, "net": 2227.5, "ts": 1791452021662}
+{"olay": "cirak_basla", "kod": "simit", "id": 85711, "ts": 1791452025608}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 85712, "ts": 1791452025767}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 85713, "ts": 1791452025927}
+{"olay": "topladi", "adet": 2, "net": 5837.73, "ts": 1791452351638}
+{"olay": "cirak_basla", "kod": "misir", "id": 85768, "ts": 1791452355237}
+{"olay": "cirak_basla", "kod": "midye", "id": 85769, "ts": 1791452355395}
+{"olay": "topladi", "adet": 1, "net": 4105.26, "ts": 1791452369441}
+{"olay": "cirak_basla", "kod": "kestane", "id": 85770, "ts": 1791452373399}
+{"olay": "kosu_bitti", "tur": 421, "kazanc": 117818.3, "servis": 2428, "bahsis": 517, "bakiye": 165700.23, "gecen_dk": 50.1, "ts": 1791452468789}
