@@ -1,6 +1,8 @@
 name: Cirak Bot
 
 on:
+  repository_dispatch:
+    types: [zincir]
   push:
     branches:
       - 'arena/71f59bcb-c-rak-bot'
@@ -20,7 +22,7 @@ concurrency:
 jobs:
   kosu:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 60
     steps:
       - name: Arena dalini al
         uses: actions/checkout@v4
