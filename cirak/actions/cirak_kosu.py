@@ -810,59 +810,52 @@ def gorev_kaynak_indir(op, komut):
 
 # ---------------------------------------------------------------- dükkân yönet
 def gorev_dukkan_yonet(op, komut):
-    """Tüm dükkânların kasasını toplar, biten rafları doldurur."""
+    """Tüm dükkânların kasasını toplar, rafları her zaman full doldurur, oto tedarik açar."""
     isl = cek(op, "isletmelerim") or []
     liste = isl if isinstance(isl, list) else (isl.get("isletmeler") or [])
     sonuc = {"toplam": len(liste), "kasa_toplanan": 0, "kasa_tl": 0.0,
-             "raf_doldurulan": 0, "raf_tl": 0.0, "detay": [], "hatalar": []}
+             "raf_doldurulan": 0, "oto_acilan": 0, "detay": [], "hatalar": []}
     for d in liste:
         if not isinstance(d, dict):
             continue
         id_ = d.get("id")
         ad = d.get("ad", "?")
         kasa = (d.get("kasa") or 0) / 100
-        biten = d.get("bitenUrun") or 0
-        hizmet = d.get("hizmet") or False
         durum = d.get("durum", "")
         if durum != "acik":
             continue
         det = {"ad": ad, "id": id_}
-        # Kasa topla
-        if kasa > 100:
+        # Detaylı bilgi çek (otoTedarik, kapasite, doluluk)
+        detay = cek(op, "isletme/%s" % id_)
+        if not isinstance(detay, dict) or "hata" in detay:
+            continue
+        hizmet = detay.get("hizmet") or detay.get("kategori") == "Hizmet"
+        oto = detay.get("otoTedarik", False)
+        kap = detay.get("kapasite") or 0
+        dol = detay.get("doluluk") or 0
+        # 1) Kasa topla
+        if kasa > 50:
             r = cek(op, "isletme/%s/kasa" % id_, {})
             if isinstance(r, dict) and "hata" not in r:
-                tut = r.get("toplam") or r.get("tutar") or r.get("miktar") or 0
-                if isinstance(tut, (int, float)):
-                    sonuc["kasa_tl"] += tut / 100
+                sonuc["kasa_tl"] += kasa
                 sonuc["kasa_toplanan"] += 1
                 det["kasa"] = kasa
-            time.sleep(0.5)
-        # Raf doldur
-        if not hizmet and biten > 0:
-            stok = cek(op, "isletme/%s/stok" % id_)
-            if isinstance(stok, dict) and "hata" not in stok:
-                urunler = stok.get("urunler") or stok.get("raflar") or stok.get("liste") or []
-                dold = 0
-                for u in urunler:
-                    if not isinstance(u, dict):
-                        continue
-                    mev = u.get("stok") or u.get("miktar") or 0
-                    kap = u.get("kapasite") or u.get("raf") or u.get("max") or 0
-                    kod = u.get("kod") or u.get("urun") or ""
-                    if kap > 0 and mev < kap and kod:
-                        eksik = kap - mev
-                        r2 = cek(op, "isletme/%s/stok" % id_, {"urun": kod, "miktar": eksik})
-                        if isinstance(r2, dict) and "hata" not in r2:
-                            maliyet = (r2.get("tutar") or r2.get("maliyet") or 0)
-                            if isinstance(maliyet, (int, float)):
-                                sonuc["raf_tl"] += maliyet / 100
-                            dold += 1
-                        time.sleep(0.3)
-                if dold > 0:
-                    sonuc["raf_doldurulan"] += 1
-                    det["raf"] = dold
-            time.sleep(0.5)
-        if det.get("kasa") or det.get("raf"):
+            time.sleep(0.4)
+        # 2) Oto tedarik kapalıysa aç
+        if not oto and not hizmet:
+            r = cek(op, "isletme/%s/oto" % id_, {"acik": True})
+            if isinstance(r, dict) and "hata" not in r:
+                sonuc["oto_acilan"] += 1
+                det["oto"] = "acildi"
+            time.sleep(0.3)
+        # 3) Raf düşükse doldur (stoklu dükkânlar, doluluk < kapasite)
+        if not hizmet and kap > 0 and dol < kap:
+            r = cek(op, "isletme/%s/oto" % id_, {"doldur": True})
+            if isinstance(r, dict) and "hata" not in r:
+                sonuc["raf_doldurulan"] += 1
+                det["raf"] = "%d/%d" % (dol, kap)
+            time.sleep(0.3)
+        if det.get("kasa") or det.get("raf") or det.get("oto"):
             sonuc["detay"].append(det)
     return sonuc
 
