@@ -54,7 +54,10 @@ def oturum():
             print("! cerez dosyasi okunamadi:", e)
     env = (os.environ.get("TEZGAH_CEREZ") or "").strip()
     if env:
-        cj.clear("oyunsitem.com", "/", "tezgah_oturum")
+        try:
+            cj.clear("oyunsitem.com", "/", "tezgah_oturum")
+        except KeyError:
+            pass
         cj.set_cookie(
             http.cookiejar.Cookie(
                 0, "tezgah_oturum", env, None, False, "oyunsitem.com", False,
@@ -704,6 +707,26 @@ def gorev_mesaj_oku(op, komut):
         except Exception as e:
             sonuc["durum_yazma_hatasi"] = repr(e)
     return sonuc
+
+
+def gorev_havale(op, komut):
+    """Gelen havaleleri listeler (Karahan'in para gonderip gonderemedigini gormek icin)."""
+    hv = cek(op, "banka/havale") or {}
+    gecmis = hv.get("gecmis") or []
+    kayit = [{"id": g.get("id"), "kim": g.get("kim"), "tutar": (g.get("tutar") or 0) / 100,
+              "aciklama": g.get("aciklama"), "giden": g.get("giden"),
+              "ts": g.get("ts") or g.get("zaman")} for g in gecmis]
+    return {"toplam": len(kayit), "gelenler": [g for g in kayit if not g.get("giden")][-10:],
+            "son_hareketler": kayit[-10:], "hesap_no": hv.get("hesapNo"),
+            "engel": hv.get("engel"), "ham": {k: v for k, v in hv.items() if k != "gecmis"}}
+
+
+def gorev_banka(op, komut):
+    """Banka durumu + hesap no (Karahan para gonderecekse lazim)."""
+    b = cek(op, "banka") or {}
+    return {"nakit": (b.get("nakit") or 0) / 100, "vadesiz": (b.get("vadesiz") or 0) / 100,
+            "hesap_no": b.get("hesapNo"), "vadeliler": b.get("vadeliler"), "krediler": b.get("krediler"),
+            "kredi_notu": b.get("krediNotu"), "ham_anahtarlar": list(b.keys())}
 
 
 def gorev_secim(op, komut):
