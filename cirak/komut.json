@@ -1,21 +1,17 @@
 {
-  "hesap_adi": "Kalfa19",
-  "gorevler": [
-    "cerez-kontrol",
-    "isletmeler",
-    "dukkan-yonet",
-    "reklam-ve-fiyat",
-    "dukkan-ac",
-    "bot"
-  ],
-  "sure_dk": 50,
-  "bekle_sn": 15,
-  "dukkan_hedefleri": [
-    {"tur": "sarkuteri", "oncelik": 1, "maks_maliyet": 250000},
-    {"tur": "cilingir", "oncelik": 2, "maks_maliyet": 180000},
-    {"tur": "elektrikci", "oncelik": 3, "maks_maliyet": 200000},
-    {"tur": "emlakci", "oncelik": 4, "maks_maliyet": 350000}
-  ],
-  "mevcut_dukkanlar": ["oto_yikama", "hirdavat", "hali_yikama", "kargo", "lastikci", "fotografci"],
-  "notlar": "6 dükkân zaten var. Şarküteri > Çilingir > Elektrikçi > Emlakçı aç. Reklam ver, fiyatları optimize et."
+ "gorevler": [
+  "cerez-kontrol",
+  "banka",
+  "havale",
+  "mesaj-oku",
+  "oda",
+  "seviye-bildir",
+  "dukkan-ac",
+  "bot"
+ ],
+ "sure_dk": 50,
+ "zincir": true,
+ "zincir_butce_dk": 0,
+ "not": "VARSAYILAN (zincir) mod: mesaj oku/cevap + oda + dükkân denemesi + 50 dk grind; bitince kendini yeniden tetikler.",
+ "kosu": 1
 }
