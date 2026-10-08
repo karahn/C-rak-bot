@@ -1,17 +1,14 @@
 {
- "gorevler": [
-  "cerez-kontrol",
-  "banka",
-  "havale",
-  "mesaj-oku",
-  "oda",
-  "seviye-bildir",
-  "dukkan-ac",
-  "bot"
- ],
- "sure_dk": 50,
- "zincir": true,
- "zincir_butce_dk": 0,
- "not": "VARSAYILAN (zincir) mod: mesaj oku/cevap + oda + dükkân denemesi + 50 dk grind; bitince kendini yeniden tetikler.",
- "kosu": 1
+  "hesap_adi": "Kalfa19",
+  "gorevler": [
+    "cerez-kontrol",
+    "isletmeler",
+    "dukkan-yonet",
+    "reklam-ve-fiyat",
+    "dukkan-ac",
+    "bot"
+  ],
+  "sure_dk": 50,
+  "bekle_sn": 15,
+  "notlar": "TÜM GÖREVLER AKTİF: kasa topla, raf doldur, oto tedarik aç, reklam ver, fiyat optimize et"
 }
