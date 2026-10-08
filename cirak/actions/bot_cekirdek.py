@@ -123,7 +123,7 @@ class Bot:
     def keyif(self):
         import time as _t
         simdi = _t.time()
-        if simdi - self.son_keyif < 1800:   # 30 dk'da bir
+        if simdi - self.son_keyif < 900:   # 15 dk'da bir (daha sık kontrol)
             return
         self.son_keyif = simdi
         bakiye = self.bakiye()
@@ -131,24 +131,74 @@ class Bot:
             y = self.cek("yasam") or {}
         except Exception:
             y = {}
-        keyif = y.get("keyif") if isinstance(y, dict) else None
+        keyif_val = y.get("keyif") if isinstance(y, dict) else None
+        tatil = y.get("tatil") if isinstance(y, dict) else None
         try:
-            k = float(str(keyif).replace("%", "")) if keyif is not None else 100
+            k = float(str(keyif_val).replace("%", "")) if keyif_val is not None else 100
         except Exception:
             k = 100
-        # Yeni hesapta para kısıtlı → ücretli etkinlik açma (min 1.000 ₺ şart)
-        if k < 80 and bakiye >= 1000:
-            r = self.cek("etkinlik", {"kod": "yuruyus", "plan": "simdi", "not": "Keyif turu", "davetliler": []})
-            self.log({"olay": "keyif_yuruyus", "onceki": keyif, "bakiye": bakiye, "sonuc": r})
+
+        # Zaten tatildeyse bir şey yapma
+        if tatil:
+            self.log({"olay": "keyif_tatil", "keyif": keyif_val, "yer": tatil.get("yerAd", "?")})
+            return
+
+        if k < 80 and bakiye >= 5000:
+            # 1) Önce mekana git (en hızlı keyif: Bar = +18 keyif, ~1200₺)
+            mekanlar = self.cek("mekanlar") or {}
+            mekan_liste = mekanlar.get("mekanlar") or mekanlar.get("liste") or []
+            if isinstance(mekanlar, list):
+                mekan_liste = mekanlar
+            en_iyi = None
+            for mk in mekan_liste:
+                if isinstance(mk, dict):
+                    fiyat = (mk.get("fiyat") or mk.get("ucret") or 0)
+                    if isinstance(fiyat, (int, float)) and fiyat > 100:
+                        fiyat = fiyat / 100  # kuruş → TL
+                    mk_keyif = mk.get("keyif") or mk.get("puan") or 0
+                    kod = mk.get("kod") or mk.get("id")
+                    if kod and fiyat <= bakiye * 0.1:  # bakiyenin %10'undan ucuz
+                        if en_iyi is None or mk_keyif > en_iyi.get("keyif", 0):
+                            en_iyi = {"kod": kod, "keyif": mk_keyif, "fiyat": fiyat, "ad": mk.get("ad", "?")}
+            
+            if en_iyi:
+                r = self.cek("etkinlik", {"kod": "mekan", "mekan": en_iyi["kod"],
+                                          "plan": "simdi", "not": "Keyif molası", "davetliler": []})
+                self.log({"olay": "keyif_mekan", "onceki": keyif_val, "mekan": en_iyi["ad"],
+                          "keyif_puan": en_iyi["keyif"], "fiyat": en_iyi["fiyat"], "sonuc": r})
+            else:
+                # 2) Mekan yoksa yürüyüş yap
+                r = self.cek("etkinlik", {"kod": "yuruyus", "plan": "simdi", "not": "Keyif turu", "davetliler": []})
+                self.log({"olay": "keyif_yuruyus", "onceki": keyif_val, "bakiye": bakiye, "sonuc": r})
+            
+            # 3) Keyif %50 altındaysa tatil düşün (kısa tatil)
+            if k < 50 and bakiye >= 50000:
+                t = self.cek("tatil") or {}
+                yerler = t.get("yerler") or []
+                for yer in yerler:
+                    if isinstance(yer, dict) and not yer.get("yurtdisi"):
+                        fiyat = yer.get("fiyat") or {}
+                        kisa = fiyat.get("kisa") or fiyat.get("toplam") or 0
+                        if isinstance(kisa, (int, float)):
+                            kisa_tl = kisa / 100 if kisa > 10000 else kisa
+                            if kisa_tl <= bakiye * 0.2:  # bakiyenin %20'sinden ucuz
+                                r = self.cek("tatil", {"yer": yer.get("kod"), "sure": "kisa"})
+                                self.log({"olay": "keyif_tatil_baslat", "yer": yer.get("ad"),
+                                          "fiyat": kisa_tl, "sonuc": r})
+                                break
+        
         elif k < 80:
-            self.log({"olay": "keyif_atlandi", "neden": "bakiye_dusuk", "bakiye": bakiye, "keyif": keyif})
-        # davetleri kabul (≤500 ₺, keyif ≥10)
+            # Para yetmiyor, ücretsiz yürüyüş dene
+            r = self.cek("etkinlik", {"kod": "yuruyus", "plan": "simdi", "not": "Ücretsiz keyif", "davetliler": []})
+            self.log({"olay": "keyif_yuruyus_ucretsiz", "keyif": keyif_val, "bakiye": bakiye, "sonuc": r})
+
+        # Davetleri kabul (keyif ≥ 5)
         e = self.cek("etkinlikler") or {}
         for d in (e.get("davetler") or []):
             if d.get("tur") != "etkinlik":
                 continue
             fiyat = d.get("fiyat") or 0
-            if fiyat <= 50000 and (d.get("keyif") or 0) >= 10:
+            if fiyat <= 50000 and (d.get("keyif") or 0) >= 5:
                 r = self.cek("etkinlik/%s/kabul" % d["id"], {})
                 self.log({"olay": "davet_kabul", "id": d.get("id"), "sonuc": r})
 
