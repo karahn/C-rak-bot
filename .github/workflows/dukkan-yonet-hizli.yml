@@ -23,26 +23,51 @@ jobs:
         env:
           TEZGAH_CEREZ: ${{ secrets.TEZGAH_CEREZ }}
         run: |
-          python3 -c "
+          cd cirak/actions
+          python3 << 'EOF'
           import sys
-          sys.path.insert(0, 'cirak/actions')
-          from cirak_kosu import Operator, gorev_dukkan_yonet
+          import json
+          import os
           
-          op = Operator()
-          sonuc = gorev_dukkan_yonet(op, {})
+          # Cerez kontrolü
+          cerez = os.environ.get('TEZGAH_CEREZ')
+          if not cerez:
+              print("❌ HATA: TEZGAH_CEREZ ortam değişkeni yok!")
+              sys.exit(1)
           
-          print('\\n=== DÜKKAN YÖNETİMİ SONUCU ===')
-          print(f'Toplam dükkân: {sonuc.get(\"toplam\", 0)}')
-          print(f'Kasa toplanan: {sonuc.get(\"kasa_toplanan\", 0)}')
-          print(f'Kasa TL: {sonuc.get(\"kasa_tl\", 0):.2f}')
-          print(f'Raf doldurulan: {sonuc.get(\"raf_doldurulan\", 0)}')
-          print(f'Oto tedarik açılan: {sonuc.get(\"oto_acilan\", 0)}')
+          print("✅ Cerez bulundu")
+          
+          # cirak_kosu modülünü yükle
+          sys.path.insert(0, '.')
+          import cirak_kosu
+          
+          # Oturum oluştur (opener)
+          op = cirak_kosu.oturum()
+          print("✅ Oturum oluşturuldu")
+          
+          # dukkan-yonet görevini çalıştır
+          print("\n🏪 Dükkan yönetimi başlatılıyor...")
+          sonuc = cirak_kosu.gorev_dukkan_yonet(op, {})
+          
+          print("\n=== DÜKKAN YÖNETİMİ SONUCU ===")
+          print(f"Toplam dükkân: {sonuc.get('toplam', 0)}")
+          print(f"Kasa toplanan: {sonuc.get('kasa_toplanan', 0)}")
+          print(f"Kasa TL: {sonuc.get('kasa_tl', 0):.2f}")
+          print(f"Raf doldurulan: {sonuc.get('raf_doldurulan', 0)}")
+          print(f"Oto tedarik açılan: {sonuc.get('oto_acilan', 0)}")
           
           if sonuc.get('hatalar'):
-              print(f'\\nHatalar: {len(sonuc[\"hatalar\"])}')
+              print(f"\n❌ Hatalar: {len(sonuc['hatalar'])}")
               for h in sonuc['hatalar'][:5]:
-                  print(f'  - {h}')
-          "
+                  print(f"  - {h}")
+          
+          # Sonucu JSON olarak kaydet
+          os.makedirs('../rapor', exist_ok=True)
+          with open('../rapor/dukkan-yonet-hizli.json', 'w', encoding='utf-8') as f:
+              json.dump(sonuc, f, ensure_ascii=False, indent=2)
+          
+          print("\n✅ Sonuç kaydedildi: cirak/rapor/dukkan-yonet-hizli.json")
+          EOF
 
       - name: Sonuçları repoya yaz
         if: always()
