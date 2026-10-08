@@ -511,12 +511,29 @@ def gorev_oda(op, komut):
     return sonuc
 
 
-def zincir(bekle_sn: int = 0):
-    """Aynı iş akışını yeniden tetikler (7/24 zincir). GITHUB_TOKEN'ın actions:write izni gerekir."""
+def zincir(bekle_sn: int = 0, butce_dk: float = 0):
+    """Kendini yeniden tetikler (7/24 zincir) — repository_dispatch + contents:write yeterli."""
     import base64 as b64
     import re as _re
     if bekle_sn:
         time.sleep(bekle_sn)
+    # Günlük bütçe kontrolü (dakika) — 24 saatte harcanan süre
+    if butce_dk:
+        try:
+            simdi_ms = time.time() * 1000
+            kullanilan = 0.0
+            yol = os.path.join(KOK, "loglar", "kosu.jsonl")
+            for satir in open(yol, encoding="utf-8"):
+                try:
+                    d = json.loads(satir)
+                except Exception:
+                    continue
+                if d.get("olay") == "kosu_bitti" and (simdi_ms - (d.get("ts") or 0)) <= 86_400_000:
+                    kullanilan += float(d.get("gecen_dk") or 0)
+            if kullanilan >= butce_dk:
+                return {"durdu": "butce_doldu", "kullanilan_dk_24s": round(kullanilan, 1)}
+        except Exception as e:
+            pass
     try:
         cfg = open(os.path.join(".git", "config"), encoding="utf-8").read()
         m = _re.search(r"extraheader\s*=\s*Authorization:\s*basic\s+(\S+)", cfg)
@@ -526,8 +543,8 @@ def zincir(bekle_sn: int = 0):
     except Exception as e:
         return {"hata": repr(e)[:200]}
     istek = urllib.request.Request(
-        "https://api.github.com/repos/karahn/C-rak-bot/actions/workflows/cirak-bot.yml/dispatches",
-        data=json.dumps({"ref": "arena/71f59bcb-c-rak-bot"}).encode(), method="POST",
+        "https://api.github.com/repos/karahn/C-rak-bot/dispatches",
+        data=json.dumps({"event_type": "zincir", "client_payload": {"kaynak": "bot"}}).encode(), method="POST",
         headers={"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json",
                  "Content-Type": "application/json", "User-Agent": "cirak-bot"})
     try:
@@ -805,9 +822,10 @@ def main() -> int:
     md = "\n\n---\n\n".join(insan_ozeti(v, k) for k, v in ozetler.items())
     yaz(os.path.join(RAK, "son.md"), md)
 
-    # 7/24 zincir: kendini yeniden tetikle (GITHUB_TOKEN actions:write gerektirir)
+    # 7/24 zincir: kendini yeniden tetikle (repository_dispatch + contents:write yeterli)
     if komut.get("zincir"):
-        z = zincir(bekle_sn=int(komut.get("zincir_bekle_sn") or 5))
+        z = zincir(bekle_sn=int(komut.get("zincir_bekle_sn") or 10),
+                   butce_dk=float(komut.get("zincir_butce_dk") or 0))
         print("zincir:", json.dumps(z, ensure_ascii=False))
         yaz(os.path.join(RAK, "zincir.json"), json.dumps({"ts": simdi(), "sonuc": z}, ensure_ascii=False, indent=1))
 
