@@ -304,6 +304,74 @@ class Bot:
         return True
 
     # ---------------------------------------------------------------- ana döngü
+
+    def dukkan_yonet_periodik(self):
+        """Periyodik olarak kasa topla, raf doldur, oto tedarik aç (her 5 dakikada bir)."""
+        import time
+        if not hasattr(self, '_son_dukkan_yonet'):
+            self._son_dukkan_yonet = 0
+        
+        # 5 dakikada bir çalıştır
+        if time.time() - self._son_dukkan_yonet < 300:
+            return
+        
+        self._son_dukkan_yonet = time.time()
+        
+        try:
+            isl = self.cek("isletmelerim") or []
+            liste = isl if isinstance(isl, list) else (isl.get("isletmeler") or [])
+            
+            kasa_toplanan = 0
+            raf_doldurulan = 0
+            oto_acilan = 0
+            
+            for d in liste:
+                if not isinstance(d, dict):
+                    continue
+                id_ = d.get("id")
+                kasa = (d.get("kasa") or 0) / 100
+                durum = d.get("durum", "")
+                if durum != "acik":
+                    continue
+                
+                # Kasa topla
+                if kasa > 50:
+                    r = self.cek("isletme/%s/kasa" % id_, {})
+                    if isinstance(r, dict) and "hata" not in r:
+                        kasa_toplanan += 1
+                    time.sleep(0.3)
+                
+                # Detay çek
+                detay = self.cek("isletme/%s" % id_)
+                if not isinstance(detay, dict) or "hata" in detay:
+                    continue
+                
+                hizmet = detay.get("hizmet") or detay.get("kategori") == "Hizmet"
+                if hizmet:
+                    continue
+                
+                # Oto tedarik aç
+                r_oto = self.cek("isletme/%s/oto" % id_, {"acik": True})
+                if isinstance(r_oto, dict) and "hata" not in r_oto:
+                    oto_acilan += 1
+                time.sleep(0.2)
+                
+                # Raf doldur
+                r_raf = self.cek("isletme/%s/oto" % id_, {"doldur": True})
+                if isinstance(r_raf, dict) and "hata" not in r_raf:
+                    raf_doldurulan += 1
+                time.sleep(0.2)
+            
+            if kasa_toplanan > 0 or raf_doldurulan > 0 or oto_acilan > 0:
+                self.log({"olay": "dukkan_yonet_periodik", 
+                         "kasa_toplanan": kasa_toplanan,
+                         "raf_doldurulan": raf_doldurulan,
+                         "oto_acilan": oto_acilan})
+        
+        except Exception as e:
+            self.log({"olay": "dukkan_yonet_hata", "hata": repr(e)[:200]})
+
+
     def kos(self, log_yaz=None):
         import time as _t
         t0 = _t.time()
@@ -321,6 +389,7 @@ class Bot:
                 self.odullu_video()
                 aktif = self.tezgah_tur()
                 self.servis(aktif)
+            self.dukkan_yonet_periodik()
             except Exception as e:
                 self.log({"olay": "tur_hata", "tur": tur, "hata": repr(e)[:300]})
             self.kalp("tur=%d kazanc=%.0f servis=%d siparis=%d/%d" % (
