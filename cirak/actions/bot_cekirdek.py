@@ -389,7 +389,7 @@ class Bot:
                 self.odullu_video()
                 aktif = self.tezgah_tur()
                 self.servis(aktif)
-            self.dukkan_yonet_periodik()
+                self.dukkan_yonet_periodik()
             except Exception as e:
                 self.log({"olay": "tur_hata", "tur": tur, "hata": repr(e)[:300]})
             self.kalp("tur=%d kazanc=%.0f servis=%d siparis=%d/%d" % (
