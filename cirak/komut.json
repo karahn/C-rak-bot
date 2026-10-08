@@ -14,5 +14,10 @@
   "zincir": true,
   "zincir_butce_dk": 0,
   "not": "VARSAYILAN (zincir) mod: mesaj oku/cevap + oda + dükkân denemesi + 50 dk grind; bitince kendini yeniden tetikler.",
-  "kosu": 1
+  "kosu": 1,
+  "hedefler": [
+    "kasap",
+    "firin",
+    "lokanta"
+  ]
 }
