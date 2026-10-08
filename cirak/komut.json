@@ -1,5 +1,6 @@
 {
   "gorevler": [
+    "isletmeler",
     "cerez-kontrol",
     "banka",
     "havale",
@@ -33,5 +34,5 @@
   "zincir_butce_dk": 0,
   "zincir_bekle_sn": 10,
   "not": "7/24 ZINCIR + 12 tezgah + SV4 yeni dükkânlar (lastikçi, oto yedek parça öncelikli). Pursaklar'da Karahan'ın açmadığı türler.",
-  "kosu": 23
+  "kosu": 24
 }

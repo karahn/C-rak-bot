@@ -744,6 +744,28 @@ def gorev_banka(op, komut):
             "kredi_notu": b.get("krediNotu"), "ham_anahtarlar": list(b.keys())}
 
 
+def gorev_isletmeler(op, komut):
+    """Kalfa19'un mevcut dükkânlarını listeler — tür, ilçe, kasa bilgisi."""
+    isl = cek(op, "isletmelerim") or []
+    liste = isl if isinstance(isl, list) else (isl.get("isletmeler") or isl.get("liste") or [])
+    sonuc = {"toplam": len(liste), "dukkanlar": [], "turler": set()}
+    for d in liste:
+        if isinstance(d, dict):
+            tur = d.get("tur") or d.get("turKod") or "?"
+            sonuc["turler"].add(tur)
+            ilce = d.get("ilce", {})
+            ilce_ad = ilce.get("ad") if isinstance(ilce, dict) else str(ilce)
+            kasa = (d.get("kasa") or 0) / 100
+            seviye = d.get("seviye") or d.get("sv")
+            sonuc["dukkanlar"].append({
+                "ad": d.get("ad", "?"), "tur": tur, "ilce": ilce_ad,
+                "kasa": kasa, "seviye": seviye, "no": d.get("no") or d.get("id")
+            })
+    sonuc["turler"] = sorted(sonuc["turler"])
+    sonuc["tur_sayisi"] = len(sonuc["turler"])
+    return sonuc
+
+
 def gorev_secim(op, komut):
     """Secimleri okur; Karahan aday ise raporlar (oy ucu netlesince oy verilecek)."""
     s = cek(op, "secim") or {}
@@ -793,7 +815,8 @@ GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilik
             "arkadas-istek": gorev_arkadas_istek, "mesaj": gorev_mesaj, "oda": gorev_oda,
             "seviye-bildir": gorev_seviye_bildir, "dukkan-ac": gorev_dukkan_ac,
             "mesaj-oku": gorev_mesaj_oku, "havale": gorev_havale, "banka": gorev_banka,
-            "secim": gorev_secim, "kaynak-indir": gorev_kaynak_indir}
+            "secim": gorev_secim, "kaynak-indir": gorev_kaynak_indir,
+            "isletmeler": gorev_isletmeler}
 
 
 # ---------------------------------------------------------------- özet yaz
