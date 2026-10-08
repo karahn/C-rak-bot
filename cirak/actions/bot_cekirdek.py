@@ -144,32 +144,37 @@ class Bot:
             return
 
         if k < 80 and bakiye >= 5000:
-            # 1) Önce mekana git (en hızlı keyif: Bar = +18 keyif, ~1200₺)
-            mekanlar = self.cek("mekanlar") or {}
-            mekan_liste = mekanlar.get("mekanlar") or mekanlar.get("liste") or []
-            if isinstance(mekanlar, list):
-                mekan_liste = mekanlar
-            en_iyi = None
-            for mk in mekan_liste:
-                if isinstance(mk, dict):
-                    fiyat = (mk.get("fiyat") or mk.get("ucret") or 0)
-                    if isinstance(fiyat, (int, float)) and fiyat > 100:
-                        fiyat = fiyat / 100  # kuruş → TL
-                    mk_keyif = mk.get("keyif") or mk.get("puan") or 0
-                    kod = mk.get("kod") or mk.get("id")
-                    if kod and fiyat <= bakiye * 0.1:  # bakiyenin %10'undan ucuz
-                        if en_iyi is None or mk_keyif > en_iyi.get("keyif", 0):
-                            en_iyi = {"kod": kod, "keyif": mk_keyif, "fiyat": fiyat, "ad": mk.get("ad", "?")}
-            
-            if en_iyi:
-                r = self.cek("etkinlik", {"kod": "mekan", "mekan": en_iyi["kod"],
-                                          "plan": "simdi", "not": "Keyif molası", "davetliler": []})
-                self.log({"olay": "keyif_mekan", "onceki": keyif_val, "mekan": en_iyi["ad"],
-                          "keyif_puan": en_iyi["keyif"], "fiyat": en_iyi["fiyat"], "sonuc": r})
+            # 1) Önce KAMP yap (en verimli: +22 keyif, ~400-500₺)
+            r = self.cek("etkinlik", {"kod": "kamp", "plan": "simdi", "not": "Keyif kampı", "davetliler": []})
+            if isinstance(r, dict) and "hata" not in r:
+                self.log({"olay": "keyif_kamp", "onceki": keyif_val, "bakiye": bakiye, "sonuc": r})
             else:
-                # 2) Mekan yoksa yürüyüş yap
-                r = self.cek("etkinlik", {"kod": "yuruyus", "plan": "simdi", "not": "Keyif turu", "davetliler": []})
-                self.log({"olay": "keyif_yuruyus", "onceki": keyif_val, "bakiye": bakiye, "sonuc": r})
+                # 2) Kamp olmadıysa mekana git
+                mekanlar = self.cek("mekanlar") or {}
+                mekan_liste = mekanlar.get("mekanlar") or mekanlar.get("liste") or []
+                if isinstance(mekanlar, list):
+                    mekan_liste = mekanlar
+                en_iyi = None
+                for mk in mekan_liste:
+                    if isinstance(mk, dict):
+                        fiyat = (mk.get("fiyat") or mk.get("ucret") or 0)
+                        if isinstance(fiyat, (int, float)) and fiyat > 100:
+                            fiyat = fiyat / 100
+                        mk_keyif = mk.get("keyif") or mk.get("puan") or 0
+                        kod = mk.get("kod") or mk.get("id")
+                        if kod and fiyat <= bakiye * 0.1:
+                            if en_iyi is None or mk_keyif > en_iyi.get("keyif", 0):
+                                en_iyi = {"kod": kod, "keyif": mk_keyif, "fiyat": fiyat, "ad": mk.get("ad", "?")}
+                
+                if en_iyi:
+                    r = self.cek("etkinlik", {"kod": "mekan", "mekan": en_iyi["kod"],
+                                              "plan": "simdi", "not": "Keyif molası", "davetliler": []})
+                    self.log({"olay": "keyif_mekan", "onceki": keyif_val, "mekan": en_iyi["ad"],
+                              "keyif_puan": en_iyi["keyif"], "fiyat": en_iyi["fiyat"], "sonuc": r})
+                else:
+                    # 3) Son çare yürüyüş
+                    r = self.cek("etkinlik", {"kod": "yuruyus", "plan": "simdi", "not": "Keyif turu", "davetliler": []})
+                    self.log({"olay": "keyif_yuruyus", "onceki": keyif_val, "bakiye": bakiye, "sonuc": r})
             
             # 3) Keyif %50 altındaysa tatil düşün (kısa tatil)
             if k < 50 and bakiye >= 50000:
