@@ -1,17 +1,37 @@
-# C-rak-bot
+# C-rak-bot 🤖
 
-Çırak (oyunsitem.com/cirak) — **Karahan + Arena AI ortak oyun çalışma alanı.**
+**Çırak** (oyunsitem.com/cirak) için otomatik oyun botu.
+Karahan (oyuncu) + Arena AI ortak projesi — hesap: **Kalfa19** (Ankara/Pursaklar).
 
-## İçerik
-| Dosya | Ne var |
+## Nasıl çalışır?
+
+| Parça | Açıklama |
 |---|---|
-| `cirak/dukkan-seviye-rehberi.md` | **79 işletme türü seviye seviye** — hangi seviyede hangi dükkân açılıyor, fiyat, stoklu/stoksuz, tavsiye sırası |
-| `cirak/HESAP-YENI.md` | Yeni hesap kayıt bilgileri (`kalfa42`) |
-| `bot_kit.zip` | PC/telefon kurulum paketi (süpervizör + 7 bot) — eski oturumdan |
-| `workspace-...zip` | Eski Arena oturumunun tam çalışma alanı (arşiv) |
+| `cirak/actions/cirak_kosu.py` | Koşucu — GitHub Actions üzerinde çalışır (Python 3.11) |
+| `cirak/komut.json` | Görev listesi + süre (push edilince koşu tetiklenir) |
+| `cirak/actions/bot_cekirdek.py` | Oyun çekirdeği: tezgâh grind, sokak olayları, günlük ödüller, oda, dükkân kiralama |
+| `cirak/rapor/` | Her koşunun raporu (`son.json`, `son.md`) |
+| `cirak/loglar/kosu.jsonl` | Koşu günlüğü |
+| `cirak/kaynak/` | Oyun kaynak dosyaları (bootstrap, API uçları) |
 
-## Durum (7 Ekim 2026)
-- Devir dosyaları okundu; eski çalışma alanı `cirak_ws/` (symlink: `/home/user/cirak`) altına açıldı.
-- **Oyun sürümü 0.57.14** (devir notları 0.56.2'de kalmış) — güncellemeler `api/yenilikler` ucundan okunabiliyor.
-- ⚠️ **Bu Arena oturumunun sandbox'ı oyuna çıkamıyor** (yalnızca github/npm/pypi). Oyun sayfaları **okuma aracıyla** okunabiliyor ama oturumlu işlem/bot çalıştırma için köprü gerekiyor.
-- `arastirmaci42` hesabına **giriş yapılmadı/yapılmayacak** (Karahan'ın talimatı). İleride kendi hesabımız: `kalfa42`.
+🔐 **Kimlik bilgileri repoda YOKTUR** — oturum çerezi GitHub Actions gizli anahtarında
+(`TEZGAH_CEREZ`) tutulur.
+
+## Ne yapar?
+
+- 🛒 Seyyar tezgâhları (pazar, simit, pamuk, şemsiye…) çalıştırıp **müşterilere servis** yapar (bahşiş toplar)
+- 🚶 Sokak olaylarını değerlendirir (cüzdan, kedi, sokak sanatçısı…)
+- 🎁 Günlük bonus, görev ödülü, sezon ödülü, oda eğitimi (TP) toplar
+- 📬 Karahan ile oyun içi mesajlaşır; seviye atlayınca yeni dükkânları bildirir
+- 🏪 Para yettiğinde dükkân kiralar (kargo, oto yıkama, oto servis, emlakçı — otopark hariç)
+- 🔁 Koşu bitince kendini yeniden tetikler (`repository_dispatch`) — kesintisiz döngü
+
+## Belgeler
+
+| Dosya | İçerik |
+|---|---|
+| `cirak/dukkan-seviye-rehberi.md` | 79 işletme türü — seviye, fiyat, stoklu/stoksuz, tavsiye |
+| `cirak/KALFA19-PLAN.md` | Yol haritası ve Karahan'ın talimatları |
+| `cirak/SEVIYE-DUKKAN-BILDIRIMI.md` | Hangi seviyede ne açılıyor (bildirim listesi) |
+| `cirak/7-24-KURULUM.md` | Kesintisiz çalışma kurulumu |
+| `cirak/ACTIONS-KURULUM.md` | İş akışı kurulum notları |
