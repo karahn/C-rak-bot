@@ -1,0 +1,54 @@
+name: Dükkan Yönet Hızlı (Manuel)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  dukkan-yonet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sadece dükkan yönetimi çalıştır
+        env:
+          TEZGAH_CEREZ: ${{ secrets.TEZGAH_CEREZ }}
+        run: |
+          python3 -c "
+          import sys
+          sys.path.insert(0, 'cirak/actions')
+          from cirak_kosu import Operator, gorev_dukkan_yonet
+          
+          op = Operator()
+          sonuc = gorev_dukkan_yonet(op, {})
+          
+          print('\\n=== DÜKKAN YÖNETİMİ SONUCU ===')
+          print(f'Toplam dükkân: {sonuc.get(\"toplam\", 0)}')
+          print(f'Kasa toplanan: {sonuc.get(\"kasa_toplanan\", 0)}')
+          print(f'Kasa TL: {sonuc.get(\"kasa_tl\", 0):.2f}')
+          print(f'Raf doldurulan: {sonuc.get(\"raf_doldurulan\", 0)}')
+          print(f'Oto tedarik açılan: {sonuc.get(\"oto_acilan\", 0)}')
+          
+          if sonuc.get('hatalar'):
+              print(f'\\nHatalar: {len(sonuc[\"hatalar\"])}')
+              for h in sonuc['hatalar'][:5]:
+                  print(f'  - {h}')
+          "
+
+      - name: Sonuçları repoya yaz
+        if: always()
+        run: |
+          git config user.name "dukkan-yonet-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A cirak/
+          git commit -m "🏪 Manuel dükkan yönetimi $(date -u '+%Y-%m-%d %H:%M') UTC" || echo "değişiklik yok"
+          git push origin HEAD:main || echo "push başarısız"
