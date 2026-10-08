@@ -455,19 +455,10 @@ def gorev_ana_js(op, komut):
             "ornek_uclar": sorted(uclar)[:80], "ilgi_ornekleri": ilgi[:8]}
 
 
-def mesaj_gonder(op, alici: str, metin: str, tekrar: int = 2):
-    """DM gönderir; oyun 'Biraz yavaş' derse bekleyip tekrar dener."""
+def mesaj_gonder(op, alici: str, metin: str):
+    """DM gönderir (300 karakter sınırı)."""
     metin = (metin or "").strip()[:295]
-    for i in range(max(1, tekrar)):
-        r = cek(op, "mesaj", {"alici": alici, "metin": metin})
-        hata = str((r or {}).get("hata") or "").lower()
-        if r and not hata:
-            return r
-        if "yavaş" in hata or "yavas" in hata:
-            time.sleep(35)
-            continue
-        return r
-    return r
+    return cek(op, "mesaj", {"alici": alici, "metin": metin})
 
 
 def gorev_arkadas_istek(op, komut):
@@ -518,7 +509,7 @@ def gorev_mesaj(op, komut):
             continue
         r = mesaj_gonder(op, alici, metin)
         sonuc.append({"alici": alici, "sonuc": r})
-        time.sleep(21)
+        time.sleep(11)
     return {"mesajlar": sonuc}
 
 
@@ -561,26 +552,14 @@ def zincir(bekle_sn: int = 0, butce_dk: float = 0):
                 return {"durdu": "butce_doldu", "kullanilan_dk_24s": round(kullanilan, 1)}
         except Exception as e:
             pass
-    tok = None
     try:
         cfg = open(os.path.join(".git", "config"), encoding="utf-8").read()
-        m = _re.search(r"extraheader\s*=\s*authorization:\s*basic\s+(\S+)", cfg, _re.I)
-        if m:
-            tok = b64.b64decode(m.group(1)).decode(errors="replace").split(":", 1)[1]
-    except Exception:
-        pass
-    if not tok:
-        try:
-            import subprocess as _sp
-            cikti = _sp.run(["git", "config", "--get-regexp", r"http\..*extraheader"],
-                            capture_output=True, text=True, timeout=20).stdout
-            m2 = _re.search(r"authorization:\s*basic\s+(\S+)", cikti, _re.I)
-            if m2:
-                tok = b64.b64decode(m2.group(1)).decode(errors="replace").split(":", 1)[1]
-        except Exception as e:
-            return {"hata": "token_okunamadi:" + repr(e)[:120]}
-    if not tok:
-        return {"hata": "token_okunamadi"}
+        m = _re.search(r"extraheader\s*=\s*Authorization:\s*basic\s+(\S+)", cfg)
+        if not m:
+            return {"hata": "token_okunamadi"}
+        tok = b64.b64decode(m.group(1)).decode(errors="replace").split(":", 1)[1]
+    except Exception as e:
+        return {"hata": repr(e)[:200]}
     istek = urllib.request.Request(
         "https://api.github.com/repos/karahn/C-rak-bot/dispatches",
         data=json.dumps({"event_type": "zincir", "client_payload": {"kaynak": "bot"}}).encode(), method="POST",
@@ -641,16 +620,38 @@ def gorev_seviye_bildir(op, komut):
 
 
 def gorev_dukkan_ac(op, komut):
-    """Boş parsel bulur, tür/fiyat listesini çeker ve uygun ilk dükkânı kiralar."""
+    """Boş parsel bulur, tür/fiyat listesini çeker ve uygun ilk dükkânı kiralar.
+    
+    KURAL: Aynı türden 2 dükkân AÇMA! (mevcut türleri kontrol et)
+    """
     ilce = int(komut.get("ilce") or 2034)
     hedefler = komut.get("hedefler") or ["kargo", "oto_yikama"]
     adet = int(komut.get("adet") or 1)
     rezerv = float(komut.get("rezerv") or 10000)
-    sonuc = {"ilce": ilce, "acilanlar": [], "secenekler": [], "denemeler": []}
+    sonuc = {"ilce": ilce, "acilanlar": [], "secenekler": [], "denemeler": [], "mevcut_turler": [], "atlanan": []}
+
+    # MEVCUT DÜKKAN TÜRLERİNİ ÇEK (KURAL: Aynı türden 2 tane açma!)
+    isl = cek(op, "isletmelerim") or []
+    isl_list = isl if isinstance(isl, list) else (isl.get("isletmeler") or [])
+    mevcut_turler = set()
+    for d in isl_list:
+        if isinstance(d, dict):
+            tur = d.get("tur") or d.get("turKod")
+            if tur:
+                mevcut_turler.add(tur)
+    sonuc["mevcut_turler"] = sorted(mevcut_turler)
+    
+    # Hedeflerden zaten sahip olunanları çıkar
+    orijinal_hedefler = list(hedefler)
+    hedefler = [h for h in hedefler if h not in mevcut_turler]
+    sonuc["atlanan"] = [h for h in orijinal_hedefler if h in mevcut_turler]
 
     d = cek(op, "durum") or {}
-    bakiye = ((d.get("oyuncu") or {}).get("bakiye") or 0) / 100
+    oyuncu = d.get("oyuncu") or {}
+    bakiye = (oyuncu.get("bakiye") or 0) / 100
+    oyuncu_seviye = oyuncu.get("seviye") or 0
     sonuc["bakiye"] = bakiye
+    sonuc["oyuncu_seviye"] = oyuncu_seviye
     cadde = cek(op, "cadde?ilce=%d" % ilce) or {}
     bos = [y for y in (cadde.get("yerler") or []) if not y.get("isletme")]
     sonuc["bos_parsel"] = len(bos)
@@ -670,11 +671,17 @@ def gorev_dukkan_ac(op, komut):
                 continue
             kira = t.get("kira") or kb.get("kira") or 0
             toplam = (kira * 2 + (t.get("kurulum") or 0) + ruhsat) / 100
-            kayit = {"no": y.get("no"), "tur": kod, "ad": t.get("ad"), "seviye": t.get("seviye"),
+            gereken_seviye = t.get("seviye") or 0
+            kayit = {"no": y.get("no"), "tur": kod, "ad": t.get("ad"), "seviye": gereken_seviye,
                      "kilitli": t.get("kilitli"), "toplam": toplam, "kurulum": (t.get("kurulum") or 0) / 100,
                      "kira": kira / 100}
             sonuc["secenekler"].append(kayit)
             if t.get("kilitli"):
+                kayit["neden_alinmadi"] = "kilitli"
+                continue
+            # SEVİYE KONTROLÜ
+            if gereken_seviye > oyuncu_seviye:
+                kayit["neden_alinmadi"] = "seviye_yetmiyor (SV%d gerekiyor, SV%d var)" % (gereken_seviye, oyuncu_seviye)
                 continue
             if bakiye - toplam < rezerv:
                 kayit["neden_alinmadi"] = "para_yetmiyor"
@@ -725,18 +732,7 @@ def gorev_mesaj_oku(op, komut):
     yeni = bool(son_gelen) and (son_gelen.get("id") or 0) > cevaplanan
     if yeni and komut.get("oto_cevap"):
         metin = (son_gelen.get("metin") or "").lower()
-        if any(x in metin for x in ("dükkan aç", "dukkan ac", "dükkan", "dukkan", "para iste", "para gönder", "para gonder")):
-            d = cek(op, "durum") or {}
-            bakiye = ((d.get("oyuncu") or {}).get("bakiye") or 0) / 100
-            h = sonraki_hedef(op, komut, bakiye)
-            if h:
-                cevap = ("Patron kargo + lastikçi açıldı! Kasa %.0f TL. Sıradaki: %s = %.0f TL (%.0f TL daha lazım). "
-                         "IBAN: %s" % (bakiye, h.get("ad") or h.get("tur"), h.get("toplam"),
-                                       h.get("gereken"), iban_bul(op)))[:295]
-            else:
-                cevap = ("Patron dükkânlar açılıyor! Kasa %.0f TL. IBAN: %s - gönderdikçe yenilerini açıyorum."
-                         % (bakiye, iban_bul(op)))[:295]
-        elif "iban" in metin or "hesap" in metin:
+        if "iban" in metin or "hesap" in metin:
             cevap = ("Patron IBAN: %s - hesap adi Kalfa19. Gonderince hemen kargo (81.000 TL) + oto yikama "
                      "aciyorum. Tezgahlar tam gaz!" % iban_bul(op))
         elif any(x in metin for x in ("para", "milyon", "gonder", "yollad", "havale")):
@@ -754,28 +750,6 @@ def gorev_mesaj_oku(op, komut):
         except Exception as e:
             sonuc["durum_yazma_hatasi"] = repr(e)
     return sonuc
-
-
-def sonraki_hedef(op, komut, bakiye_tl):
-    """Hedef listesindeki ilk açılabilir dükkânın toplam maliyetini ve eksik tutarı bulur."""
-    ilce = int(komut.get("ilce") or 2034)
-    hedefler = komut.get("hedefler") or ["oto_yikama"]
-    cadde = cek(op, "cadde?ilce=%d" % ilce) or {}
-    bos = [y for y in (cadde.get("yerler") or []) if not y.get("isletme")]
-    for y in bos[:6]:
-        kb = cek(op, "kiralama/%s?ilce=%d" % (y.get("no"), ilce)) or {}
-        if kb.get("hata"):
-            continue
-        turler = {t.get("kod"): t for t in (kb.get("turler") or [])}
-        for kod in hedefler:
-            t = turler.get(kod)
-            if not t or t.get("kilitli"):
-                continue
-            kira = t.get("kira") or kb.get("kira") or 0
-            toplam = (kira * 2 + (t.get("kurulum") or 0) + (kb.get("ruhsat") or 0)) / 100
-            return {"tur": kod, "ad": t.get("ad"), "toplam": toplam,
-                    "gereken": max(0.0, toplam - bakiye_tl)}
-    return None
 
 
 def gorev_havale(op, komut):
@@ -796,48 +770,6 @@ def gorev_banka(op, komut):
     return {"nakit": (b.get("nakit") or 0) / 100, "vadesiz": (b.get("vadesiz") or 0) / 100,
             "hesap_no": b.get("hesapNo"), "vadeliler": b.get("vadeliler"), "krediler": b.get("krediler"),
             "kredi_notu": b.get("krediNotu"), "ham_anahtarlar": list(b.keys())}
-
-
-def gorev_secim(op, komut):
-    """Secimleri okur; Karahan aday ise raporlar (oy ucu netlesince oy verilecek)."""
-    s = cek(op, "secim") or {}
-    k14 = cek(op, "oyuncu-karti/14") or {}
-    sonuc = {"secim": s}
-    metin = json.dumps(s, ensure_ascii=False).lower()
-    sonuc["karahan_geciyor"] = "karahan" in metin
-    if isinstance(s, dict):
-        for anahtar in ("adaylar", "adaylik", "secimler", "makamlar", "oylamalar"):
-            if s.get(anahtar):
-                sonuc[anahtar] = s.get(anahtar)
-    sonuc["iliski"] = k14.get("iliski")
-    return sonuc
-
-
-def gorev_kaynak_indir(op, komut):
-    """Listedeki JS dosyalarini indirir ve 'ara' kelimelerini baglamiyla cikarir."""
-    import re
-    KAY = os.path.join(KOK, "kaynak")
-    os.makedirs(KAY, exist_ok=True)
-    dosyalar = komut.get("dosyalar") or ["js/devlet.js", "js/banka.js"]
-    ara = komut.get("ara") or ["oy", "aday", "baskan"]
-    sonuc = {"inenler": [], "bulgular": {}}
-    for d in dosyalar:
-        url = d if d.startswith("http") else "https://oyunsitem.com/cirak/" + d.lstrip("/")
-        kod, govde = cek_metin_kod(op, url)
-        ad = d.split("/")[-1].split("?")[0]
-        sonuc["inenler"].append({"dosya": d, "kod": kod, "boyut": len(govde)})
-        if kod == 200 and len(govde) > 500:
-            yaz(os.path.join(KAY, ad), govde)
-            bulgular = []
-            for kelime in ara:
-                for m in list(re.finditer(re.escape(kelime), govde, re.I))[:4]:
-                    parca = re.sub(r"\s+", " ", govde[max(0, m.start() - 150): m.start() + 170])
-                    bulgular.append("[%s] %s" % (kelime, parca))
-            if bulgular:
-                yaz(os.path.join(KAY, "ara-" + ad + ".txt"), "\n\n".join(bulgular[:60]))
-                sonuc["bulgular"][ad] = bulgular[:10]
-        time.sleep(0.5)
-    return sonuc
 
 
 def gorev_isletmeler(op, komut):
@@ -1063,6 +995,72 @@ def gorev_esnaf_topla(op, komut):
     return sonuc
 
 
+
+
+# ---------------------------------------------------------------- reklam ve fiyat
+def gorev_reklam_ve_fiyat(op, komut):
+    """Tüm dükkânlara reklam verir ve fiyatları optimize eder (kırmızıya yakın ama altında)."""
+    isl = cek(op, "isletmelerim") or []
+    liste = isl if isinstance(isl, list) else (isl.get("isletmeler") or [])
+    sonuc = {"toplam": len(liste), "reklam_verilen": 0, "fiyat_ayarlanan": 0, 
+             "detay": [], "hatalar": []}
+    
+    for d in liste:
+        if not isinstance(d, dict):
+            continue
+        id_ = d.get("id")
+        ad = d.get("ad", "?")
+        durum = d.get("durum", "")
+        if durum != "acik":
+            continue
+        
+        det = {"ad": ad, "id": id_}
+        
+        # 1) Reklam ver (eğer henüz verilmemişse)
+        detay = cek(op, "isletme/%s" % id_)
+        if isinstance(detay, dict) and "hata" not in detay:
+            reklam_aktif = detay.get("reklamAktif") or detay.get("reklam")
+            if not reklam_aktif:
+                r_reklam = cek(op, "isletme/%s/reklam" % id_, {"aktif": True})
+                if isinstance(r_reklam, dict) and "hata" not in r_reklam:
+                    sonuc["reklam_verilen"] += 1
+                    det["reklam"] = "verildi"
+                else:
+                    sonuc["hatalar"].append({"id": id_, "ad": ad, "reklam_hata": r_reklam})
+                time.sleep(0.3)
+        
+        # 2) Fiyat ayarla (kırmızıdan bir önceki = ortalama üstü)
+        fiyatlar = detay.get("fiyatlar") or detay.get("urunFiyatlari") or []
+        if isinstance(fiyatlar, list) and fiyatlar:
+            fiyat_guncelleme = []
+            for urun in fiyatlar:
+                if not isinstance(urun, dict):
+                    continue
+                urun_id = urun.get("id") or urun.get("urunId")
+                min_fiyat = urun.get("min") or urun.get("minFiyat") or 0
+                max_fiyat = urun.get("max") or urun.get("maxFiyat") or 0
+                onerilen = urun.get("onerilen") or urun.get("onerilenFiyat") or 0
+                
+                # Kırmızı bölge: onerilen ile max arası
+                # "Kırmızıdan bir önceki" = onerilen + (max - onerilen) * 0.75
+                if min_fiyat > 0 and max_fiyat > 0:
+                    yeni_fiyat = int(onerilen + (max_fiyat - onerilen) * 0.75)
+                    fiyat_guncelleme.append({"urunId": urun_id, "fiyat": yeni_fiyat})
+            
+            if fiyat_guncelleme:
+                r_fiyat = cek(op, "isletme/%s/fiyat" % id_, {"fiyatlar": fiyat_guncelleme})
+                if isinstance(r_fiyat, dict) and "hata" not in r_fiyat:
+                    sonuc["fiyat_ayarlanan"] += 1
+                    det["fiyat"] = "%d ürün" % len(fiyat_guncelleme)
+                else:
+                    sonuc["hatalar"].append({"id": id_, "ad": ad, "fiyat_hata": r_fiyat})
+                time.sleep(0.3)
+        
+        if det.get("reklam") or det.get("fiyat"):
+            sonuc["detay"].append(det)
+    
+    return sonuc
+
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
             "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif,
@@ -1073,7 +1071,7 @@ GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilik
             "secim": gorev_secim, "kaynak-indir": gorev_kaynak_indir,
             "isletmeler": gorev_isletmeler,
             "dukkan-yonet": gorev_dukkan_yonet, "gunluk-gorev": gorev_gunluk_gorev,
-            "mini-oyun": gorev_mini_oyun, "esnaf-topla": gorev_esnaf_topla}
+            "mini-oyun": gorev_mini_oyun, "esnaf-topla": gorev_esnaf_topla, "reklam-ve-fiyat": gorev_reklam_ve_fiyat}
 
 
 # ---------------------------------------------------------------- özet yaz
