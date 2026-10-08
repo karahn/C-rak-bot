@@ -1,14 +1,16 @@
-name: Cirak Bot (arena)
+name: Cirak Bot
+
 on:
   push:
     paths:
       - 'cirak/komut.json'
+  schedule:
+    - cron: '*/5 * * * *'
   workflow_dispatch:
+
 permissions:
   contents: write
-concurrency:
-  group: cirak-bot
-  cancel-in-progress: false
+
 jobs:
   kosu:
     runs-on: ubuntu-latest
