@@ -808,6 +808,162 @@ def gorev_kaynak_indir(op, komut):
     return sonuc
 
 
+# ---------------------------------------------------------------- dükkân yönet
+def gorev_dukkan_yonet(op, komut):
+    """Tüm dükkânların kasasını toplar, biten rafları doldurur."""
+    isl = cek(op, "isletmelerim") or []
+    liste = isl if isinstance(isl, list) else (isl.get("isletmeler") or [])
+    sonuc = {"toplam": len(liste), "kasa_toplanan": 0, "kasa_tl": 0.0,
+             "raf_doldurulan": 0, "raf_tl": 0.0, "detay": [], "hatalar": []}
+    for d in liste:
+        if not isinstance(d, dict):
+            continue
+        id_ = d.get("id")
+        ad = d.get("ad", "?")
+        kasa = (d.get("kasa") or 0) / 100
+        biten = d.get("bitenUrun") or 0
+        hizmet = d.get("hizmet") or False
+        durum = d.get("durum", "")
+        if durum != "acik":
+            continue
+        det = {"ad": ad, "id": id_}
+        # Kasa topla
+        if kasa > 100:
+            r = cek(op, "isletme/%s/kasa" % id_, {})
+            if isinstance(r, dict) and "hata" not in r:
+                tut = r.get("toplam") or r.get("tutar") or r.get("miktar") or 0
+                if isinstance(tut, (int, float)):
+                    sonuc["kasa_tl"] += tut / 100
+                sonuc["kasa_toplanan"] += 1
+                det["kasa"] = kasa
+            time.sleep(0.5)
+        # Raf doldur
+        if not hizmet and biten > 0:
+            stok = cek(op, "isletme/%s/stok" % id_)
+            if isinstance(stok, dict) and "hata" not in stok:
+                urunler = stok.get("urunler") or stok.get("raflar") or stok.get("liste") or []
+                dold = 0
+                for u in urunler:
+                    if not isinstance(u, dict):
+                        continue
+                    mev = u.get("stok") or u.get("miktar") or 0
+                    kap = u.get("kapasite") or u.get("raf") or u.get("max") or 0
+                    kod = u.get("kod") or u.get("urun") or ""
+                    if kap > 0 and mev < kap and kod:
+                        eksik = kap - mev
+                        r2 = cek(op, "isletme/%s/stok" % id_, {"urun": kod, "miktar": eksik})
+                        if isinstance(r2, dict) and "hata" not in r2:
+                            maliyet = (r2.get("tutar") or r2.get("maliyet") or 0)
+                            if isinstance(maliyet, (int, float)):
+                                sonuc["raf_tl"] += maliyet / 100
+                            dold += 1
+                        time.sleep(0.3)
+                if dold > 0:
+                    sonuc["raf_doldurulan"] += 1
+                    det["raf"] = dold
+            time.sleep(0.5)
+        if det.get("kasa") or det.get("raf"):
+            sonuc["detay"].append(det)
+    return sonuc
+
+
+# ---------------------------------------------------------------- günlük görev
+def gorev_gunluk_gorev(op, komut):
+    """Günlük görevleri kontrol eder, tamamlananların ödülünü alır."""
+    g = cek(op, "gorevler") or {}
+    sonuc = {"gun": g.get("gun"), "alindi": g.get("alindi", False),
+             "gorevler": [], "odul_alindi": False}
+    gorevler = g.get("gorevler") or []
+    for gv in gorevler:
+        if isinstance(gv, dict):
+            sonuc["gorevler"].append({
+                "ad": gv.get("ad", gv.get("kod", "?")),
+                "tamam": gv.get("tamam", False),
+                "ilerleme": gv.get("ilerleme"),
+                "hedef": gv.get("hedef"),
+            })
+    hepsi = gorevler and all(x.get("tamam") for x in gorevler)
+    if hepsi and not g.get("alindi"):
+        r = cek(op, "gorevler/odul", {})
+        if isinstance(r, dict) and "hata" not in r:
+            sonuc["odul_alindi"] = True
+            sonuc["odul_detay"] = r
+    # Sezon ödülü
+    z = cek(op, "sezon") or {}
+    if z.get("odulHazir") or z.get("alinabilir"):
+        r = cek(op, "sezon/odul", {})
+        if isinstance(r, dict) and "hata" not in r:
+            sonuc["sezon_odul"] = r
+    return sonuc
+
+
+# ---------------------------------------------------------------- mini oyun
+def gorev_mini_oyun(op, komut):
+    """Mini oyun oynar — antrenman (ücretsiz) + ödüllü teklif."""
+    import random as _r
+    sonuc = {"oynanan": 0, "puan": 0, "odul_tl": 0, "oyunlar": [], "hatalar": []}
+    mo = cek(op, "mini-oyun") or {}
+    teklif = mo.get("teklif")
+    HIZLI = ["lokum", "sektir", "sayi", "hafiza", "eslestir"]
+    # Ödüllü teklif
+    if isinstance(teklif, dict) and teklif.get("id"):
+        kod = teklif.get("kod", "?")
+        try:
+            r = cek(op, "mini-oyun/basla", {"id": teklif["id"]})
+            if isinstance(r, dict) and "hata" not in r:
+                puan = _r.randint(50, 75)
+                time.sleep(3)
+                r2 = cek(op, "mini-oyun/bitir", {"id": r.get("id") or r.get("oturumId"),
+                                                  "jeton": r.get("jeton", ""), "puan": puan})
+                if isinstance(r2, dict) and "hata" not in r2:
+                    odul = (r2.get("odul") or 0) / 100
+                    sonuc["oynanan"] += 1
+                    sonuc["puan"] += puan
+                    sonuc["odul_tl"] += odul
+                    sonuc["oyunlar"].append({"kod": kod, "puan": puan, "odul": odul, "tur": "odullu"})
+            time.sleep(2)
+        except Exception as e:
+            sonuc["hatalar"].append({"kod": kod, "hata": repr(e)[:200]})
+    # Antrenman
+    adet = int(komut.get("mini_oyun_adet") or 2)
+    for kod in HIZLI[:adet]:
+        try:
+            r = cek(op, "mini-oyun/basla", {"kod": kod, "antrenman": True})
+            if isinstance(r, dict) and "hata" not in r:
+                puan = _r.randint(40, 70)
+                time.sleep(3)
+                r2 = cek(op, "mini-oyun/bitir", {"id": r.get("id") or r.get("oturumId"),
+                                                  "jeton": r.get("jeton", ""), "puan": puan})
+                if isinstance(r2, dict) and "hata" not in r2:
+                    sonuc["oynanan"] += 1
+                    sonuc["puan"] += puan
+                    odul = (r2.get("odul") or 0) / 100
+                    sonuc["odul_tl"] += odul
+                    sonuc["oyunlar"].append({"kod": kod, "puan": puan, "odul": odul, "tur": "antrenman"})
+            elif isinstance(r, dict):
+                sonuc["hatalar"].append({"kod": kod, "hata": r.get("hata", "?")})
+            time.sleep(1)
+        except Exception as e:
+            sonuc["hatalar"].append({"kod": kod, "hata": repr(e)[:200]})
+    return sonuc
+
+
+# ---------------------------------------------------------------- esnaf topla-baslat
+def gorev_esnaf_topla(op, komut):
+    """Esnaf kartı ile tüm tezgâhları topla ve yeniden başlat."""
+    r = cek(op, "esnaf/topla-baslat", {})
+    sonuc = {"sonuc": r}
+    if isinstance(r, dict) and "hata" not in r:
+        sonuc["basarili"] = True
+        sonuc["toplanan"] = r.get("toplanan") or r.get("adet") or 0
+        sonuc["baslatilan"] = r.get("baslatilan") or r.get("yeni") or 0
+        sonuc["kazanc"] = (r.get("kazanc") or r.get("net") or 0) / 100
+    elif isinstance(r, dict):
+        sonuc["basarili"] = False
+        sonuc["hata"] = r.get("hata", "?")
+    return sonuc
+
+
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
             "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif,
@@ -816,7 +972,9 @@ GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilik
             "seviye-bildir": gorev_seviye_bildir, "dukkan-ac": gorev_dukkan_ac,
             "mesaj-oku": gorev_mesaj_oku, "havale": gorev_havale, "banka": gorev_banka,
             "secim": gorev_secim, "kaynak-indir": gorev_kaynak_indir,
-            "isletmeler": gorev_isletmeler}
+            "isletmeler": gorev_isletmeler,
+            "dukkan-yonet": gorev_dukkan_yonet, "gunluk-gorev": gorev_gunluk_gorev,
+            "mini-oyun": gorev_mini_oyun, "esnaf-topla": gorev_esnaf_topla}
 
 
 # ---------------------------------------------------------------- özet yaz

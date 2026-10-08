@@ -10,7 +10,11 @@
     "oda",
     "seviye-bildir",
     "dukkan-ac",
-    "bot"
+    "bot",
+    "dukkan-yonet",
+    "gunluk-gorev",
+    "mini-oyun",
+    "esnaf-topla"
   ],
   "arkadas_id": 14,
   "arkadas_ad": "Karahan",
@@ -33,6 +37,7 @@
   "zincir": true,
   "zincir_butce_dk": 0,
   "zincir_bekle_sn": 10,
-  "not": "7/24 ZINCIR + 12 tezgah + SV4 yeni dükkânlar (lastikçi, oto yedek parça öncelikli). Pursaklar'da Karahan'ın açmadığı türler.",
-  "kosu": 24
+  "not": "7/24 ZINCIR + dükkân yönetim + günlük görev + mini oyun + esnaf topla",
+  "kosu": 25,
+  "mini_oyun_adet": 2
 }
