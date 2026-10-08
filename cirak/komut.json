@@ -1,15 +1,18 @@
 {
- "gorevler": [
-  "cerez-kontrol",
-  "banka",
-  "havale",
-  "mesaj-oku",
-  "oda",
-  "seviye-bildir",
-  "dukkan-ac",
-  "bot"
- ],
- "sure_dk": 3,
- "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. Uzun grind için sure_dk değerini artır (ben ayarlarım).",
- "kosu": 21
+  "gorevler": [
+    "cerez-kontrol",
+    "banka",
+    "havale",
+    "mesaj-oku",
+    "mesaj",
+    "oda",
+    "seviye-bildir",
+    "dukkan-ac",
+    "bot"
+  ],
+  "sure_dk": 50,
+  "not": "7/24 ZINCIR (sınırsız): 50 dk grind + mesaj/oda/dükkân kontrolü; bitince kendini yeniden tetikler.",
+  "kosu": 22,
+  "zincir": true,
+  "zincir_butce_dk": 0
 }
