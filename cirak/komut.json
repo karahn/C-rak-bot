@@ -3,6 +3,7 @@
     "cerez-kontrol",
     "banka",
     "havale",
+    "arkadas-istek",
     "mesaj-oku",
     "mesaj",
     "oda",
@@ -10,9 +11,27 @@
     "dukkan-ac",
     "bot"
   ],
+  "arkadas_id": 14,
+  "arkadas_ad": "Karahan",
+  "kisi": "Karahan",
+  "oto_cevap": true,
+  "mesajlar": [],
+  "ilce": 2034,
+  "hedefler": [
+    "lastikci",
+    "oto_yedek_parca",
+    "oto_yikama",
+    "oto_servis",
+    "emlakci"
+  ],
+  "adet": 2,
+  "rezerv": 10000,
+  "ad_kalibi": "Kalfa {tur}",
+  "otopark_yasak": true,
   "sure_dk": 50,
-  "not": "7/24 ZINCIR (sınırsız): 50 dk grind + mesaj/oda/dükkân kontrolü; bitince kendini yeniden tetikler.",
-  "kosu": 22,
   "zincir": true,
-  "zincir_butce_dk": 0
+  "zincir_butce_dk": 0,
+  "zincir_bekle_sn": 10,
+  "not": "7/24 ZINCIR + 12 tezgah + SV4 yeni dükkânlar (lastikçi, oto yedek parça öncelikli). Pursaklar'da Karahan'ın açmadığı türler.",
+  "kosu": 23
 }
