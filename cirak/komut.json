@@ -4,16 +4,18 @@
     "cerez-kontrol",
     "isletmeler",
     "dukkan-yonet",
+    "reklam-ve-fiyat",
     "dukkan-ac",
     "bot"
   ],
   "sure_dk": 50,
   "bekle_sn": 15,
   "dukkan_hedefleri": [
-    {"tur": "kargo", "oncelik": 1, "maks_maliyet": 200000},
-    {"tur": "oto_yikama", "oncelik": 2, "maks_maliyet": 450000},
-    {"tur": "sarkuteri", "oncelik": 3, "maks_maliyet": 250000},
-    {"tur": "cilingir", "oncelik": 4, "maks_maliyet": 180000}
+    {"tur": "sarkuteri", "oncelik": 1, "maks_maliyet": 250000},
+    {"tur": "cilingir", "oncelik": 2, "maks_maliyet": 180000},
+    {"tur": "elektrikci", "oncelik": 3, "maks_maliyet": 200000},
+    {"tur": "emlakci", "oncelik": 4, "maks_maliyet": 350000}
   ],
-  "notlar": "Hırdavatçı zaten var. Kargo > Oto Yıkama > Şarküteri > Çilingir sırasıyla aç."
+  "mevcut_dukkanlar": ["oto_yikama", "hirdavat", "hali_yikama", "kargo", "lastikci", "fotografci"],
+  "notlar": "6 dükkân zaten var. Şarküteri > Çilingir > Elektrikçi > Emlakçı aç. Reklam ver, fiyatları optimize et."
 }
