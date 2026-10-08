@@ -213,17 +213,16 @@ class Bot:
                         self.log({"olay": "siparis_basladi", "adet": adet,
                                   "sure_sn": round(sure_ms / 1000, 1), "odul": odul / 100 if odul else 0,
                                   "tezgah": is_.get("isKodu")})
-                        # Hızlı döngü: max 10 parça/istek, 250ms bekleme
+                        # Ultra hızlı döngü: 1 parça/istek, 150ms (oyun JS: 280ms retry)
                         basari = False
                         ret = 0  # hız sınırı sayacı
-                        for _ in range(200):  # 200 iterasyon × 10 parça = 2000 max
-                            rr = self.cek("seyyar/servis", {"id": is_.get("id"), "parca": 10})
+                        for _ in range(500):  # 500 iterasyon × 1 parça
+                            rr = self.cek("seyyar/servis", {"id": is_.get("id"), "parca": 1})
                             if rr is None or (isinstance(rr, dict) and "hata" in rr):
-                                # Hız sınırı veya bağlantı hatası
                                 ret += 1
-                                if ret > 6:
+                                if ret > 8:
                                     break
-                                _t.sleep(0.3)
+                                _t.sleep(0.2)
                                 continue
                             ret = 0
                             sp = (rr or {}).get("siparis") or {}
@@ -240,7 +239,7 @@ class Bot:
                                 self.log({"olay": "siparis_kacti",
                                           "tezgah": is_.get("isKodu")})
                                 break
-                            _t.sleep(0.25)  # 400ms→250ms (oyunun kendi retry: 280ms)
+                            _t.sleep(0.15)  # 150ms — JS oyun istemcisinden daha hızlı
                         if not basari and not sp.get("durum"):
                             self.log({"olay": "siparis_zaman_asimi",
                                       "tezgah": is_.get("isKodu")})
