@@ -725,7 +725,18 @@ def gorev_mesaj_oku(op, komut):
     yeni = bool(son_gelen) and (son_gelen.get("id") or 0) > cevaplanan
     if yeni and komut.get("oto_cevap"):
         metin = (son_gelen.get("metin") or "").lower()
-        if "iban" in metin or "hesap" in metin:
+        if any(x in metin for x in ("dükkan aç", "dukkan ac", "dükkan", "dukkan", "para iste", "para gönder", "para gonder")):
+            d = cek(op, "durum") or {}
+            bakiye = ((d.get("oyuncu") or {}).get("bakiye") or 0) / 100
+            h = sonraki_hedef(op, komut, bakiye)
+            if h:
+                cevap = ("Patron kargo + lastikçi açıldı! Kasa %.0f TL. Sıradaki: %s = %.0f TL (%.0f TL daha lazım). "
+                         "IBAN: %s" % (bakiye, h.get("ad") or h.get("tur"), h.get("toplam"),
+                                       h.get("gereken"), iban_bul(op)))[:295]
+            else:
+                cevap = ("Patron dükkânlar açılıyor! Kasa %.0f TL. IBAN: %s - gönderdikçe yenilerini açıyorum."
+                         % (bakiye, iban_bul(op)))[:295]
+        elif "iban" in metin or "hesap" in metin:
             cevap = ("Patron IBAN: %s - hesap adi Kalfa19. Gonderince hemen kargo (81.000 TL) + oto yikama "
                      "aciyorum. Tezgahlar tam gaz!" % iban_bul(op))
         elif any(x in metin for x in ("para", "milyon", "gonder", "yollad", "havale")):
@@ -743,6 +754,28 @@ def gorev_mesaj_oku(op, komut):
         except Exception as e:
             sonuc["durum_yazma_hatasi"] = repr(e)
     return sonuc
+
+
+def sonraki_hedef(op, komut, bakiye_tl):
+    """Hedef listesindeki ilk açılabilir dükkânın toplam maliyetini ve eksik tutarı bulur."""
+    ilce = int(komut.get("ilce") or 2034)
+    hedefler = komut.get("hedefler") or ["oto_yikama"]
+    cadde = cek(op, "cadde?ilce=%d" % ilce) or {}
+    bos = [y for y in (cadde.get("yerler") or []) if not y.get("isletme")]
+    for y in bos[:6]:
+        kb = cek(op, "kiralama/%s?ilce=%d" % (y.get("no"), ilce)) or {}
+        if kb.get("hata"):
+            continue
+        turler = {t.get("kod"): t for t in (kb.get("turler") or [])}
+        for kod in hedefler:
+            t = turler.get(kod)
+            if not t or t.get("kilitli"):
+                continue
+            kira = t.get("kira") or kb.get("kira") or 0
+            toplam = (kira * 2 + (t.get("kurulum") or 0) + (kb.get("ruhsat") or 0)) / 100
+            return {"tur": kod, "ad": t.get("ad"), "toplam": toplam,
+                    "gereken": max(0.0, toplam - bakiye_tl)}
+    return None
 
 
 def gorev_havale(op, komut):
