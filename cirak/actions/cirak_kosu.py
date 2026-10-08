@@ -282,9 +282,9 @@ def gorev_yenilikler(op, komut):
             "ilk": ozet[0] if ozet else None, "son": ozet[-1] if ozet else None}
 
 
-VARSAYILAN_KOMUT = {"gorevler": ["cerez-kontrol", "banka", "havale", "mesaj-oku", "oda", "seviye-bildir", "dukkan-ac", "bot"], "sure_dk": 3,
-                    "not": "Varsayılan (hafif) mod: oturum kontrolü + durum + tek tur ödül/olay. "
-                           "Uzun grind için sure_dk değerini artır (ben ayarlarım).",
+VARSAYILAN_KOMUT = {"gorevler": ["cerez-kontrol", "banka", "havale", "mesaj-oku", "oda", "seviye-bildir", "dukkan-ac", "bot"],
+                    "sure_dk": 50, "zincir": True, "zincir_butce_dk": 0,
+                    "not": "VARSAYILAN (zincir) mod: mesaj oku/cevap + oda + dükkân denemesi + 50 dk grind; bitince kendini yeniden tetikler.",
                     "kosu": 1}
 
 
@@ -351,10 +351,11 @@ def gorev_bot(op, komut):
     bot = mod.Bot(lambda rota, veri=None: cek(op, rota, veri), logla, kalp, sure_dk=sure)
     ozet = bot.kos()
 
-    # Ağır koşudan sonra komutu hafif moda döndür → zamanlanmış koşular ucuz kalsın
-    yeni = dict(VARSAYILAN_KOMUT)
-    yeni["kosu"] = int(komut.get("kosu") or 0) + 1
-    if sure >= 2:  # sadece gerçek grind koşusundan sonra sıfırla
+    # Ağır koşudan sonra komutu hafif moda döndür → zamanlanmış koşular ucuz kalsın.
+    # ZİNCİR MODUNDA komut.json'a DOKUNULMAZ (yönetici komutuyla çakışmasın).
+    if sure >= 2 and not komut.get("zincir"):
+        yeni = dict(VARSAYILAN_KOMUT)
+        yeni["kosu"] = int(komut.get("kosu") or 0) + 1
         yaz(KOMUT_DOSYA, json.dumps(yeni, ensure_ascii=False, indent=1))
         ozet["komut_sifirlandi"] = True
     return ozet
@@ -489,11 +490,25 @@ def gorev_arkadas_istek(op, komut):
 
 
 def gorev_mesaj(op, komut):
-    """komut.mesajlar listesindeki DM'leri gönderir."""
+    """komut.mesajlar listesindeki DM'leri gönderir (aynı mesajı iki kez göndermez)."""
     sonuc = []
     for m in (komut.get("mesajlar") or []):
-        r = mesaj_gonder(op, m.get("alici") or "Karahan", m.get("metin") or "")
-        sonuc.append({"alici": m.get("alici"), "sonuc": r})
+        alici = m.get("alici") or "Karahan"
+        metin = (m.get("metin") or "").strip()
+        if not metin:
+            continue
+        # Oyun geçmişine bak: bu mesaj zaten gitmişse tekrar gönderme
+        try:
+            g = cek(op, "mesajlar/%s" % alici) or {}
+            imza = metin[:40].lower()
+            gitmis = any(imza in (x.get("metin") or "").lower() for x in (g.get("mesajlar") or []))
+        except Exception:
+            gitmis = False
+        if gitmis:
+            sonuc.append({"alici": alici, "atlandi": "zaten_gonderilmis"})
+            continue
+        r = mesaj_gonder(op, alici, metin)
+        sonuc.append({"alici": alici, "sonuc": r})
         time.sleep(11)
     return {"mesajlar": sonuc}
 
