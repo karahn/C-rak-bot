@@ -12,9 +12,9 @@ Değişiklikler (v2):
 EYLEM = {"kavga": "ara155", "ambulans": "ara112", "itfaiye": "ara110",
          "cuzdan": "ver", "kedi": "besle", "muzisyen": "bahsis"}
 
-# Ölçülmüş: pazar servis tavanı en yüksek; çırağa kârlı tezgâhlar
-BEN_SIRA = ["pazar", "kestane", "simit"]
-CIRAK_SIRA = ["pazar", "simit", "pamuk", "semsiye", "kestane", "misir", "gozleme", "midye"]
+# Ölçülmüş kazanç sırası (12 tezgah): kokoreç > pazar > gözleme > kestane > midye > dondurma > mısır > simit > pamuk > ayakkabı > şemsiye > su
+BEN_SIRA = ["pazar", "kokorec", "gozleme", "kestane"]
+CIRAK_SIRA = ["pazar", "kokorec", "gozleme", "kestane", "midye", "dondurma", "misir", "simit", "pamuk", "ayakkabi", "semsiye", "su"]
 
 
 class Bot:
@@ -154,6 +154,7 @@ class Bot:
 
     # ---------------------------------------------------------------- tezgâh
     def tezgah_tur(self):
+        import time as _t
         s = self.cek("seyyar") or {}
         isler = {j.get("kod"): j for j in (s.get("isler") or [])}
         aktif = s.get("aktifler") or []
@@ -164,6 +165,10 @@ class Bot:
                     self.kazanc += (p.get("net") or 0) / 100
                 self.log({"olay": "topladi", "adet": len(r),
                           "net": sum((p.get("net") or 0) for p in r) / 100})
+            # ÖNEMLİ: toplama sonrası listeyi yenile (yoksa bitti tezgahlar aktif kalır)
+            _t.sleep(1)
+            s = self.cek("seyyar") or {}
+            aktif = s.get("aktifler") or []
         benim = next((x for x in aktif if x.get("calisan") == "ben" and not x.get("bitti")), None)
         if not benim:
             for kod in BEN_SIRA:
