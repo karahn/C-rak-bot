@@ -32,10 +32,10 @@
   "rezerv": 20000,
   "ad_kalibi": "Kalfa {tur}",
   "otopark_yasak": true,
-  "sure_dk": 45,
+  "sure_dk": 50,
   "zincir": true,
-  "zincir_butce_dk": 1200,
+  "zincir_butce_dk": 0,
   "zincir_bekle_sn": 10,
-  "not": "7/24 ZİNCİR: 45 dk koşu + kendini yeniden tetikleme. Bütçe 1200 dk/24s (public yapılınca 0'a çekilecek). Komut 19.",
-  "kosu": 19
+  "not": "7/24 SINIRSIZ MOD (public): 50 dk grind + koşu bitince kendini yeniden tetikleme. Komut 20.",
+  "kosu": 20
 }
