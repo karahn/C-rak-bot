@@ -23,11 +23,10 @@
   "mesajlar": [],
   "ilce": 2034,
   "hedefler": [
-    "lastikci",
+    "fotografci",
+    "teknik_servis",
     "oto_yedek_parca",
-    "oto_yikama",
-    "oto_servis",
-    "emlakci"
+    "elektrikci"
   ],
   "adet": 2,
   "rezerv": 10000,
@@ -37,7 +36,7 @@
   "zincir": true,
   "zincir_butce_dk": 0,
   "zincir_bekle_sn": 10,
-  "not": "7/24 ZINCIR + dükkân yönetim + günlük görev + mini oyun + esnaf topla",
-  "kosu": 25,
+  "not": "HEDEF: Fotografci + Teknik servis + Oto yedek + Elektrikci. Banka kısıtlı - tezgahla para biriktir, yeterli olunca aç. SV5'te oto servis.",
+  "kosu": 26,
   "mini_oyun_adet": 2
 }
