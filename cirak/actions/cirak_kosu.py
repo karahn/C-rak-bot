@@ -455,10 +455,19 @@ def gorev_ana_js(op, komut):
             "ornek_uclar": sorted(uclar)[:80], "ilgi_ornekleri": ilgi[:8]}
 
 
-def mesaj_gonder(op, alici: str, metin: str):
-    """DM gönderir (300 karakter sınırı)."""
+def mesaj_gonder(op, alici: str, metin: str, tekrar: int = 2):
+    """DM gönderir; oyun 'Biraz yavaş' derse bekleyip tekrar dener."""
     metin = (metin or "").strip()[:295]
-    return cek(op, "mesaj", {"alici": alici, "metin": metin})
+    for i in range(max(1, tekrar)):
+        r = cek(op, "mesaj", {"alici": alici, "metin": metin})
+        hata = str((r or {}).get("hata") or "").lower()
+        if r and not hata:
+            return r
+        if "yavaş" in hata or "yavas" in hata:
+            time.sleep(35)
+            continue
+        return r
+    return r
 
 
 def gorev_arkadas_istek(op, komut):
@@ -509,7 +518,7 @@ def gorev_mesaj(op, komut):
             continue
         r = mesaj_gonder(op, alici, metin)
         sonuc.append({"alici": alici, "sonuc": r})
-        time.sleep(11)
+        time.sleep(21)
     return {"mesajlar": sonuc}
 
 
@@ -552,14 +561,26 @@ def zincir(bekle_sn: int = 0, butce_dk: float = 0):
                 return {"durdu": "butce_doldu", "kullanilan_dk_24s": round(kullanilan, 1)}
         except Exception as e:
             pass
+    tok = None
     try:
         cfg = open(os.path.join(".git", "config"), encoding="utf-8").read()
-        m = _re.search(r"extraheader\s*=\s*Authorization:\s*basic\s+(\S+)", cfg)
-        if not m:
-            return {"hata": "token_okunamadi"}
-        tok = b64.b64decode(m.group(1)).decode(errors="replace").split(":", 1)[1]
-    except Exception as e:
-        return {"hata": repr(e)[:200]}
+        m = _re.search(r"extraheader\s*=\s*authorization:\s*basic\s+(\S+)", cfg, _re.I)
+        if m:
+            tok = b64.b64decode(m.group(1)).decode(errors="replace").split(":", 1)[1]
+    except Exception:
+        pass
+    if not tok:
+        try:
+            import subprocess as _sp
+            cikti = _sp.run(["git", "config", "--get-regexp", r"http\..*extraheader"],
+                            capture_output=True, text=True, timeout=20).stdout
+            m2 = _re.search(r"authorization:\s*basic\s+(\S+)", cikti, _re.I)
+            if m2:
+                tok = b64.b64decode(m2.group(1)).decode(errors="replace").split(":", 1)[1]
+        except Exception as e:
+            return {"hata": "token_okunamadi:" + repr(e)[:120]}
+    if not tok:
+        return {"hata": "token_okunamadi"}
     istek = urllib.request.Request(
         "https://api.github.com/repos/karahn/C-rak-bot/dispatches",
         data=json.dumps({"event_type": "zincir", "client_payload": {"kaynak": "bot"}}).encode(), method="POST",
@@ -744,28 +765,6 @@ def gorev_banka(op, komut):
             "kredi_notu": b.get("krediNotu"), "ham_anahtarlar": list(b.keys())}
 
 
-def gorev_isletmeler(op, komut):
-    """Kalfa19'un mevcut dükkânlarını listeler — tür, ilçe, kasa bilgisi."""
-    isl = cek(op, "isletmelerim") or []
-    liste = isl if isinstance(isl, list) else (isl.get("isletmeler") or isl.get("liste") or [])
-    sonuc = {"toplam": len(liste), "dukkanlar": [], "turler": set()}
-    for d in liste:
-        if isinstance(d, dict):
-            tur = d.get("tur") or d.get("turKod") or "?"
-            sonuc["turler"].add(tur)
-            ilce = d.get("ilce", {})
-            ilce_ad = ilce.get("ad") if isinstance(ilce, dict) else str(ilce)
-            kasa = (d.get("kasa") or 0) / 100
-            seviye = d.get("seviye") or d.get("sv")
-            sonuc["dukkanlar"].append({
-                "ad": d.get("ad", "?"), "tur": tur, "ilce": ilce_ad,
-                "kasa": kasa, "seviye": seviye, "no": d.get("no") or d.get("id")
-            })
-    sonuc["turler"] = sorted(sonuc["turler"])
-    sonuc["tur_sayisi"] = len(sonuc["turler"])
-    return sonuc
-
-
 def gorev_secim(op, komut):
     """Secimleri okur; Karahan aday ise raporlar (oy ucu netlesince oy verilecek)."""
     s = cek(op, "secim") or {}
@@ -808,155 +807,6 @@ def gorev_kaynak_indir(op, komut):
     return sonuc
 
 
-# ---------------------------------------------------------------- dükkân yönet
-def gorev_dukkan_yonet(op, komut):
-    """Tüm dükkânların kasasını toplar, rafları her zaman full doldurur, oto tedarik açar."""
-    isl = cek(op, "isletmelerim") or []
-    liste = isl if isinstance(isl, list) else (isl.get("isletmeler") or [])
-    sonuc = {"toplam": len(liste), "kasa_toplanan": 0, "kasa_tl": 0.0,
-             "raf_doldurulan": 0, "oto_acilan": 0, "detay": [], "hatalar": []}
-    for d in liste:
-        if not isinstance(d, dict):
-            continue
-        id_ = d.get("id")
-        ad = d.get("ad", "?")
-        kasa = (d.get("kasa") or 0) / 100
-        durum = d.get("durum", "")
-        if durum != "acik":
-            continue
-        det = {"ad": ad, "id": id_}
-        # Detaylı bilgi çek (otoTedarik, kapasite, doluluk)
-        detay = cek(op, "isletme/%s" % id_)
-        if not isinstance(detay, dict) or "hata" in detay:
-            continue
-        hizmet = detay.get("hizmet") or detay.get("kategori") == "Hizmet"
-        oto = detay.get("otoTedarik", False)
-        kap = detay.get("kapasite") or 0
-        dol = detay.get("doluluk") or 0
-        # 1) Kasa topla
-        if kasa > 50:
-            r = cek(op, "isletme/%s/kasa" % id_, {})
-            if isinstance(r, dict) and "hata" not in r:
-                sonuc["kasa_tl"] += kasa
-                sonuc["kasa_toplanan"] += 1
-                det["kasa"] = kasa
-            time.sleep(0.4)
-        # 2) Oto tedarik kapalıysa aç
-        if not oto and not hizmet:
-            r = cek(op, "isletme/%s/oto" % id_, {"acik": True})
-            if isinstance(r, dict) and "hata" not in r:
-                sonuc["oto_acilan"] += 1
-                det["oto"] = "acildi"
-            time.sleep(0.3)
-        # 3) Raf düşükse doldur (stoklu dükkânlar, doluluk < kapasite)
-        if not hizmet and kap > 0 and dol < kap:
-            r = cek(op, "isletme/%s/oto" % id_, {"doldur": True})
-            if isinstance(r, dict) and "hata" not in r:
-                sonuc["raf_doldurulan"] += 1
-                det["raf"] = "%d/%d" % (dol, kap)
-            time.sleep(0.3)
-        if det.get("kasa") or det.get("raf") or det.get("oto"):
-            sonuc["detay"].append(det)
-    return sonuc
-
-
-# ---------------------------------------------------------------- günlük görev
-def gorev_gunluk_gorev(op, komut):
-    """Günlük görevleri kontrol eder, tamamlananların ödülünü alır."""
-    g = cek(op, "gorevler") or {}
-    sonuc = {"gun": g.get("gun"), "alindi": g.get("alindi", False),
-             "gorevler": [], "odul_alindi": False}
-    gorevler = g.get("gorevler") or []
-    for gv in gorevler:
-        if isinstance(gv, dict):
-            sonuc["gorevler"].append({
-                "ad": gv.get("ad", gv.get("kod", "?")),
-                "tamam": gv.get("tamam", False),
-                "ilerleme": gv.get("ilerleme"),
-                "hedef": gv.get("hedef"),
-            })
-    hepsi = gorevler and all(x.get("tamam") for x in gorevler)
-    if hepsi and not g.get("alindi"):
-        r = cek(op, "gorevler/odul", {})
-        if isinstance(r, dict) and "hata" not in r:
-            sonuc["odul_alindi"] = True
-            sonuc["odul_detay"] = r
-    # Sezon ödülü
-    z = cek(op, "sezon") or {}
-    if z.get("odulHazir") or z.get("alinabilir"):
-        r = cek(op, "sezon/odul", {})
-        if isinstance(r, dict) and "hata" not in r:
-            sonuc["sezon_odul"] = r
-    return sonuc
-
-
-# ---------------------------------------------------------------- mini oyun
-def gorev_mini_oyun(op, komut):
-    """Mini oyun oynar — antrenman (ücretsiz) + ödüllü teklif."""
-    import random as _r
-    sonuc = {"oynanan": 0, "puan": 0, "odul_tl": 0, "oyunlar": [], "hatalar": []}
-    mo = cek(op, "mini-oyun") or {}
-    teklif = mo.get("teklif")
-    HIZLI = ["lokum", "sektir", "sayi", "hafiza", "eslestir"]
-    # Ödüllü teklif
-    if isinstance(teklif, dict) and teklif.get("id"):
-        kod = teklif.get("kod", "?")
-        try:
-            r = cek(op, "mini-oyun/basla", {"id": teklif["id"]})
-            if isinstance(r, dict) and "hata" not in r:
-                puan = _r.randint(50, 75)
-                time.sleep(3)
-                r2 = cek(op, "mini-oyun/bitir", {"id": r.get("id") or r.get("oturumId"),
-                                                  "jeton": r.get("jeton", ""), "puan": puan})
-                if isinstance(r2, dict) and "hata" not in r2:
-                    odul = (r2.get("odul") or 0) / 100
-                    sonuc["oynanan"] += 1
-                    sonuc["puan"] += puan
-                    sonuc["odul_tl"] += odul
-                    sonuc["oyunlar"].append({"kod": kod, "puan": puan, "odul": odul, "tur": "odullu"})
-            time.sleep(2)
-        except Exception as e:
-            sonuc["hatalar"].append({"kod": kod, "hata": repr(e)[:200]})
-    # Antrenman
-    adet = int(komut.get("mini_oyun_adet") or 2)
-    for kod in HIZLI[:adet]:
-        try:
-            r = cek(op, "mini-oyun/basla", {"kod": kod, "antrenman": True})
-            if isinstance(r, dict) and "hata" not in r:
-                puan = _r.randint(40, 70)
-                time.sleep(3)
-                r2 = cek(op, "mini-oyun/bitir", {"id": r.get("id") or r.get("oturumId"),
-                                                  "jeton": r.get("jeton", ""), "puan": puan})
-                if isinstance(r2, dict) and "hata" not in r2:
-                    sonuc["oynanan"] += 1
-                    sonuc["puan"] += puan
-                    odul = (r2.get("odul") or 0) / 100
-                    sonuc["odul_tl"] += odul
-                    sonuc["oyunlar"].append({"kod": kod, "puan": puan, "odul": odul, "tur": "antrenman"})
-            elif isinstance(r, dict):
-                sonuc["hatalar"].append({"kod": kod, "hata": r.get("hata", "?")})
-            time.sleep(1)
-        except Exception as e:
-            sonuc["hatalar"].append({"kod": kod, "hata": repr(e)[:200]})
-    return sonuc
-
-
-# ---------------------------------------------------------------- esnaf topla-baslat
-def gorev_esnaf_topla(op, komut):
-    """Esnaf kartı ile tüm tezgâhları topla ve yeniden başlat."""
-    r = cek(op, "esnaf/topla-baslat", {})
-    sonuc = {"sonuc": r}
-    if isinstance(r, dict) and "hata" not in r:
-        sonuc["basarili"] = True
-        sonuc["toplanan"] = r.get("toplanan") or r.get("adet") or 0
-        sonuc["baslatilan"] = r.get("baslatilan") or r.get("yeni") or 0
-        sonuc["kazanc"] = (r.get("kazanc") or r.get("net") or 0) / 100
-    elif isinstance(r, dict):
-        sonuc["basarili"] = False
-        sonuc["hata"] = r.get("hata", "?")
-    return sonuc
-
-
 GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilikler": gorev_yenilikler,
             "cerez-kontrol": gorev_cerez_kontrol, "kaynak": gorev_kaynak,
             "captcha-ornek": gorev_captcha_ornek, "bot": gorev_bot, "kesif": gorev_kesif,
@@ -964,10 +814,7 @@ GOREVLER = {"test": gorev_test, "durum": gorev_durum, "ham": gorev_ham, "yenilik
             "arkadas-istek": gorev_arkadas_istek, "mesaj": gorev_mesaj, "oda": gorev_oda,
             "seviye-bildir": gorev_seviye_bildir, "dukkan-ac": gorev_dukkan_ac,
             "mesaj-oku": gorev_mesaj_oku, "havale": gorev_havale, "banka": gorev_banka,
-            "secim": gorev_secim, "kaynak-indir": gorev_kaynak_indir,
-            "isletmeler": gorev_isletmeler,
-            "dukkan-yonet": gorev_dukkan_yonet, "gunluk-gorev": gorev_gunluk_gorev,
-            "mini-oyun": gorev_mini_oyun, "esnaf-topla": gorev_esnaf_topla}
+            "secim": gorev_secim, "kaynak-indir": gorev_kaynak_indir}
 
 
 # ---------------------------------------------------------------- özet yaz
