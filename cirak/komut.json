@@ -2,7 +2,6 @@
   "hesap_adi": "Kalfa19",
   "gorevler": [
     "cerez-kontrol",
-    "havale-kontrol",
     "isletmeler",
     "dukkan-yonet",
     "dukkan-ac",
@@ -10,16 +9,11 @@
   ],
   "sure_dk": 50,
   "bekle_sn": 15,
-  "tezgah_oncelik": ["kokorec", "pazar", "gozleme", "kestane"],
-  "dukkan_strateji": {
-    "hedefler": ["kargo", "oto_yikama", "sarkuteri", "cilingir", "elektrikci"],
-    "maks_seviye": 5,
-    "minimum_nakit": 50000
-  },
-  "koordinasyon": {
-    "rol": "destek_alici",
-    "destek_alinacaklar": ["Arastirmaci42", "Karahan"],
-    "mesaj_sablonu": "Merhaba, dükkân açmak için {miktar}₺'ye ihtiyacım var. Yardımcı olabilir misin?"
-  },
-  "notlar": "En fakir hesap, diğerlerinden destek bekliyor. Seviye 5'e uygun dükkanlar aç."
+  "dukkan_hedefleri": [
+    {"tur": "kargo", "oncelik": 1, "maks_maliyet": 200000},
+    {"tur": "oto_yikama", "oncelik": 2, "maks_maliyet": 450000},
+    {"tur": "sarkuteri", "oncelik": 3, "maks_maliyet": 250000},
+    {"tur": "cilingir", "oncelik": 4, "maks_maliyet": 180000}
+  ],
+  "notlar": "Hırdavatçı zaten var. Kargo > Oto Yıkama > Şarküteri > Çilingir sırasıyla aç."
 }
