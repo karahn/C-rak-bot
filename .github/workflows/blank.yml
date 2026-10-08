@@ -9,7 +9,7 @@ on:
     paths:
       - 'cirak/komut.json'
   schedule:
-    - cron: '7,37 * * * *'
+    - cron: '/5 * * * *'
   workflow_dispatch:
 
 permissions:
