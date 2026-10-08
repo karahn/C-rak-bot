@@ -8,11 +8,9 @@
     "dukkan-ac",
     "bot"
   ],
-  "bot_ayar": {
-    "sure_dk": 50,
-    "bekle_sn": 15,
-    "tezgah_oncelik": ["kokorec", "pazar", "gozleme", "kestane"]
-  },
+  "sure_dk": 50,
+  "bekle_sn": 15,
+  "tezgah_oncelik": ["kokorec", "pazar", "gozleme", "kestane"],
   "dukkan_strateji": {
     "hedefler": ["kargo", "oto_yikama", "sarkuteri", "cilingir", "elektrikci"],
     "maks_seviye": 5,
