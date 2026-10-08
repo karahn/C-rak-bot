@@ -1,5 +1,16 @@
 {
-  "gorevler": ["cerez-kontrol", "banka", "havale", "arkadas-istek", "mesaj-oku", "mesaj", "oda", "seviye-bildir", "dukkan-ac", "bot"],
+  "gorevler": [
+    "cerez-kontrol",
+    "banka",
+    "havale",
+    "arkadas-istek",
+    "mesaj-oku",
+    "mesaj",
+    "oda",
+    "seviye-bildir",
+    "dukkan-ac",
+    "bot"
+  ],
   "arkadas_id": 14,
   "arkadas_ad": "Karahan",
   "kisi": "Karahan",
@@ -11,15 +22,20 @@
     }
   ],
   "ilce": 2034,
-  "hedefler": ["kargo", "oto_yikama", "oto_servis", "emlakci"],
+  "hedefler": [
+    "kargo",
+    "oto_yikama",
+    "oto_servis",
+    "emlakci"
+  ],
   "adet": 2,
   "rezerv": 20000,
   "ad_kalibi": "Kalfa {tur}",
   "otopark_yasak": true,
   "sure_dk": 45,
   "zincir": true,
-  "zincir_butce_dk": 0,
+  "zincir_butce_dk": 1200,
   "zincir_bekle_sn": 10,
-  "not": "7/24 ZİNCİR MODU: koşu bitince kendini yeniden tetikler (repository_dispatch). Her koşu 45 dk. Sınırsız bütçe (0). Komut 18.",
-  "kosu": 18
+  "not": "7/24 ZİNCİR: 45 dk koşu + kendini yeniden tetikleme. Bütçe 1200 dk/24s (public yapılınca 0'a çekilecek). Komut 19.",
+  "kosu": 19
 }
