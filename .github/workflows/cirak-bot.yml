@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   kosu:
@@ -35,3 +36,14 @@ jobs:
             git pull --rebase --autostash && git push origin HEAD:arena/71f59bcb-c-rak-bot && break
             sleep 5
           done
+      - name: Self-trigger next run (24/7 continuous)
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sleep 5
+          curl -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/cirak-bot.yml/dispatches \
+            -d '{"ref":"arena/71f59bcb-c-rak-bot"}'
