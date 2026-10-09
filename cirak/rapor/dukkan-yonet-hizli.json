@@ -1,0 +1,53 @@
+{
+  "toplam": 12,
+  "kasa_toplanan": 0,
+  "kasa_tl": 0.0,
+  "raf_doldurulan": 7,
+  "oto_acilan": 7,
+  "detay": [
+    {
+      "ad": "Kalfa19 Hırdavatçı",
+      "id": 42846,
+      "oto": "acik",
+      "raf": "135/160→full"
+    },
+    {
+      "ad": "Kalfa Bakkal",
+      "id": 44873,
+      "oto": "acik",
+      "raf": "4541/5340→full"
+    },
+    {
+      "ad": "Kalfa Şarküteri",
+      "id": 45124,
+      "oto": "acik",
+      "raf": "186/189→full"
+    },
+    {
+      "ad": "Kalfa Büfe",
+      "id": 45739,
+      "oto": "acik",
+      "raf": "654/730→full"
+    },
+    {
+      "ad": "Kalfa Kasap",
+      "id": 46044,
+      "oto": "acik",
+      "raf": "0/167→full"
+    },
+    {
+      "ad": "Kalfa Fırın",
+      "id": 46075,
+      "oto": "acik",
+      "raf": "0/1605→full"
+    },
+    {
+      "ad": "Kalfa Lokanta",
+      "id": 46742,
+      "oto": "acik",
+      "raf": "0/1140→full"
+    }
+  ],
+  "hatalar": [],
+  "debug": []
+}
