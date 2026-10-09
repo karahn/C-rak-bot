@@ -16,8 +16,17 @@
   "not": "VARSAYILAN (zincir) mod: mesaj oku/cevap + oda + dükkân denemesi + 50 dk grind; bitince kendini yeniden tetikler.",
   "kosu": 1,
   "hedefler": [
-    "kasap",
     "firin",
-    "lokanta"
-  ]
+    "lokanta",
+    "donerci",
+    "pideci",
+    "pizzaci",
+    "hamburgerci",
+    "pastane",
+    "kafe",
+    "bar",
+    "cay_ocagi",
+    "kasap"
+  ],
+  "adet": 5
 }
