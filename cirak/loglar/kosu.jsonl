@@ -3166,3 +3166,19 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 16, "oto_acilan": 16, "ts": 1791586468063}
 {"olay": "ara_ozet", "tur": 20, "kazanc": 1051.6, "servis": 123, "bakiye": 803774.78, "siparis": "1/3", "gecen_dk": 14.8, "ts": 1791586514347}
 {"olay": "kosu_bitti", "tur": 21, "kazanc": 1114.0, "servis": 131, "bahsis": 20, "bakiye": 804437.38, "siparis_toplam": 3, "siparis_basari": 1, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1791586555620}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 804758.46, "bot_versiyon": "v2_hizli_siparis", "ts": 1791586629010}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622078", "sonuc": {"tutar": -2000, "tecrube": 1, "metin": "Kediyi besledin. Mırlayarak ayağına süründü.", "bakiye": 80485089, "hareket": 904030}, "ts": 1791586630494}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 16, "oto_acilan": 16, "ts": 1791586714718}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 120.0, "tezgah": "kestane", "ts": 1791586827263}
+{"olay": "siparis_tamam", "kazanilan": 120.0, "tezgah": "kestane", "ts": 1791586829352}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 100240, "ts": 1791586835078}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 478.4, "servis": 40, "bakiye": 809540.87, "siparis": "1/1", "gecen_dk": 4.0, "ts": 1791586870046}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 16, "oto_acilan": 16, "ts": 1791587030405}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 689.0, "servis": 76, "bakiye": 812529.53, "siparis": "1/1", "gecen_dk": 7.5, "ts": 1791587076988}
+{"olay": "siparis_basladi", "adet": 10, "sure_sn": 30.0, "odul": 50.0, "tezgah": "simit", "ts": 1791587149040}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "simit", "ts": 1791587151466}
+{"olay": "siparis_basladi", "adet": 9, "sure_sn": 30.0, "odul": 128.0, "tezgah": "pazar", "ts": 1791587228546}
+{"olay": "siparis_zaman_asimi", "tezgah": "pazar", "ts": 1791587346299}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 16, "oto_acilan": 16, "ts": 1791587395252}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 914.3, "servis": 111, "bakiye": 843816.08, "siparis": "2/3", "gecen_dk": 13.4, "ts": 1791587433702}
+{"olay": "kosu_bitti", "tur": 18, "kazanc": 1059.2, "servis": 135, "bahsis": 21, "bakiye": 846621.65, "siparis_toplam": 3, "siparis_basari": 2, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1791587551290}
