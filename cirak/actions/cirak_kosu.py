@@ -669,6 +669,7 @@ def gorev_dukkan_ac(op, komut):
                 yeni_sokak = s.get("no")
                 cadde = cek(op, "cadde?ilce=%d&sokak=%d" % (ilce, yeni_sokak)) or {}
                 bos = [y for y in (cadde.get("yerler") or []) if not y.get("isletme")]
+                secili_sokak = yeni_sokak
                 sonuc["sokak_degistirildi"] = yeni_sokak
                 break
     
@@ -677,7 +678,9 @@ def gorev_dukkan_ac(op, komut):
     for y in bos:
         if len(sonuc["acilanlar"]) >= adet:
             break
-        kb = cek(op, "kiralama/%s?ilce=%d" % (y.get("no"), ilce)) or {}
+        # Sokak parametresi ekle (sokak değiştirildiyse)
+        sokak_param = "&sokak=%d" % secili_sokak if secili_sokak else ""
+        kb = cek(op, "kiralama/%s?ilce=%d%s" % (y.get("no"), ilce, sokak_param)) or {}
         if kb.get("hata"):
             sonuc["denemeler"].append({"no": y.get("no"), "hata": kb.get("hata")})
             continue
@@ -705,7 +708,11 @@ def gorev_dukkan_ac(op, komut):
                 kayit["neden_alinmadi"] = "para_yetmiyor"
                 continue
             ad = (komut.get("ad_kalibi") or "Kalfa {tur}").replace("{tur}", t.get("ad") or kod)
-            r = cek(op, "kirala", {"yerNo": y.get("no"), "tur": kod, "ad": ad, "ilceId": ilce})
+            # Sokak parametresi ekle (sokak değiştirildiyse)
+            kirala_veri = {"yerNo": y.get("no"), "tur": kod, "ad": ad, "ilceId": ilce}
+            if secili_sokak:
+                kirala_veri["sokakId"] = secili_sokak
+            r = cek(op, "kirala", kirala_veri)
             sonuc["acilanlar"].append({"tur": kod, "no": y.get("no"), "toplam": toplam, "sonuc": r})
             bakiye -= toplam
             break
