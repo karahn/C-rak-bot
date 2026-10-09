@@ -2945,3 +2945,19 @@
 {"olay": "siparis_tamam", "kazanilan": 60.0, "tezgah": "simit", "ts": 1791572162407}
 {"olay": "ara_ozet", "tur": 20, "kazanc": 1343.0, "servis": 138, "bakiye": 720050.61, "siparis": "4/4", "gecen_dk": 14.6, "ts": 1791572242499}
 {"olay": "kosu_bitti", "tur": 21, "kazanc": 1367.0, "servis": 146, "bahsis": 23, "bakiye": 720695.46, "siparis_toplam": 4, "siparis_basari": 4, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1791572283064}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 721275.41, "bot_versiyon": "v2_hizli_siparis", "ts": 1791572326020}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791572441140}
+{"olay": "topladi", "adet": 1, "net": 314.57, "ts": 1791572444851}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 552.2, "servis": 40, "bakiye": 773530.72, "siparis": "0/0", "gecen_dk": 4.0, "ts": 1791572565731}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791572757865}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 699.7, "servis": 80, "bakiye": 765670.79, "siparis": "0/0", "gecen_dk": 8.0, "ts": 1791572804286}
+{"olay": "topladi", "adet": 6, "net": 29988.38, "ts": 1791572838183}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 30866.6, "servis": 117, "bakiye": 787035.7, "siparis": "0/0", "gecen_dk": 10.7, "ts": 1791572968459}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791573001443}
+{"olay": "ara_ozet", "tur": 20, "kazanc": 31095.3, "servis": 157, "bakiye": 788206.46, "siparis": "0/0", "gecen_dk": 12.7, "ts": 1791573086255}
+{"olay": "siparis_basladi", "adet": 8, "sure_sn": 30.0, "odul": 88.0, "tezgah": "pazar", "ts": 1791573198075}
+{"olay": "siparis_tamam", "kazanilan": 88.0, "tezgah": "pazar", "ts": 1791573200258}
+{"olay": "siparis_basladi", "adet": 14, "sure_sn": 30.0, "odul": 101.0, "tezgah": "kestane", "ts": 1791573201622}
+{"olay": "siparis_zaman_asimi", "tezgah": "kestane", "ts": 1791573443290}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791573522591}
+{"olay": "kosu_bitti", "tur": 23, "kazanc": 31369.1, "servis": 181, "bahsis": 34, "bakiye": 792994.65, "siparis_toplam": 2, "siparis_basari": 1, "gecen_dk": 20.0, "bot_versiyon": "v2", "ts": 1791573524805}
