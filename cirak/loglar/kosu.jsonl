@@ -3015,3 +3015,17 @@
 {"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "misir", "ts": 1791577471630}
 {"olay": "ara_ozet", "tur": 20, "kazanc": 890.9, "servis": 134, "bakiye": 910575.34, "siparis": "3/3", "gecen_dk": 15.3, "ts": 1791577552368}
 {"olay": "kosu_bitti", "tur": 20, "kazanc": 890.9, "servis": 134, "bahsis": 19, "bakiye": 910661.04, "siparis_toplam": 3, "siparis_basari": 3, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1791577554650}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 914258.31, "bot_versiyon": "v2_hizli_siparis", "ts": 1791577637230}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791577753309}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 251.0, "servis": 39, "bakiye": 931208.72, "siparis": "0/0", "gecen_dk": 4.0, "ts": 1791577877568}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "su", "ts": 1791577988169}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "su", "ts": 1791577992095}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791578074842}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 493.7, "servis": 71, "bakiye": 933989.34, "siparis": "1/1", "gecen_dk": 8.0, "ts": 1791578116041}
+{"olay": "cirak_basla", "kod": "su", "id": 99125, "ts": 1791578150144}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 538.5, "servis": 86, "bakiye": 934587.03, "siparis": "1/1", "gecen_dk": 9.9, "ts": 1791578231526}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791578390036}
+{"olay": "ara_ozet", "tur": 20, "kazanc": 566.9, "servis": 101, "bakiye": 935462.57, "siparis": "1/1", "gecen_dk": 12.6, "ts": 1791578395260}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 99195, "ts": 1791578429372}
+{"olay": "ara_ozet", "tur": 25, "kazanc": 661.4, "servis": 119, "bakiye": 936190.01, "siparis": "1/1", "gecen_dk": 14.6, "ts": 1791578512242}
+{"olay": "kosu_bitti", "tur": 27, "kazanc": 668.8, "servis": 123, "bahsis": 19, "bakiye": 936557.98, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1791578553267}
