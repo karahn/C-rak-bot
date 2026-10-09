@@ -13,8 +13,6 @@ EYLEM = {"kavga": "ara155", "ambulans": "ara112", "itfaiye": "ara110",
          "cuzdan": "ver", "kedi": "besle", "muzisyen": "bahsis"}
 
 # Ölçülmüş kazanç sırası (12 tezgah): kokoreç > pazar > gözleme > kestane > midye > dondurma > mısır > simit > pamuk > ayakkabı > şemsiye > su
-BEN_SIRA = ["pazar", "kokorec", "gozleme", "kestane"]
-CIRAK_SIRA = ["pazar", "kokorec", "gozleme", "kestane", "midye", "dondurma", "misir", "simit", "pamuk", "ayakkabi", "semsiye", "su"]
 
 
 class Bot:
@@ -224,24 +222,36 @@ class Bot:
             _t.sleep(1)
             s = self.cek("seyyar") or {}
             aktif = s.get("aktifler") or []
-        benim = next((x for x in aktif if x.get("calisan") == "ben" and not x.get("bitti")), None)
-        if not benim:
-            for kod in BEN_SIRA:
-                if (isler.get(kod) or {}).get("sahip"):
+        
+        # TÜM TEZGAHLARI AÇ (sahip olunan ve kilitli olmayan)
+        aktif_kod = {x.get("isKodu") for x in aktif}
+        benim_sayisi = sum(1 for x in aktif if x.get("calisan") == "ben" and not x.get("bitti"))
+        
+        # Önce ben çalıştır (maksimum 1 tezgah)
+        if benim_sayisi == 0:
+            for kod, is_ in isler.items():
+                if is_.get("sahip") and not is_.get("kilitli") and kod not in aktif_kod:
                     r = self.cek("seyyar/basla", {"isKodu": kod, "sure": "tam"})
                     if isinstance(r, dict) and r.get("id"):
-                        benim = {"id": r["id"], "isKodu": kod}
+                        aktif.append({"id": r["id"], "isKodu": kod, "calisan": "ben"})
+                        aktif_kod.add(kod)
+                        benim_sayisi += 1
                         self.log({"olay": "ben_basla", "kod": kod, "id": r.get("id")})
                         break
-        aktif_kod = {x.get("isKodu") for x in aktif}
-        for kod in CIRAK_SIRA:
-            if not (isler.get(kod) or {}).get("sahip") or kod in aktif_kod or (benim and benim["isKodu"] == kod):
+        
+        # Sonra çırak çalıştır (kalan tüm tezgahlar)
+        for kod, is_ in isler.items():
+            if not is_.get("sahip") or is_.get("kilitli") or kod in aktif_kod:
+                continue
+            # Benim çalıştığım tezgahı çırak çalıştırmasın
+            if benim_sayisi > 0 and any(x.get("isKodu") == kod and x.get("calisan") == "ben" for x in aktif):
                 continue
             r = self.cek("seyyar/basla", {"isKodu": kod, "sure": "tam", "cirak": True})
             if isinstance(r, dict) and "id" in r:
                 aktif.append({"id": r.get("id"), "isKodu": kod, "calisan": "cirak"})
                 aktif_kod.add(kod)
                 self.log({"olay": "cirak_basla", "kod": kod, "id": r.get("id")})
+        
         return aktif
 
     def servis(self, aktif):
