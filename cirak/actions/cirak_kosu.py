@@ -153,10 +153,19 @@ def gorev_durum(op, komut):
 
 
 def gorev_ham(op, komut):
-    rapor = {"ts": simdi(), "uclar": {}}
+    rapor = {"ts": simdi(), "uclar": {}, "uclar_post": {}}
+    # GET istekleri
     for u in komut.get("uclar") or []:
         r = cek(op, u)
         rapor["uclar"][u] = r
+        time.sleep(1.2)
+    # POST istekleri
+    for u in komut.get("uclar_post") or []:
+        endpoint = u.get("endpoint")
+        data = u.get("data")
+        key = "%s %s" % (endpoint, json.dumps(data, ensure_ascii=False))
+        r = cek(op, endpoint, data)
+        rapor["uclar_post"][key] = r
         time.sleep(1.2)
     return rapor
 
