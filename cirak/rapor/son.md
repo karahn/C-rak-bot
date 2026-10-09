@@ -1,12 +1,12 @@
 # Çırak raporu — cerez-kontrol
 
-**Zaman:** 2026-10-09 13:38:26 UTC
+**Zaman:** 2026-10-09 13:55:01 UTC
 
 ## Oyuncu
 
 - Ad: **Kalfa19**
-- Seviye: 7 · TP: 839
-- Nakit: 29287.44 ₺
+- Seviye: 7 · TP: 849
+- Nakit: 5095.37 ₺
 - Konum: Ankara / Pursaklar / Fatih Mahallesi
 
 
@@ -14,64 +14,64 @@
 
 # Çırak raporu — banka
 
-**Zaman:** 2026-10-09 13:38:26 UTC
+**Zaman:** 2026-10-09 13:55:01 UTC
 
 
 ---
 
 # Çırak raporu — havale
 
-**Zaman:** 2026-10-09 13:38:26 UTC
+**Zaman:** 2026-10-09 13:55:01 UTC
 
 
 ---
 
 # Çırak raporu — mesaj-oku
 
-**Zaman:** 2026-10-09 13:38:26 UTC
+**Zaman:** 2026-10-09 13:55:01 UTC
 
 
 ---
 
 # Çırak raporu — oda
 
-**Zaman:** 2026-10-09 13:38:26 UTC
+**Zaman:** 2026-10-09 13:55:01 UTC
 
 
 ---
 
 # Çırak raporu — seviye-bildir
 
-**Zaman:** 2026-10-09 13:38:26 UTC
+**Zaman:** 2026-10-09 13:55:01 UTC
 
 
 ---
 
 # Çırak raporu — dukkan-yonet
 
-**Zaman:** 2026-10-09 13:38:26 UTC
+**Zaman:** 2026-10-09 13:55:01 UTC
 
 
 ---
 
 # Çırak raporu — dukkan-ac
 
-**Zaman:** 2026-10-09 13:38:26 UTC
+**Zaman:** 2026-10-09 13:55:01 UTC
 
 
 ---
 
 # Çırak raporu — bot
 
-**Zaman:** 1791553106362 UTC
+**Zaman:** 1791554101695 UTC
 
 ## Bot koşusu
 
 | Alan | Değer |
 |---|---|
-| Süre | 15.4 dk |
-| Tur | 32 |
-| Kazanç | 677.6 ₺ |
-| Servis | 149 |
+| Süre | 15.3 dk |
+| Tur | 22 |
+| Kazanç | 1110.7 ₺ |
+| Servis | 155 |
 | Bahşiş | 20 |
-| Bakiye | 4870.23 ₺ |
+| Bakiye | 45870.31 ₺ |
