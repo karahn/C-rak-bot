@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: arena/71f59bcb-c-rak-bot
           fetch-depth: 1
 
       - uses: actions/setup-python@v5
@@ -24,28 +25,23 @@ jobs:
           TEZGAH_CEREZ: ${{ secrets.TEZGAH_CEREZ }}
         run: |
           cd cirak/actions
-          python3 << 'EOF'
+          python3 << 'PYEOF'
           import sys
           import json
           import os
           
-          # Cerez kontrolü
           cerez = os.environ.get('TEZGAH_CEREZ')
           if not cerez:
               print("❌ HATA: TEZGAH_CEREZ ortam değişkeni yok!")
               sys.exit(1)
           
           print("✅ Cerez bulundu")
-          
-          # cirak_kosu modülünü yükle
           sys.path.insert(0, '.')
           import cirak_kosu
           
-          # Oturum oluştur (opener)
           op = cirak_kosu.oturum()
           print("✅ Oturum oluşturuldu")
           
-          # dukkan-yonet görevini çalıştır
           print("\n🏪 Dükkan yönetimi başlatılıyor...")
           sonuc = cirak_kosu.gorev_dukkan_yonet(op, {})
           
@@ -61,13 +57,12 @@ jobs:
               for h in sonuc['hatalar'][:5]:
                   print(f"  - {h}")
           
-          # Sonucu JSON olarak kaydet
           os.makedirs('../rapor', exist_ok=True)
           with open('../rapor/dukkan-yonet-hizli.json', 'w', encoding='utf-8') as f:
               json.dump(sonuc, f, ensure_ascii=False, indent=2)
           
           print("\n✅ Sonuç kaydedildi: cirak/rapor/dukkan-yonet-hizli.json")
-          EOF
+          PYEOF
 
       - name: Sonuçları repoya yaz
         if: always()
@@ -76,4 +71,4 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add -A cirak/
           git commit -m "🏪 Manuel dükkan yönetimi $(date -u '+%Y-%m-%d %H:%M') UTC" || echo "değişiklik yok"
-          git push origin HEAD:main || echo "push başarısız"
+          git push origin HEAD:arena/71f59bcb-c-rak-bot || echo "push başarısız"
