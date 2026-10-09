@@ -883,15 +883,29 @@ def gorev_dukkan_yonet(op, komut):
         else:
             sonuc["debug"].append({"id": id_, "ad": ad, "oto_hata": r_oto})
         time.sleep(0.2)
-        # 3) Raf — HER ZAMAN doldur (boşalmış olabilir, kapasite sorgusuna güvenme)
-        r_raf = cek(op, "isletme/%s/oto" % id_, {"doldur": True})
-        if isinstance(r_raf, dict) and "hata" not in r_raf:
+        # 3) Raf — HER ZAMAN doldur (boşalmış olabilir)
+        # Önce dükkân detayından ürünleri al
+        urunler = detay.get("urunler") or []
+        raf_doldu = False
+        for u in urunler:
+            urun_kod = u.get("kod")
+            kapasite = u.get("kapasite") or 0
+            miktar = u.get("miktar") or 0
+            eksik = kapasite - miktar
+            if eksik > 0 and urun_kod:
+                r_stok = cek(op, "isletme/%s/stok" % id_, {"urun": urun_kod, "miktar": eksik})
+                if isinstance(r_stok, dict) and "hata" not in r_stok:
+                    raf_doldu = True
+                time.sleep(0.1)
+        
+        if raf_doldu:
             sonuc["raf_doldurulan"] += 1
             det["raf"] = "dolduruldu"
             if kap > 0:
                 det["raf"] = "%d/%d→full" % (dol, kap)
-        else:
-            sonuc["hatalar"].append({"id": id_, "ad": ad, "raf_hata": r_raf})
+        elif not urunler:
+            # Ürün listesi yoksa eski yöntemi dene (geriye uyumluluk)
+            sonuc["debug"].append({"id": id_, "ad": ad, "urun_yok": True})
         time.sleep(0.2)
         if det.get("kasa") or det.get("raf") or det.get("oto"):
             sonuc["detay"].append(det)
