@@ -258,7 +258,7 @@ class Bot:
                 if r.get("bahsis"):
                     self.bahsis += 1
                 if r.get("teklif"):
-                    # --- TOPLU SİPARİŞ (v2: hızlandırılmış) ---
+                    # --- TOPLU SİPARİŞ (v3: ultra hızlı) ---
                     self.siparis_sayisi += 1
                     sp_basla = self.cek("seyyar/siparis", {"id": is_.get("id"), "kabul": True})
                     if isinstance(sp_basla, dict):
@@ -268,16 +268,16 @@ class Bot:
                         self.log({"olay": "siparis_basladi", "adet": adet,
                                   "sure_sn": round(sure_ms / 1000, 1), "odul": odul / 100 if odul else 0,
                                   "tezgah": is_.get("isKodu")})
-                        # Ultra hızlı döngü: 1 parça/istek, 150ms (oyun JS: 280ms retry)
+                        # Ultra hızlı döngü v3: 1 parça/istek, 100ms (oyun JS: 280ms retry)
                         basari = False
                         ret = 0  # hız sınırı sayacı
-                        for _ in range(500):  # 500 iterasyon × 1 parça
+                        for _ in range(1000):  # 1000 iterasyon × 1 parça (500→1000)
                             rr = self.cek("seyyar/servis", {"id": is_.get("id"), "parca": 1})
                             if rr is None or (isinstance(rr, dict) and "hata" in rr):
                                 ret += 1
-                                if ret > 8:
+                                if ret > 10:  # 8→10 (daha toleranslı)
                                     break
-                                _t.sleep(0.2)
+                                _t.sleep(0.15)  # 200ms→150ms
                                 continue
                             ret = 0
                             sp = (rr or {}).get("siparis") or {}
@@ -294,7 +294,7 @@ class Bot:
                                 self.log({"olay": "siparis_kacti",
                                           "tezgah": is_.get("isKodu")})
                                 break
-                            _t.sleep(0.15)  # 150ms — JS oyun istemcisinden daha hızlı
+                            _t.sleep(0.10)  # 150ms→100ms (daha hızlı!)
                         if not basari and not sp.get("durum"):
                             self.log({"olay": "siparis_zaman_asimi",
                                       "tezgah": is_.get("isKodu")})
