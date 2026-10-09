@@ -1,11 +1,6 @@
 name: Cirak Bot
 
 on:
-  push:
-    paths:
-      - 'cirak/komut.json'
-  schedule:
-    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
