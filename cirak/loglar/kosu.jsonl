@@ -2791,3 +2791,16 @@
 {"olay": "ara_ozet", "tur": 25, "kazanc": 1205.0, "servis": 196, "bakiye": 240748.73, "siparis": "2/3", "gecen_dk": 13.3, "ts": 1791564088901}
 {"olay": "ara_ozet", "tur": 30, "kazanc": 1484.8, "servis": 236, "bakiye": 242436.93, "siparis": "2/3", "gecen_dk": 14.9, "ts": 1791564185372}
 {"olay": "kosu_bitti", "tur": 31, "kazanc": 1538.3, "servis": 244, "bahsis": 42, "bakiye": 242490.41, "siparis_toplam": 3, "siparis_basari": 2, "gecen_dk": 15.1, "bot_versiyon": "v2", "ts": 1791564194766}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 243831.06, "bot_versiyon": "v2_hizli_siparis", "ts": 1791564331402}
+{"olay": "siparis_basladi", "adet": 10, "sure_sn": 30.0, "odul": 107.0, "tezgah": "dondurma", "ts": 1791564368308}
+{"olay": "siparis_tamam", "kazanilan": 107.0, "tezgah": "dondurma", "ts": 1791564371447}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791564506907}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 375.6, "servis": 40, "bakiye": 266460.79, "siparis": "1/1", "gecen_dk": 5.5, "ts": 1791564662642}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791564781486}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 503.0, "servis": 68, "bakiye": 269033.16, "siparis": "1/1", "gecen_dk": 8.9, "ts": 1791564867720}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 15, "oto_acilan": 15, "ts": 1791565104780}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 679.8, "servis": 98, "bakiye": 271623.66, "siparis": "1/1", "gecen_dk": 12.9, "ts": 1791565105071}
+{"olay": "siparis_basladi", "adet": 10, "sure_sn": 30.0, "odul": 114.0, "tezgah": "midye", "ts": 1791565142739}
+{"olay": "siparis_tamam", "kazanilan": 114.0, "tezgah": "midye", "ts": 1791565145919}
+{"olay": "topladi", "adet": 1, "net": 574.18, "ts": 1791565220882}
+{"olay": "kosu_bitti", "tur": 19, "kazanc": 1622.2, "servis": 130, "bahsis": 28, "bakiye": 478813.07, "siparis_toplam": 2, "siparis_basari": 2, "gecen_dk": 16.1, "bot_versiyon": "v2", "ts": 1791565299356}
