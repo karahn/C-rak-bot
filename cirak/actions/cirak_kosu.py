@@ -652,8 +652,26 @@ def gorev_dukkan_ac(op, komut):
     oyuncu_seviye = oyuncu.get("seviye") or 0
     sonuc["bakiye"] = bakiye
     sonuc["oyuncu_seviye"] = oyuncu_seviye
+    
+    # SOKAK SEÇİMİ: Önce mevcut cadde'yi kontrol et, boş parsel yoksa diğer sokakları dene
     cadde = cek(op, "cadde?ilce=%d" % ilce) or {}
+    sokak_bilgi = cadde.get("sokak", {})
+    sokak_liste = sokak_bilgi.get("liste", [])
+    secili_sokak = sokak_bilgi.get("secili", 0)
+    
     bos = [y for y in (cadde.get("yerler") or []) if not y.get("isletme")]
+    
+    # Eğer seçili sokakta boş parsel yoksa, boş parsel olan başka bir sokağa geç
+    if not bos and sokak_liste:
+        for s in sokak_liste:
+            if s.get("no") != secili_sokak and s.get("bos", 0) > 0:
+                # Bu sokağa geç
+                yeni_sokak = s.get("no")
+                cadde = cek(op, "cadde?ilce=%d&sokak=%d" % (ilce, yeni_sokak)) or {}
+                bos = [y for y in (cadde.get("yerler") or []) if not y.get("isletme")]
+                sonuc["sokak_degistirildi"] = yeni_sokak
+                break
+    
     sonuc["bos_parsel"] = len(bos)
 
     for y in bos:
