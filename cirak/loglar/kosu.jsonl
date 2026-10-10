@@ -4182,3 +4182,14 @@
 {"olay": "ara_ozet", "tur": 5, "kazanc": 210.8, "servis": 24, "bakiye": 337495.64, "siparis": "1/1", "gecen_dk": 10.7, "ts": 1791651763331}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791652081279}
 {"olay": "kosu_bitti", "tur": 6, "kazanc": 229.9, "servis": 26, "bahsis": 6, "bakiye": 329700.7, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 16.0, "bot_versiyon": "v2", "ts": 1791652083567}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 113393.54, "bot_versiyon": "v2_hizli_siparis", "ts": 1791652221829}
+{"olay": "sokak", "tur": "kavga", "id": "2034:kavga:373260", "sonuc": {"tutar": 22500, "tecrube": 2, "metin": "İhbarın alındı. Polis ekibi yola çıktı; lütfen güvenli bir mesafede bekle.", "bakiye": 11361854, "hareket": 1104338}, "ts": 1791652223459}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 105.0, "tezgah": "pazar", "ts": 1791652257768}
+{"olay": "siparis_kacti", "tezgah": "pazar", "ts": 1791652289597}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791652537507}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791652826094}
+{"olay": "siparis_basladi", "adet": 13, "sure_sn": 30.0, "odul": 105.0, "tezgah": "pazar", "ts": 1791652861606}
+{"olay": "siparis_kacti", "tezgah": "pazar", "ts": 1791652894386}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 178.4, "servis": 30, "bakiye": 121822.94, "siparis": "0/2", "gecen_dk": 11.9, "ts": 1791652933658}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791653124347}
+{"olay": "kosu_bitti", "tur": 6, "kazanc": 201.5, "servis": 34, "bahsis": 6, "bakiye": 127600.23, "siparis_toplam": 2, "siparis_basari": 0, "gecen_dk": 15.1, "bot_versiyon": "v2", "ts": 1791653126664}
