@@ -4243,3 +4243,12 @@
 {"olay": "ara_ozet", "tur": 5, "kazanc": 164.9, "servis": 29, "bakiye": 389886.38, "siparis": "0/0", "gecen_dk": 10.5, "ts": 1791657301606}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791657578821}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 164.9, "servis": 32, "bahsis": 8, "bakiye": 391888.24, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.2, "bot_versiyon": "v2", "ts": 1791657580987}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 424038.7, "bot_versiyon": "v2_hizli_siparis", "ts": 1791657724733}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791657974509}
+{"olay": "cirak_basla", "kod": "su", "id": 108046, "ts": 1791658008386}
+{"olay": "siparis_basladi", "adet": 10, "sure_sn": 30.0, "odul": 95.0, "tezgah": "kestane", "ts": 1791658062529}
+{"olay": "siparis_tamam", "kazanilan": 95.0, "tezgah": "kestane", "ts": 1791658065555}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791658219244}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 320.4, "servis": 37, "bakiye": 421942.85, "siparis": "1/1", "gecen_dk": 8.2, "ts": 1791658219457}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791658644983}
+{"olay": "kosu_bitti", "tur": 9, "kazanc": 562.6, "servis": 69, "bahsis": 9, "bakiye": 425771.79, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1791658647186}
