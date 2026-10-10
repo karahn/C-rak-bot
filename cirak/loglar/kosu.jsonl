@@ -4358,3 +4358,12 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791669575177}
 {"olay": "ara_ozet", "tur": 5, "kazanc": 33712.1, "servis": 36, "bakiye": 674512.66, "siparis": "2/2", "gecen_dk": 16.3, "ts": 1791669575380}
 {"olay": "kosu_bitti", "tur": 5, "kazanc": 33712.1, "servis": 36, "bahsis": 5, "bakiye": 674559.23, "siparis_toplam": 2, "siparis_basari": 2, "gecen_dk": 16.4, "bot_versiyon": "v2", "ts": 1791669577607}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 676288.18, "bot_versiyon": "v2_hizli_siparis", "ts": 1791669680767}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791669960929}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791670245937}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 103.2, "servis": 21, "bakiye": 681091.79, "siparis": "0/0", "gecen_dk": 9.6, "ts": 1791670254114}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "ayakkabi", "ts": 1791670261337}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "ayakkabi", "ts": 1791670265503}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 233.9, "servis": 43, "bakiye": 681932.86, "siparis": "1/1", "gecen_dk": 10.6, "ts": 1791670316435}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 29, "oto_acilan": 29, "ts": 1791670597693}
+{"olay": "kosu_bitti", "tur": 11, "kazanc": 293.6, "servis": 51, "bahsis": 7, "bakiye": 708384.89, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.8, "bot_versiyon": "v2", "ts": 1791670630119}
