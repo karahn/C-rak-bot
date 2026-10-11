@@ -5001,3 +5001,13 @@
 {"olay": "cirak_basla", "kod": "kestane", "id": 114521, "ts": 1791730818469}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 31, "raf_doldurulan": 33, "oto_acilan": 33, "ts": 1791731238279}
 {"olay": "kosu_bitti", "tur": 9, "kazanc": 14387.5, "servis": 72, "bahsis": 14, "bakiye": 882832.04, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 17.5, "bot_versiyon": "v2", "ts": 1791731240435}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 71709.59, "bot_versiyon": "v2_hizli_siparis", "ts": 1791731480907}
+{"olay": "siparis_basladi", "adet": 10, "sure_sn": 30.0, "odul": 67.0, "tezgah": "misir", "ts": 1791731517230}
+{"olay": "siparis_kacti", "tezgah": "misir", "ts": 1791731548883}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 33, "oto_acilan": 33, "ts": 1791731799058}
+{"olay": "sokak", "tur": "itfaiye", "id": "2034:itfaiye:116649", "sonuc": {"hata": "Buna zaten katıldın."}, "ts": 1791731871411}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3878207", "sonuc": {"hata": "Buna zaten katıldın."}, "ts": 1791731871618}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 33, "oto_acilan": 33, "ts": 1791732151877}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 33, "oto_acilan": 33, "ts": 1791732468524}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 99.5, "servis": 18, "bakiye": 102652.97, "siparis": "0/1", "gecen_dk": 17.0, "ts": 1791732499006}
+{"olay": "kosu_bitti", "tur": 5, "kazanc": 99.5, "servis": 18, "bahsis": 4, "bakiye": 102705.23, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 17.0, "bot_versiyon": "v2", "ts": 1791732501237}
