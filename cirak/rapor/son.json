@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 9,
-  "tp": 2204,
-  "nakit_kurus": 26174589,
+  "tp": 2215,
+  "nakit_kurus": 23560737,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -25,8 +25,8 @@
    "ad": "Fatih Mahallesi"
   },
   "banka": {
-   "vadesiz": 52200,
-   "nakit": 26174589,
+   "vadesiz": 12574,
+   "nakit": 23560737,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 323200000,
+     "limit": 327300000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 538700000,
+     "limit": 545600000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 431000000,
+     "limit": 436400000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 646500000,
+     "limit": 654700000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -133,7 +133,7 @@
    "tahsis": 0.5,
    "ekonomiGunuMs": 28800000,
    "karaListe": 0,
-   "net": 52200,
+   "net": 12574,
    "krediNotu": {
     "puan": 1100,
     "bant": "Az riskli",
@@ -144,7 +144,7 @@
    "masak": null
   },
   "takvim": {
-   "ms": 1791729946436,
+   "ms": 1791731281537,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -152,16 +152,16 @@
    "haftaGunu": "Pazar",
    "haftaGunuNo": 0,
    "haftaSonu": true,
-   "saat": 14,
-   "dakika": 45,
+   "saat": 15,
+   "dakika": 8,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "11 Ekim 2026, Pazar"
   }
  },
  "banka": {
-  "nakit": 261745.89,
-  "vadesiz": 522.0,
+  "nakit": 235607.37,
+  "vadesiz": 125.74,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
@@ -370,16 +370,16 @@
  },
  "seviye-bildir": {
   "seviye": 9,
-  "tp": 2204,
+  "tp": 2215,
   "onceki": 9,
   "yeni_mi": false
  },
  "dukkan-yonet": {
-  "toplam": 48,
+  "toplam": 49,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 31,
+  "oto_acilan": 25,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -540,6 +540,11 @@
     "ad": "Kalfa Halıcı",
     "id": 57832,
     "oto": "acik"
+   },
+   {
+    "ad": "Kalfa Spor mağazas",
+    "id": 58415,
+    "oto": "acik"
    }
   ],
   "hatalar": [],
@@ -550,7 +555,139 @@
   "acilanlar": [],
   "secenekler": [
    {
-    "no": 46,
+    "no": 50,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 50,
+    "tur": "oto_servis",
+    "ad": "Oto servis",
+    "seviye": 5,
+    "kilitli": false,
+    "toplam": 812000.0,
+    "kurulum": 720000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 50,
+    "tur": "otopark",
+    "ad": "Otopark",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 892000.0,
+    "kurulum": 800000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 51,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 51,
+    "tur": "oto_servis",
+    "ad": "Oto servis",
+    "seviye": 5,
+    "kilitli": false,
+    "toplam": 812000.0,
+    "kurulum": 720000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 51,
+    "tur": "otopark",
+    "ad": "Otopark",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 892000.0,
+    "kurulum": 800000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 57,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 57,
+    "tur": "oto_servis",
+    "ad": "Oto servis",
+    "seviye": 5,
+    "kilitli": false,
+    "toplam": 812000.0,
+    "kurulum": 720000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 57,
+    "tur": "otopark",
+    "ad": "Otopark",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 892000.0,
+    "kurulum": 800000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 64,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 64,
+    "tur": "oto_servis",
+    "ad": "Oto servis",
+    "seviye": 5,
+    "kilitli": false,
+    "toplam": 812000.0,
+    "kurulum": 720000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 64,
+    "tur": "otopark",
+    "ad": "Otopark",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 892000.0,
+    "kurulum": 800000.0,
+    "kira": 36000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 66,
     "tur": "matbaa",
     "ad": "Matbaa",
     "seviye": 6,
@@ -561,7 +698,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 46,
+    "no": 66,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -572,7 +709,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 46,
+    "no": 66,
     "tur": "oto_servis",
     "ad": "Oto servis",
     "seviye": 5,
@@ -583,7 +720,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 46,
+    "no": 66,
     "tur": "otopark",
     "ad": "Otopark",
     "seviye": 4,
@@ -594,18 +731,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 46,
-    "tur": "spor_magazasi",
-    "ad": "Spor mağazası",
-    "seviye": 3,
-    "kilitli": false,
-    "toplam": 266000.0,
-    "kurulum": 220000.0,
-    "kira": 18000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 46,
+    "no": 66,
     "tur": "telefoncu",
     "ad": "Telefoncu",
     "seviye": 5,
@@ -616,7 +742,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 46,
+    "no": 66,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
     "seviye": 4,
@@ -624,138 +750,6 @@
     "toplam": 286000.0,
     "kurulum": 240000.0,
     "kira": 18000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 50,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 1092000.0,
-    "kurulum": 1000000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 50,
-    "tur": "oto_servis",
-    "ad": "Oto servis",
-    "seviye": 5,
-    "kilitli": false,
-    "toplam": 812000.0,
-    "kurulum": 720000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 50,
-    "tur": "otopark",
-    "ad": "Otopark",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 892000.0,
-    "kurulum": 800000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 51,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 1092000.0,
-    "kurulum": 1000000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 51,
-    "tur": "oto_servis",
-    "ad": "Oto servis",
-    "seviye": 5,
-    "kilitli": false,
-    "toplam": 812000.0,
-    "kurulum": 720000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 51,
-    "tur": "otopark",
-    "ad": "Otopark",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 892000.0,
-    "kurulum": 800000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 57,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 1092000.0,
-    "kurulum": 1000000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 57,
-    "tur": "oto_servis",
-    "ad": "Oto servis",
-    "seviye": 5,
-    "kilitli": false,
-    "toplam": 812000.0,
-    "kurulum": 720000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 57,
-    "tur": "otopark",
-    "ad": "Otopark",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 892000.0,
-    "kurulum": 800000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 64,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 1092000.0,
-    "kurulum": 1000000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 64,
-    "tur": "oto_servis",
-    "ad": "Oto servis",
-    "seviye": 5,
-    "kilitli": false,
-    "toplam": 812000.0,
-    "kurulum": 720000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 64,
-    "tur": "otopark",
-    "ad": "Otopark",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 892000.0,
-    "kurulum": 800000.0,
-    "kira": 36000.0,
     "neden_alinmadi": "para_yetmiyor"
    }
   ],
@@ -803,6 +797,7 @@
    "sarkuteri",
    "seyahat_acentesi",
    "sigorta_acentesi",
+   "spor_magazasi",
    "tavukcu",
    "teknik_servis",
    "temizlik_magazasi",
@@ -831,6 +826,7 @@
    "perdeci",
    "seyahat_acentesi",
    "sigorta_acentesi",
+   "spor_magazasi",
    "tavukcu",
    "teknik_servis",
    "temizlik_magazasi",
@@ -838,23 +834,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 262893.62,
+  "bakiye": 89316.9,
   "oyuncu_seviye": 9,
   "sokak_degistirildi": 1,
   "bos_parsel": 5,
-  "kalan_bakiye": 262893.62
+  "kalan_bakiye": 89316.9
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 4,
-  "kazanc": 9260.4,
-  "servis": 32,
-  "bahsis": 8,
-  "bakiye": 239551.87,
-  "siparis_toplam": 1,
-  "siparis_basari": 0,
-  "gecen_dk": 18.8,
+  "tur": 5,
+  "kazanc": 17810.5,
+  "servis": 40,
+  "bahsis": 5,
+  "bakiye": 125396.77,
+  "siparis_toplam": 2,
+  "siparis_basari": 1,
+  "gecen_dk": 16.9,
   "bot_versiyon": "v2",
-  "ts": 1791720457663
+  "ts": 1791721647437
  }
 }
