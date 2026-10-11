@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 10,
-  "tp": 2400,
-  "nakit_kurus": 38140785,
+  "tp": 2404,
+  "nakit_kurus": 17786295,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 12574,
-   "nakit": 38140785,
+   "nakit": 17787743,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 379600000,
+     "limit": 375100000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 632700000,
+     "limit": 625200000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 506200000,
+     "limit": 500200000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 759300000,
+     "limit": 750300000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -135,7 +135,7 @@
    "karaListe": 0,
    "net": 12574,
    "krediNotu": {
-    "puan": 1112,
+    "puan": 1114,
     "bant": "Az riskli",
     "renk": "#E8C21A"
    },
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1791751871352,
+   "ms": 1791753066697,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -153,21 +153,21 @@
    "haftaGunu": "Pazar",
    "haftaGunuNo": 0,
    "haftaSonu": true,
-   "saat": 20,
-   "dakika": 51,
+   "saat": 21,
+   "dakika": 11,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "11 Ekim 2026, Pazar"
   }
  },
  "banka": {
-  "nakit": 381407.85,
+  "nakit": 177894.1,
   "vadesiz": 125.74,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
   "kredi_notu": {
-   "puan": 1112,
+   "puan": 1114,
    "bant": "Az riskli",
    "renk": "#E8C21A"
   },
@@ -261,64 +261,64 @@
   "cevaplanan_id": 1137,
   "son_mesajlar": [
    {
-    "id": 1436,
-    "benden": true,
-    "metin": "Patron, SV9 oldum! Yeni açılan dükkânlar: Mali müşavir, Beyaz eşya, Elektronik mağazası, Sürücü kursu, Veteriner kliniği, Araç kiralama",
-    "zaman": 1791650624442
-   },
-   {
-    "id": 1437,
-    "benden": true,
-    "metin": "Patron, SV9 oldum! Yeni açılan dükkânlar: Mali müşavir, Beyaz eşya, Elektronik mağazası, Sürücü kursu, Veteriner kliniği, Araç kiralama",
-    "zaman": 1791650732783
-   },
-   {
-    "id": 1438,
-    "benden": true,
-    "metin": "Patron, SV9 oldum! Yeni açılan dükkânlar: Mali müşavir, Beyaz eşya, Elektronik mağazası, Sürücü kursu, Veteriner kliniği, Araç kiralama",
-    "zaman": 1791650768260
-   },
-   {
-    "id": 1439,
-    "benden": true,
-    "metin": "Patron, SV9 oldum! Yeni açılan dükkânlar: Mali müşavir, Beyaz eşya, Elektronik mağazası, Sürücü kursu, Veteriner kliniği, Araç kiralama",
-    "zaman": 1791650814738
-   },
-   {
-    "id": 1440,
-    "benden": true,
-    "metin": "Patron, SV9 oldum! Yeni açılan dükkânlar: Mali müşavir, Beyaz eşya, Elektronik mağazası, Sürücü kursu, Veteriner kliniği, Araç kiralama",
-    "zaman": 1791650914198
-   },
-   {
-    "id": 1569,
+    "id": 1575,
     "benden": true,
     "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
-    "zaman": 1791740704481
+    "zaman": 1791741072941
    },
    {
-    "id": 1570,
+    "id": 1576,
     "benden": true,
     "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
-    "zaman": 1791740731428
+    "zaman": 1791741258473
    },
    {
-    "id": 1571,
+    "id": 1577,
     "benden": true,
     "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
-    "zaman": 1791740801783
+    "zaman": 1791741261598
    },
    {
-    "id": 1573,
+    "id": 1579,
     "benden": true,
     "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
-    "zaman": 1791740837337
+    "zaman": 1791741400724
    },
    {
-    "id": 1574,
+    "id": 1582,
     "benden": true,
     "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
-    "zaman": 1791741054306
+    "zaman": 1791741506366
+   },
+   {
+    "id": 1585,
+    "benden": true,
+    "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
+    "zaman": 1791741716755
+   },
+   {
+    "id": 1586,
+    "benden": true,
+    "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
+    "zaman": 1791741945237
+   },
+   {
+    "id": 1590,
+    "benden": true,
+    "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
+    "zaman": 1791742119422
+   },
+   {
+    "id": 1591,
+    "benden": true,
+    "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
+    "zaman": 1791742191780
+   },
+   {
+    "id": 1592,
+    "benden": true,
+    "metin": "Patron, SV10 oldum! Yeni açılan dükkânlar: Reklam ajansı, Kuyumcu, Oto galeri",
+    "zaman": 1791742202370
    }
   ]
  },
@@ -372,24 +372,16 @@
  },
  "seviye-bildir": {
   "seviye": 10,
-  "tp": 2400,
-  "onceki": 9,
-  "yeni_mi": true,
-  "mesaj": {
-   "tamam": true
-  },
-  "yeni_dukkanlar": [
-   "Reklam ajansı",
-   "Kuyumcu",
-   "Oto galeri"
-  ]
+  "tp": 2404,
+  "onceki": 10,
+  "yeni_mi": false
  },
  "dukkan-yonet": {
   "toplam": 52,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 23,
+  "oto_acilan": 33,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -567,7 +559,16 @@
  },
  "dukkan-ac": {
   "ilce": 2034,
-  "acilanlar": [],
+  "acilanlar": [
+   {
+    "tur": "yedek_parca",
+    "no": 77,
+    "toplam": 141000.0,
+    "sonuc": {
+     "hata": "Bu senin 53. dükkânın: 5.922.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+    }
+   }
+  ],
   "secenekler": [
    {
     "no": 51,
@@ -592,7 +593,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 57,
+    "no": 53,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -603,7 +604,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 57,
+    "no": 53,
     "tur": "otopark",
     "ad": "Otopark",
     "seviye": 4,
@@ -614,7 +615,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 64,
+    "no": 57,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -625,7 +626,7 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 64,
+    "no": 57,
     "tur": "otopark",
     "ad": "Otopark",
     "seviye": 4,
@@ -658,26 +659,14 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 68,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 1092000.0,
-    "kurulum": 1000000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 68,
-    "tur": "otopark",
-    "ad": "Otopark",
+    "no": 77,
+    "tur": "yedek_parca",
+    "ad": "Oto yedek parça",
     "seviye": 4,
     "kilitli": false,
-    "toplam": 892000.0,
-    "kurulum": 800000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
+    "toplam": 141000.0,
+    "kurulum": 120000.0,
+    "kira": 8000.0
    }
   ],
   "denemeler": [],
@@ -767,23 +756,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 381947.03,
+  "bakiye": 201874.62,
   "oyuncu_seviye": 10,
   "sokak_degistirildi": 1,
   "bos_parsel": 5,
-  "kalan_bakiye": 381947.03
+  "kalan_bakiye": 60874.619999999995
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 5,
-  "kazanc": 678.2,
-  "servis": 33,
-  "bahsis": 6,
-  "bakiye": 177283.26,
-  "siparis_toplam": 2,
+  "tur": 9,
+  "kazanc": 587.9,
+  "servis": 72,
+  "bahsis": 11,
+  "bakiye": 214361.57,
+  "siparis_toplam": 1,
   "siparis_basari": 0,
-  "gecen_dk": 15.9,
+  "gecen_dk": 17.9,
   "bot_versiyon": "v2",
-  "ts": 1791742210771
+  "ts": 1791743588008
  }
 }
