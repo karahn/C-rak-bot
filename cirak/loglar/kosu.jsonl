@@ -4929,3 +4929,8 @@
 {"olay": "cirak_basla", "kod": "misir", "id": 113962, "ts": 1791723777461}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 33, "oto_acilan": 33, "ts": 1791724093450}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 12288.0, "servis": 34, "bahsis": 7, "bakiye": 62560.41, "siparis_toplam": 2, "siparis_basari": 1, "gecen_dk": 17.7, "bot_versiyon": "v2", "ts": 1791724125808}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 63450.84, "bot_versiyon": "v2_hizli_siparis", "ts": 1791724319046}
+{"olay": "siparis_basladi", "adet": 11, "sure_sn": 30.0, "odul": 63.0, "tezgah": "misir", "ts": 1791724324287}
+{"olay": "siparis_zaman_asimi", "tezgah": "misir", "ts": 1791725113805}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 33, "oto_acilan": 33, "ts": 1791725392880}
+{"olay": "kosu_bitti", "tur": 1, "kazanc": 76.1, "servis": 8, "bahsis": 2, "bakiye": 99131.82, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 18.4, "bot_versiyon": "v2", "ts": 1791725425438}
