@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 9,
-  "tp": 2141,
-  "nakit_kurus": 1881227,
+  "tp": 2152,
+  "nakit_kurus": 39270228,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 52200,
-   "nakit": 1881227,
+   "nakit": 39270228,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 303000000,
+     "limit": 313800000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 505000000,
+     "limit": 523100000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 404000000,
+     "limit": 418500000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 606000000,
+     "limit": 627700000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -135,7 +135,7 @@
    "karaListe": 0,
    "net": 52200,
    "krediNotu": {
-    "puan": 1097,
+    "puan": 1098,
     "bant": "Orta riskli",
     "renk": "#F08A24"
    },
@@ -144,7 +144,7 @@
    "masak": null
   },
   "takvim": {
-   "ms": 1791722854497,
+   "ms": 1791724010994,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -152,21 +152,21 @@
    "haftaGunu": "Pazar",
    "haftaGunuNo": 0,
    "haftaSonu": true,
-   "saat": 12,
-   "dakika": 47,
+   "saat": 13,
+   "dakika": 6,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "11 Ekim 2026, Pazar"
   }
  },
  "banka": {
-  "nakit": 18812.27,
+  "nakit": 392702.28,
   "vadesiz": 522.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
   "kredi_notu": {
-   "puan": 1097,
+   "puan": 1098,
    "bant": "Orta riskli",
    "renk": "#F08A24"
   },
@@ -370,7 +370,7 @@
  },
  "seviye-bildir": {
   "seviye": 9,
-  "tp": 2141,
+  "tp": 2152,
   "onceki": 9,
   "yeni_mi": false
  },
@@ -379,7 +379,7 @@
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 30,
+  "oto_acilan": 14,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -847,23 +847,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 19713.26,
+  "bakiye": 70347.52,
   "oyuncu_seviye": 9,
   "sokak_degistirildi": 1,
   "bos_parsel": 5,
-  "kalan_bakiye": 19713.26
+  "kalan_bakiye": 70347.52
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 8,
-  "kazanc": 598.7,
-  "servis": 64,
-  "bahsis": 9,
-  "bakiye": 393564.68,
-  "siparis_toplam": 3,
-  "siparis_basari": 2,
-  "gecen_dk": 16.9,
+  "tur": 4,
+  "kazanc": 9348.7,
+  "servis": 32,
+  "bahsis": 4,
+  "bakiye": 108707.75,
+  "siparis_toplam": 1,
+  "siparis_basari": 0,
+  "gecen_dk": 15.3,
   "bot_versiyon": "v2",
-  "ts": 1791713187747
+  "ts": 1791714314093
  }
 }
