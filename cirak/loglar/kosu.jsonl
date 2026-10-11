@@ -4599,3 +4599,18 @@
 {"olay": "siparis_basladi", "adet": 8, "sure_sn": 30.0, "odul": 104.0, "tezgah": "kestane", "ts": 1791691356346}
 {"olay": "siparis_tamam", "kazanilan": 104.0, "tezgah": "kestane", "ts": 1791691358755}
 {"olay": "kosu_bitti", "tur": 8, "kazanc": 560.9, "servis": 60, "bahsis": 17, "bakiye": 91063.63, "siparis_toplam": 2, "siparis_basari": 1, "gecen_dk": 16.2, "bot_versiyon": "v2", "ts": 1791691393236}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 17804.19, "bot_versiyon": "v2_hizli_siparis", "ts": 1791691503336}
+{"olay": "topladi", "adet": 1, "net": 6836.75, "ts": 1791691535308}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 31, "oto_acilan": 31, "ts": 1791691746103}
+{"olay": "siparis_basladi", "adet": 13, "sure_sn": 30.0, "odul": 110.0, "tezgah": "kestane", "ts": 1791691850616}
+{"olay": "siparis_tamam", "kazanilan": 110.0, "tezgah": "kestane", "ts": 1791691853250}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 31, "oto_acilan": 31, "ts": 1791692062202}
+{"olay": "topladi", "adet": 1, "net": 1054.4, "ts": 1791692095549}
+{"olay": "cirak_basla", "kod": "semsiye", "id": 111772, "ts": 1791692096850}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 31, "oto_acilan": 31, "ts": 1791692316708}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 8247.4, "servis": 35, "bakiye": 28370.48, "siparis": "1/1", "gecen_dk": 13.6, "ts": 1791692316864}
+{"olay": "siparis_basladi", "adet": 14, "sure_sn": 30.0, "odul": 50.0, "tezgah": "ayakkabi", "ts": 1791692351313}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "ayakkabi", "ts": 1791692354211}
+{"olay": "siparis_basladi", "adet": 8, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1791692385996}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "pamuk", "ts": 1791692387604}
+{"olay": "kosu_bitti", "tur": 8, "kazanc": 8519.9, "servis": 59, "bahsis": 8, "bakiye": 29059.45, "siparis_toplam": 3, "siparis_basari": 3, "gecen_dk": 15.0, "bot_versiyon": "v2", "ts": 1791692404888}
