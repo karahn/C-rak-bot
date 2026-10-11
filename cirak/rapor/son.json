@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 10,
-  "tp": 2494,
-  "nakit_kurus": 12320,
+  "tp": 2505,
+  "nakit_kurus": 37250,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 12895,
+   "nakit": 37250,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 363600000,
+     "limit": 364000000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 606000000,
+     "limit": 606700000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 484800000,
+     "limit": 485300000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 727200000,
+     "limit": 728000000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1791763361328,
+   "ms": 1791764705457,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -154,14 +154,14 @@
    "haftaGunuNo": 1,
    "haftaSonu": false,
    "saat": 0,
-   "dakika": 2,
+   "dakika": 25,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "12 Ekim 2026, Pazartesi"
   }
  },
  "banka": {
-  "nakit": 131.56,
+  "nakit": 372.5,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -333,7 +333,7 @@
     "aidat": 25000,
     "borc": null,
     "baskan": null,
-    "kasa": 1125000,
+    "kasa": 1150000,
     "uyeler": null,
     "tp": null
    },
@@ -372,7 +372,7 @@
  },
  "seviye-bildir": {
   "seviye": 10,
-  "tp": 2494,
+  "tp": 2505,
   "onceki": 10,
   "yeni_mi": false
  },
@@ -380,8 +380,8 @@
   "toplam": 52,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
-  "raf_doldurulan": 1,
-  "oto_acilan": 15,
+  "raf_doldurulan": 2,
+  "oto_acilan": 16,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -391,7 +391,8 @@
    {
     "ad": "Kalfa Bakkal",
     "id": 44873,
-    "oto": "acik"
+    "oto": "acik",
+    "raf": "7580/8040→full"
    },
    {
     "ad": "Kalfa Şarküteri",
@@ -401,8 +402,7 @@
    {
     "ad": "Kalfa Büfe",
     "id": 45739,
-    "oto": "acik",
-    "raf": "970/1090→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Kasap",
@@ -457,7 +457,8 @@
    {
     "ad": "Kalfa Market",
     "id": 49004,
-    "oto": "acik"
+    "oto": "acik",
+    "raf": "5809/6020→full"
    },
    {
     "ad": "Kalfa Bar",
@@ -563,14 +564,36 @@
   "acilanlar": [],
   "secenekler": [
    {
-    "no": 47,
+    "no": 59,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 546000.0,
+    "kurulum": 500000.0,
+    "kira": 18000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 59,
+    "tur": "otopark",
+    "ad": "Otopark",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 446000.0,
+    "kurulum": 400000.0,
+    "kira": 18000.0,
+    "neden_alinmadi": "para_yetmiyor"
+   },
+   {
+    "no": 59,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
     "seviye": 4,
     "kilitli": false,
-    "toplam": 141000.0,
-    "kurulum": 120000.0,
-    "kira": 8000.0,
+    "toplam": 286000.0,
+    "kurulum": 240000.0,
+    "kira": 18000.0,
     "neden_alinmadi": "para_yetmiyor"
    },
    {
@@ -760,23 +783,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 447.57,
+  "bakiye": 175.88,
   "oyuncu_seviye": 10,
   "sokak_degistirildi": 1,
   "bos_parsel": 6,
-  "kalan_bakiye": 447.57
+  "kalan_bakiye": 175.88
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 6,
-  "kazanc": 140.1,
-  "servis": 29,
-  "bahsis": 2,
-  "bakiye": 226.83,
-  "siparis_toplam": 1,
-  "siparis_basari": 0,
-  "gecen_dk": 15.3,
+  "tur": 8,
+  "kazanc": 348.8,
+  "servis": 64,
+  "bahsis": 12,
+  "bakiye": 437.02,
+  "siparis_toplam": 3,
+  "siparis_basari": 2,
+  "gecen_dk": 17.3,
   "bot_versiyon": "v2",
-  "ts": 1791753867558
+  "ts": 1791755242843
  }
 }
