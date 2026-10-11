@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 9,
-  "tp": 2034,
-  "nakit_kurus": 9461374,
+  "tp": 2042,
+  "nakit_kurus": 2903296,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 52200,
-   "nakit": 9461374,
+   "nakit": 2903296,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 287400000,
+     "limit": 287100000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 479000000,
+     "limit": 478500000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 383200000,
+     "limit": 382800000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 574800000,
+     "limit": 574200000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -144,7 +144,7 @@
    "masak": null
   },
   "takvim": {
-   "ms": 1791710571838,
+   "ms": 1791711609065,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -153,14 +153,14 @@
    "haftaGunuNo": 0,
    "haftaSonu": true,
    "saat": 9,
-   "dakika": 22,
+   "dakika": 40,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "11 Ekim 2026, Pazar"
   }
  },
  "banka": {
-  "nakit": 94613.74,
+  "nakit": 29032.96,
   "vadesiz": 522.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -370,16 +370,16 @@
  },
  "seviye-bildir": {
   "seviye": 9,
-  "tp": 2034,
+  "tp": 2042,
   "onceki": 9,
   "yeni_mi": false
  },
  "dukkan-yonet": {
-  "toplam": 41,
+  "toplam": 42,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 9,
+  "oto_acilan": 20,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -568,17 +568,6 @@
    },
    {
     "no": 54,
-    "tur": "kuafor",
-    "ad": "Kuaför",
-    "seviye": 2,
-    "kilitli": false,
-    "toplam": 206000.0,
-    "kurulum": 160000.0,
-    "kira": 18000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 54,
     "tur": "kurs",
     "ad": "Özel kurs",
     "seviye": 7,
@@ -750,17 +739,6 @@
     "kilitli": false,
     "toplam": 286000.0,
     "kurulum": 240000.0,
-    "kira": 18000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 63,
-    "tur": "kuafor",
-    "ad": "Kuaför",
-    "seviye": 2,
-    "kilitli": false,
-    "toplam": 206000.0,
-    "kurulum": 160000.0,
     "kira": 18000.0,
     "neden_alinmadi": "para_yetmiyor"
    },
@@ -942,17 +920,6 @@
    },
    {
     "no": 78,
-    "tur": "kuafor",
-    "ad": "Kuaför",
-    "seviye": 2,
-    "kilitli": false,
-    "toplam": 206000.0,
-    "kurulum": 160000.0,
-    "kira": 18000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 78,
     "tur": "kurs",
     "ad": "Özel kurs",
     "seviye": 7,
@@ -1073,127 +1040,6 @@
     "neden_alinmadi": "para_yetmiyor"
    },
    {
-    "no": 81,
-    "tur": "camasirhane",
-    "ad": "Çamaşırhane",
-    "seviye": 2,
-    "kilitli": false,
-    "toplam": 111000.0,
-    "kurulum": 90000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "halici",
-    "ad": "Halıcı",
-    "seviye": 5,
-    "kilitli": false,
-    "toplam": 141000.0,
-    "kurulum": 120000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "kuafor",
-    "ad": "Kuaför",
-    "seviye": 2,
-    "kilitli": false,
-    "toplam": 101000.0,
-    "kurulum": 80000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "kurs",
-    "ad": "Özel kurs",
-    "seviye": 7,
-    "kilitli": false,
-    "toplam": 171000.0,
-    "kurulum": 150000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "matbaa",
-    "ad": "Matbaa",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 181000.0,
-    "kurulum": 160000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "seyahat_acentesi",
-    "ad": "Seyahat acentesi",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 111000.0,
-    "kurulum": 90000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "sigorta_acentesi",
-    "ad": "Sigorta acentesi",
-    "seviye": 7,
-    "kilitli": false,
-    "toplam": 101000.0,
-    "kurulum": 80000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "spor_magazasi",
-    "ad": "Spor mağazası",
-    "seviye": 3,
-    "kilitli": false,
-    "toplam": 131000.0,
-    "kurulum": 110000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "teknik_servis",
-    "ad": "Teknik servis",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 101000.0,
-    "kurulum": 80000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "telefoncu",
-    "ad": "Telefoncu",
-    "seviye": 5,
-    "kilitli": false,
-    "toplam": 141000.0,
-    "kurulum": 120000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 81,
-    "tur": "yedek_parca",
-    "ad": "Oto yedek parça",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 141000.0,
-    "kurulum": 120000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
     "no": 83,
     "tur": "camasirhane",
     "ad": "Çamaşırhane",
@@ -1212,17 +1058,6 @@
     "kilitli": false,
     "toplam": 141000.0,
     "kurulum": 120000.0,
-    "kira": 8000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 83,
-    "tur": "kuafor",
-    "ad": "Kuaför",
-    "seviye": 2,
-    "kilitli": false,
-    "toplam": 101000.0,
-    "kurulum": 80000.0,
     "kira": 8000.0,
     "neden_alinmadi": "para_yetmiyor"
    },
@@ -1343,6 +1178,7 @@
    "kargo",
    "kasap",
    "kebapci",
+   "kuafor",
    "kuruyemis",
    "lastikci",
    "lokanta",
@@ -1372,6 +1208,7 @@
    "elektrikci",
    "ic_giyim",
    "kebapci",
+   "kuafor",
    "kuruyemis",
    "perdeci",
    "tavukcu",
@@ -1380,23 +1217,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 95121.5,
+  "bakiye": 29171.48,
   "oyuncu_seviye": 9,
   "sokak_degistirildi": 1,
-  "bos_parsel": 7,
-  "kalan_bakiye": 95121.5
+  "bos_parsel": 6,
+  "kalan_bakiye": 29171.48
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 6,
-  "kazanc": 316.3,
-  "servis": 48,
-  "bahsis": 11,
-  "bakiye": 28945.74,
-  "siparis_toplam": 0,
-  "siparis_basari": 0,
-  "gecen_dk": 15.8,
+  "tur": 10,
+  "kazanc": 819.9,
+  "servis": 74,
+  "bahsis": 17,
+  "bakiye": 64495.47,
+  "siparis_toplam": 4,
+  "siparis_basari": 3,
+  "gecen_dk": 15.7,
   "bot_versiyon": "v2",
-  "ts": 1791700785403
+  "ts": 1791701868371
  }
 }
