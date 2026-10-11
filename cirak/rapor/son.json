@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 9,
-  "tp": 2042,
-  "nakit_kurus": 2903296,
+  "tp": 2053,
+  "nakit_kurus": 6452008,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 52200,
-   "nakit": 2903296,
+   "nakit": 6452008,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 287100000,
+     "limit": 288200000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 478500000,
+     "limit": 480300000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 382800000,
+     "limit": 384200000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 574200000,
+     "limit": 576400000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -144,7 +144,7 @@
    "masak": null
   },
   "takvim": {
-   "ms": 1791711609065,
+   "ms": 1791712691559,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -153,14 +153,14 @@
    "haftaGunuNo": 0,
    "haftaSonu": true,
    "saat": 9,
-   "dakika": 40,
+   "dakika": 58,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "11 Ekim 2026, Pazar"
   }
  },
  "banka": {
-  "nakit": 29032.96,
+  "nakit": 64520.08,
   "vadesiz": 522.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -370,7 +370,7 @@
  },
  "seviye-bildir": {
   "seviye": 9,
-  "tp": 2042,
+  "tp": 2053,
   "onceki": 9,
   "yeni_mi": false
  },
@@ -379,7 +379,7 @@
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 20,
+  "oto_acilan": 28,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -1217,23 +1217,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 29171.48,
+  "bakiye": 65492.74,
   "oyuncu_seviye": 9,
   "sokak_degistirildi": 1,
   "bos_parsel": 6,
-  "kalan_bakiye": 29171.48
+  "kalan_bakiye": 65492.74
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 10,
-  "kazanc": 819.9,
-  "servis": 74,
-  "bahsis": 17,
-  "bakiye": 64495.47,
-  "siparis_toplam": 4,
-  "siparis_basari": 3,
-  "gecen_dk": 15.7,
+  "tur": 9,
+  "kazanc": 7467.1,
+  "servis": 60,
+  "bahsis": 11,
+  "bakiye": 54896.16,
+  "siparis_toplam": 1,
+  "siparis_basari": 0,
+  "gecen_dk": 17.5,
   "bot_versiyon": "v2",
-  "ts": 1791701868371
+  "ts": 1791703029982
  }
 }
