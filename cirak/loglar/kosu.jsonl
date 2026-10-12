@@ -5716,3 +5716,17 @@
 {"olay": "siparis_tamam", "kazanilan": 76.0, "tezgah": "kestane", "ts": 1791816399637}
 {"olay": "ara_ozet", "tur": 5, "kazanc": 252.7, "servis": 35, "bakiye": 2630744.38, "siparis": "1/1", "gecen_dk": 14.4, "ts": 1791816400230}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 252.7, "servis": 37, "bahsis": 10, "bakiye": 2631070.75, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.1, "bot_versiyon": "v2", "ts": 1791816442584}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 2631770.93, "bot_versiyon": "v2_hizli_siparis", "ts": 1791816629434}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791816979062}
+{"olay": "siparis_basladi", "adet": 14, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1791816984952}
+{"olay": "siparis_kacti", "tezgah": "pamuk", "ts": 1791817016273}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 74.0, "tezgah": "pazar", "ts": 1791817017664}
+{"olay": "siparis_tamam", "kazanilan": 74.0, "tezgah": "pazar", "ts": 1791817021932}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791817246928}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 50.0, "tezgah": "ayakkabi", "ts": 1791817251018}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "ayakkabi", "ts": 1791817254961}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 213.7, "servis": 29, "bakiye": 2780984.9, "siparis": "2/3", "gecen_dk": 10.7, "ts": 1791817272097}
+{"olay": "siparis_basladi", "adet": 11, "sure_sn": 30.0, "odul": 74.0, "tezgah": "pazar", "ts": 1791817321789}
+{"olay": "siparis_tamam", "kazanilan": 74.0, "tezgah": "pazar", "ts": 1791817324754}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791817562213}
+{"olay": "kosu_bitti", "tur": 8, "kazanc": 376.9, "servis": 47, "bahsis": 7, "bakiye": 3076428.97, "siparis_toplam": 4, "siparis_basari": 3, "gecen_dk": 15.6, "bot_versiyon": "v2", "ts": 1791817564477}
