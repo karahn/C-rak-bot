@@ -5498,3 +5498,12 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791788492502}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791788700931}
 {"olay": "kosu_bitti", "tur": 4, "kazanc": 163.7, "servis": 26, "bahsis": 5, "bakiye": 659658.17, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1791788703182}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 578318.32, "bot_versiyon": "v2_hizli_siparis", "ts": 1791789226254}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791789541002}
+{"olay": "sokak", "tur": "kavga", "id": "2034:kavga:373289", "sonuc": {"hata": "Geç kaldın, olay bitti."}, "ts": 1791789544346}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3878332", "sonuc": {"tutar": 47500, "tecrube": 1, "metin": "Cüzdanı sahibine verdin. Sevinçten sana bir ödül bıraktı.", "itibar": 5, "bakiye": 58071467, "hareket": 1474018}, "ts": 1791789574749}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791789855550}
+{"olay": "topladi", "adet": 10, "net": 35374.88, "ts": 1791789889344}
+{"olay": "cirak_basla", "kod": "dondurma", "id": 117746, "ts": 1791789892254}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791790171550}
+{"olay": "kosu_bitti", "tur": 3, "kazanc": 35412.7, "servis": 15, "bahsis": 2, "bakiye": 609244.83, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.8, "bot_versiyon": "v2", "ts": 1791790173766}
