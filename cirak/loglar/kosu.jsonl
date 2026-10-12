@@ -5856,3 +5856,10 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791830789369}
 {"olay": "ara_ozet", "tur": 10, "kazanc": 520.5, "servis": 80, "bakiye": 4038073.7, "siparis": "3/4", "gecen_dk": 14.8, "ts": 1791830804972}
 {"olay": "kosu_bitti", "tur": 12, "kazanc": 588.8, "servis": 96, "bahsis": 15, "bakiye": 4038210.55, "siparis_toplam": 4, "siparis_basari": 3, "gecen_dk": 15.1, "bot_versiyon": "v2", "ts": 1791830821925}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 4038861.02, "bot_versiyon": "v2_hizli_siparis", "ts": 1791830951262}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791831247138}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3878422", "sonuc": {"tutar": 47500, "tecrube": 1, "metin": "Cüzdanı sahibine verdin. Sevinçten sana bir ödül bıraktı.", "itibar": 5, "bakiye": 404075233, "hareket": 1596218}, "ts": 1791831251001}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791831487422}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 69.8, "servis": 28, "bakiye": 4042079.71, "siparis": "0/0", "gecen_dk": 9.7, "ts": 1791831531056}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 10, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791831893797}
+{"olay": "kosu_bitti", "tur": 7, "kazanc": 153.3, "servis": 44, "bahsis": 9, "bakiye": 4133832.25, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 16.3, "bot_versiyon": "v2", "ts": 1791831926778}
