@@ -5915,3 +5915,16 @@
 {"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "pamuk", "ts": 1791836131802}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791836367973}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 216.7, "servis": 29, "bahsis": 5, "bakiye": 4207857.96, "siparis_toplam": 3, "siparis_basari": 3, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1791836370221}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 4208016.91, "bot_versiyon": "v2_hizli_siparis", "ts": 1791836488849}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791836648459}
+{"olay": "siparis_basladi", "adet": 10, "sure_sn": 30.0, "odul": 50.0, "tezgah": "ayakkabi", "ts": 1791836686160}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "ayakkabi", "ts": 1791836689473}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 86.1, "servis": 16, "bakiye": 4208596.58, "siparis": "1/1", "gecen_dk": 4.0, "ts": 1791836731250}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622165", "sonuc": {"hata": "Buna zaten katıldın."}, "ts": 1791836767984}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791837025993}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 144.2, "servis": 38, "bakiye": 4219920.65, "siparis": "1/1", "gecen_dk": 9.1, "ts": 1791837033779}
+{"olay": "siparis_basladi", "adet": 11, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1791837099873}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "pamuk", "ts": 1791837102775}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791837329796}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 292.1, "servis": 69, "bakiye": 4221653.91, "siparis": "2/2", "gecen_dk": 15.4, "ts": 1791837414448}
+{"olay": "kosu_bitti", "tur": 15, "kazanc": 292.1, "servis": 69, "bahsis": 12, "bakiye": 4221679.28, "siparis_toplam": 2, "siparis_basari": 2, "gecen_dk": 16.0, "bot_versiyon": "v2", "ts": 1791837446786}

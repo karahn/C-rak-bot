@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 10,
-  "tp": 3182,
-  "nakit_kurus": 416402886,
+  "tp": 3193,
+  "nakit_kurus": 420786116,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 416402886,
+   "nakit": 420786116,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 497200000,
+     "limit": 498000000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 828700000,
+     "limit": 830000000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 662900000,
+     "limit": 664000000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 994400000,
+     "limit": 996000000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1791846047302,
+   "ms": 1791847194530,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -154,14 +154,14 @@
    "haftaGunuNo": 1,
    "haftaSonu": false,
    "saat": 23,
-   "dakika": 0,
+   "dakika": 19,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "12 Ekim 2026, Pazartesi"
   }
  },
  "banka": {
-  "nakit": 4164028.86,
+  "nakit": 4207861.16,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -372,7 +372,7 @@
  },
  "seviye-bildir": {
   "seviye": 10,
-  "tp": 3182,
+  "tp": 3193,
   "onceki": 10,
   "yeni_mi": false
  },
@@ -380,8 +380,8 @@
   "toplam": 52,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
-  "raf_doldurulan": 3,
-  "oto_acilan": 8,
+  "raf_doldurulan": 0,
+  "oto_acilan": 16,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -391,8 +391,7 @@
    {
     "ad": "Kalfa Bakkal",
     "id": 44873,
-    "oto": "acik",
-    "raf": "7838/8040→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Şarküteri",
@@ -402,8 +401,7 @@
    {
     "ad": "Kalfa Büfe",
     "id": 45739,
-    "oto": "acik",
-    "raf": "1058/1090→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Kasap",
@@ -423,8 +421,7 @@
    {
     "ad": "Kalfa Pideci",
     "id": 47965,
-    "oto": "acik",
-    "raf": "1873/1940→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Dönerci",
@@ -820,23 +817,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 4205674.22,
+  "bakiye": 4207975.28,
   "oyuncu_seviye": 10,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 242674.21999999974
+  "kalan_bakiye": 244975.28000000026
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 7,
-  "kazanc": 216.7,
-  "servis": 29,
-  "bahsis": 5,
-  "bakiye": 4207857.96,
-  "siparis_toplam": 3,
-  "siparis_basari": 3,
-  "gecen_dk": 15.3,
+  "tur": 15,
+  "kazanc": 292.1,
+  "servis": 69,
+  "bahsis": 12,
+  "bakiye": 4221679.28,
+  "siparis_toplam": 2,
+  "siparis_basari": 2,
+  "gecen_dk": 16.0,
   "bot_versiyon": "v2",
-  "ts": 1791836370221
+  "ts": 1791837446786
  }
 }
