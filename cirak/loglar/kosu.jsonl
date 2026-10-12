@@ -5507,3 +5507,8 @@
 {"olay": "cirak_basla", "kod": "dondurma", "id": 117746, "ts": 1791789892254}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791790171550}
 {"olay": "kosu_bitti", "tur": 3, "kazanc": 35412.7, "servis": 15, "bahsis": 2, "bakiye": 609244.83, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.8, "bot_versiyon": "v2", "ts": 1791790173766}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 609630.12, "bot_versiyon": "v2_hizli_siparis", "ts": 1791790385233}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791790700379}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791791016991}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791791332799}
+{"olay": "kosu_bitti", "tur": 3, "kazanc": 142.3, "servis": 24, "bahsis": 5, "bakiye": 611918.6, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 16.3, "bot_versiyon": "v2", "ts": 1791791365170}
