@@ -5833,3 +5833,11 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791828533646}
 {"olay": "ara_ozet", "tur": 5, "kazanc": 45.0, "servis": 16, "bakiye": 4034753.89, "siparis": "0/1", "gecen_dk": 14.3, "ts": 1791828568746}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 52.8, "servis": 22, "bahsis": 4, "bakiye": 4010440.16, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 15.0, "bot_versiyon": "v2", "ts": 1791828610770}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 3981653.57, "bot_versiyon": "v2_hizli_siparis", "ts": 1791828811304}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3878417", "sonuc": {"tutar": 47500, "tecrube": 1, "metin": "Cüzdanı sahibine verdin. Sevinçten sana bir ödül bıraktı.", "itibar": 5, "bakiye": 398212857, "hareket": 1589673}, "ts": 1791828813751}
+{"olay": "sokak", "tur": "itfaiye", "id": "2034:itfaiye:116655", "sonuc": {"tutar": 23750, "tecrube": 2, "metin": "İhbarın alındı. İtfaiye yola çıktı; binadan uzak dur.", "bakiye": 398236607, "hareket": 1589674}, "ts": 1791828814062}
+{"olay": "topladi", "adet": 8, "net": 18819.19, "ts": 1791828846451}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791829124824}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791829403274}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791829720127}
+{"olay": "kosu_bitti", "tur": 4, "kazanc": 18951.5, "servis": 29, "bahsis": 4, "bakiye": 4009641.13, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.2, "bot_versiyon": "v2", "ts": 1791829722489}
