@@ -6430,3 +6430,17 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791892255233}
 {"olay": "ara_ozet", "tur": 5, "kazanc": 186.0, "servis": 34, "bakiye": 6261832.55, "siparis": "1/1", "gecen_dk": 16.3, "ts": 1791892285578}
 {"olay": "kosu_bitti", "tur": 5, "kazanc": 186.0, "servis": 34, "bahsis": 4, "bakiye": 6261845.17, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 16.4, "bot_versiyon": "v2", "ts": 1791892287755}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 6262512.51, "bot_versiyon": "v2_hizli_siparis", "ts": 1791892420896}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1791892425151}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "pamuk", "ts": 1791892428388}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791892678399}
+{"olay": "siparis_basladi", "adet": 13, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1791892683815}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "pamuk", "ts": 1791892687345}
+{"olay": "siparis_basladi", "adet": 13, "sure_sn": 30.0, "odul": 63.0, "tezgah": "misir", "ts": 1791892689146}
+{"olay": "siparis_tamam", "kazanilan": 63.0, "tezgah": "misir", "ts": 1791892692614}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791892965200}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 340.0, "servis": 40, "bakiye": 6410349.33, "siparis": "3/3", "gecen_dk": 9.1, "ts": 1791892965433}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1791893031662}
+{"olay": "siparis_kacti", "tezgah": "pamuk", "ts": 1791893065179}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791893386756}
+{"olay": "kosu_bitti", "tur": 6, "kazanc": 366.8, "servis": 48, "bahsis": 7, "bakiye": 6536317.9, "siparis_toplam": 4, "siparis_basari": 3, "gecen_dk": 16.1, "bot_versiyon": "v2", "ts": 1791893389012}
