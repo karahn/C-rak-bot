@@ -1,1 +1,1 @@
-1791870215610 tur=25 kazanc=905 servis=150 siparis=7/7
+1791871522019 tur=4 kazanc=106 servis=32 siparis=0/0
