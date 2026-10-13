@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 11,
   "tp": 3339,
-  "nakit_kurus": 425159753,
+  "nakit_kurus": 425649417,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 425159753,
+   "nakit": 425649417,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 499300000,
+     "limit": 499400000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 832200000,
+     "limit": 832400000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 665700000,
+     "limit": 665900000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 998600000,
+     "limit": 998900000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1791866334378,
+   "ms": 1791867492342,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -154,14 +154,14 @@
    "haftaGunuNo": 2,
    "haftaSonu": false,
    "saat": 4,
-   "dakika": 38,
+   "dakika": 58,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "13 Ekim 2026, Salı"
   }
  },
  "banka": {
-  "nakit": 4251597.53,
+  "nakit": 4256494.17,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -381,7 +381,7 @@
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 18,
+  "oto_acilan": 21,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -609,11 +609,11 @@
     }
    },
    {
-    "tur": "otopark",
+    "tur": "nakliyat",
     "no": 64,
-    "toplam": 892000.0,
+    "toplam": 1092000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 37.464.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Bu senin 53. dükkânın: 45.864.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
     }
    }
   ],
@@ -686,17 +686,6 @@
     "kilitli": false,
     "toplam": 1092000.0,
     "kurulum": 1000000.0,
-    "kira": 36000.0,
-    "neden_alinmadi": "para_yetmiyor"
-   },
-   {
-    "no": 64,
-    "tur": "otopark",
-    "ad": "Otopark",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 892000.0,
-    "kurulum": 800000.0,
     "kira": 36000.0
    },
    {
@@ -820,23 +809,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 4252156.54,
+  "bakiye": 4257048.72,
   "oyuncu_seviye": 11,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 207156.54000000004
+  "kalan_bakiye": 12048.71999999974
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 3,
-  "kazanc": 104.4,
-  "servis": 24,
-  "bahsis": 4,
-  "bakiye": 4256468.38,
+  "tur": 17,
+  "kazanc": 318.3,
+  "servis": 84,
+  "bahsis": 14,
+  "bakiye": 4301163.04,
   "siparis_toplam": 1,
-  "siparis_basari": 0,
-  "gecen_dk": 15.9,
+  "siparis_basari": 1,
+  "gecen_dk": 15.0,
   "bot_versiyon": "v2",
-  "ts": 1791856667719
+  "ts": 1791857694514
  }
 }
