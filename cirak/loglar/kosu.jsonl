@@ -6391,3 +6391,12 @@
 {"olay": "siparis_kacti", "tezgah": "misir", "ts": 1791885965600}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791886279683}
 {"olay": "kosu_bitti", "tur": 2, "kazanc": 81.7, "servis": 16, "bahsis": 3, "bakiye": 5845282.91, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1791886281945}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 5847332.94, "bot_versiyon": "v2_hizli_siparis", "ts": 1791886529172}
+{"olay": "sokak", "tur": "itfaiye", "id": "2034:itfaiye:116659", "sonuc": {"tutar": 25000, "tecrube": 2, "metin": "İhbarın alındı. İtfaiye yola çıktı; binadan uzak dur.", "bakiye": 584770417, "hareket": 1723043}, "ts": 1791886560926}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791886876395}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791887227844}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791887337168}
+{"olay": "siparis_basladi", "adet": 9, "sure_sn": 30.0, "odul": 70.0, "tezgah": "pazar", "ts": 1791887344019}
+{"olay": "siparis_kacti", "tezgah": "pazar", "ts": 1791887375449}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 154.2, "servis": 35, "bakiye": 5881356.55, "siparis": "0/1", "gecen_dk": 15.3, "ts": 1791887446186}
+{"olay": "kosu_bitti", "tur": 5, "kazanc": 154.2, "servis": 35, "bahsis": 8, "bakiye": 5881461.98, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1791887448414}
