@@ -1,1 +1,1 @@
-1791920914592 tur=19 kazanc=516 servis=137 siparis=0/0
+1791922163252 tur=6 kazanc=229 servis=48 siparis=1/1
