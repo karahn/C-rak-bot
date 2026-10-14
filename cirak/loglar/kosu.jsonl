@@ -7418,3 +7418,23 @@
 {"olay": "siparis_zaman_asimi", "tezgah": "ayakkabi", "ts": 1791995163158}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791995398154}
 {"olay": "kosu_bitti", "tur": 1, "kazanc": 3.4, "servis": 5, "bahsis": 1, "bakiye": 12848965.26, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1791995400440}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 12849255.88, "bot_versiyon": "v2_hizli_siparis", "ts": 1791995598956}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791995757310}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3878778", "sonuc": {"tutar": 52500, "tecrube": 1, "metin": "Cüzdanı sahibine verdin. Sevinçten sana bir ödül bıraktı.", "itibar": 5, "bakiye": 1284994377, "hareket": 1997958}, "ts": 1791995760522}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 88.8, "servis": 32, "bakiye": 12856832.97, "siparis": "0/0", "gecen_dk": 4.1, "ts": 1791995844666}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791996042713}
+{"olay": "topladi", "adet": 7, "net": 10249.26, "ts": 1791996076300}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 130310, "ts": 1791996077616}
+{"olay": "cirak_basla", "kod": "simit", "id": 130311, "ts": 1791996077826}
+{"olay": "cirak_basla", "kod": "pazar", "id": 130312, "ts": 1791996077993}
+{"olay": "cirak_basla", "kod": "misir", "id": 130313, "ts": 1791996078163}
+{"olay": "cirak_basla", "kod": "kestane", "id": 130314, "ts": 1791996078324}
+{"olay": "cirak_basla", "kod": "midye", "id": 130315, "ts": 1791996078490}
+{"olay": "cirak_basla", "kod": "dondurma", "id": 130316, "ts": 1791996078664}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 10416.3, "servis": 58, "bakiye": 12865038.54, "siparis": "0/0", "gecen_dk": 8.7, "ts": 1791996120486}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1791996125132}
+{"olay": "siparis_kacti", "tezgah": "pamuk", "ts": 1791996156016}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1791996364558}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 10574.6, "servis": 95, "bakiye": 12866302.24, "siparis": "0/1", "gecen_dk": 13.4, "ts": 1791996400465}
+{"olay": "ara_ozet", "tur": 20, "kazanc": 10619.5, "servis": 123, "bakiye": 12867412.13, "siparis": "0/1", "gecen_dk": 15.4, "ts": 1791996520269}
+{"olay": "kosu_bitti", "tur": 20, "kazanc": 10619.5, "servis": 123, "bahsis": 20, "bakiye": 12867421.68, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1791996522437}
