@@ -2,9 +2,9 @@
  "cerez-kontrol": {
   "tamam": true,
   "oyuncu": "Kalfa19",
-  "seviye": 11,
-  "tp": 4391,
-  "nakit_kurus": 1167995491,
+  "seviye": 12,
+  "tp": 4405,
+  "nakit_kurus": 1169116043,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 1167995491,
+   "nakit": 1169116043,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 540900000,
+     "limit": 541200000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 901500000,
+     "limit": 902000000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 721200000,
+     "limit": 721600000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 1081800000,
+     "limit": 1082500000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -135,7 +135,7 @@
    "karaListe": 0,
    "net": 0,
    "krediNotu": {
-    "puan": 1235,
+    "puan": 1239,
     "bant": "Az riskli",
     "renk": "#E8C21A"
    },
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1791995841935,
+   "ms": 1791997006238,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -154,20 +154,20 @@
    "haftaGunuNo": 3,
    "haftaSonu": false,
    "saat": 16,
-   "dakika": 37,
+   "dakika": 56,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "14 Ekim 2026, Çarşamba"
   }
  },
  "banka": {
-  "nakit": 11679964.67,
+  "nakit": 11691160.43,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
   "kredi_notu": {
-   "puan": 1235,
+   "puan": 1239,
    "bant": "Az riskli",
    "renk": "#E8C21A"
   },
@@ -261,64 +261,64 @@
   "cevaplanan_id": 1137,
   "son_mesajlar": [
    {
-    "id": 2497,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850116992
-   },
-   {
-    "id": 2498,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850362779
-   },
-   {
-    "id": 2499,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850481525
-   },
-   {
-    "id": 2500,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850484077
-   },
-   {
-    "id": 2501,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850525326
-   },
-   {
-    "id": 2502,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850600509
-   },
-   {
-    "id": 2503,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850725529
-   },
-   {
-    "id": 2504,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850840290
-   },
-   {
-    "id": 2505,
-    "benden": true,
-    "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
-    "zaman": 1791850918078
-   },
-   {
     "id": 2506,
     "benden": true,
     "metin": "Patron, SV11 oldum! Yeni açılan dükkânlar: Hukuk bürosu, Disko, Diş kliniği",
     "zaman": 1791850956127
+   },
+   {
+    "id": 2685,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985253589
+   },
+   {
+    "id": 2686,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985603022
+   },
+   {
+    "id": 2687,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985654292
+   },
+   {
+    "id": 2688,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985669655
+   },
+   {
+    "id": 2689,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985673055
+   },
+   {
+    "id": 2690,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985715435
+   },
+   {
+    "id": 2691,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985752869
+   },
+   {
+    "id": 2692,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985755183
+   },
+   {
+    "id": 2693,
+    "benden": true,
+    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
+    "zaman": 1791985931427
    }
   ]
  },
@@ -371,17 +371,25 @@
   ]
  },
  "seviye-bildir": {
-  "seviye": 11,
-  "tp": 4391,
+  "seviye": 12,
+  "tp": 4405,
   "onceki": 11,
-  "yeni_mi": false
+  "yeni_mi": true,
+  "mesaj": {
+   "tamam": true
+  },
+  "yeni_dukkanlar": [
+   "Gümrük müşaviri",
+   "Eczane",
+   "Düğün salonu"
+  ]
  },
  "dukkan-yonet": {
   "toplam": 52,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
-  "raf_doldurulan": 0,
-  "oto_acilan": 34,
+  "raf_doldurulan": 2,
+  "oto_acilan": 28,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -546,12 +554,14 @@
    {
     "ad": "Kalfa Spor mağazas",
     "id": 58415,
-    "oto": "acik"
+    "oto": "acik",
+    "raf": "315/335→full"
    },
    {
     "ad": "Kalfa Telefoncu",
     "id": 59920,
-    "oto": "acik"
+    "oto": "acik",
+    "raf": "318/338→full"
    }
   ],
   "hatalar": [],
@@ -794,23 +804,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 11680263.22,
-  "oyuncu_seviye": 11,
+  "bakiye": 11668173.95,
+  "oyuncu_seviye": 12,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 8245263.220000001
+  "kalan_bakiye": 8233173.949999999
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 4,
-  "kazanc": 91.6,
-  "servis": 28,
-  "bahsis": 7,
-  "bakiye": 11691158.07,
+  "tur": 8,
+  "kazanc": 55.1,
+  "servis": 25,
+  "bahsis": 4,
+  "bakiye": 12000033.82,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 17.3,
+  "gecen_dk": 15.1,
   "bot_versiyon": "v2",
-  "ts": 1791986178328
+  "ts": 1791987341426
  }
 }
