@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 12,
-  "tp": 4576,
-  "nakit_kurus": 1352435391,
+  "tp": 4579,
+  "nakit_kurus": 1344844152,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 1352435391,
+   "nakit": 1344844152,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 593100000,
+     "limit": 593300000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 988600000,
+     "limit": 988800000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 790800000,
+     "limit": 791000000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 1186300000,
+     "limit": 1186600000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792015559523,
+   "ms": 1792016886235,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -154,14 +154,14 @@
    "haftaGunuNo": 3,
    "haftaSonu": false,
    "saat": 22,
-   "dakika": 5,
+   "dakika": 28,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "14 Ekim 2026, Çarşamba"
   }
  },
  "banka": {
-  "nakit": 13524353.91,
+  "nakit": 13448441.52,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -372,7 +372,7 @@
  },
  "seviye-bildir": {
   "seviye": 12,
-  "tp": 4576,
+  "tp": 4579,
   "onceki": 12,
   "yeni_mi": false
  },
@@ -380,8 +380,8 @@
   "toplam": 52,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
-  "raf_doldurulan": 16,
-  "oto_acilan": 31,
+  "raf_doldurulan": 0,
+  "oto_acilan": 33,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -391,8 +391,7 @@
    {
     "ad": "Kalfa Bakkal",
     "id": 44873,
-    "oto": "acik",
-    "raf": "7738/8040→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Şarküteri",
@@ -402,8 +401,7 @@
    {
     "ad": "Kalfa Büfe",
     "id": 45739,
-    "oto": "acik",
-    "raf": "1032/1090→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Kasap",
@@ -418,68 +416,57 @@
    {
     "ad": "Kalfa Lokanta",
     "id": 46742,
-    "oto": "acik",
-    "raf": "1605/1720→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Pideci",
     "id": 47965,
-    "oto": "acik",
-    "raf": "1847/1940→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Dönerci",
     "id": 47966,
-    "oto": "acik",
-    "raf": "576/615→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Hamburgerci",
     "id": 48276,
-    "oto": "acik",
-    "raf": "792/845→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Pastane",
     "id": 48422,
-    "oto": "acik",
-    "raf": "2081/2170→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Pizzacı",
     "id": 48423,
-    "oto": "acik",
-    "raf": "414/447→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Çay ocağı",
     "id": 48731,
-    "oto": "acik",
-    "raf": "900/950→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Kafe",
     "id": 48842,
-    "oto": "acik",
-    "raf": "681/721→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Market",
     "id": 49004,
-    "oto": "acik",
-    "raf": "5733/6020→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Bar",
     "id": 50573,
-    "oto": "acik",
-    "raf": "170/195→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Kebapçı",
     "id": 52897,
-    "oto": "acik",
-    "raf": "2187/2310→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Aktar",
@@ -514,8 +501,7 @@
    {
     "ad": "Kalfa Çiğ köfteci",
     "id": 53198,
-    "oto": "acik",
-    "raf": "416/450→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa İç giyim",
@@ -525,14 +511,12 @@
    {
     "ad": "Kalfa Dondurmacı",
     "id": 53427,
-    "oto": "acik",
-    "raf": "339/367→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Kuruyemişçi",
     "id": 53455,
-    "oto": "acik",
-    "raf": "606/640→full"
+    "oto": "acik"
    },
    {
     "ad": "Kalfa Temizlik ürü",
@@ -810,23 +794,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 13445324.02,
+  "bakiye": 13448941.5,
   "oyuncu_seviye": 12,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 9605324.02
+  "kalan_bakiye": 9608941.5
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 12,
-  "kazanc": 375.1,
+  "tur": 13,
+  "kazanc": 10200.4,
   "servis": 96,
-  "bahsis": 19,
-  "bakiye": 13448311.68,
-  "siparis_toplam": 4,
-  "siparis_basari": 1,
-  "gecen_dk": 15.5,
+  "bahsis": 20,
+  "bakiye": 13466004.29,
+  "siparis_toplam": 3,
+  "siparis_basari": 2,
+  "gecen_dk": 15.4,
   "bot_versiyon": "v2",
-  "ts": 1792006059175
+  "ts": 1792007145076
  }
 }
