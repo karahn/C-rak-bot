@@ -8252,3 +8252,11 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792071677288}
 {"olay": "ara_ozet", "tur": 10, "kazanc": 187.9, "servis": 68, "bakiye": 16111981.55, "siparis": "0/0", "gecen_dk": 13.8, "ts": 1792071685531}
 {"olay": "kosu_bitti", "tur": 12, "kazanc": 201.1, "servis": 80, "bahsis": 11, "bakiye": 16112133.47, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.0, "bot_versiyon": "v2", "ts": 1792071760806}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 16112531.32, "bot_versiyon": "v2_hizli_siparis", "ts": 1792071917742}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792072116105}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792072402699}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 153.0, "servis": 38, "bakiye": 16114206.94, "siparis": "0/0", "gecen_dk": 8.1, "ts": 1792072402942}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792072724785}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 333.4, "servis": 73, "bakiye": 16142706.51, "siparis": "0/0", "gecen_dk": 14.0, "ts": 1792072755399}
+{"olay": "sokak", "tur": "muzisyen", "id": "2034:muzisyen:497798", "sonuc": {"tutar": -5000, "tecrube": 1, "metin": "Müzisyene bahşiş verdin. Sıradaki şarkı senin için çalınacak.", "bakiye": 1614300519, "hareket": 2202039, "ad": "Kalfa19"}, "ts": 1792072797923}
+{"olay": "kosu_bitti", "tur": 13, "kazanc": 413.1, "servis": 97, "bahsis": 28, "bakiye": 16195565.33, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1792072844372}
