@@ -8071,3 +8071,18 @@
 {"olay": "siparis_zaman_asimi", "tezgah": "simit", "ts": 1792052563898}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792052840111}
 {"olay": "kosu_bitti", "tur": 2, "kazanc": 44.7, "servis": 16, "bahsis": 3, "bakiye": 14532039.13, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 15.7, "bot_versiyon": "v2", "ts": 1792052909899}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 14532896.14, "bot_versiyon": "v2_hizli_siparis", "ts": 1792053154355}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792053253822}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 135669, "ts": 1792053332055}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 131.3, "servis": 40, "bakiye": 14540202.07, "siparis": "0/0", "gecen_dk": 4.2, "ts": 1792053403853}
+{"olay": "siparis_basladi", "adet": 9, "sure_sn": 30.0, "odul": 50.0, "tezgah": "su", "ts": 1792053478216}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "su", "ts": 1792053480201}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792053725210}
+{"olay": "siparis_basladi", "adet": 10, "sure_sn": 30.0, "odul": 50.0, "tezgah": "ayakkabi", "ts": 1792053728686}
+{"olay": "siparis_kacti", "tezgah": "ayakkabi", "ts": 1792053759274}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "semsiye", "ts": 1792053797845}
+{"olay": "siparis_kacti", "tezgah": "semsiye", "ts": 1792053829753}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 50.0, "tezgah": "simit", "ts": 1792053830940}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "simit", "ts": 1792053833476}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792054079962}
+{"olay": "kosu_bitti", "tur": 9, "kazanc": 338.5, "servis": 72, "bahsis": 12, "bakiye": 14551845.74, "siparis_toplam": 4, "siparis_basari": 2, "gecen_dk": 15.5, "bot_versiyon": "v2", "ts": 1792054082194}
