@@ -8222,3 +8222,17 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792068112145}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792068473276}
 {"olay": "kosu_bitti", "tur": 3, "kazanc": 74.7, "servis": 14, "bahsis": 2, "bakiye": 15883132.3, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 17.2, "bot_versiyon": "v2", "ts": 1792068475475}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 15889835.09, "bot_versiyon": "v2_hizli_siparis", "ts": 1792068627277}
+{"olay": "siparis_basladi", "adet": 13, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1792068661105}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "pamuk", "ts": 1792068664549}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 52.0, "tezgah": "misir", "ts": 1792068696408}
+{"olay": "siparis_tamam", "kazanilan": 52.0, "tezgah": "misir", "ts": 1792068698403}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792068883679}
+{"olay": "siparis_basladi", "adet": 14, "sure_sn": 30.0, "odul": 51.0, "tezgah": "kestane", "ts": 1792068958015}
+{"olay": "siparis_tamam", "kazanilan": 51.0, "tezgah": "kestane", "ts": 1792068961068}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792069220621}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 302.4, "servis": 40, "bakiye": 15831939.82, "siparis": "3/3", "gecen_dk": 9.9, "ts": 1792069220798}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 52.0, "tezgah": "misir", "ts": 1792069302812}
+{"olay": "siparis_kacti", "tezgah": "misir", "ts": 1792069335708}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792069538922}
+{"olay": "kosu_bitti", "tur": 8, "kazanc": 394.0, "servis": 64, "bahsis": 12, "bakiye": 16142831.91, "siparis_toplam": 4, "siparis_basari": 3, "gecen_dk": 15.2, "bot_versiyon": "v2", "ts": 1792069541100}
