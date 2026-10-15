@@ -8158,3 +8158,17 @@
 {"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "pamuk", "ts": 1792060952441}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792061176120}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 157.9, "servis": 42, "bahsis": 8, "bakiye": 15223856.14, "siparis_toplam": 2, "siparis_basari": 1, "gecen_dk": 15.5, "bot_versiyon": "v2", "ts": 1792061178330}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 15224054.21, "bot_versiyon": "v2_hizli_siparis", "ts": 1792061266352}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792061366810}
+{"olay": "siparis_basladi", "adet": 14, "sure_sn": 30.0, "odul": 50.0, "tezgah": "semsiye", "ts": 1792061401854}
+{"olay": "siparis_kacti", "tezgah": "semsiye", "ts": 1792061434611}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 113.7, "servis": 40, "bakiye": 15224709.8, "siparis": "0/1", "gecen_dk": 4.2, "ts": 1792061519795}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792061794357}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 205.6, "servis": 73, "bakiye": 15232919.31, "siparis": "0/1", "gecen_dk": 9.4, "ts": 1792061828052}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 293.2, "servis": 106, "bakiye": 15233111.22, "siparis": "0/1", "gecen_dk": 9.9, "ts": 1792061860048}
+{"olay": "siparis_basladi", "adet": 14, "sure_sn": 30.0, "odul": 50.0, "tezgah": "midye", "ts": 1792061929555}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "midye", "ts": 1792061933227}
+{"olay": "siparis_basladi", "adet": 9, "sure_sn": 30.0, "odul": 50.0, "tezgah": "ayakkabi", "ts": 1792061934405}
+{"olay": "siparis_kacti", "tezgah": "ayakkabi", "ts": 1792061965297}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792062211285}
+{"olay": "kosu_bitti", "tur": 17, "kazanc": 359.9, "servis": 115, "bahsis": 22, "bakiye": 15671789.79, "siparis_toplam": 3, "siparis_basari": 1, "gecen_dk": 15.8, "bot_versiyon": "v2", "ts": 1792062213467}
