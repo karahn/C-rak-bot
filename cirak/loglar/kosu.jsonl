@@ -7780,3 +7780,18 @@
 {"olay": "siparis_kacti", "tezgah": "ayakkabi", "ts": 1792025909324}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792026207780}
 {"olay": "kosu_bitti", "tur": 9, "kazanc": 282.7, "servis": 67, "bahsis": 11, "bakiye": 13495947.49, "siparis_toplam": 4, "siparis_basari": 2, "gecen_dk": 15.7, "bot_versiyon": "v2", "ts": 1792026210204}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 13496643.19, "bot_versiyon": "v2_hizli_siparis", "ts": 1792026388396}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792026547099}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pazar", "ts": 1792026634262}
+{"olay": "siparis_kacti", "tezgah": "pazar", "ts": 1792026664836}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 108.6, "servis": 40, "bakiye": 13498086.28, "siparis": "0/1", "gecen_dk": 4.6, "ts": 1792026666373}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "semsiye", "ts": 1792026691436}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "semsiye", "ts": 1792026695104}
+{"olay": "siparis_basladi", "adet": 11, "sure_sn": 30.0, "odul": 50.0, "tezgah": "misir", "ts": 1792026697279}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "misir", "ts": 1792026699951}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792026921534}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 323.8, "servis": 80, "bakiye": 13499018.76, "siparis": "2/3", "gecen_dk": 8.9, "ts": 1792026921704}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 419.0, "servis": 117, "bakiye": 13499172.94, "siparis": "2/3", "gecen_dk": 9.4, "ts": 1792026954872}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792027221745}
+{"olay": "ara_ozet", "tur": 20, "kazanc": 493.4, "servis": 151, "bakiye": 13500164.91, "siparis": "2/3", "gecen_dk": 14.5, "ts": 1792027259225}
+{"olay": "kosu_bitti", "tur": 22, "kazanc": 501.5, "servis": 161, "bahsis": 29, "bakiye": 13500347.94, "siparis_toplam": 3, "siparis_basari": 2, "gecen_dk": 15.2, "bot_versiyon": "v2", "ts": 1792027302610}
