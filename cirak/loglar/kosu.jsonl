@@ -7972,3 +7972,13 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792042359385}
 {"olay": "ara_ozet", "tur": 10, "kazanc": 326.5, "servis": 52, "bakiye": 13711193.55, "siparis": "3/4", "gecen_dk": 15.9, "ts": 1792042359629}
 {"olay": "kosu_bitti", "tur": 10, "kazanc": 326.5, "servis": 52, "bahsis": 12, "bakiye": 13711193.55, "siparis_toplam": 4, "siparis_basari": 3, "gecen_dk": 16.0, "bot_versiyon": "v2", "ts": 1792042361863}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 13719043.09, "bot_versiyon": "v2_hizli_siparis", "ts": 1792042547212}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792042805268}
+{"olay": "topladi", "adet": 6, "net": 12020.9, "ts": 1792042877870}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792042983910}
+{"olay": "siparis_basladi", "adet": 13, "sure_sn": 30.0, "odul": 54.0, "tezgah": "kestane", "ts": 1792043052213}
+{"olay": "siparis_kacti", "tezgah": "kestane", "ts": 1792043084809}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 12149.5, "servis": 40, "bakiye": 13729098.88, "siparis": "0/1", "gecen_dk": 9.6, "ts": 1792043123673}
+{"olay": "sokak", "tur": "itfaiye", "id": "2034:itfaiye:116669", "sonuc": {"tutar": 26250, "tecrube": 2, "metin": "İhbarın alındı. İtfaiye yola çıktı; binadan uzak dur.", "bakiye": 1372944845, "hareket": 2116492}, "ts": 1792043157342}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792043413718}
+{"olay": "kosu_bitti", "tur": 7, "kazanc": 12208.0, "servis": 56, "bahsis": 14, "bakiye": 13730667.97, "siparis_toplam": 1, "siparis_basari": 0, "gecen_dk": 15.1, "bot_versiyon": "v2", "ts": 1792043454145}
