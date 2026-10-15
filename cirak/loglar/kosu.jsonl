@@ -8386,3 +8386,10 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792083285470}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792083586504}
 {"olay": "kosu_bitti", "tur": 8, "kazanc": 105.0, "servis": 45, "bahsis": 7, "bakiye": 17366072.85, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.2, "bot_versiyon": "v2", "ts": 1792083588777}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 17673769.73, "bot_versiyon": "v2_hizli_siparis", "ts": 1792084271421}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792084591959}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792084873681}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792085110501}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 101.6, "servis": 33, "bakiye": 17678492.25, "siparis": "0/0", "gecen_dk": 14.1, "ts": 1792085116657}
+{"olay": "keyif_kamp", "onceki": 79, "bakiye": 17681628.07, "sonuc": {"id": 1148, "fiyat": 49600, "keyif": 100, "davetEdilen": []}, "ts": 1792085190152}
+{"olay": "kosu_bitti", "tur": 8, "kazanc": 101.6, "servis": 36, "bahsis": 4, "bakiye": 17681256.25, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1792085193329}
