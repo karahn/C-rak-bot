@@ -8309,3 +8309,13 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792076551145}
 {"olay": "ara_ozet", "tur": 15, "kazanc": 516.2, "servis": 120, "bakiye": 16647899.56, "siparis": "2/3", "gecen_dk": 15.1, "ts": 1792076590150}
 {"olay": "kosu_bitti", "tur": 15, "kazanc": 516.2, "servis": 120, "bahsis": 22, "bakiye": 16647751.45, "siparis_toplam": 3, "siparis_basari": 2, "gecen_dk": 15.1, "bot_versiyon": "v2", "ts": 1792076592407}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 16840215.73, "bot_versiyon": "v2_hizli_siparis", "ts": 1792077076215}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792077307621}
+{"olay": "siparis_basladi", "adet": 8, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1792077391069}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "pamuk", "ts": 1792077393019}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622249", "sonuc": {"tutar": -2000, "tecrube": 1, "metin": "Kediyi besledin. Mırlayarak ayağına süründü.", "bakiye": 1684196829, "hareket": 2217239}, "ts": 1792077429792}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792077594329}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 165.2, "servis": 33, "bakiye": 16842242.46, "siparis": "1/1", "gecen_dk": 8.6, "ts": 1792077594630}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 165.2, "servis": 38, "bakiye": 16842511.27, "siparis": "1/1", "gecen_dk": 10.0, "ts": 1792077673545}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792077948398}
+{"olay": "kosu_bitti", "tur": 14, "kazanc": 302.7, "servis": 63, "bahsis": 19, "bakiye": 16845059.64, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.2, "bot_versiyon": "v2", "ts": 1792077989259}
