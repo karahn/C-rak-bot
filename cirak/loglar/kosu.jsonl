@@ -8348,3 +8348,23 @@
 {"olay": "siparis_basladi", "adet": 13, "sure_sn": 30.0, "odul": 62.0, "tezgah": "pazar", "ts": 1792080193221}
 {"olay": "siparis_kacti", "tezgah": "pazar", "ts": 1792080226748}
 {"olay": "kosu_bitti", "tur": 14, "kazanc": 489.4, "servis": 112, "bahsis": 25, "bakiye": 17131471.32, "siparis_toplam": 3, "siparis_basari": 2, "gecen_dk": 16.0, "bot_versiyon": "v2", "ts": 1792080307620}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 17299294.91, "bot_versiyon": "v2_hizli_siparis", "ts": 1792080551378}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792080747732}
+{"olay": "siparis_basladi", "adet": 14, "sure_sn": 30.0, "odul": 50.0, "tezgah": "su", "ts": 1792080826503}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "su", "ts": 1792080830057}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 165.1, "servis": 40, "bakiye": 17300621.65, "siparis": "1/1", "gecen_dk": 5.3, "ts": 1792080871651}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792081035966}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 302.8, "servis": 71, "bakiye": 17304987.2, "siparis": "1/1", "gecen_dk": 10.0, "ts": 1792081151165}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622250", "sonuc": {"hata": "Buna zaten katıldın."}, "ts": 1792081189236}
+{"olay": "sokak", "tur": "kavga", "id": "2034:kavga:373350", "sonuc": {"hata": "Buna zaten katıldın."}, "ts": 1792081189401}
+{"olay": "topladi", "adet": 7, "net": 31518.63, "ts": 1792081189800}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 138432, "ts": 1792081191155}
+{"olay": "cirak_basla", "kod": "simit", "id": 138433, "ts": 1792081191331}
+{"olay": "cirak_basla", "kod": "pazar", "id": 138434, "ts": 1792081191534}
+{"olay": "cirak_basla", "kod": "misir", "id": 138435, "ts": 1792081191704}
+{"olay": "cirak_basla", "kod": "kestane", "id": 138436, "ts": 1792081192136}
+{"olay": "cirak_basla", "kod": "midye", "id": 138437, "ts": 1792081192306}
+{"olay": "cirak_basla", "kod": "dondurma", "id": 138438, "ts": 1792081192505}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792081353378}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 31952.4, "servis": 107, "bakiye": 17330875.18, "siparis": "1/1", "gecen_dk": 15.3, "ts": 1792081466568}
+{"olay": "kosu_bitti", "tur": 15, "kazanc": 31952.4, "servis": 107, "bahsis": 21, "bakiye": 17330878.1, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1792081468773}
