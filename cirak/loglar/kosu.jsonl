@@ -8205,3 +8205,12 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792065836234}
 {"olay": "ara_ozet", "tur": 5, "kazanc": 97.9, "servis": 25, "bakiye": 15796876.78, "siparis": "1/1", "gecen_dk": 15.8, "ts": 1792065836420}
 {"olay": "kosu_bitti", "tur": 5, "kazanc": 97.9, "servis": 25, "bahsis": 5, "bakiye": 15824004.25, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.9, "bot_versiyon": "v2", "ts": 1792065838615}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 15857558.55, "bot_versiyon": "v2_hizli_siparis", "ts": 1792066387704}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792066699921}
+{"olay": "sokak", "tur": "kavga", "id": "2034:kavga:373347", "sonuc": {"tutar": 26250, "tecrube": 2, "metin": "İhbarın alındı. Polis ekibi yola çıktı; lütfen güvenli bir mesafede bekle.", "bakiye": 1586550420, "hareket": 2183775}, "ts": 1792066703113}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792066892013}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 131.3, "servis": 40, "bakiye": 15866441.18, "siparis": "0/0", "gecen_dk": 9.3, "ts": 1792066943914}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622245", "sonuc": {"tutar": -2000, "tecrube": 1, "metin": "Kediyi besledin. Mırlayarak ayağına süründü.", "bakiye": 1586645701, "hareket": 2184518}, "ts": 1792066953988}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792067286343}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 275.3, "servis": 80, "bakiye": 15868821.67, "siparis": "0/0", "gecen_dk": 15.0, "ts": 1792067286544}
+{"olay": "kosu_bitti", "tur": 10, "kazanc": 275.3, "servis": 80, "bahsis": 11, "bakiye": 15868888.46, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.0, "bot_versiyon": "v2", "ts": 1792067288732}
