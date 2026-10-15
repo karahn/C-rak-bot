@@ -7752,3 +7752,17 @@
 {"olay": "cirak_basla", "kod": "midye", "id": 133001, "ts": 1792023734214}
 {"olay": "cirak_basla", "kod": "dondurma", "id": 133002, "ts": 1792023734487}
 {"olay": "kosu_bitti", "tur": 11, "kazanc": 194.3, "servis": 83, "bahsis": 9, "bakiye": 13471511.38, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.2, "bot_versiyon": "v2", "ts": 1792023771610}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 13472611.27, "bot_versiyon": "v2_hizli_siparis", "ts": 1792023957825}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792024156629}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792024462479}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 68.8, "servis": 34, "bakiye": 13474761.14, "siparis": "0/0", "gecen_dk": 9.1, "ts": 1792024500959}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792024710203}
+{"olay": "siparis_basladi", "adet": 9, "sure_sn": 30.0, "odul": 50.0, "tezgah": "ayakkabi", "ts": 1792024714250}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "ayakkabi", "ts": 1792024717152}
+{"olay": "siparis_basladi", "adet": 9, "sure_sn": 30.0, "odul": 54.0, "tezgah": "kestane", "ts": 1792024729245}
+{"olay": "siparis_tamam", "kazanilan": 54.0, "tezgah": "kestane", "ts": 1792024732118}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "su", "ts": 1792024767328}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "su", "ts": 1792024771804}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 333.2, "servis": 72, "bakiye": 13476129.38, "siparis": "3/3", "gecen_dk": 13.6, "ts": 1792024774349}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792025080509}
+{"olay": "kosu_bitti", "tur": 13, "kazanc": 393.6, "servis": 94, "bahsis": 19, "bakiye": 13477181.46, "siparis_toplam": 3, "siparis_basari": 3, "gecen_dk": 18.8, "bot_versiyon": "v2", "ts": 1792025082752}
