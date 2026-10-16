@@ -8952,3 +8952,16 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792133258514}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792133577367}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 172.1, "servis": 54, "bahsis": 7, "bakiye": 18412141.61, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 16.8, "bot_versiyon": "v2", "ts": 1792133609848}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 18418797.26, "bot_versiyon": "v2_hizli_siparis", "ts": 1792133824016}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792133855421}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792134115500}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792134149023}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622268", "sonuc": {"tutar": -2000, "tecrube": 1, "metin": "Kediyi besledin. Mırlayarak ayağına süründü.", "bakiye": 1849258017, "hareket": 2347881}, "ts": 1792134150151}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792134388060}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792134391122}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792134429852}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792134468532}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 139.5, "servis": 34, "bakiye": 18688903.08, "siparis": "0/0", "gecen_dk": 10.8, "ts": 1792134474090}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792134507476}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792134769669}
+{"olay": "kosu_bitti", "tur": 6, "kazanc": 165.1, "servis": 42, "bahsis": 6, "bakiye": 18689783.17, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.8, "bot_versiyon": "v2", "ts": 1792134771909}
