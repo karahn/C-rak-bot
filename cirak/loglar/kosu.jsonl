@@ -9485,3 +9485,21 @@
 {"olay": "siparis_kacti", "tezgah": "dondurma", "ts": 1792162845670}
 {"olay": "ara_ozet", "tur": 10, "kazanc": 226.8, "servis": 64, "bakiye": 20854449.4, "siparis": "2/3", "gecen_dk": 15.0, "ts": 1792162846805}
 {"olay": "kosu_bitti", "tur": 10, "kazanc": 226.8, "servis": 64, "bahsis": 12, "bakiye": 20855519.3, "siparis_toplam": 3, "siparis_basari": 2, "gecen_dk": 15.1, "bot_versiyon": "v2", "ts": 1792162849046}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 21222363.37, "bot_versiyon": "v2_hizli_siparis", "ts": 1792163327191}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792163328699}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "simit", "ts": 1792163334361}
+{"olay": "siparis_kacti", "tezgah": "simit", "ts": 1792163366778}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792163571624}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792163575107}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792163615345}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "simit", "ts": 1792163650005}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "simit", "ts": 1792163655319}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792163889712}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792163893179}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792163933066}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 50.0, "tezgah": "simit", "ts": 1792163967684}
+{"olay": "siparis_tamam", "kazanilan": 50.0, "tezgah": "simit", "ts": 1792163971636}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 218.7, "servis": 40, "bakiye": 21229063.23, "siparis": "2/3", "gecen_dk": 11.3, "ts": 1792163974033}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792164007588}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792164206774}
+{"olay": "kosu_bitti", "tur": 6, "kazanc": 233.9, "servis": 48, "bahsis": 6, "bakiye": 21230087.38, "siparis_toplam": 3, "siparis_basari": 2, "gecen_dk": 15.2, "bot_versiyon": "v2", "ts": 1792164209308}
