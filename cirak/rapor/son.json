@@ -3,8 +3,8 @@
   "tamam": true,
   "oyuncu": "Kalfa19",
   "seviye": 13,
-  "tp": 5743,
-  "nakit_kurus": 1817875026,
+  "tp": 5759,
+  "nakit_kurus": 1819828252,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 1817875048,
+   "nakit": 1819828264,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 737900000,
+     "limit": 738500000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 1229800000,
+     "limit": 1230800000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 983800000,
+     "limit": 984600000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 1475800000,
+     "limit": 1477000000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792134550177,
+   "ms": 1792135878855,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -154,14 +154,14 @@
    "haftaGunuNo": 5,
    "haftaSonu": false,
    "saat": 7,
-   "dakika": 9,
+   "dakika": 31,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "16 Ekim 2026, Cuma"
   }
  },
  "banka": {
-  "nakit": 18178752.72,
+  "nakit": 18198282.83,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -377,7 +377,7 @@
  },
  "seviye-bildir": {
   "seviye": 13,
-  "tp": 5743,
+  "tp": 5759,
   "onceki": 13,
   "yeni_mi": false
  },
@@ -386,7 +386,7 @@
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 12,
+  "oto_acilan": 32,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -574,19 +574,19 @@
     }
    },
    {
+    "tur": "yedek_parca",
+    "no": 47,
+    "toplam": 141000.0,
+    "sonuc": {
+     "hata": "Bu senin 53. dükkânın: 5.922.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+    }
+   },
+   {
     "tur": "nakliyat",
     "no": 53,
     "toplam": 1092000.0,
     "sonuc": {
      "hata": "Bu senin 53. dükkânın: 45.864.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
-    }
-   },
-   {
-    "tur": "nakliyat",
-    "no": 55,
-    "toplam": 546000.0,
-    "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 22.932.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
     }
    },
    {
@@ -642,6 +642,16 @@
     "kira": 8000.0
    },
    {
+    "no": 47,
+    "tur": "yedek_parca",
+    "ad": "Oto yedek parça",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 141000.0,
+    "kurulum": 120000.0,
+    "kira": 8000.0
+   },
+   {
     "no": 53,
     "tur": "nakliyat",
     "ad": "Nakliyat",
@@ -650,16 +660,6 @@
     "toplam": 1092000.0,
     "kurulum": 1000000.0,
     "kira": 36000.0
-   },
-   {
-    "no": 55,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 546000.0,
-    "kurulum": 500000.0,
-    "kira": 18000.0
    },
    {
     "no": 58,
@@ -799,23 +799,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 18178807.88,
+  "bakiye": 18198885.05,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 14479807.879999999
+  "kalan_bakiye": 14904885.05
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 9,
-  "kazanc": 151.8,
-  "servis": 60,
-  "bahsis": 16,
-  "bakiye": 18197426.15,
-  "siparis_toplam": 0,
-  "siparis_basari": 0,
-  "gecen_dk": 15.1,
+  "tur": 18,
+  "kazanc": 241.0,
+  "servis": 74,
+  "bahsis": 18,
+  "bakiye": 18202057.03,
+  "siparis_toplam": 2,
+  "siparis_basari": 2,
+  "gecen_dk": 16.1,
   "bot_versiyon": "v2",
-  "ts": 1792124731184
+  "ts": 1792126270726
  }
 }
