@@ -9091,3 +9091,37 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792140525676}
 {"olay": "sokak", "tur": "kavga", "id": "2034:kavga:373362", "sonuc": {"tutar": 27500, "tecrube": 2, "metin": "İhbarın alındı. Polis ekibi yola çıktı; lütfen güvenli bir mesafede bekle.", "bakiye": 1898683131, "hareket": 2363767}, "ts": 1792140526336}
 {"olay": "kosu_bitti", "tur": 14, "kazanc": 230.5, "servis": 77, "bahsis": 13, "bakiye": 18986961.31, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1792140563590}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 18987858.81, "bot_versiyon": "v2_hizli_siparis", "ts": 1792140772541}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792140773583}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792140983465}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141016406}
+{"olay": "siparis_basladi", "adet": 8, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1792141017239}
+{"olay": "siparis_kacti", "tezgah": "pamuk", "ts": 1792141049156}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141086060}
+{"olay": "siparis_basladi", "adet": 8, "sure_sn": 30.0, "odul": 50.0, "tezgah": "kestane", "ts": 1792141088936}
+{"olay": "siparis_kacti", "tezgah": "kestane", "ts": 1792141119255}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141123941}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 50.0, "tezgah": "dondurma", "ts": 1792141158247}
+{"olay": "siparis_kacti", "tezgah": "dondurma", "ts": 1792141189607}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792141375451}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141378247}
+{"olay": "topladi", "adet": 7, "net": 8462.85, "ts": 1792141378964}
+{"olay": "cirak_basla", "kod": "pamuk", "id": 144917, "ts": 1792141380290}
+{"olay": "cirak_basla", "kod": "simit", "id": 144918, "ts": 1792141380451}
+{"olay": "cirak_basla", "kod": "pazar", "id": 144919, "ts": 1792141380609}
+{"olay": "cirak_basla", "kod": "misir", "id": 144920, "ts": 1792141380769}
+{"olay": "cirak_basla", "kod": "kestane", "id": 144921, "ts": 1792141380938}
+{"olay": "cirak_basla", "kod": "midye", "id": 144922, "ts": 1792141381093}
+{"olay": "cirak_basla", "kod": "dondurma", "id": 144923, "ts": 1792141381242}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 8566.0, "servis": 40, "bakiye": 19118537.71, "siparis": "0/3", "gecen_dk": 10.2, "ts": 1792141385506}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141388267}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141395267}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141402651}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141409996}
+{"olay": "siparis_basladi", "adet": 11, "sure_sn": 30.0, "odul": 50.0, "tezgah": "pamuk", "ts": 1792141412377}
+{"olay": "siparis_kacti", "tezgah": "pamuk", "ts": 1792141445029}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141450230}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 8672.9, "servis": 80, "bakiye": 19158516.01, "siparis": "0/4", "gecen_dk": 11.4, "ts": 1792141455003}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792141487965}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792141712390}
+{"olay": "kosu_bitti", "tur": 11, "kazanc": 8692.9, "servis": 88, "bahsis": 19, "bakiye": 19241923.44, "siparis_toplam": 4, "siparis_basari": 0, "gecen_dk": 16.2, "bot_versiyon": "v2", "ts": 1792141744772}
