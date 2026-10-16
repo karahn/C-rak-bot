@@ -9784,3 +9784,24 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792179466789}
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792179784311}
 {"olay": "kosu_bitti", "tur": 9, "kazanc": 236.6, "servis": 72, "bahsis": 17, "bakiye": 22280446.59, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 16.5, "bot_versiyon": "v2", "ts": 1792179816745}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 22292923.97, "bot_versiyon": "v2_hizli_siparis", "ts": 1792180184980}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792180216350}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792180294484}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792180327864}
+{"olay": "siparis_basladi", "adet": 12, "sure_sn": 30.0, "odul": 50.0, "tezgah": "simit", "ts": 1792180361558}
+{"olay": "siparis_kacti", "tezgah": "simit", "ts": 1792180395323}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792180430787}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622284", "sonuc": {"tutar": -2000, "tecrube": 1, "metin": "Kediyi besledin. Mırlayarak ayağına süründü.", "bakiye": 2229402358, "hareket": 2475961}, "ts": 1792180431617}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792180439601}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792180477968}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "kestane", "ts": 1792180483111}
+{"olay": "siparis_kacti", "tezgah": "kestane", "ts": 1792180516194}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 100.2, "servis": 40, "bakiye": 22294439.92, "siparis": "0/2", "gecen_dk": 5.5, "ts": 1792180516798}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792180519960}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792180782610}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792180815986}
+{"olay": "sokak", "tur": "muzisyen", "id": "2034:muzisyen:497828", "sonuc": {"tutar": -5000, "tecrube": 1, "metin": "Müzisyene bahşiş verdin. Sıradaki şarkı senin için çalınacak.", "bakiye": 2229525338, "hareket": 2477515, "ad": "Kalfa19"}, "ts": 1792180816697}
+{"olay": "siparis_basladi", "adet": 15, "sure_sn": 30.0, "odul": 50.0, "tezgah": "misir", "ts": 1792180851227}
+{"olay": "siparis_kacti", "tezgah": "misir", "ts": 1792180885330}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 12, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792181085601}
+{"olay": "kosu_bitti", "tur": 7, "kazanc": 137.2, "servis": 56, "bahsis": 5, "bakiye": 22347721.06, "siparis_toplam": 3, "siparis_basari": 0, "gecen_dk": 15.1, "bot_versiyon": "v2", "ts": 1792181087843}
