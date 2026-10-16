@@ -9638,3 +9638,14 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792171564726}
 {"olay": "ara_ozet", "tur": 10, "kazanc": 237.6, "servis": 80, "bakiye": 22019163.28, "siparis": "1/1", "gecen_dk": 15.4, "ts": 1792171595136}
 {"olay": "kosu_bitti", "tur": 10, "kazanc": 237.6, "servis": 80, "bahsis": 13, "bakiye": 22019215.3, "siparis_toplam": 1, "siparis_basari": 1, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1792171597378}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 22020794.11, "bot_versiyon": "v2_hizli_siparis", "ts": 1792171793396}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792171794278}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792172074380}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792172107419}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792172112064}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792172146586}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792172425627}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792172428479}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792172706098}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 8.9, "servis": 16, "bakiye": 22029326.83, "siparis": "0/0", "gecen_dk": 15.2, "ts": 1792172706282}
+{"olay": "kosu_bitti", "tur": 5, "kazanc": 8.9, "servis": 16, "bahsis": 2, "bakiye": 22029327.29, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1792172708465}
