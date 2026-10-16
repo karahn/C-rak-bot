@@ -2,9 +2,9 @@
  "cerez-kontrol": {
   "tamam": true,
   "oyuncu": "Kalfa19",
-  "seviye": 12,
-  "tp": 5695,
-  "nakit_kurus": 1812240678,
+  "seviye": 13,
+  "tp": 5710,
+  "nakit_kurus": 1815273592,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 1812240678,
+   "nakit": 1815273592,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 736200000,
+     "limit": 737100000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 1227000000,
+     "limit": 1228500000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 981600000,
+     "limit": 982800000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 1472400000,
+     "limit": 1474200000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -135,7 +135,7 @@
    "karaListe": 0,
    "net": 0,
    "krediNotu": {
-    "puan": 1251,
+    "puan": 1256,
     "bant": "Az riskli",
     "renk": "#E8C21A"
    },
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792129541590,
+   "ms": 1792131000938,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -153,21 +153,21 @@
    "haftaGunu": "Cuma",
    "haftaGunuNo": 5,
    "haftaSonu": false,
-   "saat": 5,
-   "dakika": 45,
+   "saat": 6,
+   "dakika": 10,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "16 Ekim 2026, Cuma"
   }
  },
  "banka": {
-  "nakit": 18122408.52,
+  "nakit": 18152735.92,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
   "kredi_notu": {
-   "puan": 1251,
+   "puan": 1256,
    "bant": "Az riskli",
    "renk": "#E8C21A"
   },
@@ -261,54 +261,6 @@
   "cevaplanan_id": 1137,
   "son_mesajlar": [
    {
-    "id": 2694,
-    "benden": true,
-    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
-    "zaman": 1791986208008
-   },
-   {
-    "id": 2695,
-    "benden": true,
-    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
-    "zaman": 1791986317854
-   },
-   {
-    "id": 2696,
-    "benden": true,
-    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
-    "zaman": 1791986468202
-   },
-   {
-    "id": 2697,
-    "benden": true,
-    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
-    "zaman": 1791986779926
-   },
-   {
-    "id": 2698,
-    "benden": true,
-    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
-    "zaman": 1791986818372
-   },
-   {
-    "id": 2699,
-    "benden": true,
-    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
-    "zaman": 1791986820388
-   },
-   {
-    "id": 2700,
-    "benden": true,
-    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
-    "zaman": 1791986902549
-   },
-   {
-    "id": 2701,
-    "benden": true,
-    "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
-    "zaman": 1791987013120
-   },
-   {
     "id": 2702,
     "benden": true,
     "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
@@ -319,6 +271,54 @@
     "benden": true,
     "metin": "Patron, SV12 oldum! Yeni açılan dükkânlar: Gümrük müşaviri, Eczane, Düğün salonu",
     "zaman": 1791987229866
+   },
+   {
+    "id": 2812,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792119182607
+   },
+   {
+    "id": 2813,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792119216453
+   },
+   {
+    "id": 2814,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792119539057
+   },
+   {
+    "id": 2815,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792119749242
+   },
+   {
+    "id": 2816,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792119752564
+   },
+   {
+    "id": 2817,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792119825501
+   },
+   {
+    "id": 2818,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120006371
+   },
+   {
+    "id": 2819,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120050954
    }
   ]
  },
@@ -376,17 +376,21 @@
   ]
  },
  "seviye-bildir": {
-  "seviye": 12,
-  "tp": 5695,
+  "seviye": 13,
+  "tp": 5710,
   "onceki": 12,
-  "yeni_mi": false
+  "yeni_mi": true,
+  "mesaj": {
+   "tamam": true
+  },
+  "yeni_dukkanlar": []
  },
  "dukkan-yonet": {
   "toplam": 52,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 34,
+  "oto_acilan": 25,
   "detay": [
    {
     "ad": "Kalfa19 Hırdavatçı",
@@ -599,7 +603,7 @@
    },
    {
     "tur": "yedek_parca",
-    "no": 60,
+    "no": 77,
     "toplam": 141000.0,
     "sonuc": {
      "hata": "Bu senin 53. dükkânın: 5.922.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
@@ -672,7 +676,7 @@
     "kira": 18000.0
    },
    {
-    "no": 60,
+    "no": 77,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
     "seviye": 4,
@@ -799,23 +803,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 18123542.89,
-  "oyuncu_seviye": 12,
+  "bakiye": 18152773.01,
+  "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 13878542.89
+  "kalan_bakiye": 13907773.010000002
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 5,
-  "kazanc": 230.6,
-  "servis": 34,
-  "bahsis": 7,
-  "bakiye": 18151926.76,
-  "siparis_toplam": 3,
-  "siparis_basari": 2,
-  "gecen_dk": 16.9,
+  "tur": 12,
+  "kazanc": 333.5,
+  "servis": 80,
+  "bahsis": 16,
+  "bakiye": 18156566.23,
+  "siparis_toplam": 4,
+  "siparis_basari": 3,
+  "gecen_dk": 15.4,
   "bot_versiyon": "v2",
-  "ts": 1792119978896
+  "ts": 1792121224521
  }
 }
