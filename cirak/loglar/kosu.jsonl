@@ -10498,3 +10498,12 @@
 {"olay": "sokak", "tur": "muzisyen", "id": "2034:muzisyen:497842", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792231388991}
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792231427746}
 {"olay": "kosu_bitti", "tur": 8, "kazanc": 0.0, "servis": 64, "bahsis": 0, "bakiye": 22351725.17, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.7, "bot_versiyon": "v2", "ts": 1792231467042}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 22351725.17, "bot_versiyon": "v2_hizli_siparis", "ts": 1792231929152}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792231960089}
+{"olay": "sokak", "tur": "ambulans", "id": "2034:ambulans:373381", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792231960634}
+{"olay": "dukkan_yonet_periodik", "kasa_toplanan": 2, "raf_doldurulan": 2, "oto_acilan": 2, "ts": 1792232233497}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792232266405}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792232274985}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792232700829}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3879291", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792232701300}
+{"olay": "kosu_bitti", "tur": 4, "kazanc": 0.0, "servis": 32, "bahsis": 0, "bakiye": 22351725.17, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 18.5, "bot_versiyon": "v2", "ts": 1792233036005}
