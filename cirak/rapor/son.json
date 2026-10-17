@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6537,
-  "nakit_kurus": 2236229295,
+  "nakit_kurus": 2236286896,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 2236229295,
+   "nakit": 2236286896,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 1148400000,
+     "limit": 1148500000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792214730247,
+   "ms": 1792215885382,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -154,14 +154,14 @@
    "haftaGunuNo": 6,
    "haftaSonu": true,
    "saat": 5,
-   "dakika": 25,
+   "dakika": 44,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "17 Ekim 2026, Cumartesi"
   }
  },
  "banka": {
-  "nakit": 22362292.95,
+  "nakit": 22362868.96,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -386,181 +386,283 @@
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
   "raf_doldurulan": 0,
-  "oto_acilan": 34,
-  "detay": [
-   {
-    "ad": "Kalfa19 Hırdavatçı",
-    "id": 42846,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Bakkal",
-    "id": 44873,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Şarküteri",
-    "id": 45124,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Büfe",
-    "id": 45739,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Kasap",
-    "id": 46044,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Fırın",
-    "id": 46075,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Lokanta",
-    "id": 46742,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Pideci",
-    "id": 47965,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Dönerci",
-    "id": 47966,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Hamburgerci",
-    "id": 48276,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Pastane",
-    "id": 48422,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Pizzacı",
-    "id": 48423,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Çay ocağı",
-    "id": 48731,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Kafe",
-    "id": 48842,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Market",
-    "id": 49004,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Bar",
-    "id": 50573,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Kebapçı",
-    "id": 52897,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Aktar",
-    "id": 52900,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Tavukçu",
-    "id": 52945,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Balıkçı",
-    "id": 52947,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Bebek mağaza",
-    "id": 53012,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Bilgisayarcı",
-    "id": 53038,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Çantacı",
-    "id": 53039,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Çiğ köfteci",
-    "id": 53198,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa İç giyim",
-    "id": 53273,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Dondurmacı",
-    "id": 53427,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Kuruyemişçi",
-    "id": 53455,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Temizlik ürü",
-    "id": 53790,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Züccaciye",
-    "id": 54488,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Yapı marketi",
-    "id": 56017,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Perdeci",
-    "id": 56669,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Halıcı",
-    "id": 57832,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Spor mağazas",
-    "id": 58415,
-    "oto": "acik"
-   },
-   {
-    "ad": "Kalfa Telefoncu",
-    "id": 59920,
-    "oto": "acik"
-   }
-  ],
+  "oto_acilan": 0,
+  "detay": [],
   "hatalar": [],
-  "debug": []
+  "debug": [
+   {
+    "id": 42846,
+    "ad": "Kalfa19 Hırdavatçı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 44873,
+    "ad": "Kalfa Bakkal",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 45124,
+    "ad": "Kalfa Şarküteri",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 45739,
+    "ad": "Kalfa Büfe",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 46044,
+    "ad": "Kalfa Kasap",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 46075,
+    "ad": "Kalfa Fırın",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 46742,
+    "ad": "Kalfa Lokanta",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 47965,
+    "ad": "Kalfa Pideci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 47966,
+    "ad": "Kalfa Dönerci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48276,
+    "ad": "Kalfa Hamburgerci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48422,
+    "ad": "Kalfa Pastane",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48423,
+    "ad": "Kalfa Pizzacı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48731,
+    "ad": "Kalfa Çay ocağı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48842,
+    "ad": "Kalfa Kafe",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 49004,
+    "ad": "Kalfa Market",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 50573,
+    "ad": "Kalfa Bar",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 52897,
+    "ad": "Kalfa Kebapçı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 52900,
+    "ad": "Kalfa Aktar",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 52945,
+    "ad": "Kalfa Tavukçu",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 52947,
+    "ad": "Kalfa Balıkçı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53012,
+    "ad": "Kalfa Bebek mağaza",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53038,
+    "ad": "Kalfa Bilgisayarcı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53039,
+    "ad": "Kalfa Çantacı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53198,
+    "ad": "Kalfa Çiğ köfteci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53273,
+    "ad": "Kalfa İç giyim",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53427,
+    "ad": "Kalfa Dondurmacı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53455,
+    "ad": "Kalfa Kuruyemişçi",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53790,
+    "ad": "Kalfa Temizlik ürü",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 54488,
+    "ad": "Kalfa Züccaciye",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 56017,
+    "ad": "Kalfa Yapı marketi",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 56669,
+    "ad": "Kalfa Perdeci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 57832,
+    "ad": "Kalfa Halıcı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 58415,
+    "ad": "Kalfa Spor mağazas",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 59920,
+    "ad": "Kalfa Telefoncu",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   }
+  ]
  },
  "dukkan-ac": {
   "ilce": 2034,
@@ -570,7 +672,8 @@
     "no": 48,
     "toplam": 546000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 22.932.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
     }
    },
    {
@@ -578,7 +681,8 @@
     "no": 51,
     "toplam": 1092000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 45.864.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
     }
    },
    {
@@ -586,7 +690,8 @@
     "no": 53,
     "toplam": 1092000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 45.864.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
     }
    },
    {
@@ -594,15 +699,17 @@
     "no": 57,
     "toplam": 1092000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 45.864.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
     }
    },
    {
     "tur": "nakliyat",
-    "no": 58,
+    "no": 59,
     "toplam": 546000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 22.932.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
     }
    },
    {
@@ -610,7 +717,8 @@
     "no": 65,
     "toplam": 1092000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 45.864.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
     }
    },
    {
@@ -618,7 +726,8 @@
     "no": 73,
     "toplam": 546000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 22.932.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
     }
    },
    {
@@ -626,7 +735,8 @@
     "no": 79,
     "toplam": 546000.0,
     "sonuc": {
-     "hata": "Bu senin 53. dükkânın: 22.932.000 ₺ ek açılış vergisi ödenecek. Tutarı onaylayıp yeniden dene."
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
     }
    }
   ],
@@ -672,7 +782,7 @@
     "kira": 36000.0
    },
    {
-    "no": 58,
+    "no": 59,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -799,23 +909,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 22362734.86,
+  "bakiye": 22362868.96,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 15810734.86
+  "kalan_bakiye": 15810868.96
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 9,
+  "tur": 13,
   "kazanc": 0.0,
-  "servis": 72,
+  "servis": 104,
   "bahsis": 0,
-  "bakiye": 22362868.96,
+  "bakiye": 22363731.96,
   "siparis_toplam": 0,
   "siparis_basari": 0,
   "gecen_dk": 15.6,
   "bot_versiyon": "v2",
-  "ts": 1792205061047
+  "ts": 1792206117505
  }
 }
