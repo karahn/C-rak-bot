@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6537,
-  "nakit_kurus": 2235568517,
+  "nakit_kurus": 2235147430,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 2235568517,
+   "nakit": 2235147430,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 895800000,
+     "limit": 903400000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 1493000000,
+     "limit": 1505700000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 1194400000,
+     "limit": 1204600000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 1791700000,
+     "limit": 1806900000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792249065142,
+   "ms": 1792250761356,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -153,15 +153,15 @@
    "haftaGunu": "Cumartesi",
    "haftaGunuNo": 6,
    "haftaSonu": true,
-   "saat": 14,
-   "dakika": 57,
+   "saat": 15,
+   "dakika": 26,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "17 Ekim 2026, Cumartesi"
   }
  },
  "banka": {
-  "nakit": 22355685.17,
+  "nakit": 22351474.3,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -385,15 +385,9 @@
   "toplam": 52,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
-  "raf_doldurulan": 1,
+  "raf_doldurulan": 0,
   "oto_acilan": 0,
-  "detay": [
-   {
-    "ad": "Kalfa Balıkçı",
-    "id": 52947,
-    "raf": "167/231→full"
-   }
-  ],
+  "detay": [],
   "hatalar": [],
   "debug": [
    {
@@ -923,15 +917,15 @@
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 3,
+  "tur": 4,
   "kazanc": 0.0,
-  "servis": 24,
+  "servis": 32,
   "bahsis": 0,
-  "bakiye": 22351474.3,
+  "bakiye": 22353433.3,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 16.4,
+  "gecen_dk": 18.4,
   "bot_versiyon": "v2",
-  "ts": 1792239937319
+  "ts": 1792241653358
  }
 }
