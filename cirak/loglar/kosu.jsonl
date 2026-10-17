@@ -10544,3 +10544,8 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792240833505}
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792241289153}
 {"olay": "kosu_bitti", "tur": 4, "kazanc": 0.0, "servis": 32, "bahsis": 0, "bakiye": 22353433.3, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 18.4, "bot_versiyon": "v2", "ts": 1792241653358}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 22353433.3, "bot_versiyon": "v2_hizli_siparis", "ts": 1792242538481}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792242569396}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792242935269}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792243300297}
+{"olay": "kosu_bitti", "tur": 3, "kazanc": 0.0, "servis": 24, "bahsis": 0, "bakiye": 22353433.3, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 16.8, "bot_versiyon": "v2", "ts": 1792243544280}
