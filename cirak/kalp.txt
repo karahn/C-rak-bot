@@ -1,1 +1,1 @@
-1792251705606 tur=7 kazanc=0 servis=56 siparis=0/0
+1792253450902 tur=8 kazanc=0 servis=64 siparis=0/0
