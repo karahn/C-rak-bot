@@ -1,1 +1,1 @@
-1792197935182 tur=18 kazanc=625 servis=144 siparis=4/6
+1792199132878 tur=21 kazanc=307 servis=129 siparis=0/0
