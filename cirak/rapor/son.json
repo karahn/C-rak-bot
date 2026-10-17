@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6537,
-  "nakit_kurus": 2237331496,
+  "nakit_kurus": 2238012896,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 0,
-   "nakit": 2237331496,
+   "nakit": 2238012896,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -65,7 +65,7 @@
       6,
       12
      ],
-     "limit": 861900000,
+     "limit": 866300000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -84,7 +84,7 @@
       12,
       24
      ],
-     "limit": 1436600000,
+     "limit": 1443900000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -103,7 +103,7 @@
       24,
       36
      ],
-     "limit": 1149200000,
+     "limit": 1155100000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -122,7 +122,7 @@
       36,
       60
      ],
-     "limit": 1723900000,
+     "limit": 1732600000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -145,7 +145,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792227390174,
+   "ms": 1792228513169,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -153,15 +153,15 @@
    "haftaGunu": "Cumartesi",
    "haftaGunuNo": 6,
    "haftaSonu": true,
-   "saat": 8,
-   "dakika": 56,
+   "saat": 9,
+   "dakika": 15,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "17 Ekim 2026, Cumartesi"
   }
  },
  "banka": {
-  "nakit": 22373314.96,
+  "nakit": 22380128.96,
   "vadesiz": 0.0,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -687,7 +687,7 @@
    },
    {
     "tur": "nakliyat",
-    "no": 68,
+    "no": 65,
     "toplam": 1092000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -695,9 +695,9 @@
     }
    },
    {
-    "tur": "yedek_parca",
-    "no": 69,
-    "toplam": 141000.0,
+    "tur": "nakliyat",
+    "no": 68,
+    "toplam": 1092000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
      "insanDogrula": true
@@ -722,9 +722,9 @@
     }
    },
    {
-    "tur": "nakliyat",
-    "no": 79,
-    "toplam": 546000.0,
+    "tur": "yedek_parca",
+    "no": 76,
+    "toplam": 141000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
      "insanDogrula": true
@@ -732,8 +732,8 @@
    },
    {
     "tur": "nakliyat",
-    "no": 82,
-    "toplam": 1092000.0,
+    "no": 79,
+    "toplam": 546000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
      "insanDogrula": true
@@ -762,7 +762,7 @@
     "kira": 18000.0
    },
    {
-    "no": 68,
+    "no": 65,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -772,14 +772,14 @@
     "kira": 36000.0
    },
    {
-    "no": 69,
-    "tur": "yedek_parca",
-    "ad": "Oto yedek parça",
-    "seviye": 4,
+    "no": 68,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
     "kilitli": false,
-    "toplam": 141000.0,
-    "kurulum": 120000.0,
-    "kira": 8000.0
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0
    },
    {
     "no": 71,
@@ -802,6 +802,16 @@
     "kira": 18000.0
    },
    {
+    "no": 76,
+    "tur": "yedek_parca",
+    "ad": "Oto yedek parça",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 141000.0,
+    "kurulum": 120000.0,
+    "kira": 8000.0
+   },
+   {
     "no": 79,
     "tur": "nakliyat",
     "ad": "Nakliyat",
@@ -810,16 +820,6 @@
     "toplam": 546000.0,
     "kurulum": 500000.0,
     "kira": 18000.0
-   },
-   {
-    "no": 82,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 1092000.0,
-    "kurulum": 1000000.0,
-    "kira": 36000.0
    }
   ],
   "denemeler": [],
@@ -909,23 +909,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 22373314.96,
+  "bakiye": 22380128.96,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 17177314.96
+  "kalan_bakiye": 17184128.96
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 7,
+  "tur": 3,
   "kazanc": 0.0,
-  "servis": 56,
+  "servis": 24,
   "bahsis": 0,
   "bakiye": 22380128.96,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.3,
+  "gecen_dk": 17.7,
   "bot_versiyon": "v2",
-  "ts": 1792217689315
+  "ts": 1792219198097
  }
 }
