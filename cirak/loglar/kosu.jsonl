@@ -10248,3 +10248,16 @@
 {"olay": "dukkan_yonet_periodik", "kasa_toplanan": 0, "raf_doldurulan": 34, "oto_acilan": 34, "ts": 1792203834759}
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Bu yetenek en üst derecede."}, "ts": 1792203837766}
 {"olay": "kosu_bitti", "tur": 8, "kazanc": 323.4, "servis": 60, "bahsis": 11, "bakiye": 22362059.92, "siparis_toplam": 3, "siparis_basari": 3, "gecen_dk": 15.9, "bot_versiyon": "v2", "ts": 1792203905668}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 22362866.6, "bot_versiyon": "v2_hizli_siparis", "ts": 1792204122623}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792204123710}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792204387082}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792204457401}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792204749833}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792204861027}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 0.0, "servis": 40, "bakiye": 22362868.96, "siparis": "0/0", "gecen_dk": 12.9, "ts": 1792204898174}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792204901304}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792204941405}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792204981472}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792205021633}
+{"olay": "sokak", "tur": "itfaiye", "id": "2034:itfaiye:116680", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792205022291}
+{"olay": "kosu_bitti", "tur": 9, "kazanc": 0.0, "servis": 72, "bahsis": 0, "bakiye": 22362868.96, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.6, "bot_versiyon": "v2", "ts": 1792205061047}
