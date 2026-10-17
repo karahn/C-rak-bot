@@ -10658,3 +10658,10 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792258572727}
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792258611479}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 0.0, "servis": 56, "bahsis": 0, "bakiye": 22367830.3, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 17.2, "bot_versiyon": "v2", "ts": 1792258912053}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 22367830.3, "bot_versiyon": "v2_hizli_siparis", "ts": 1792259693616}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792259694419}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792260058578}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3879350", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792260059108}
+{"olay": "sokak", "tur": "muzisyen", "id": "2034:muzisyen:497850", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792260059269}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792260447226}
+{"olay": "kosu_bitti", "tur": 3, "kazanc": 0.0, "servis": 24, "bahsis": 0, "bakiye": 22367830.3, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 17.5, "bot_versiyon": "v2", "ts": 1792260743984}
