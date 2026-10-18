@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6537,
-  "nakit_kurus": 2200897732,
+  "nakit_kurus": 2172279282,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 603550794,
-   "nakit": 2200897732,
+   "nakit": 2172279282,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792302443655,
+   "ms": 1792303962787,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -157,15 +157,15 @@
    "haftaGunu": "Pazar",
    "haftaGunuNo": 0,
    "haftaSonu": true,
-   "saat": 5,
-   "dakika": 47,
+   "saat": 6,
+   "dakika": 12,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "18 Ekim 2026, Pazar"
   }
  },
  "banka": {
-  "nakit": 22008977.32,
+  "nakit": 21722792.82,
   "vadesiz": 6035507.94,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -913,23 +913,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 22008977.32,
+  "bakiye": 21722792.82,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 20475977.32
+  "kalan_bakiye": 20189792.82
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 8,
+  "tur": 6,
   "kazanc": 0.0,
-  "servis": 64,
+  "servis": 48,
   "bahsis": 0,
   "bakiye": 21722792.82,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.6,
+  "gecen_dk": 15.4,
   "bot_versiyon": "v2",
-  "ts": 1792293139540
+  "ts": 1792294674435
  }
 }
