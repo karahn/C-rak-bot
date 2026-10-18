@@ -25,7 +25,7 @@
    "ad": "Fatih Mahallesi"
   },
   "banka": {
-   "vadesiz": 884077234,
+   "vadesiz": 1002272452,
    "nakit": 2170908269,
    "vadeliler": [],
    "krediler": [],
@@ -86,7 +86,7 @@
       12,
       24
      ],
-     "limit": 1727100000,
+     "limit": 1727200000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -137,7 +137,7 @@
    "tahsis": 0.5,
    "ekonomiGunuMs": 28800000,
    "karaListe": 0,
-   "net": 884077234,
+   "net": 1002272452,
    "krediNotu": {
     "puan": 1272,
     "bant": "Az riskli",
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792363985283,
+   "ms": 1792365501644,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -157,8 +157,8 @@
    "haftaGunu": "Pazar",
    "haftaGunuNo": 0,
    "haftaSonu": true,
-   "saat": 22,
-   "dakika": 53,
+   "saat": 23,
+   "dakika": 18,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "18 Ekim 2026, Pazar"
@@ -166,7 +166,7 @@
  },
  "banka": {
   "nakit": 21709082.69,
-  "vadesiz": 8840772.34,
+  "vadesiz": 10022724.52,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
@@ -921,15 +921,15 @@
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 13,
+  "tur": 10,
   "kazanc": 0.0,
-  "servis": 104,
+  "servis": 80,
   "bahsis": 0,
   "bakiye": 21709082.69,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.8,
+  "gecen_dk": 15.5,
   "bot_versiyon": "v2",
-  "ts": 1792354616593
+  "ts": 1792356052069
  }
 }
