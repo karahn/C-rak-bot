@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6537,
-  "nakit_kurus": 2172705582,
+  "nakit_kurus": 2172755582,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 621550783,
-   "nakit": 2172705582,
+   "nakit": 2172755582,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -86,7 +86,7 @@
       12,
       24
      ],
-     "limit": 1594700000,
+     "limit": 1594800000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792314346921,
+   "ms": 1792316084285,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,14 +158,14 @@
    "haftaGunuNo": 0,
    "haftaSonu": true,
    "saat": 9,
-   "dakika": 5,
+   "dakika": 34,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "18 Ekim 2026, Pazar"
   }
  },
  "banka": {
-  "nakit": 21727055.82,
+  "nakit": 21727555.82,
   "vadesiz": 6215507.83,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -682,7 +682,7 @@
    },
    {
     "tur": "yedek_parca",
-    "no": 47,
+    "no": 44,
     "toplam": 141000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -691,7 +691,7 @@
    },
    {
     "tur": "yedek_parca",
-    "no": 52,
+    "no": 47,
     "toplam": 141000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -756,7 +756,7 @@
     "kira": 8000.0
    },
    {
-    "no": 47,
+    "no": 44,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
     "seviye": 4,
@@ -766,7 +766,7 @@
     "kira": 8000.0
    },
    {
-    "no": 52,
+    "no": 47,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
     "seviye": 4,
@@ -921,15 +921,15 @@
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 4,
+  "tur": 3,
   "kazanc": 0.0,
-  "servis": 32,
+  "servis": 24,
   "bahsis": 0,
-  "bakiye": 21727555.82,
+  "bakiye": 21728750.53,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 18.2,
+  "gecen_dk": 15.9,
   "bot_versiyon": "v2",
-  "ts": 1792305261129
+  "ts": 1792306982364
  }
 }
