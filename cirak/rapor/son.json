@@ -139,7 +139,7 @@
    "karaListe": 0,
    "net": 1020445268,
    "krediNotu": {
-    "puan": 1272,
+    "puan": 1273,
     "bant": "Az riskli",
     "renk": "#E8C21A"
    },
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792375555024,
+   "ms": 1792377020885,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,7 +158,7 @@
    "haftaGunuNo": 1,
    "haftaSonu": false,
    "saat": 2,
-   "dakika": 5,
+   "dakika": 30,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "19 Ekim 2026, Pazartesi"
@@ -171,7 +171,7 @@
   "vadeliler": [],
   "krediler": [],
   "kredi_notu": {
-   "puan": 1272,
+   "puan": 1273,
    "bant": "Az riskli",
    "renk": "#E8C21A"
   },
@@ -681,9 +681,9 @@
     }
    },
    {
-    "tur": "nakliyat",
-    "no": 55,
-    "toplam": 546000.0,
+    "tur": "yedek_parca",
+    "no": 44,
+    "toplam": 141000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
      "insanDogrula": true
@@ -756,14 +756,14 @@
     "kira": 8000.0
    },
    {
-    "no": 55,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
+    "no": 44,
+    "tur": "yedek_parca",
+    "ad": "Oto yedek parça",
+    "seviye": 4,
     "kilitli": false,
-    "toplam": 546000.0,
-    "kurulum": 500000.0,
-    "kira": 18000.0
+    "toplam": 141000.0,
+    "kurulum": 120000.0,
+    "kira": 8000.0
    },
    {
     "no": 57,
@@ -917,19 +917,19 @@
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 17925044.79
+  "kalan_bakiye": 18330044.79
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 10,
+  "tur": 17,
   "kazanc": 0.0,
-  "servis": 80,
+  "servis": 136,
   "bahsis": 0,
   "bakiye": 21624044.79,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.5,
+  "gecen_dk": 15.7,
   "bot_versiyon": "v2",
-  "ts": 1792366138085
+  "ts": 1792367636900
  }
 }
