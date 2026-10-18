@@ -66,7 +66,7 @@
       6,
       12
      ],
-     "limit": 1003700000,
+     "limit": 1010200000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -86,7 +86,7 @@
       12,
       24
      ],
-     "limit": 1672800000,
+     "limit": 1683800000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -106,7 +106,7 @@
       24,
       36
      ],
-     "limit": 1338200000,
+     "limit": 1347000000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -126,7 +126,7 @@
       36,
       60
      ],
-     "limit": 2007400000,
+     "limit": 2020500000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -139,7 +139,7 @@
    "karaListe": 0,
    "net": 624296990,
    "krediNotu": {
-    "puan": 1271,
+    "puan": 1270,
     "bant": "Az riskli",
     "renk": "#E8C21A"
    },
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792342123709,
+   "ms": 1792343524329,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -157,8 +157,8 @@
    "haftaGunu": "Pazar",
    "haftaGunuNo": 0,
    "haftaSonu": true,
-   "saat": 16,
-   "dakika": 48,
+   "saat": 17,
+   "dakika": 12,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "18 Ekim 2026, Pazar"
@@ -171,7 +171,7 @@
   "vadeliler": [],
   "krediler": [],
   "kredi_notu": {
-   "puan": 1271,
+   "puan": 1270,
    "bant": "Az riskli",
    "renk": "#E8C21A"
   },
@@ -342,7 +342,7 @@
      "oy": 6,
      "donem": "2026-10"
     },
-    "kasa": 5550000,
+    "kasa": 5800000,
     "uyeler": null,
     "tp": null
    },
@@ -717,18 +717,18 @@
     }
    },
    {
-    "tur": "nakliyat",
-    "no": 73,
-    "toplam": 546000.0,
+    "tur": "yedek_parca",
+    "no": 70,
+    "toplam": 141000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
      "insanDogrula": true
     }
    },
    {
-    "tur": "yedek_parca",
-    "no": 76,
-    "toplam": 141000.0,
+    "tur": "nakliyat",
+    "no": 73,
+    "toplam": 546000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
      "insanDogrula": true
@@ -796,6 +796,16 @@
     "kira": 36000.0
    },
    {
+    "no": 70,
+    "tur": "yedek_parca",
+    "ad": "Oto yedek parça",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 141000.0,
+    "kurulum": 120000.0,
+    "kira": 8000.0
+   },
+   {
     "no": 73,
     "tur": "nakliyat",
     "ad": "Nakliyat",
@@ -804,16 +814,6 @@
     "toplam": 546000.0,
     "kurulum": 500000.0,
     "kira": 18000.0
-   },
-   {
-    "no": 76,
-    "tur": "yedek_parca",
-    "ad": "Oto yedek parça",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 141000.0,
-    "kurulum": 120000.0,
-    "kira": 8000.0
    },
    {
     "no": 82,
@@ -921,15 +921,15 @@
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 7,
+  "tur": 5,
   "kazanc": 0.0,
-  "servis": 56,
+  "servis": 40,
   "bahsis": 0,
   "bakiye": 21692905.79,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.2,
+  "gecen_dk": 16.1,
   "bot_versiyon": "v2",
-  "ts": 1792332699693
+  "ts": 1792334344562
  }
 }
