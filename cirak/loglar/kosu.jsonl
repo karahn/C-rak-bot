@@ -11297,3 +11297,15 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792334060022}
 {"olay": "ara_ozet", "tur": 5, "kazanc": 0.0, "servis": 40, "bakiye": 21692905.79, "siparis": "0/0", "gecen_dk": 16.1, "ts": 1792334342154}
 {"olay": "kosu_bitti", "tur": 5, "kazanc": 0.0, "servis": 40, "bahsis": 0, "bakiye": 21692905.79, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 16.1, "bot_versiyon": "v2", "ts": 1792334344562}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 21692905.79, "bot_versiyon": "v2_hizli_siparis", "ts": 1792335051281}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792335052211}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792335052664}
+{"olay": "keyif_mekan", "onceki": 79, "mekan": "Kalfa Bar", "keyif_puan": 18, "fiyat": 1258.75, "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792335054291}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792335369051}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792335369486}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792335654098}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792335654562}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3879514", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792335655290}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792335694704}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792335695157}
+{"olay": "kosu_bitti", "tur": 4, "kazanc": 0.0, "servis": 32, "bahsis": 0, "bakiye": 21700776.79, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 16.0, "bot_versiyon": "v2", "ts": 1792336008761}
