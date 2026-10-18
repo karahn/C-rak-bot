@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6537,
-  "nakit_kurus": 2236613022,
+  "nakit_kurus": 2236733022,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 603550794,
-   "nakit": 2236613022,
+   "nakit": 2236733022,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -86,7 +86,7 @@
       12,
       24
      ],
-     "limit": 1588000000,
+     "limit": 1588100000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -106,7 +106,7 @@
       24,
       36
      ],
-     "limit": 1270400000,
+     "limit": 1270500000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -126,7 +126,7 @@
       36,
       60
      ],
-     "limit": 1905600000,
+     "limit": 1905700000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792299067450,
+   "ms": 1792300948642,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -157,15 +157,15 @@
    "haftaGunu": "Pazar",
    "haftaGunuNo": 0,
    "haftaSonu": true,
-   "saat": 4,
-   "dakika": 51,
+   "saat": 5,
+   "dakika": 22,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "18 Ekim 2026, Pazar"
   }
  },
  "banka": {
-  "nakit": 22366130.22,
+  "nakit": 22367330.22,
   "vadesiz": 6035507.94,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -389,9 +389,20 @@
   "toplam": 52,
   "kasa_toplanan": 0,
   "kasa_tl": 0.0,
-  "raf_doldurulan": 0,
-  "oto_acilan": 0,
-  "detay": [],
+  "raf_doldurulan": 1,
+  "oto_acilan": 1,
+  "detay": [
+   {
+    "ad": "Kalfa Aktar",
+    "id": 52900,
+    "raf": "73/455→full"
+   },
+   {
+    "ad": "Kalfa Tavukçu",
+    "id": 52945,
+    "oto": "acik"
+   }
+  ],
   "hatalar": [],
   "debug": [
    {
@@ -533,14 +544,6 @@
    {
     "id": 52900,
     "ad": "Kalfa Aktar",
-    "oto_hata": {
-     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
-     "insanDogrula": true
-    }
-   },
-   {
-    "id": 52945,
-    "ad": "Kalfa Tavukçu",
     "oto_hata": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
      "insanDogrula": true
@@ -699,24 +702,6 @@
     }
    },
    {
-    "tur": "nakliyat",
-    "no": 58,
-    "toplam": 546000.0,
-    "sonuc": {
-     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
-     "insanDogrula": true
-    }
-   },
-   {
-    "tur": "yedek_parca",
-    "no": 69,
-    "toplam": 141000.0,
-    "sonuc": {
-     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
-     "insanDogrula": true
-    }
-   },
-   {
     "tur": "yedek_parca",
     "no": 70,
     "toplam": 141000.0,
@@ -727,7 +712,25 @@
    },
    {
     "tur": "yedek_parca",
-    "no": 71,
+    "no": 72,
+    "toplam": 141000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 73,
+    "toplam": 546000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "yedek_parca",
+    "no": 75,
     "toplam": 141000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -776,26 +779,6 @@
     "kira": 8000.0
    },
    {
-    "no": 58,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 546000.0,
-    "kurulum": 500000.0,
-    "kira": 18000.0
-   },
-   {
-    "no": 69,
-    "tur": "yedek_parca",
-    "ad": "Oto yedek parça",
-    "seviye": 4,
-    "kilitli": false,
-    "toplam": 141000.0,
-    "kurulum": 120000.0,
-    "kira": 8000.0
-   },
-   {
     "no": 70,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
@@ -806,7 +789,27 @@
     "kira": 8000.0
    },
    {
-    "no": 71,
+    "no": 72,
+    "tur": "yedek_parca",
+    "ad": "Oto yedek parça",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 141000.0,
+    "kurulum": 120000.0,
+    "kira": 8000.0
+   },
+   {
+    "no": 73,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 546000.0,
+    "kurulum": 500000.0,
+    "kira": 18000.0
+   },
+   {
+    "no": 75,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
     "seviye": 4,
@@ -913,23 +916,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 22366130.22,
+  "bakiye": 22008977.32,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 20833130.22
+  "kalan_bakiye": 20475977.32
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 3,
+  "tur": 4,
   "kazanc": 0.0,
-  "servis": 24,
+  "servis": 32,
   "bahsis": 0,
-  "bakiye": 22367330.22,
+  "bakiye": 22008977.32,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 17.0,
+  "gecen_dk": 15.6,
   "bot_versiyon": "v2",
-  "ts": 1792290008451
+  "ts": 1792291620746
  }
 }
