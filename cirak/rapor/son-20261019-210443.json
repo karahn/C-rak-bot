@@ -1,0 +1,935 @@
+{
+ "cerez-kontrol": {
+  "tamam": true,
+  "oyuncu": "Kalfa19",
+  "seviye": 13,
+  "tp": 6553,
+  "nakit_kurus": 2092129189,
+  "il": {
+   "id": 6,
+   "ad": "Ankara",
+   "nufus": 5910320,
+   "kiyi": false,
+   "buyuksehir": true,
+   "bolge": "İç Anadolu",
+   "enlem": 39.9208,
+   "ulke": "TR"
+  },
+  "ilce": {
+   "id": 2034,
+   "ad": "Pursaklar",
+   "nufus": 168881
+  },
+  "mahalle": {
+   "id": 1728,
+   "ad": "Fatih Mahallesi"
+  },
+  "banka": {
+   "vadesiz": 1418928368,
+   "nakit": 2092129189,
+   "vadeliler": [],
+   "krediler": [],
+   "vadeler": [
+    {
+     "gun": 7,
+     "ad": "1 hafta",
+     "faiz": 36
+    },
+    {
+     "gun": 30,
+     "ad": "1 ay",
+     "faiz": 40
+    },
+    {
+     "gun": 90,
+     "ad": "3 ay",
+     "faiz": 42
+    },
+    {
+     "gun": 365,
+     "ad": "1 yıl",
+     "faiz": 45
+    }
+   ],
+   "krediTurleri": [
+    {
+     "kod": "isletme",
+     "ad": "İşletme kredisi",
+     "simge": "💼",
+     "aciklama": "Stok, kira ve maaş gibi günlük ihtiyaçlar için.",
+     "faiz": 51,
+     "temelFaiz": 54,
+     "odaIndirimi": 3,
+     "seviyeIndirimi": 0,
+     "taksitler": [
+      3,
+      6,
+      12
+     ],
+     "limit": 1125100000,
+     "engel": null,
+     "enAz": 1000000,
+     "alim": false,
+     "pesinat": 0
+    },
+    {
+     "kod": "makine",
+     "ad": "Makine-teçhizat kredisi",
+     "simge": "🏭",
+     "aciklama": "Tesis kurmak ve büyütmek için; en az bir tesisin olmalı.",
+     "faiz": 44,
+     "temelFaiz": 44,
+     "odaIndirimi": 0,
+     "seviyeIndirimi": 0,
+     "taksitler": [
+      6,
+      12,
+      24
+     ],
+     "limit": 1875300000,
+     "engel": "15. seviyede açılır.",
+     "enAz": 1000000,
+     "alim": false,
+     "pesinat": 0
+    },
+    {
+     "kod": "tasit",
+     "ad": "Taşıt kredisi",
+     "simge": "🚗",
+     "aciklama": "Araba ve yat alırken kullanılır; en az %30 peşinat gerekir.",
+     "faiz": 48,
+     "temelFaiz": 48,
+     "odaIndirimi": 0,
+     "seviyeIndirimi": 0,
+     "taksitler": [
+      12,
+      24,
+      36
+     ],
+     "limit": 1500200000,
+     "engel": null,
+     "enAz": 1000000,
+     "alim": true,
+     "pesinat": 0.3
+    },
+    {
+     "kod": "konut",
+     "ad": "Konut kredisi",
+     "simge": "🏠",
+     "aciklama": "Ev ve arsa alırken kullanılır; en az %20 peşinat gerekir.",
+     "faiz": 40,
+     "temelFaiz": 40,
+     "odaIndirimi": 0,
+     "seviyeIndirimi": 0,
+     "taksitler": [
+      24,
+      36,
+      60
+     ],
+     "limit": 2250300000,
+     "engel": null,
+     "enAz": 1000000,
+     "alim": true,
+     "pesinat": 0.2
+    }
+   ],
+   "stopaj": 15,
+   "tahsis": 0.5,
+   "ekonomiGunuMs": 28800000,
+   "karaListe": 0,
+   "net": 1418928368,
+   "krediNotu": {
+    "puan": 1278,
+    "bant": "Az riskli",
+    "renk": "#E8C21A"
+   },
+   "hesapNo": "TR11 0077 7049 1600 7396 8972 10",
+   "donuk": false,
+   "masak": null,
+   "masakServet": []
+  },
+  "takvim": {
+   "ms": 1792453029221,
+   "yil": 2026,
+   "ay": 9,
+   "ayAdi": "Ekim",
+   "gunNo": 19,
+   "haftaGunu": "Pazartesi",
+   "haftaGunuNo": 1,
+   "haftaSonu": false,
+   "saat": 23,
+   "dakika": 37,
+   "mevsim": "sonbahar",
+   "mevsimAdi": "Sonbahar",
+   "metin": "19 Ekim 2026, Pazartesi"
+  }
+ },
+ "banka": {
+  "nakit": 20921291.89,
+  "vadesiz": 14189283.68,
+  "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
+  "vadeliler": [],
+  "krediler": [],
+  "kredi_notu": {
+   "puan": 1278,
+   "bant": "Az riskli",
+   "renk": "#E8C21A"
+  },
+  "ham_anahtarlar": [
+   "vadesiz",
+   "nakit",
+   "vadeliler",
+   "krediler",
+   "vadeler",
+   "krediTurleri",
+   "stopaj",
+   "tahsis",
+   "ekonomiGunuMs",
+   "karaListe",
+   "net",
+   "krediNotu",
+   "hesapNo",
+   "donuk",
+   "masak",
+   "masakServet"
+  ]
+ },
+ "havale": {
+  "toplam": 3,
+  "gelenler": [
+   {
+    "id": 50,
+    "kim": "Karahan",
+    "tutar": 500000.0,
+    "aciklama": "Ortaklık Payı 😘",
+    "giden": false,
+    "ts": 1791638483479
+   },
+   {
+    "id": 43,
+    "kim": "Karahan",
+    "tutar": 1000000.0,
+    "aciklama": "Ortaklık payı",
+    "giden": false,
+    "ts": 1791456893694
+   },
+   {
+    "id": 42,
+    "kim": "Karahan",
+    "tutar": 1000000.0,
+    "aciklama": null,
+    "giden": false,
+    "ts": 1791411838262
+   }
+  ],
+  "son_hareketler": [
+   {
+    "id": 50,
+    "kim": "Karahan",
+    "tutar": 500000.0,
+    "aciklama": "Ortaklık Payı 😘",
+    "giden": false,
+    "ts": 1791638483479
+   },
+   {
+    "id": 43,
+    "kim": "Karahan",
+    "tutar": 1000000.0,
+    "aciklama": "Ortaklık payı",
+    "giden": false,
+    "ts": 1791456893694
+   },
+   {
+    "id": 42,
+    "kim": "Karahan",
+    "tutar": 1000000.0,
+    "aciklama": null,
+    "giden": false,
+    "ts": 1791411838262
+   }
+  ],
+  "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
+  "engel": null,
+  "ham": {
+   "hesapNo": "TR11 0077 7049 1600 7396 8972 10",
+   "sinir": 1000000000,
+   "bugun": 0,
+   "engel": null
+  }
+ },
+ "mesaj-oku": {
+  "kisi": "Karahan",
+  "toplam": 25,
+  "gelen_adet": 0,
+  "son_gelen": null,
+  "cevaplanan_id": 1137,
+  "son_mesajlar": [
+   {
+    "id": 2820,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120203980
+   },
+   {
+    "id": 2821,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120522669
+   },
+   {
+    "id": 2822,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120627490
+   },
+   {
+    "id": 2823,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120813389
+   },
+   {
+    "id": 2824,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120848741
+   },
+   {
+    "id": 2825,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120851078
+   },
+   {
+    "id": 2826,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120925729
+   },
+   {
+    "id": 2827,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792120929735
+   },
+   {
+    "id": 2828,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792121077378
+   },
+   {
+    "id": 2829,
+    "benden": true,
+    "metin": "Patron, SV13 oldum! Yeni açılan dükkânlar: -",
+    "zaman": 1792121218301
+   }
+  ]
+ },
+ "oda": {
+  "odalar": [
+   {
+    "kod": "esnaf",
+    "ad": "Esnaf ve Sanatkârlar Odası",
+    "uye": true,
+    "aktif": true,
+    "egitimAlindi": true,
+    "aidat": 250000,
+    "borc": null,
+    "baskan": {
+     "oyuncuId": 14,
+     "ad": "Karahan",
+     "oy": 6,
+     "donem": "2026-10"
+    },
+    "kasa": 6050000,
+    "uyeler": null,
+    "tp": null
+   },
+   {
+    "kod": "ticaret",
+    "ad": "Ticaret Odası",
+    "uye": true,
+    "aktif": true,
+    "egitimAlindi": true,
+    "aidat": 1500000,
+    "borc": null,
+    "baskan": null,
+    "kasa": 450000,
+    "uyeler": null,
+    "tp": null
+   },
+   {
+    "kod": "sanayi",
+    "ad": "Sanayi Odası",
+    "uye": false,
+    "aktif": false,
+    "egitimAlindi": false,
+    "aidat": 3000000,
+    "borc": null,
+    "baskan": null,
+    "kasa": 0,
+    "uyeler": null,
+    "tp": null
+   }
+  ],
+  "egitim": [],
+  "uyelikler": [
+   "Esnaf ve Sanatkârlar Odası",
+   "Ticaret Odası"
+  ]
+ },
+ "seviye-bildir": {
+  "seviye": 13,
+  "tp": 6553,
+  "onceki": 13,
+  "yeni_mi": false
+ },
+ "dukkan-yonet": {
+  "toplam": 52,
+  "kasa_toplanan": 0,
+  "kasa_tl": 0.0,
+  "raf_doldurulan": 0,
+  "oto_acilan": 0,
+  "detay": [],
+  "hatalar": [],
+  "debug": [
+   {
+    "id": 42846,
+    "ad": "Kalfa19 Hırdavatçı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 44873,
+    "ad": "Kalfa Bakkal",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 45124,
+    "ad": "Kalfa Şarküteri",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 45739,
+    "ad": "Kalfa Büfe",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 46044,
+    "ad": "Kalfa Kasap",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 46075,
+    "ad": "Kalfa Fırın",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 46742,
+    "ad": "Kalfa Lokanta",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 47965,
+    "ad": "Kalfa Pideci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 47966,
+    "ad": "Kalfa Dönerci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48276,
+    "ad": "Kalfa Hamburgerci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48422,
+    "ad": "Kalfa Pastane",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48423,
+    "ad": "Kalfa Pizzacı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48731,
+    "ad": "Kalfa Çay ocağı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 48842,
+    "ad": "Kalfa Kafe",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 49004,
+    "ad": "Kalfa Market",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 50573,
+    "ad": "Kalfa Bar",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 52897,
+    "ad": "Kalfa Kebapçı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 52900,
+    "ad": "Kalfa Aktar",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 52945,
+    "ad": "Kalfa Tavukçu",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 52947,
+    "ad": "Kalfa Balıkçı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53012,
+    "ad": "Kalfa Bebek mağaza",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53038,
+    "ad": "Kalfa Bilgisayarcı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53039,
+    "ad": "Kalfa Çantacı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53198,
+    "ad": "Kalfa Çiğ köfteci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53273,
+    "ad": "Kalfa İç giyim",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53427,
+    "ad": "Kalfa Dondurmacı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53455,
+    "ad": "Kalfa Kuruyemişçi",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 53790,
+    "ad": "Kalfa Temizlik ürü",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 54488,
+    "ad": "Kalfa Züccaciye",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 56017,
+    "ad": "Kalfa Yapı marketi",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 56669,
+    "ad": "Kalfa Perdeci",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 57832,
+    "ad": "Kalfa Halıcı",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 58415,
+    "ad": "Kalfa Spor mağazas",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "id": 59920,
+    "ad": "Kalfa Telefoncu",
+    "oto_hata": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   }
+  ]
+ },
+ "dukkan-ac": {
+  "ilce": 2034,
+  "acilanlar": [
+   {
+    "tur": "yedek_parca",
+    "no": 47,
+    "toplam": 141000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 53,
+    "toplam": 1092000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 55,
+    "toplam": 546000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 57,
+    "toplam": 1092000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 61,
+    "toplam": 1092000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 64,
+    "toplam": 1092000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 80,
+    "toplam": 546000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 82,
+    "toplam": 1092000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   }
+  ],
+  "secenekler": [
+   {
+    "no": 47,
+    "tur": "yedek_parca",
+    "ad": "Oto yedek parça",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 141000.0,
+    "kurulum": 120000.0,
+    "kira": 8000.0
+   },
+   {
+    "no": 53,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0
+   },
+   {
+    "no": 55,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 546000.0,
+    "kurulum": 500000.0,
+    "kira": 18000.0
+   },
+   {
+    "no": 57,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0
+   },
+   {
+    "no": 61,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0
+   },
+   {
+    "no": 64,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0
+   },
+   {
+    "no": 80,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 546000.0,
+    "kurulum": 500000.0,
+    "kira": 18000.0
+   },
+   {
+    "no": 82,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0
+   }
+  ],
+  "denemeler": [],
+  "mevcut_turler": [
+   "aktar",
+   "bakkal",
+   "balikci",
+   "bar",
+   "bebek_magazasi",
+   "bilgisayarci",
+   "bisikletci",
+   "bufe",
+   "camasirhane",
+   "cantaci",
+   "cay_ocagi",
+   "cigkofte",
+   "cilingir",
+   "dondurmaci",
+   "donerci",
+   "elektrikci",
+   "emlakci",
+   "firin",
+   "fotografci",
+   "hali_yikama",
+   "halici",
+   "hamburgerci",
+   "hirdavat",
+   "ic_giyim",
+   "kafe",
+   "kargo",
+   "kasap",
+   "kebapci",
+   "kuafor",
+   "kurs",
+   "kuruyemis",
+   "lastikci",
+   "lokanta",
+   "market",
+   "matbaa",
+   "oto_servis",
+   "oto_yikama",
+   "pastane",
+   "perdeci",
+   "pideci",
+   "pizzaci",
+   "sarkuteri",
+   "seyahat_acentesi",
+   "sigorta_acentesi",
+   "spor_magazasi",
+   "tavukcu",
+   "teknik_servis",
+   "telefoncu",
+   "temizlik_magazasi",
+   "tesisatci",
+   "yapi_marketi",
+   "zuccaciye"
+  ],
+  "atlanan": [
+   "aktar",
+   "balikci",
+   "bebek_magazasi",
+   "bilgisayarci",
+   "bisikletci",
+   "camasirhane",
+   "cantaci",
+   "cigkofte",
+   "cilingir",
+   "dondurmaci",
+   "elektrikci",
+   "halici",
+   "ic_giyim",
+   "kebapci",
+   "kuafor",
+   "kurs",
+   "kuruyemis",
+   "matbaa",
+   "oto_servis",
+   "perdeci",
+   "seyahat_acentesi",
+   "sigorta_acentesi",
+   "spor_magazasi",
+   "tavukcu",
+   "teknik_servis",
+   "telefoncu",
+   "temizlik_magazasi",
+   "tesisatci",
+   "yapi_marketi",
+   "zuccaciye"
+  ],
+  "bakiye": 20921291.89,
+  "oyuncu_seviye": 13,
+  "sokak_degistirildi": 1,
+  "bos_parsel": 9,
+  "kalan_bakiye": 14228291.89
+ },
+ "bot": {
+  "olay": "kosu_bitti",
+  "tur": 8,
+  "kazanc": 0.0,
+  "servis": 64,
+  "bahsis": 0,
+  "bakiye": 20808807.76,
+  "siparis_toplam": 0,
+  "siparis_basari": 0,
+  "gecen_dk": 15.4,
+  "bot_versiyon": "v2",
+  "ts": 1792443883714
+ }
+}
