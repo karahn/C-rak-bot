@@ -12145,3 +12145,15 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792390106577}
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792390147292}
 {"olay": "kosu_bitti", "tur": 7, "kazanc": 0.0, "servis": 56, "bahsis": 0, "bakiye": 21042788.41, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1792390391734}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 21042788.41, "bot_versiyon": "v2_hizli_siparis", "ts": 1792390947410}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792390948554}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792391190762}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792391231041}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3879634", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792391231734}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792391271443}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792391512927}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 0.0, "servis": 40, "bakiye": 21042788.41, "siparis": "0/0", "gecen_dk": 10.1, "ts": 1792391550314}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792391553479}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792391593991}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792391865839}
+{"olay": "kosu_bitti", "tur": 8, "kazanc": 0.0, "servis": 64, "bahsis": 0, "bakiye": 21042788.41, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.5, "bot_versiyon": "v2", "ts": 1792391875793}
