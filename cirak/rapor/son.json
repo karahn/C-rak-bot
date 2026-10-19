@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6553,
-  "nakit_kurus": 2104724441,
+  "nakit_kurus": 2104844441,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 1020973346,
-   "nakit": 2104724441,
+   "nakit": 2104844441,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -66,7 +66,7 @@
       6,
       12
      ],
-     "limit": 1058400000,
+     "limit": 1058500000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -106,7 +106,7 @@
       24,
       36
      ],
-     "limit": 1411200000,
+     "limit": 1411300000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -126,7 +126,7 @@
       36,
       60
      ],
-     "limit": 2116900000,
+     "limit": 2117000000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792411625043,
+   "ms": 1792413134216,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,14 +158,14 @@
    "haftaGunuNo": 1,
    "haftaSonu": false,
    "saat": 12,
-   "dakika": 7,
+   "dakika": 32,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "19 Ekim 2026, Pazartesi"
   }
  },
  "banka": {
-  "nakit": 21047244.41,
+  "nakit": 21048444.41,
   "vadesiz": 10209733.46,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -913,23 +913,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 21047244.41,
+  "bakiye": 21048444.41,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 16256244.41
+  "kalan_bakiye": 16257444.41
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 10,
+  "tur": 5,
   "kazanc": 0.0,
-  "servis": 80,
+  "servis": 40,
   "bahsis": 0,
-  "bakiye": 21048444.41,
+  "bakiye": 21049289.41,
   "siparis_toplam": 0,
   "siparis_basari": 0,
   "gecen_dk": 16.0,
   "bot_versiyon": "v2",
-  "ts": 1792402308015
+  "ts": 1792403910285
  }
 }
