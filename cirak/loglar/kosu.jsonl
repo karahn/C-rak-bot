@@ -12477,3 +12477,21 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792438765916}
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792439084763}
 {"olay": "kosu_bitti", "tur": 3, "kazanc": 0.0, "servis": 24, "bahsis": 0, "bakiye": 20953486.6, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 16.0, "bot_versiyon": "v2", "ts": 1792439401803}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 20953486.6, "bot_versiyon": "v2_hizli_siparis", "ts": 1792439836659}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792439837596}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440037913}
+{"olay": "sokak", "tur": "muzisyen", "id": "2034:muzisyen:497900", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440038456}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440046984}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440085835}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440124991}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 0.0, "servis": 40, "bakiye": 20921291.89, "siparis": "0/0", "gecen_dk": 8.1, "ts": 1792440322443}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440325295}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622375", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440325828}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440364629}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440403815}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440443069}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440642993}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 0.0, "servis": 80, "bakiye": 20921291.89, "siparis": "0/0", "gecen_dk": 14.1, "ts": 1792440679554}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440682435}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792440721712}
+{"olay": "kosu_bitti", "tur": 12, "kazanc": 0.0, "servis": 96, "bahsis": 0, "bakiye": 20921291.89, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1792440760312}
