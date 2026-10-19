@@ -25,7 +25,7 @@
    "ad": "Fatih Mahallesi"
   },
   "banka": {
-   "vadesiz": 1033682932,
+   "vadesiz": 1167337665,
    "nakit": 2100079552,
    "vadeliler": [],
    "krediler": [],
@@ -66,7 +66,7 @@
       6,
       12
      ],
-     "limit": 1114900000,
+     "limit": 1121900000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -86,7 +86,7 @@
       12,
       24
      ],
-     "limit": 1858200000,
+     "limit": 1869900000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -106,7 +106,7 @@
       24,
       36
      ],
-     "limit": 1486500000,
+     "limit": 1495900000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -126,7 +126,7 @@
       36,
       60
      ],
-     "limit": 2229800000,
+     "limit": 2243900000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -137,7 +137,7 @@
    "tahsis": 0.5,
    "ekonomiGunuMs": 28800000,
    "karaListe": 0,
-   "net": 1033682932,
+   "net": 1167337665,
    "krediNotu": {
     "puan": 1277,
     "bant": "Az riskli",
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792438492784,
+   "ms": 1792440223414,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -157,8 +157,8 @@
    "haftaGunu": "Pazartesi",
    "haftaGunuNo": 1,
    "haftaSonu": false,
-   "saat": 19,
-   "dakika": 34,
+   "saat": 20,
+   "dakika": 3,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "19 Ekim 2026, Pazartesi"
@@ -166,7 +166,7 @@
  },
  "banka": {
   "nakit": 21000795.52,
-  "vadesiz": 10336829.32,
+  "vadesiz": 11673376.65,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
@@ -727,7 +727,7 @@
    },
    {
     "tur": "nakliyat",
-    "no": 79,
+    "no": 80,
     "toplam": 546000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -736,8 +736,8 @@
    },
    {
     "tur": "nakliyat",
-    "no": 80,
-    "toplam": 546000.0,
+    "no": 82,
+    "toplam": 1092000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
      "insanDogrula": true
@@ -806,7 +806,7 @@
     "kira": 8000.0
    },
    {
-    "no": 79,
+    "no": 80,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -816,14 +816,14 @@
     "kira": 18000.0
    },
    {
-    "no": 80,
+    "no": 82,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
     "kilitli": false,
-    "toplam": 546000.0,
-    "kurulum": 500000.0,
-    "kira": 18000.0
+    "toplam": 1092000.0,
+    "kurulum": 1000000.0,
+    "kira": 36000.0
    }
   ],
   "denemeler": [],
@@ -916,20 +916,20 @@
   "bakiye": 21000795.52,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
-  "bos_parsel": 9,
-  "kalan_bakiye": 16755795.52
+  "bos_parsel": 8,
+  "kalan_bakiye": 16209795.52
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 3,
+  "tur": 4,
   "kazanc": 0.0,
-  "servis": 24,
+  "servis": 32,
   "bahsis": 0,
-  "bakiye": 21000795.52,
+  "bakiye": 21002281.52,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 16.2,
+  "gecen_dk": 16.0,
   "bot_versiyon": "v2",
-  "ts": 1792429397058
+  "ts": 1792431026270
  }
 }
