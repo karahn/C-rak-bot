@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792528372810,
+   "ms": 1792529974748,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,7 +158,7 @@
    "haftaGunuNo": 2,
    "haftaSonu": false,
    "saat": 20,
-   "dakika": 32,
+   "dakika": 59,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "20 Ekim 2026, Salı"
@@ -681,15 +681,6 @@
     }
    },
    {
-    "tur": "nakliyat",
-    "no": 55,
-    "toplam": 546000.0,
-    "sonuc": {
-     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
-     "insanDogrula": true
-    }
-   },
-   {
     "tur": "yedek_parca",
     "no": 60,
     "toplam": 141000.0,
@@ -727,6 +718,15 @@
    },
    {
     "tur": "yedek_parca",
+    "no": 75,
+    "toplam": 141000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "yedek_parca",
     "no": 76,
     "toplam": 141000.0,
     "sonuc": {
@@ -747,16 +747,6 @@
   "secenekler": [
    {
     "no": 48,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 546000.0,
-    "kurulum": 500000.0,
-    "kira": 18000.0
-   },
-   {
-    "no": 55,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -797,6 +787,16 @@
    },
    {
     "no": 72,
+    "tur": "yedek_parca",
+    "ad": "Oto yedek parça",
+    "seviye": 4,
+    "kilitli": false,
+    "toplam": 141000.0,
+    "kurulum": 120000.0,
+    "kira": 8000.0
+   },
+   {
+    "no": 75,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
     "seviye": 4,
@@ -913,23 +913,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 19288176.92,
+  "bakiye": 19246578.94,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 15448176.920000002
+  "kalan_bakiye": 15811578.940000001
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 4,
+  "tur": 7,
   "kazanc": 0.0,
-  "servis": 32,
+  "servis": 56,
   "bahsis": 0,
-  "bakiye": 19288176.92,
+  "bakiye": 19246578.94,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.9,
+  "gecen_dk": 15.4,
   "bot_versiyon": "v2",
-  "ts": 1792519148120
+  "ts": 1792520793497
  }
 }
