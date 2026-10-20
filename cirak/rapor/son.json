@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6553,
-  "nakit_kurus": 1920730984,
+  "nakit_kurus": 1911999149,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -25,8 +25,8 @@
    "ad": "Fatih Mahallesi"
   },
   "banka": {
-   "vadesiz": 1837227473,
-   "nakit": 1920730984,
+   "vadesiz": 1849667396,
+   "nakit": 1911999149,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -66,7 +66,7 @@
       6,
       12
      ],
-     "limit": 1219000000,
+     "limit": 1214600000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -86,7 +86,7 @@
       12,
       24
      ],
-     "limit": 2031700000,
+     "limit": 2024300000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -106,7 +106,7 @@
       24,
       36
      ],
-     "limit": 1625300000,
+     "limit": 1619400000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -126,7 +126,7 @@
       36,
       60
      ],
-     "limit": 2438000000,
+     "limit": 2429200000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -137,7 +137,7 @@
    "tahsis": 0.5,
    "ekonomiGunuMs": 28800000,
    "karaListe": 0,
-   "net": 1837227473,
+   "net": 1849667396,
    "krediNotu": {
     "puan": 1282,
     "bant": "Az riskli",
@@ -149,24 +149,24 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792540775104,
+   "ms": 1792542258718,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
-   "gunNo": 20,
-   "haftaGunu": "Salı",
-   "haftaGunuNo": 2,
+   "gunNo": 21,
+   "haftaGunu": "Çarşamba",
+   "haftaGunuNo": 3,
    "haftaSonu": false,
-   "saat": 23,
-   "dakika": 59,
+   "saat": 0,
+   "dakika": 24,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
-   "metin": "20 Ekim 2026, Salı"
+   "metin": "21 Ekim 2026, Çarşamba"
   }
  },
  "banka": {
-  "nakit": 19207309.84,
-  "vadesiz": 18372274.73,
+  "nakit": 19119991.49,
+  "vadesiz": 18496673.96,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
@@ -913,23 +913,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 19118609.49,
+  "bakiye": 19119991.49,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 14327609.489999998
+  "kalan_bakiye": 14328991.489999998
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 8,
+  "tur": 12,
   "kazanc": 0.0,
-  "servis": 64,
+  "servis": 96,
   "bahsis": 0,
   "bakiye": 19119991.49,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.3,
+  "gecen_dk": 15.9,
   "bot_versiyon": "v2",
-  "ts": 1792531433259
+  "ts": 1792532867103
  }
 }
