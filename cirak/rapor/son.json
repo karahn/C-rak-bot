@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792499399124,
+   "ms": 1792500788501,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,7 +158,7 @@
    "haftaGunuNo": 2,
    "haftaSonu": false,
    "saat": 12,
-   "dakika": 29,
+   "dakika": 53,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "20 Ekim 2026, Salı"
@@ -700,7 +700,7 @@
    },
    {
     "tur": "nakliyat",
-    "no": 64,
+    "no": 68,
     "toplam": 1092000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -776,7 +776,7 @@
     "kira": 18000.0
    },
    {
-    "no": 64,
+    "no": 68,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -925,11 +925,11 @@
   "kazanc": 0.0,
   "servis": 64,
   "bahsis": 0,
-  "bakiye": 19347046.45,
+  "bakiye": 19347533.45,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.3,
+  "gecen_dk": 15.4,
   "bot_versiyon": "v2",
-  "ts": 1792489963501
+  "ts": 1792491439651
  }
 }
