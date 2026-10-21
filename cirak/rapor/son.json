@@ -4,7 +4,7 @@
   "oyuncu": "Kalfa19",
   "seviye": 13,
   "tp": 6553,
-  "nakit_kurus": 1838769719,
+  "nakit_kurus": 1839200819,
   "il": {
    "id": 6,
    "ad": "Ankara",
@@ -26,7 +26,7 @@
   },
   "banka": {
    "vadesiz": 1860052219,
-   "nakit": 1838769719,
+   "nakit": 1839200819,
    "vadeliler": [],
    "krediler": [],
    "vadeler": [
@@ -66,7 +66,7 @@
       6,
       12
      ],
-     "limit": 1219200000,
+     "limit": 1219300000,
      "engel": null,
      "enAz": 1000000,
      "alim": false,
@@ -86,7 +86,7 @@
       12,
       24
      ],
-     "limit": 2032000000,
+     "limit": 2032200000,
      "engel": "15. seviyede açılır.",
      "enAz": 1000000,
      "alim": false,
@@ -106,7 +106,7 @@
       24,
       36
      ],
-     "limit": 1625600000,
+     "limit": 1625700000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -126,7 +126,7 @@
       36,
       60
      ],
-     "limit": 2438400000,
+     "limit": 2438600000,
      "engel": null,
      "enAz": 1000000,
      "alim": true,
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792573656713,
+   "ms": 1792575003347,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,14 +158,14 @@
    "haftaGunuNo": 3,
    "haftaSonu": false,
    "saat": 9,
-   "dakika": 7,
+   "dakika": 30,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "21 Ekim 2026, Çarşamba"
   }
  },
  "banka": {
-  "nakit": 18387697.19,
+  "nakit": 18392008.19,
   "vadesiz": 18600522.19,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
@@ -921,15 +921,15 @@
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 12,
+  "tur": 11,
   "kazanc": 0.0,
-  "servis": 96,
+  "servis": 88,
   "bahsis": 0,
   "bakiye": 18392008.19,
   "siparis_toplam": 0,
   "siparis_basari": 0,
   "gecen_dk": 15.3,
   "bot_versiyon": "v2",
-  "ts": 1792564180052
+  "ts": 1792565502204
  }
 }
