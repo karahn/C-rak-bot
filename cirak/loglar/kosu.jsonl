@@ -14163,3 +14163,12 @@
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792565463794}
 {"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622418", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792565464303}
 {"olay": "kosu_bitti", "tur": 11, "kazanc": 0.0, "servis": 88, "bahsis": 0, "bakiye": 18392008.19, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1792565502204}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 18336196.63, "bot_versiyon": "v2_hizli_siparis", "ts": 1792566059257}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792566060424}
+{"olay": "keyif_mekan", "onceki": 66, "mekan": "Kalfa Bar", "keyif_puan": 18, "fiyat": 1258.75, "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792566062080}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792566339997}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792566380118}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792566659324}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792566699898}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 0.0, "servis": 40, "bakiye": 18346374.63, "siparis": "0/0", "gecen_dk": 15.3, "ts": 1792566976877}
+{"olay": "kosu_bitti", "tur": 5, "kazanc": 0.0, "servis": 40, "bahsis": 0, "bakiye": 18346374.63, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1792566979167}
