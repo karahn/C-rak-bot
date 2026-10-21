@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792566898127,
+   "ms": 1792568255145,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,7 +158,7 @@
    "haftaGunuNo": 3,
    "haftaSonu": false,
    "saat": 7,
-   "dakika": 14,
+   "dakika": 37,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "21 Ekim 2026, Çarşamba"
@@ -727,7 +727,7 @@
    },
    {
     "tur": "yedek_parca",
-    "no": 72,
+    "no": 77,
     "toplam": 141000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -806,7 +806,7 @@
     "kira": 8000.0
    },
    {
-    "no": 72,
+    "no": 77,
     "tur": "yedek_parca",
     "ad": "Oto yedek parça",
     "seviye": 4,
@@ -928,8 +928,8 @@
   "bakiye": 18425487.37,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.2,
+  "gecen_dk": 15.3,
   "bot_versiyon": "v2",
-  "ts": 1792557429742
+  "ts": 1792558793447
  }
 }
