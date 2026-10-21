@@ -14189,3 +14189,14 @@
 {"olay": "sokak", "tur": "kavga", "id": "2034:kavga:373451", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792568423365}
 {"olay": "ara_ozet", "tur": 10, "kazanc": 0.0, "servis": 80, "bakiye": 18346399.63, "siparis": "0/0", "gecen_dk": 15.4, "ts": 1792568459251}
 {"olay": "kosu_bitti", "tur": 10, "kazanc": 0.0, "servis": 80, "bahsis": 0, "bakiye": 18346399.63, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.4, "bot_versiyon": "v2", "ts": 1792568461437}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 18346399.63, "bot_versiyon": "v2_hizli_siparis", "ts": 1792569023464}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792569024493}
+{"olay": "keyif_mekan", "onceki": 66, "mekan": "Kalfa Bar", "keyif_puan": 18, "fiyat": 1258.75, "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792569056399}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792569300615}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792569340575}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792569584115}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792569624050}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 0.0, "servis": 40, "bakiye": 18311838.31, "siparis": "0/0", "gecen_dk": 10.6, "ts": 1792569660885}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792569663879}
+{"olay": "sokak", "tur": "kedi", "id": "2034:kedi:622420", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792569664529}
+{"olay": "kosu_bitti", "tur": 6, "kazanc": 0.0, "servis": 48, "bahsis": 0, "bakiye": 18311838.31, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1792569942700}
