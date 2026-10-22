@@ -15528,3 +15528,53 @@
 {"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792675063104}
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792675063467}
 {"olay": "kosu_bitti", "tur": 6, "kazanc": 0.0, "servis": 12, "bahsis": 0, "bakiye": 17657664.78, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1792675101504}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 17657664.78, "bot_versiyon": "v2_hizli_siparis", "ts": 1792675664861}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792675695753}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792675696122}
+{"olay": "keyif_mekan", "onceki": 76, "mekan": "Kalfa Bar", "keyif_puan": 18, "fiyat": 1258.75, "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792675697512}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792675941348}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792675941710}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792675980553}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792675980898}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792676226891}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792676227448}
+{"olay": "sokak", "tur": "cuzdan", "id": "2034:cuzdan:3880251", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792676258437}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792676297622}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792676297987}
+{"olay": "ara_ozet", "tur": 5, "kazanc": 0.0, "servis": 10, "bakiye": 17657664.78, "siparis": "0/0", "gecen_dk": 10.7, "ts": 1792676304037}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792676336946}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792676337297}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676476168}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676479586}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676482670}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676485746}
+{"olay": "ara_ozet", "tur": 10, "kazanc": 0.0, "servis": 12, "bakiye": 0.0, "siparis": "0/0", "gecen_dk": 13.7, "ts": 1792676486289}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676488980}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676492396}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676495414}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676498490}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676501564}
+{"olay": "ara_ozet", "tur": 15, "kazanc": 0.0, "servis": 12, "bakiye": 0.0, "siparis": "0/0", "gecen_dk": 14.0, "ts": 1792676502442}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676505162}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676508211}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676511260}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676514378}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676517836}
+{"olay": "ara_ozet", "tur": 20, "kazanc": 0.0, "servis": 12, "bakiye": 0.0, "siparis": "0/0", "gecen_dk": 14.2, "ts": 1792676518360}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676521082}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676524152}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676527228}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676530660}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676533724}
+{"olay": "ara_ozet", "tur": 25, "kazanc": 0.0, "servis": 12, "bakiye": 0.0, "siparis": "0/0", "gecen_dk": 14.5, "ts": 1792676534265}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676536952}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676539992}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676543487}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676546594}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676549935}
+{"olay": "ara_ozet", "tur": 30, "kazanc": 0.0, "servis": 12, "bakiye": 0.0, "siparis": "0/0", "gecen_dk": 14.8, "ts": 1792676550923}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676553868}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676557307}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676560589}
+{"olay": "gunluk", "sonuc": {"bonus": {"hata": "Sunucuda bir sorun oluştu. Biraz sonra tekrar dene."}}, "ts": 1792676563742}
+{"olay": "kosu_bitti", "tur": 34, "kazanc": 0.0, "servis": 12, "bahsis": 0, "bakiye": 0.0, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.0, "bot_versiyon": "v2", "ts": 1792676566294}
