@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792718903068,
+   "ms": 1792720335951,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,7 +158,7 @@
    "haftaGunuNo": 5,
    "haftaSonu": false,
    "saat": 1,
-   "dakika": 28,
+   "dakika": 52,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "23 Ekim 2026, Cuma"
@@ -925,11 +925,11 @@
   "kazanc": 0.0,
   "servis": 26,
   "bahsis": 0,
-  "bakiye": 17274654.37,
+  "bakiye": 17276862.37,
   "siparis_toplam": 0,
   "siparis_basari": 0,
   "gecen_dk": 15.4,
   "bot_versiyon": "v2",
-  "ts": 1792709512164
+  "ts": 1792710940234
  }
 }
