@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792714342437,
+   "ms": 1792715827218,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,7 +158,7 @@
    "haftaGunuNo": 5,
    "haftaSonu": false,
    "saat": 0,
-   "dakika": 12,
+   "dakika": 37,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "23 Ekim 2026, Cuma"
@@ -682,15 +682,6 @@
    },
    {
     "tur": "nakliyat",
-    "no": 55,
-    "toplam": 546000.0,
-    "sonuc": {
-     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
-     "insanDogrula": true
-    }
-   },
-   {
-    "tur": "nakliyat",
     "no": 61,
     "toplam": 1092000.0,
     "sonuc": {
@@ -719,6 +710,15 @@
    {
     "tur": "nakliyat",
     "no": 73,
+    "toplam": 546000.0,
+    "sonuc": {
+     "hata": "Devam etmeden önce kısa bir doğrulama yap.",
+     "insanDogrula": true
+    }
+   },
+   {
+    "tur": "nakliyat",
+    "no": 79,
     "toplam": 546000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -756,16 +756,6 @@
     "kira": 36000.0
    },
    {
-    "no": 55,
-    "tur": "nakliyat",
-    "ad": "Nakliyat",
-    "seviye": 6,
-    "kilitli": false,
-    "toplam": 546000.0,
-    "kurulum": 500000.0,
-    "kira": 18000.0
-   },
-   {
     "no": 61,
     "tur": "nakliyat",
     "ad": "Nakliyat",
@@ -797,6 +787,16 @@
    },
    {
     "no": 73,
+    "tur": "nakliyat",
+    "ad": "Nakliyat",
+    "seviye": 6,
+    "kilitli": false,
+    "toplam": 546000.0,
+    "kurulum": 500000.0,
+    "kira": 18000.0
+   },
+   {
+    "no": 79,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -921,15 +921,15 @@
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 7,
+  "tur": 9,
   "kazanc": 0.0,
-  "servis": 14,
+  "servis": 18,
   "bahsis": 0,
-  "bakiye": 17281716.9,
+  "bakiye": 17274654.37,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.3,
+  "gecen_dk": 15.9,
   "bot_versiyon": "v2",
-  "ts": 1792705002559
+  "ts": 1792706559447
  }
 }
