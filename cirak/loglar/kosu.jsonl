@@ -15995,3 +15995,14 @@
 {"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792678127680}
 {"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792678128138}
 {"olay": "kosu_bitti", "tur": 117, "kazanc": 0.0, "servis": 8, "bahsis": 0, "bakiye": 17660424.78, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 16.0, "bot_versiyon": "v2", "ts": 1792678480620}
+{"olay": "kosu_basladi", "sure_dk": 15.0, "bakiye": 17660424.78, "bot_versiyon": "v2_hizli_siparis", "ts": 1792679122542}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792679123490}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792679124449}
+{"olay": "keyif_mekan", "onceki": 76, "mekan": "Kalfa Bar", "keyif_puan": 18, "fiyat": 1258.75, "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792679156464}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792679439465}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792679439872}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792679720985}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792679721450}
+{"olay": "gunluk", "sonuc": {"sezon": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}}, "ts": 1792679761250}
+{"olay": "yetenek", "kod": "yonetim", "sonuc": {"hata": "Devam etmeden önce kısa bir doğrulama yap.", "insanDogrula": true}, "ts": 1792679761660}
+{"olay": "kosu_bitti", "tur": 4, "kazanc": 0.0, "servis": 8, "bahsis": 0, "bakiye": 17660424.78, "siparis_toplam": 0, "siparis_basari": 0, "gecen_dk": 15.3, "bot_versiyon": "v2", "ts": 1792680041436}
