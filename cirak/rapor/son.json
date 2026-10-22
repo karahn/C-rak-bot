@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792694023748,
+   "ms": 1792695590107,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,7 +158,7 @@
    "haftaGunuNo": 4,
    "haftaSonu": false,
    "saat": 18,
-   "dakika": 33,
+   "dakika": 59,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "22 Ekim 2026, Perşembe"
@@ -691,7 +691,7 @@
    },
    {
     "tur": "nakliyat",
-    "no": 58,
+    "no": 55,
     "toplam": 546000.0,
     "sonuc": {
      "hata": "Devam etmeden önce kısa bir doğrulama yap.",
@@ -766,7 +766,7 @@
     "kira": 8000.0
    },
    {
-    "no": 58,
+    "no": 55,
     "tur": "nakliyat",
     "ad": "Nakliyat",
     "seviye": 6,
@@ -913,11 +913,11 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 17672346.78,
+  "bakiye": 17676773.78,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 13427346.780000001
+  "kalan_bakiye": 13431773.780000001
  },
  "bot": {
   "olay": "kosu_bitti",
@@ -925,11 +925,11 @@
   "kazanc": 0.0,
   "servis": 8,
   "bahsis": 0,
-  "bakiye": 17672346.78,
+  "bakiye": 17676773.78,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.4,
+  "gecen_dk": 16.0,
   "bot_versiyon": "v2",
-  "ts": 1792684764065
+  "ts": 1792686403530
  }
 }
