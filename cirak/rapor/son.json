@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792657850863,
+   "ms": 1792659452731,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -158,7 +158,7 @@
    "haftaGunuNo": 4,
    "haftaSonu": false,
    "saat": 8,
-   "dakika": 30,
+   "dakika": 57,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "22 Ekim 2026, Perşembe"
@@ -913,23 +913,23 @@
    "yapi_marketi",
    "zuccaciye"
   ],
-  "bakiye": 17895224.82,
+  "bakiye": 17899208.82,
   "oyuncu_seviye": 13,
   "sokak_degistirildi": 1,
   "bos_parsel": 8,
-  "kalan_bakiye": 14460224.82
+  "kalan_bakiye": 14464208.82
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 8,
+  "tur": 16,
   "kazanc": 0.0,
-  "servis": 16,
+  "servis": 32,
   "bahsis": 0,
-  "bakiye": 17895224.82,
+  "bakiye": 17900588.82,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.9,
+  "gecen_dk": 15.2,
   "bot_versiyon": "v2",
-  "ts": 1792648615083
+  "ts": 1792650004346
  }
 }
