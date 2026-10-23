@@ -67,15 +67,15 @@
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 216,
+  "tur": 86,
   "kazanc": 0.0,
   "servis": 0,
   "bahsis": 0,
   "bakiye": 0.0,
   "siparis_toplam": 0,
   "siparis_basari": 0,
-  "gecen_dk": 15.0,
+  "gecen_dk": 16.8,
   "bot_versiyon": "v2",
-  "ts": 1792769547947
+  "ts": 1792770587296
  }
 }
