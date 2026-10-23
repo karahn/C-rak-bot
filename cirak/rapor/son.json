@@ -25,7 +25,7 @@
    "ad": "Fatih Mahallesi"
   },
   "banka": {
-   "vadesiz": 2553706390,
+   "vadesiz": 2556272293,
    "nakit": 1727686237,
    "vadeliler": [],
    "krediler": [],
@@ -137,7 +137,7 @@
    "tahsis": 0.5,
    "ekonomiGunuMs": 28800000,
    "karaListe": 0,
-   "net": 2553706390,
+   "net": 2556272293,
    "krediNotu": {
     "puan": 1291,
     "bant": "Az riskli",
@@ -149,7 +149,7 @@
    "masakServet": []
   },
   "takvim": {
-   "ms": 1792723225033,
+   "ms": 1792724602250,
    "yil": 2026,
    "ay": 9,
    "ayAdi": "Ekim",
@@ -157,8 +157,8 @@
    "haftaGunu": "Cuma",
    "haftaGunuNo": 5,
    "haftaSonu": false,
-   "saat": 2,
-   "dakika": 40,
+   "saat": 3,
+   "dakika": 3,
    "mevsim": "sonbahar",
    "mevsimAdi": "Sonbahar",
    "metin": "23 Ekim 2026, Cuma"
@@ -166,7 +166,7 @@
  },
  "banka": {
   "nakit": 17276862.37,
-  "vadesiz": 25537063.9,
+  "vadesiz": 25562722.93,
   "hesap_no": "TR11 0077 7049 1600 7396 8972 10",
   "vadeliler": [],
   "krediler": [],
@@ -921,15 +921,15 @@
  },
  "bot": {
   "olay": "kosu_bitti",
-  "tur": 11,
+  "tur": 14,
   "kazanc": 0.0,
-  "servis": 22,
+  "servis": 28,
   "bahsis": 0,
   "bakiye": 17276862.37,
   "siparis_toplam": 0,
   "siparis_basari": 0,
   "gecen_dk": 15.6,
   "bot_versiyon": "v2",
-  "ts": 1792713776862
+  "ts": 1792715131779
  }
 }
